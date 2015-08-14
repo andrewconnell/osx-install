@@ -1,0 +1,28 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Catalog">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="Count" Value="9" />
+  </Section>
+  <Section Name="CodeIssuesList">
+   <Option Name="ProviderName0" Value="String.Compare can be used" />
+   <Option Name="Enabled0" Value="False" />
+   <Option Name="ProviderName1" Value="Can remove type qualifier" />
+   <Option Name="Enabled1" Value="False" />
+   <Option Name="ProviderName2" Value="Case statement does not explicitly handle all enum values" />
+   <Option Name="Enabled2" Value="False" />
+   <Option Name="ProviderName3" Value="Case statement has no default branch" />
+   <Option Name="Enabled3" Value="False" />
+   <Option Name="ProviderName4" Value="Nested code can be flattened" />
+   <Option Name="Enabled4" Value="False" />
+   <Option Name="ProviderName5" Value="Ternary expression can be used" />
+   <Option Name="Enabled5" Value="False" />
+   <Option Name="ProviderName6" Value="ForEach Action can be called" />
+   <Option Name="Enabled6" Value="False" />
+   <Option Name="ProviderName7" Value="Implicit variable can be used" />
+   <Option Name="Enabled7" Value="False" />
+   <Option Name="ProviderName8" Value="Redundant field initialization" />
+   <Option Name="Enabled8" Value="False" />
+  </Section>
+ </Language>
+</Page>

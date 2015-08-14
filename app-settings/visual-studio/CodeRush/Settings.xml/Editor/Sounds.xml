@@ -1,0 +1,63 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Sounds">
+ <Language Name="*Neutral*">
+  <Section Name="Header">
+   <Option Name="Count" Value="8" />
+   <Option Name="Enabled" Value="False" />
+  </Section>
+  <Section Name="Record0">
+   <Option Name="FeatureName" Value="Auto Declare" />
+   <Option Name="FileName" Value="Default8" />
+   <Option Name="SoundSource" Value="Default" />
+   <Option Name="Volume" Value="10" />
+  </Section>
+  <Section Name="Record1">
+   <Option Name="FeatureName" Value="Collect Marker" />
+   <Option Name="FileName" Value="Default1" />
+   <Option Name="SoundSource" Value="Default" />
+   <Option Name="Volume" Value="10" />
+  </Section>
+  <Section Name="Record2">
+   <Option Name="FeatureName" Value="Comment Toggle" />
+   <Option Name="FileName" Value="Default1" />
+   <Option Name="SoundSource" Value="Default" />
+   <Option Name="Volume" Value="10" />
+  </Section>
+  <Section Name="Record3">
+   <Option Name="FeatureName" Value="Drop Marker" />
+   <Option Name="FileName" Value="Default5" />
+   <Option Name="SoundSource" Value="Default" />
+   <Option Name="Volume" Value="4" />
+  </Section>
+  <Section Name="Record4">
+   <Option Name="FeatureName" Value="Selection Increase" />
+   <Option Name="FileName" Value="Default9" />
+   <Option Name="SoundSource" Value="Default" />
+   <Option Name="Volume" Value="10" />
+  </Section>
+  <Section Name="Record5">
+   <Option Name="FeatureName" Value="Selection Reduce" />
+   <Option Name="FileName" Value="Default10" />
+   <Option Name="SoundSource" Value="Default" />
+   <Option Name="Volume" Value="10" />
+  </Section>
+  <Section Name="Record6">
+   <Option Name="FeatureName" Value="Smart Paste" />
+   <Option Name="FileName" Value="Default5" />
+   <Option Name="SoundSource" Value="Default" />
+   <Option Name="Volume" Value="10" />
+  </Section>
+  <Section Name="Record7">
+   <Option Name="FeatureName" Value="Template Expand" />
+   <Option Name="FileName" Value="Default1" />
+   <Option Name="SoundSource" Value="Default" />
+   <Option Name="Volume" Value="10" />
+  </Section>
+  <Section Name="Record8">
+   <Option Name="FeatureName" Value="Template Expand" />
+   <Option Name="FileName" Value="" />
+   <Option Name="SoundSource" Value="Default" />
+   <Option Name="Volume" Value="10" />
+  </Section>
+ </Language>
+</Page>

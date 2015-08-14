@@ -1,0 +1,32 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"C# Snippets",
+		"Git",
+		"JavaScriptNext - ES6 Syntax",
+		"JsFormat",
+		"JSHint",
+		"Kulture",
+		"LiveReload",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"OmniSharp",
+		"Package Control",
+		"PowerShell",
+		"Preference Helper",
+		"SideBarEnhancements",
+		"SideBarFolders",
+		"SnippetMaker",
+		"SublimeCodeIntel",
+		"Theme - Spacegray",
+		"View In Browser"
+	],
+	"repositories":
+	[
+		"https://github.com/fanzheng/Sublime.Markdown2Clipboard"
+	]
+}

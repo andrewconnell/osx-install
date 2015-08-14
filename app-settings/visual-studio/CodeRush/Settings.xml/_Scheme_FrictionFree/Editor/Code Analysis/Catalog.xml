@@ -1,0 +1,296 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Catalog">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="Count" Value="143" />
+  </Section>
+  <Section Name="CodeIssuesList">
+   <Option Name="ProviderName0" Value="Abstract member cannot be declared in nonabstract class" />
+   <Option Name="Enabled0" Value="True" />
+   <Option Name="ProviderName1" Value="Abstract member cannot be marked as sealed" />
+   <Option Name="Enabled1" Value="True" />
+   <Option Name="ProviderName2" Value="Abstract member cannot be marked as virtual" />
+   <Option Name="Enabled2" Value="True" />
+   <Option Name="ProviderName3" Value="Abstract member cannot be private" />
+   <Option Name="Enabled3" Value="True" />
+   <Option Name="ProviderName4" Value="Abstract member cannot declare a body" />
+   <Option Name="Enabled4" Value="True" />
+   <Option Name="ProviderName5" Value="Anonymous method cannot have 'params' parameter" />
+   <Option Name="Enabled5" Value="True" />
+   <Option Name="ProviderName6" Value="Array elements cannot be of static type" />
+   <Option Name="Enabled6" Value="True" />
+   <Option Name="ProviderName7" Value="Assignment to Global Variable" />
+   <Option Name="Enabled7" Value="True" />
+   <Option Name="ProviderName8" Value="Base type constructors are not implemented" />
+   <Option Name="Enabled8" Value="True" />
+   <Option Name="ProviderName9" Value="Can combine initialization with declaration" />
+   <Option Name="Enabled9" Value="True" />
+   <Option Name="ProviderName10" Value="Can declare MVC View" />
+   <Option Name="Enabled10" Value="True" />
+   <Option Name="ProviderName11" Value="Can implement base type constructors" />
+   <Option Name="Enabled11" Value="False" />
+   <Option Name="ProviderName12" Value="Can initialize conditionally" />
+   <Option Name="Enabled12" Value="False" />
+   <Option Name="ProviderName13" Value="Can inline temporary variable" />
+   <Option Name="Enabled13" Value="True" />
+   <Option Name="ProviderName14" Value="Can remove type qualifier" />
+   <Option Name="Enabled14" Value="False" />
+   <Option Name="ProviderName15" Value="Cannot create an instance of abstract class" />
+   <Option Name="Enabled15" Value="True" />
+   <Option Name="ProviderName16" Value="Cannot create an instance of interface" />
+   <Option Name="Enabled16" Value="True" />
+   <Option Name="ProviderName17" Value="Cannot create an instance of static class" />
+   <Option Name="Enabled17" Value="True" />
+   <Option Name="ProviderName18" Value="Cannot declare instance member in a static class" />
+   <Option Name="Enabled18" Value="True" />
+   <Option Name="ProviderName19" Value="Cannot declare variable of static type" />
+   <Option Name="Enabled19" Value="True" />
+   <Option Name="ProviderName20" Value="Cannot inherit from sealed type" />
+   <Option Name="Enabled20" Value="True" />
+   <Option Name="ProviderName21" Value="Cannot inherit from special class 'System.ValueType'" />
+   <Option Name="Enabled21" Value="True" />
+   <Option Name="ProviderName22" Value="Cannot inherit from static class" />
+   <Option Name="Enabled22" Value="True" />
+   <Option Name="ProviderName23" Value="Cannot override inherited sealed member" />
+   <Option Name="Enabled23" Value="True" />
+   <Option Name="ProviderName24" Value="Cannot yield in the body of a catch clause" />
+   <Option Name="Enabled24" Value="True" />
+   <Option Name="ProviderName25" Value="Cannot yield in the body of a finally clause" />
+   <Option Name="Enabled25" Value="True" />
+   <Option Name="ProviderName26" Value="Cannot yield in the body of a try block with a catch clause" />
+   <Option Name="Enabled26" Value="True" />
+   <Option Name="ProviderName27" Value="Case statement has incorrect range of integers expression" />
+   <Option Name="Enabled27" Value="True" />
+   <Option Name="ProviderName28" Value="Case statements do not explicitly handle all enum values" />
+   <Option Name="Enabled28" Value="False" />
+   <Option Name="ProviderName29" Value="Catch block is empty" />
+   <Option Name="Enabled29" Value="True" />
+   <Option Name="ProviderName30" Value="Class should implement IDisposable" />
+   <Option Name="Enabled30" Value="True" />
+   <Option Name="ProviderName31" Value="Complex member" />
+   <Option Name="Enabled31" Value="True" />
+   <Option Name="ProviderName32" Value="Constant cannot be marked static" />
+   <Option Name="Enabled32" Value="True" />
+   <Option Name="ProviderName33" Value="Constructor cannot call itself" />
+   <Option Name="Enabled33" Value="True" />
+   <Option Name="ProviderName34" Value="Constructor must declare a body" />
+   <Option Name="Enabled34" Value="True" />
+   <Option Name="ProviderName35" Value="Control cannot leave the body of a finally clause" />
+   <Option Name="Enabled35" Value="True" />
+   <Option Name="ProviderName36" Value="Declaration can be a constant" />
+   <Option Name="Enabled36" Value="True" />
+   <Option Name="ProviderName37" Value="Default branch is missing" />
+   <Option Name="Enabled37" Value="False" />
+   <Option Name="ProviderName38" Value="Delegate can be replaced with lambda expression" />
+   <Option Name="Enabled38" Value="False" />
+   <Option Name="ProviderName39" Value="Delegate cannot be marked static" />
+   <Option Name="Enabled39" Value="True" />
+   <Option Name="ProviderName40" Value="Destructor must declare a body" />
+   <Option Name="Enabled40" Value="True" />
+   <Option Name="ProviderName41" Value="Duplicate local declaration" />
+   <Option Name="Enabled41" Value="True" />
+   <Option Name="ProviderName42" Value="Duplicate property declaration" />
+   <Option Name="Enabled42" Value="True" />
+   <Option Name="ProviderName43" Value="DuplicateCode" />
+   <Option Name="Enabled43" Value="True" />
+   <Option Name="ProviderName44" Value="Empty event handler" />
+   <Option Name="Enabled44" Value="True" />
+   <Option Name="ProviderName45" Value="Empty finally block" />
+   <Option Name="Enabled45" Value="True" />
+   <Option Name="ProviderName46" Value="Empty namespace declaration" />
+   <Option Name="Enabled46" Value="True" />
+   <Option Name="ProviderName47" Value="Empty switch statement" />
+   <Option Name="Enabled47" Value="True" />
+   <Option Name="ProviderName48" Value="Environment.NewLine can be used" />
+   <Option Name="Enabled48" Value="True" />
+   <Option Name="ProviderName49" Value="Extension method cannot have a parameter array used with 'this' modifier" />
+   <Option Name="Enabled49" Value="True" />
+   <Option Name="ProviderName50" Value="Extension method cannot have a pointer parameter used with 'this' modifier" />
+   <Option Name="Enabled50" Value="True" />
+   <Option Name="ProviderName51" Value="Extension method must be defined in a non-generic static class" />
+   <Option Name="Enabled51" Value="True" />
+   <Option Name="ProviderName52" Value="Extension method must be defined in a top level static class" />
+   <Option Name="Enabled52" Value="True" />
+   <Option Name="ProviderName53" Value="Extern member cannot declare a body" />
+   <Option Name="Enabled53" Value="True" />
+   <Option Name="ProviderName54" Value="Field can be read-only" />
+   <Option Name="Enabled54" Value="False" />
+   <Option Name="ProviderName55" Value="Fields should be disposed" />
+   <Option Name="Enabled55" Value="False" />
+   <Option Name="ProviderName56" Value="ForEach Action can be called" />
+   <Option Name="Enabled56" Value="False" />
+   <Option Name="ProviderName57" Value="Format item index too large" />
+   <Option Name="Enabled57" Value="True" />
+   <Option Name="ProviderName58" Value="Generic class cannot derive from Attribute" />
+   <Option Name="Enabled58" Value="True" />
+   <Option Name="ProviderName59" Value="Hides declaration from the outer scope" />
+   <Option Name="Enabled59" Value="True" />
+   <Option Name="ProviderName60" Value="Implicit variable can be used" />
+   <Option Name="Enabled60" Value="False" />
+   <Option Name="ProviderName61" Value="Indexer cannot be static" />
+   <Option Name="Enabled61" Value="True" />
+   <Option Name="ProviderName62" Value="Initializer can be used" />
+   <Option Name="Enabled62" Value="True" />
+   <Option Name="ProviderName63" Value="Interface cannot contain constructors" />
+   <Option Name="Enabled63" Value="True" />
+   <Option Name="ProviderName64" Value="Interface events cannot have add or remove accessors" />
+   <Option Name="Enabled64" Value="True" />
+   <Option Name="ProviderName65" Value="Interface expected" />
+   <Option Name="Enabled65" Value="True" />
+   <Option Name="ProviderName66" Value="Interface member cannot have a definition" />
+   <Option Name="Enabled66" Value="True" />
+   <Option Name="ProviderName67" Value="Keyword &quot;base&quot; is not valid in a static member" />
+   <Option Name="Enabled67" Value="True" />
+   <Option Name="ProviderName68" Value="Keyword this/Me is not valid in a static member" />
+   <Option Name="Enabled68" Value="True" />
+   <Option Name="ProviderName69" Value="Lambda expression cannot have 'params' parameter" />
+   <Option Name="Enabled69" Value="True" />
+   <Option Name="ProviderName70" Value="Lambda parameter has redundant type specification" />
+   <Option Name="Enabled70" Value="True" />
+   <Option Name="ProviderName71" Value="Member can be static" />
+   <Option Name="Enabled71" Value="False" />
+   <Option Name="ProviderName72" Value="Member cannot be sealed because it is not an override" />
+   <Option Name="Enabled72" Value="True" />
+   <Option Name="ProviderName73" Value="Member is not implemented" />
+   <Option Name="Enabled73" Value="True" />
+   <Option Name="ProviderName74" Value="Member must declare a body because it is not marked abstract or extern" />
+   <Option Name="Enabled74" Value="True" />
+   <Option Name="ProviderName75" Value="Member names cannot be the same as their enclosing type" />
+   <Option Name="Enabled75" Value="True" />
+   <Option Name="ProviderName76" Value="Method must have a return type" />
+   <Option Name="Enabled76" Value="True" />
+   <Option Name="ProviderName77" Value="Nested code can be flattened" />
+   <Option Name="Enabled77" Value="False" />
+   <Option Name="ProviderName78" Value="Null coalescing operation can be used" />
+   <Option Name="Enabled78" Value="True" />
+   <Option Name="ProviderName79" Value="Only class types can contain destructors" />
+   <Option Name="Enabled79" Value="True" />
+   <Option Name="ProviderName80" Value="Operator cannot be abstract" />
+   <Option Name="Enabled80" Value="True" />
+   <Option Name="ProviderName81" Value="Operator cannot have 'params' parameter" />
+   <Option Name="Enabled81" Value="True" />
+   <Option Name="ProviderName82" Value="Operator must be declared static and public" />
+   <Option Name="Enabled82" Value="True" />
+   <Option Name="ProviderName83" Value="Operator must declare a body" />
+   <Option Name="Enabled83" Value="True" />
+   <Option Name="ProviderName84" Value="Overloaded unary operator takes one parameter" />
+   <Option Name="Enabled84" Value="True" />
+   <Option Name="ProviderName85" Value="Override member cannot be marked as new" />
+   <Option Name="Enabled85" Value="True" />
+   <Option Name="ProviderName86" Value="Override member cannot be marked as virtual" />
+   <Option Name="Enabled86" Value="True" />
+   <Option Name="ProviderName87" Value="Override member cannot change access rights" />
+   <Option Name="Enabled87" Value="True" />
+   <Option Name="ProviderName88" Value="Parameter modifier 'this' should be the first parameter of extension method" />
+   <Option Name="Enabled88" Value="True" />
+   <Option Name="ProviderName89" Value="Partial class has only a single part" />
+   <Option Name="Enabled89" Value="True" />
+   <Option Name="ProviderName90" Value="Partial method cannot have access modifiers or the virtual, abstract, override, new, sealed, or extern modifiers" />
+   <Option Name="Enabled90" Value="True" />
+   <Option Name="ProviderName91" Value="Partial method cannot have out parameters" />
+   <Option Name="Enabled91" Value="True" />
+   <Option Name="ProviderName92" Value="Partial method has only single part" />
+   <Option Name="Enabled92" Value="True" />
+   <Option Name="ProviderName93" Value="Partial method must be declared within a partial class or partial struct" />
+   <Option Name="Enabled93" Value="True" />
+   <Option Name="ProviderName94" Value="Possibly unassigned variable usage" />
+   <Option Name="Enabled94" Value="True" />
+   <Option Name="ProviderName95" Value="Property can be auto-implemented" />
+   <Option Name="Enabled95" Value="False" />
+   <Option Name="ProviderName96" Value="Property cannot have void type" />
+   <Option Name="Enabled96" Value="True" />
+   <Option Name="ProviderName97" Value="Protected member cannot be declared in struct" />
+   <Option Name="Enabled97" Value="True" />
+   <Option Name="ProviderName98" Value="Protected member in sealed type will be private" />
+   <Option Name="Enabled98" Value="True" />
+   <Option Name="ProviderName99" Value="Redundant base constructor call" />
+   <Option Name="Enabled99" Value="False" />
+   <Option Name="ProviderName100" Value="Redundant base qualifier" />
+   <Option Name="Enabled100" Value="False" />
+   <Option Name="ProviderName101" Value="Redundant constructor" />
+   <Option Name="Enabled101" Value="True" />
+   <Option Name="ProviderName102" Value="Redundant delegate creation" />
+   <Option Name="Enabled102" Value="False" />
+   <Option Name="ProviderName103" Value="Redundant destructor" />
+   <Option Name="Enabled103" Value="True" />
+   <Option Name="ProviderName104" Value="Redundant else statement" />
+   <Option Name="Enabled104" Value="True" />
+   <Option Name="ProviderName105" Value="Redundant field initialization" />
+   <Option Name="Enabled105" Value="False" />
+   <Option Name="ProviderName106" Value="Redundant namespace reference" />
+   <Option Name="Enabled106" Value="True" />
+   <Option Name="ProviderName107" Value="Redundant private setter" />
+   <Option Name="Enabled107" Value="True" />
+   <Option Name="ProviderName108" Value="Redundant sealed modifier" />
+   <Option Name="Enabled108" Value="True" />
+   <Option Name="ProviderName109" Value="Redundant String.Format call" />
+   <Option Name="Enabled109" Value="True" />
+   <Option Name="ProviderName110" Value="Redundant this qualifier" />
+   <Option Name="Enabled110" Value="False" />
+   <Option Name="ProviderName111" Value="Redundant ToString() call" />
+   <Option Name="Enabled111" Value="True" />
+   <Option Name="ProviderName112" Value="Redundant type qualifier" />
+   <Option Name="Enabled112" Value="True" />
+   <Option Name="ProviderName113" Value="Redundant use of 'this' qualifier in the global context" />
+   <Option Name="Enabled113" Value="True" />
+   <Option Name="ProviderName114" Value="Sealed class cannot be abstract" />
+   <Option Name="Enabled114" Value="True" />
+   <Option Name="ProviderName115" Value="Statement is not terminated" />
+   <Option Name="Enabled115" Value="True" />
+   <Option Name="ProviderName116" Value="Static class cannot be abstract" />
+   <Option Name="Enabled116" Value="True" />
+   <Option Name="ProviderName117" Value="Static class cannot be sealed" />
+   <Option Name="Enabled117" Value="True" />
+   <Option Name="ProviderName118" Value="Static class cannot contain protected member" />
+   <Option Name="Enabled118" Value="True" />
+   <Option Name="ProviderName119" Value="Static constructors cannot have access modifiers" />
+   <Option Name="Enabled119" Value="True" />
+   <Option Name="ProviderName120" Value="Static constructors must be parameterless" />
+   <Option Name="Enabled120" Value="True" />
+   <Option Name="ProviderName121" Value="String.Compare can be used" />
+   <Option Name="Enabled121" Value="False" />
+   <Option Name="ProviderName122" Value="String.Format can be used" />
+   <Option Name="Enabled122" Value="True" />
+   <Option Name="ProviderName123" Value="Struct cannot contain parameterless constructor" />
+   <Option Name="Enabled123" Value="True" />
+   <Option Name="ProviderName124" Value="Suspicious equal-to operator usage" />
+   <Option Name="Enabled124" Value="True" />
+   <Option Name="ProviderName125" Value="Suspicious unequal-to operator usage" />
+   <Option Name="Enabled125" Value="True" />
+   <Option Name="ProviderName126" Value="Suspicious use of “this” qualifier" />
+   <Option Name="Enabled126" Value="True" />
+   <Option Name="ProviderName127" Value="Ternary expression can be used" />
+   <Option Name="Enabled127" Value="False" />
+   <Option Name="ProviderName128" Value="The params parameter must be a single dimensional array" />
+   <Option Name="Enabled128" Value="True" />
+   <Option Name="ProviderName129" Value="The params parameter must be the last parameter in a formal parameter list" />
+   <Option Name="Enabled129" Value="True" />
+   <Option Name="ProviderName130" Value="Try statement without catch or finally" />
+   <Option Name="Enabled130" Value="True" />
+   <Option Name="ProviderName131" Value="Type can be moved to separate file" />
+   <Option Name="Enabled131" Value="True" />
+   <Option Name="ProviderName132" Value="Type name does not correspond to file name" />
+   <Option Name="Enabled132" Value="True" />
+   <Option Name="ProviderName133" Value="Undeclared element" />
+   <Option Name="Enabled133" Value="False" />
+   <Option Name="ProviderName134" Value="Undisposed local" />
+   <Option Name="Enabled134" Value="False" />
+   <Option Name="ProviderName135" Value="Unused member" />
+   <Option Name="Enabled135" Value="True" />
+   <Option Name="ProviderName136" Value="Unused setter" />
+   <Option Name="Enabled136" Value="True" />
+   <Option Name="ProviderName137" Value="Unused type parameter" />
+   <Option Name="Enabled137" Value="True" />
+   <Option Name="ProviderName138" Value="UnusedLocal" />
+   <Option Name="Enabled138" Value="True" />
+   <Option Name="ProviderName139" Value="Virtual call in constructor" />
+   <Option Name="Enabled139" Value="True" />
+   <Option Name="ProviderName140" Value="Virtual member cannot be declared in sealed class" />
+   <Option Name="Enabled140" Value="True" />
+   <Option Name="ProviderName141" Value="Virtual member cannot be private" />
+   <Option Name="Enabled141" Value="True" />
+   <Option Name="ProviderName142" Value="VirtualMembersCannotBeDeclaredInStructures" />
+   <Option Name="Enabled142" Value="True" />
+  </Section>
+ </Language>
+</Page>

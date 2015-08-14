@@ -1,0 +1,520 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Shortcuts_DXCore_Smart Tags">
+ <Language Name="*Neutral*">
+  <Section Name="FolderInfo">
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Description" Value="Shortcuts for working with smart tags." />
+   <Option Name="FolderState" Value="Collapsed" />
+  </Section>
+  <Section Name="Header">
+   <Option Name="Count" Value="16" />
+  </Section>
+  <Section Name="Command0">
+   <Option Name="Key1.KeyState" Value="2686977" />
+   <Option Name="Key1.KeyCode" Value="192" />
+   <Option Name="Key1.Ctrl" Value="True" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="SmartTagExecute" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="1" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextExcluded_Count" Value="2" />
+   <Option Name="ContextExcluded_0" Value="System\Intellisense Active" />
+   <Option Name="ContextExcluded_1" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command1">
+   <Option Name="Key1.KeyState" Value="22020097" />
+   <Option Name="Key1.KeyCode" Value="40" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="True" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Move Down" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command2">
+   <Option Name="Key1.KeyState" Value="1835009" />
+   <Option Name="Key1.KeyCode" Value="13" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Accept" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command3">
+   <Option Name="Key1.KeyState" Value="65537" />
+   <Option Name="Key1.KeyCode" Value="27" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Cancel" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="2" />
+   <Option Name="ContextExcluded_0" Value="System\Annotation Mode Active" />
+   <Option Name="ContextExcluded_1" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command4">
+   <Option Name="Key1.KeyState" Value="21692417" />
+   <Option Name="Key1.KeyCode" Value="37" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="True" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Move Left" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command5">
+   <Option Name="Key1.KeyState" Value="18612225" />
+   <Option Name="Key1.KeyCode" Value="13" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="True" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Accept" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command6">
+   <Option Name="Key1.KeyState" Value="21823489" />
+   <Option Name="Key1.KeyCode" Value="39" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="True" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Move Right" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command7">
+   <Option Name="Key1.KeyState" Value="983041" />
+   <Option Name="Key1.KeyCode" Value="9" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="True" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Focus Previous" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command8">
+   <Option Name="Key1.KeyState" Value="3735553" />
+   <Option Name="Key1.KeyCode" Value="32" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Check" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="1" />
+   <Option Name="ContextSelected_0" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command9">
+   <Option Name="Key1.KeyState" Value="983041" />
+   <Option Name="Key1.KeyCode" Value="9" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Focus Next" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command10">
+   <Option Name="Key1.KeyState" Value="21495809" />
+   <Option Name="Key1.KeyCode" Value="38" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="True" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Move Up" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\RefactorInstalled" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command11">
+   <Option Name="Key1.KeyState" Value="21561345" />
+   <Option Name="Key1.KeyCode" Value="33" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="True" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Move Page Up" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command12">
+   <Option Name="Key1.KeyState" Value="22085633" />
+   <Option Name="Key1.KeyCode" Value="34" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="True" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Move Page Down" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command13">
+   <Option Name="Key1.KeyState" Value="21430273" />
+   <Option Name="Key1.KeyCode" Value="36" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="True" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Move Home" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command14">
+   <Option Name="Key1.KeyState" Value="21954561" />
+   <Option Name="Key1.KeyCode" Value="35" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="True" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="Target Picker Move End" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_1" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command15">
+   <Option Name="Key1.KeyState" Value="538247169" />
+   <Option Name="Key1.KeyCode" Value="89" />
+   <Option Name="Key1.Ctrl" Value="True" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="True" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="SmartTagExecuteLast" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="1" />
+   <Option Name="ContextSelected_0" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextExcluded_Count" Value="1" />
+   <Option Name="ContextExcluded_0" Value="System\Intellisense Active" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+ </Language>
+</Page>

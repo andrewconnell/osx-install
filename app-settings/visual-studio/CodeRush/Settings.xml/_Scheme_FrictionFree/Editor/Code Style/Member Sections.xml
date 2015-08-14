@@ -1,0 +1,57 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Member Sections">
+ <Language Name="CSharp">
+  <Section Name="Fields">
+   <Option Name="Header" Value="// Fields...&#xD;&#xA;" />
+   <Option Name="Footer" Value="" />
+  </Section>
+  <Section Name="Methods">
+   <Option Name="Header" Value="// Methods...&#xD;&#xA;" />
+   <Option Name="Footer" Value="" />
+  </Section>
+  <Section Name="Properties">
+   <Option Name="Header" Value="// Properties...&#xD;&#xA;" />
+   <Option Name="Footer" Value="" />
+  </Section>
+  <Section Name="Constructors">
+   <Option Name="Header" Value="// Constructors...&#xD;&#xA;" />
+   <Option Name="Footer" Value="" />
+  </Section>
+ </Language>
+ <Language Name="Basic">
+  <Section Name="Fields">
+   <Option Name="Header" Value="' Fields...&#xD;&#xA;" />
+   <Option Name="Footer" Value="" />
+  </Section>
+  <Section Name="Methods">
+   <Option Name="Header" Value="' Methods...&#xD;&#xA;" />
+   <Option Name="Footer" Value="" />
+  </Section>
+  <Section Name="Properties">
+   <Option Name="Header" Value="' Properties...&#xD;&#xA;" />
+   <Option Name="Footer" Value="" />
+  </Section>
+  <Section Name="Constructors">
+   <Option Name="Header" Value="' Constructors...&#xD;&#xA;" />
+   <Option Name="Footer" Value="" />
+  </Section>
+ </Language>
+ <Language Name="CC++">
+  <Section Name="Fields">
+   <Option Name="Header" Value="// Fields..." />
+   <Option Name="Footer" Value="" />
+  </Section>
+  <Section Name="Methods">
+   <Option Name="Header" Value="// Methods..." />
+   <Option Name="Footer" Value="" />
+  </Section>
+  <Section Name="Properties">
+   <Option Name="Header" Value="// Properties..." />
+   <Option Name="Footer" Value="" />
+  </Section>
+  <Section Name="Constructors">
+   <Option Name="Header" Value="// Constructors..." />
+   <Option Name="Footer" Value="" />
+  </Section>
+ </Language>
+</Page>

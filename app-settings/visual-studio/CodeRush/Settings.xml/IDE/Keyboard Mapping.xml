@@ -1,0 +1,341 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Keyboard Mapping">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="Opacity" Value="1" />
+   <Option Name="BackGroundColor" Value="ARGB:255:230:230:236" />
+   <Option Name="CaptionColor" Value="ARGB:255:132:132:159" />
+  </Section>
+  <Section Name="Fonts">
+   <Option Name="Header Font family" Value="Arial" />
+   <Option Name="Header Font size" Value="24" />
+   <Option Name="Header Font style" Value="Regular" />
+   <Option Name="Header Font unit" Value="Point" />
+   <Option Name="Item Font family" Value="Calibri" />
+   <Option Name="Item Font size" Value="14.25" />
+   <Option Name="Item Font style" Value="Regular" />
+   <Option Name="Item Font unit" Value="Point" />
+  </Section>
+  <Section Name="Group Collection">
+   <Option Name="Groups Count" Value="7" />
+  </Section>
+  <Section Name="Group.0">
+   <Option Name="Group Name" Value="Code Generation/Modification" />
+   <Option Name="Item Color" Value="ARGB:255:121:0:64" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Items Count" Value="9" />
+  </Section>
+  <Section Name="Group.0.0">
+   <Option Name="Command" Value="Refactor" />
+   <Option Name="Description" Value="Refactor/Declare Menu" />
+  </Section>
+  <Section Name="Group.0.1">
+   <Option Name="Command" Value="Refactor(Rename)" />
+   <Option Name="Description" Value="Rename" />
+  </Section>
+  <Section Name="Group.0.2">
+   <Option Name="Command" Value="TemplateExpand" />
+   <Option Name="Description" Value="Expand Template" />
+  </Section>
+  <Section Name="Group.1">
+   <Option Name="Group Name" Value="Creating Selections" />
+   <Option Name="Item Color" Value="ARGB:255:0:44:177" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Items Count" Value="8" />
+  </Section>
+  <Section Name="Group.1.0">
+   <Option Name="Command" Value="SelectionExpand" />
+   <Option Name="Description" Value="Increase" />
+  </Section>
+  <Section Name="Group.1.1">
+   <Option Name="Command" Value="SelectionReduce" />
+   <Option Name="Description" Value="Decrease" />
+  </Section>
+  <Section Name="Group.1.2">
+   <Option Name="Command" Value="CamelCaseSelectLeft" />
+   <Option Name="Description" Value="CamelCase Select Left" />
+  </Section>
+  <Section Name="Group.1.3">
+   <Option Name="Command" Value="CamelCaseSelectRight" />
+   <Option Name="Description" Value="CamelCase Select Right" />
+  </Section>
+  <Section Name="Group.1.4">
+   <Option Name="Command" Value="MultiSelectAdd" />
+   <Option Name="Description" Value="MultiSelect Add" />
+  </Section>
+  <Section Name="Group.1.5">
+   <Option Name="Command" Value="MultiSelectClear" />
+   <Option Name="Description" Value="MultiSelect Clear" />
+  </Section>
+  <Section Name="Group.1.6">
+   <Option Name="Command" Value="MultiSelectRedo" />
+   <Option Name="Description" Value="MultiSelect Redo" />
+  </Section>
+  <Section Name="Group.1.7">
+   <Option Name="Command" Value="MultiSelectUndo" />
+   <Option Name="Description" Value="MultiSelect Undo" />
+  </Section>
+  <Section Name="Group.1.8">
+   <Option Name="Command" Value="MultiSelectUndo" />
+   <Option Name="Description" Value="MultiSelect Undo" />
+  </Section>
+  <Section Name="Group.2">
+   <Option Name="Group Name" Value="Embedding Selections" />
+   <Option Name="Item Color" Value="ARGB:255:178:34:34" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Items Count" Value="11" />
+  </Section>
+  <Section Name="Group.2.0">
+   <Option Name="Command" Value="Embed(block)" />
+   <Option Name="Description" Value="braces {} (C#)" />
+  </Section>
+  <Section Name="Group.2.1">
+   <Option Name="Command" Value="SelectionComment" />
+   <Option Name="Description" Value="comment/uncomment" />
+  </Section>
+  <Section Name="Group.2.2">
+   <Option Name="Command" Value="Embed(try/catch)" />
+   <Option Name="Description" Value="try/catch" />
+  </Section>
+  <Section Name="Group.2.3">
+   <Option Name="Command" Value="Embed(try/finally)" />
+   <Option Name="Description" Value="try/finally" />
+  </Section>
+  <Section Name="Group.2.4">
+   <Option Name="Command" Value="Embed(try/catch/finally)" />
+   <Option Name="Description" Value="try/catch/finally" />
+  </Section>
+  <Section Name="Group.2.5">
+   <Option Name="Command" Value="Embed(lock)" />
+   <Option Name="Description" Value="lock" />
+  </Section>
+  <Section Name="Group.2.6">
+   <Option Name="Command" Value="Embed(using)" />
+   <Option Name="Description" Value="using" />
+  </Section>
+  <Section Name="Group.2.7">
+   <Option Name="Command" Value="Embed(region)" />
+   <Option Name="Description" Value="region" />
+  </Section>
+  <Section Name="Group.2.8">
+   <Option Name="Command" Value="EmbedParentheses" />
+   <Option Name="Description" Value="parens ()" />
+  </Section>
+  <Section Name="Group.2.9">
+   <Option Name="Command" Value="EmbedNotParentheses" />
+   <Option Name="Description" Value="not parens - !()" />
+  </Section>
+  <Section Name="Group.2.10">
+   <Option Name="Command" Value="Embed(WaitCursor)" />
+   <Option Name="Description" Value="wait cursor" />
+  </Section>
+  <Section Name="Group.3">
+   <Option Name="Group Name" Value="Navigation" />
+   <Option Name="Item Color" Value="ARGB:255:0:128:128" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Items Count" Value="18" />
+  </Section>
+  <Section Name="Group.3.0">
+   <Option Name="Command" Value="Navigate" />
+   <Option Name="Description" Value="Navigation Menu" />
+  </Section>
+  <Section Name="Group.3.1">
+   <Option Name="Command" Value="ReferenceNext" />
+   <Option Name="Description" Value="Tab to Next Reference" />
+  </Section>
+  <Section Name="Group.3.2">
+   <Option Name="Command" Value="HighlightReferences" />
+   <Option Name="Description" Value="Highlight References" />
+  </Section>
+  <Section Name="Group.3.3">
+   <Option Name="Command" Value="ShowReferences" />
+   <Option Name="Description" Value="Show All References" />
+  </Section>
+  <Section Name="Group.3.4">
+   <Option Name="Command" Value="QuickNav" />
+   <Option Name="Description" Value="Quick Nav" />
+  </Section>
+  <Section Name="Group.3.5">
+   <Option Name="Command" Value="QuickFileNav" />
+   <Option Name="Description" Value="Quick File Nav" />
+  </Section>
+  <Section Name="Group.3.6">
+   <Option Name="Command" Value="BrowseRecentFiles" />
+   <Option Name="Description" Value="Browse Recent Files" />
+  </Section>
+  <Section Name="Group.3.7">
+   <Option Name="Command" Value="MarkerDrop" />
+   <Option Name="Description" Value="Drop Marker" />
+  </Section>
+  <Section Name="Group.3.8">
+   <Option Name="Command" Value="MarkerCollect" />
+   <Option Name="Description" Value="Collect Marker" />
+  </Section>
+  <Section Name="Group.3.9">
+   <Option Name="Command" Value="MarkerSwap" />
+   <Option Name="Description" Value="Swap Markers" />
+  </Section>
+  <Section Name="Group.3.10">
+   <Option Name="Command" Value="CamelCaseLeft" />
+   <Option Name="Description" Value="CamelCase Left" />
+  </Section>
+  <Section Name="Group.3.11">
+   <Option Name="Command" Value="CamelCaseRight" />
+   <Option Name="Description" Value="CamelCase Right" />
+  </Section>
+  <Section Name="Group.3.12">
+   <Option Name="Command" Value="CamelCaseDeleteLeft" />
+   <Option Name="Description" Value="CamelCase Delete Left" />
+  </Section>
+  <Section Name="Group.3.13">
+   <Option Name="Command" Value="CamelCaseDeleteRight" />
+   <Option Name="Description" Value="CamelCase Delete Right" />
+  </Section>
+  <Section Name="Group.3.14">
+   <Option Name="Command" Value="BookmarkToggle(1)" />
+   <Option Name="Description" Value="Toggle Bookmark 1" />
+  </Section>
+  <Section Name="Group.3.15">
+   <Option Name="Command" Value="BookmarkGoto(1)" />
+   <Option Name="Description" Value="Go to Bookmark 1" />
+  </Section>
+  <Section Name="Group.3.16">
+   <Option Name="Command" Value="BookmarkGotoPrevious" />
+   <Option Name="Description" Value="Go to Previous Bookmark" />
+  </Section>
+  <Section Name="Group.4">
+   <Option Name="Group Name" Value="Clipboard" />
+   <Option Name="Item Color" Value="ARGB:255:192:64:0" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Items Count" Value="3" />
+  </Section>
+  <Section Name="Group.4.0">
+   <Option Name="Command" Value="SmartPaste" />
+   <Option Name="Description" Value="Smart Paste" />
+  </Section>
+  <Section Name="Group.4.1">
+   <Option Name="Command" Value="ClipboardHistory" />
+   <Option Name="Description" Value="Clipboard History" />
+  </Section>
+  <Section Name="Group.4.2">
+   <Option Name="Command" Value="PasteReplaceWord" />
+   <Option Name="Description" Value="Replace Word" />
+  </Section>
+  <Section Name="Group.4.3">
+   <Option Name="Command" Value="RegionAutoCreate" />
+   <Option Name="Description" Value="Auto-create region" />
+  </Section>
+  <Section Name="Group.4.4">
+   <Option Name="Command" Value="ScopeCycleUp" />
+   <Option Name="Description" Value="Cycle Scope Up" />
+  </Section>
+  <Section Name="Group.4.5">
+   <Option Name="Command" Value="ScopeCycleDown" />
+   <Option Name="Description" Value="Cycle Scope Down" />
+  </Section>
+  <Section Name="Group.4.6">
+   <Option Name="Command" Value="DuplicateLine" />
+   <Option Name="Description" Value="Duplicate line" />
+  </Section>
+  <Section Name="Group.4.7">
+   <Option Name="Command" Value="AutoDeclare" />
+   <Option Name="Description" Value="Auto declare variable (C#)" />
+  </Section>
+  <Section Name="Group.5">
+   <Option Name="Group Name" Value="Unit Test Runner" />
+   <Option Name="Item Color" Value="ARGB:255:0:104:22" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Items Count" Value="6" />
+  </Section>
+  <Section Name="Group.5.0">
+   <Option Name="Command" Value="UnitTestsDebugAtCursor" />
+   <Option Name="Description" Value="Debug active test" />
+  </Section>
+  <Section Name="Group.5.1">
+   <Option Name="Command" Value="UnitTestsRunAtCursor" />
+   <Option Name="Description" Value="Run active test" />
+  </Section>
+  <Section Name="Group.5.2">
+   <Option Name="Command" Value="UnitTestsRunFile" />
+   <Option Name="Description" Value="Run all tests in file" />
+  </Section>
+  <Section Name="Group.5.3">
+   <Option Name="Command" Value="UnitTestsRunProject" />
+   <Option Name="Description" Value="Run all tests in project" />
+  </Section>
+  <Section Name="Group.5.4">
+   <Option Name="Command" Value="UnitTestsRunSolution" />
+   <Option Name="Description" Value="Run all tests in solution" />
+  </Section>
+  <Section Name="Group.5.5">
+   <Option Name="Command" Value="UnitTestsShowRunner" />
+   <Option Name="Description" Value="Show Unit Test Runner" />
+  </Section>
+  <Section Name="Group.6">
+   <Option Name="Group Name" Value="Miscellaneous" />
+   <Option Name="Item Color" Value="ARGB:255:96:96:96" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Items Count" Value="3" />
+  </Section>
+  <Section Name="Group.6.0">
+   <Option Name="Command" Value="Options" />
+   <Option Name="Description" Value="Options" />
+  </Section>
+  <Section Name="Group.6.1">
+   <Option Name="Command" Value="StepIntoMember" />
+   <Option Name="Description" Value="Step into Member" />
+  </Section>
+  <Section Name="Group.6.2">
+   <Option Name="Command" Value="ToggleStructuralHighlighting" />
+   <Option Name="Description" Value="Toggle Structural Highlighting" />
+  </Section>
+  <Section Name="Group.0.3">
+   <Option Name="Command" Value="RegionAutoCreate" />
+   <Option Name="Description" Value="Auto-create region" />
+  </Section>
+  <Section Name="Group.0.4">
+   <Option Name="Command" Value="ScopeCycleUp" />
+   <Option Name="Description" Value="Cycle Scope Up" />
+  </Section>
+  <Section Name="Group.0.5">
+   <Option Name="Command" Value="ScopeCycleDown" />
+   <Option Name="Description" Value="Cycle Scope Down" />
+  </Section>
+  <Section Name="Group.0.6">
+   <Option Name="Command" Value="DuplicateLine" />
+   <Option Name="Description" Value="Duplicate line" />
+  </Section>
+  <Section Name="Group.0.7">
+   <Option Name="Command" Value="AutoDeclare" />
+   <Option Name="Description" Value="Auto declare variable (C#)" />
+  </Section>
+  <Section Name="Group.0.8">
+   <Option Name="Command" Value="SelectionInvert" />
+   <Option Name="Description" Value="Invert Selected Code" />
+  </Section>
+  <Section Name="Group.3.17">
+   <Option Name="Command" Value="BookmarkGotoNext" />
+   <Option Name="Description" Value="Go to Next Bookmark" />
+  </Section>
+  <Section Name="Group.3.18">
+   <Option Name="Command" Value="BookmarkGoto(2)" />
+   <Option Name="Description" Value="Go to Bookmark 2" />
+  </Section>
+  <Section Name="Group.3.19">
+   <Option Name="Command" Value="BookmarkGotoPrevious" />
+   <Option Name="Description" Value="Go to Previous Bookmark" />
+  </Section>
+  <Section Name="Group.3.20">
+   <Option Name="Command" Value="BookmarkGotoNext" />
+   <Option Name="Description" Value="Go to Next Bookmark" />
+  </Section>
+  <Section Name="Group.3.21">
+   <Option Name="Command" Value="BookmarkGotoPrevious" />
+   <Option Name="Description" Value="Go to Previous Bookmark" />
+  </Section>
+  <Section Name="Group.3.22">
+   <Option Name="Command" Value="BookmarkGotoNext" />
+   <Option Name="Description" Value="Go to Next Bookmark" />
+  </Section>
+ </Language>
+</Page>

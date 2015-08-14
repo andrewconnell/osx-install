@@ -1,0 +1,1686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TemplateCategory Name="1-key" OptExpanded="true">
+    <Comments>These templates are composed of a single key. If any of these templates conflict with single letter variables that you use frequently, you can move them individually to a disabled folder, or you can disable all templates in this category by clicking the green check box to the left of the "1-key" category node.</Comments>
+    <Template Name="." CaseSensitiveName="false">
+      <Comment>/* */ Comment</Comment>
+      <Expansion Priority="0">
+        <Body>«:..»</Body>
+        <Context>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="d" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>«:#default#»</Body>
+        <Context>
+          <Selected>Editor\Code\InSwitch</Selected>
+          <Excluded>Editor\Code\DeclaresLocal(d)</Excluded>
+          <Excluded>Editor\Code\InCase</Excluded>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+          <Excluded>Editor\Line\AppearsToDeclare(d)</Excluded>
+        </Context>
+      </Expansion>
+      <Expansion Priority="1">
+        <Body>document.</Body>
+        <Context />
+      </Expansion>
+    </Template>
+    <Template Name="n" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>null</Body>
+        <Context>
+          <Excluded>Editor\Code\DeclaresLocal(n)</Excluded>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+          <Excluded>Editor\Line\AppearsToDeclare(n)</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="t" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>this.</Body>
+        <Context>
+          <Selected>Editor\Code\InMethod</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+  <TemplateCategory Name="Comments">
+    <Comments>These templates add comments to the code. Nearly all of these templates start with the "/" character.</Comments>
+    <TemplateCategory Name="Misc." OptExpanded="true">
+      <Comments>Miscellaneous comment templates, including "/t" (Translate) and "/dnt" (Do Not Translate), used to mark strings for translation.</Comments>
+      <Template Name=".." CaseSensitiveName="false">
+        <Comment>Generates a /* */ comment. See also: "." 1-key template</Comment>
+        <Expansion Priority="0">
+          <Body>/* «Caret» */</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+            <Excluded>Editor\Line\Char Left Is(.)</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="/cod" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>// Create on demand...</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="/dn" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>// Do nothing. Let descendants override.</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="/dnt" CaseSensitiveName="false">
+        <Comment>A comment to indicate that strings on this line should not be localized. Includes the "MLHIDE" keyword recognized by the Multi-Language add-in.</Comment>
+        <Expansion Priority="0">
+          <Body>// Do not translate (MLHIDE)</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="/t" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>// Translate</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+            <Excluded>Editor\Line\OnEmptyLine</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Tasks" OptExpanded="true">
+      <Comments>Templates for adding TODO tasks and marking problem areas of the code.</Comments>
+      <Template Name="/b" CaseSensitiveName="false">
+        <Comment>Comment a bug in the code to address later.</Comment>
+        <Expansion Priority="0">
+          <Body>// BUGBUG: «Caret»</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="/h" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>// HACK: «Caret»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="/t" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>// TODO: «Caret»</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+  </TemplateCategory>
+  <TemplateCategory Name="Declarations" OptExpanded="true">
+    <TemplateCategory Name="Functions" OptExpanded="true">
+      <Comments>Templates for declaring functions.</Comments>
+      <Template Name="f" CaseSensitiveName="false">
+        <Comment>Declares a function.</Comment>
+        <Expansion Priority="0">
+          <Body>function «Caret»«Field(FunctionName)»«BlockAnchor»(«Field(,Enter any parameters)»)
+{
+	«Marker»
+}</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InMethod</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Global Methods">
+      <Comments>Methods of Global object.</Comments>
+      <Template Name="es" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>escape(«Field(,parameters)»«SoftCaret»)</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+            <Excluded>Editor\Line\OnEmptyLine</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="ev" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>eval(«Field(,parameters)»«SoftCaret»)</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+            <Excluded>Editor\Line\OnEmptyLine</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="isf" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>isFinite(«Field(,parameters)»«SoftCaret»)</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+            <Excluded>Editor\Line\OnEmptyLine</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="isn" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>isNaN(«Field(,parameters)»«SoftCaret»)</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+            <Excluded>Editor\Line\OnEmptyLine</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="pf" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>parseFloat(«Field(,parameters)»«SoftCaret»)</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+            <Excluded>Editor\Line\OnEmptyLine</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="pi" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>parseInt(«Field(,parameters)»«SoftCaret»)</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+            <Excluded>Editor\Line\OnEmptyLine</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="New Instances" OptExpanded="true">
+      <TemplateCategory Name="System" OptExpanded="true">
+        <Template Name="#VarName#" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>«?PrefixLocal»«Caret»«Field(«?RootFormatLocalName(VarName)»)»«BlockAnchor»«?SuffixLocal»</Body>
+            <Context />
+          </Expansion>
+        </Template>
+      </TemplateCategory>
+      <Template Name="n?JType?" CaseSensitiveName="false">
+        <Comment>Creates a new instance of the specified type.</Comment>
+        <Expansion Priority="0">
+          <Body>var «:#VarName#» = new «?Get(JType)»(«Field(,New instance parameters)»«SoftCaret»);</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Variables" OptExpanded="true">
+      <Template Name="v" CaseSensitiveName="false">
+        <Comment>Declares a variable.</Comment>
+        <Expansion Priority="0">
+          <Body>var «:#VarName#»;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="v[" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>var «:#VarName#» = {«Field(,Enter array elements here)»};</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="v{" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«:v[»</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Window Methods" OptExpanded="true">
+      <Comments>Methods of window object.</Comments>
+      <TemplateCategory Name="Full Name Window Methods" OptExpanded="true">
+        <Template Name="wal" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>window.«:al»</Body>
+            <Context>
+              <Excluded>Editor\Code\InComment</Excluded>
+              <Excluded>Editor\Code\InString</Excluded>
+            </Context>
+          </Expansion>
+        </Template>
+      </TemplateCategory>
+      <Template Name="al" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>alert(«Field(,parameters)»«SoftCaret»);</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+  </TemplateCategory>
+  <TemplateCategory Name="Globals" OptExpanded="true">
+    <Template Name="in" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>Infinity</Body>
+        <Context>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+          <Excluded>Editor\Line\Left Text Contains(for)</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="un" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>undefined</Body>
+        <Context>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+  <TemplateCategory Name="Misc" />
+  <TemplateCategory Name="Program Blocks" OptExpanded="true">
+    <Comments>Templates in this category generate program blocks that can be used inside methods and property accessors.</Comments>
+    <TemplateCategory Name="Else blocks">
+      <Comments>Templates in this category generate Else blocks. Nearly all of these templates start with the letter "L". Many of these templates string together powerful combos. For example, "sn" sets the identifier on the clipboard to null. "lsn" creates the "else" keyword, and then sets the identifier on the clipboard to null.</Comments>
+      <Template Name="blb" CaseSensitiveName="false">
+        <Comment>block - else - block (useful after an if-expression)</Comment>
+        <Expansion Priority="0">
+          <Body>{
+	«Cursor»«Marker»
+}
+else
+{
+	«Marker»
+}</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+          <UsingClause />
+        </Expansion>
+      </Template>
+      <Template Name="lb" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else
+{
+	«Cursor»«Marker»
+}</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+          <UsingClause />
+        </Expansion>
+      </Template>
+      <Template Name="lf" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else if («Caret»)</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="ll" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else </Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lr" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else
+	«SmartReturn»</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lr&quot;" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else
+	return "";</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lrf" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else
+	return false;</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lrn" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else
+	return null;</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lrt" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else
+	return true;</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lsf" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else
+	«Paste» = false;</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lsn" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else
+	«Paste» = null;</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lst" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>else
+	«Paste» = true;</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Flow" OptExpanded="true">
+      <Comments>Templates in this category generate code that controls program flow. This includes loops (while, for, foreach, etc.), switch statements, and flow breakage (e.g., throw exceptions, return, break, continue, etc.).</Comments>
+      <TemplateCategory Name="System">
+        <Template Name="#CaseStatement#" CaseSensitiveName="false">
+          <Comment>Generates a Case block -- called from the switch template.</Comment>
+          <Expansion Priority="0">
+            <Body>	case «?Get(itemType)».«?Get(itemName)»:
+		«Marker»
+		break;
+</Body>
+            <Context />
+          </Expansion>
+        </Template>
+        <Template Name="#default#" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>default:
+	«Caret»
+break;</Body>
+            <Context>
+              <Selected>Editor\Code\InSwitch</Selected>
+              <Excluded>Editor\Code\InCase</Excluded>
+              <Excluded>Editor\Code\InComment</Excluded>
+              <Excluded>Editor\Code\InString</Excluded>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="#ForLoopRouter#" CaseSensitiveName="false">
+          <Comment>Expands the MainForLoop template with the correct upperBound, based on context.</Comment>
+          <Expansion Priority="0">
+            <Body>«?Set(upperBound,«?Paste».Length)»«:#MainForLoop#»</Body>
+            <Context>
+              <Selected>Editor\Clipboard\HasIdentifierWithProperty(Length)</Selected>
+              <Selected>Editor\Line\AtEndOfLine</Selected>
+            </Context>
+          </Expansion>
+          <Expansion Priority="1">
+            <Body>«?Set(upperBound,«?Paste».Count)»«:#MainForLoop#»</Body>
+            <Context>
+              <Selected>Editor\Clipboard\HasIdentifierWithProperty(Count)</Selected>
+              <Selected>Editor\Line\AtEndOfLine</Selected>
+            </Context>
+          </Expansion>
+          <Expansion Priority="2">
+            <Body>«?Set(upperBound,«?Paste»)»«:#MainForLoop#»</Body>
+            <Context>
+              <Selected>Editor\Clipboard\HasIdentifier</Selected>
+              <Selected>Editor\Line\AtEndOfLine</Selected>
+            </Context>
+          </Expansion>
+          <Expansion Priority="3">
+            <Body>for (var «:#IteratorVar#» = 0; «:#IteratorVar#» &lt; «FieldStart(UpperBound)»«:#UpperBoundPlaceholder#»«FieldEnd»; «:#IteratorVar#»++)
+{
+	«Target»«Marker»
+}</Body>
+            <Context>
+              <Selected>Editor\Line\AtEndOfLine</Selected>
+              <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="#IteratorVar#" CaseSensitiveName="false">
+          <Comment>A linked iterator variable of the for-loop.</Comment>
+          <Expansion Priority="0">
+            <Body>«Link(«?Get(IteratorVar)»)»</Body>
+            <Context />
+          </Expansion>
+        </Template>
+        <Template Name="#MainForLoop#" CaseSensitiveName="false">
+          <Comment>System template that expans to a for-loop. The iteratorVar and upperBound variables should be set before calling.</Comment>
+          <Expansion Priority="0">
+            <Body>for (var «:#IteratorVar#» = 0; «:#IteratorVar#» &lt; «Caret»«FieldStart(Upper bound)»«?Get(upperBound)»«FieldEnd»«BlockAnchor»; «:#IteratorVar#»++)
+{
+	«Target»
+}</Body>
+            <Context />
+          </Expansion>
+        </Template>
+      </TemplateCategory>
+      <Template Name="b," CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«:bk,»</Body>
+          <Context>
+            <Selected>Editor\Line\AtEndOfLine</Selected>
+            <Excluded>Editor\Code\DeclaresLocal(b)</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="bk" CaseSensitiveName="false">
+        <Comment>C# code block</Comment>
+        <Expansion Priority="0">
+          <Body>{
+	«Caret»«Marker»
+}</Body>
+          <Context>
+            <Selected>Editor\Line\AtEndOfLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="bk," CaseSensitiveName="false">
+        <Comment>C# code block</Comment>
+        <Expansion Priority="0">
+          <Body>{ «Caret» }</Body>
+          <Context>
+            <Selected>Editor\Line\AtEndOfLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="br" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>break;</Body>
+          <Context>
+            <Selected>Editor\Code\InMethodBlock</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="ca" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>case «Caret»«Field(value)»«BlockAnchor»:</Body>
+          <Context>
+            <Selected>Editor\Code\InCase</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>case «Caret»«Field(value)»«BlockAnchor»:
+	«Target»
+break;</Body>
+          <Context>
+            <Selected>Editor\Code\InSwitch</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="co" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«:con»</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+            <Excluded>Editor\Code\DeclaresLocal(co)</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="con" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>continue;</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="do" CaseSensitiveName="false">
+        <Comment>do - while loop</Comment>
+        <Expansion Priority="0">
+          <Body>«:dw»</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="dw" CaseSensitiveName="false">
+        <Comment>do - while loop</Comment>
+        <Expansion Priority="0">
+          <Body>do
+{
+	«Marker»
+} while («Caret»);</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="fin" CaseSensitiveName="false">
+        <Expansion Priority="3">
+          <Body>for(var «Caret»«Field(item,Variable name)»«BlockAnchor» in «Field(Collection,Collection instance)»)
+{
+	«Target»
+}</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="for" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«?Set(IteratorVar,i)»«:#ForLoopRouter#»</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="fr?IteratorVar?" CaseSensitiveName="false">
+        <Comment>For loop. The mnemonic following the "fr" indicates the iterator variable to use in the loop (try i, j, k, ix, and c).</Comment>
+        <Expansion Priority="0">
+          <Body>«:#ForLoopRouter#»</Body>
+          <Context>
+            <Selected>Editor\Line\AtEndOfLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="sw" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«:switch»</Body>
+          <Context>
+            <Selected>Editor\Line\AtEndOfLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>switch </Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+            <Excluded>Editor\Line\AtEndOfLine</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="switch" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>switch («Caret»«Field(«?Paste»,Expression to direct the switch statement)»«BlockAnchor»)
+{
+	«ForEach(EnumElement in ClipType,#CaseStatement#)»}</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasEnum</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>switch («Caret»«Field(«?Paste»,Expression to direct the switch statement)»«BlockAnchor»)
+{
+	case «Field(0)»:
+		«Marker»«Target»
+		break;
+}</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="2">
+          <Body>switch («Caret»«Field(Expression,Expression to direct the switch statement)»«BlockAnchor»)
+{
+	case «Field(0)»:
+		«Marker»«Target»
+		break;
+}</Body>
+          <Context>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tn" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>throw «Marker»«Caret»;</Body>
+          <Context>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tne" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>throw "«Caret»";</Body>
+          <Context>
+            <Selected>Editor\Code\InMethodBlock</Selected>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>throw "«Caret»";</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Selected>Editor\Code\InMethodBlock</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tne," CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>throw "«Caret»";</Body>
+          <Context>
+            <Selected>Editor\Code\InMethodBlock</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tx" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>try
+{
+	«Caret»
+}
+catch (e)
+{
+	«Marker»
+}</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="wh" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«:while»</Body>
+          <Context>
+            <Selected>Editor\Line\AtEndOfLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="while">
+        <Expansion Priority="0">
+          <Body>while («:#ExpressionPlaceholder#»)
+{
+	«Marker»
+}</Body>
+          <Context>
+            <Selected>Editor\Line\AtEndOfLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="wi" CaseSensitiveName="false">
+        <Comment>With block</Comment>
+        <Expansion Priority="0">
+          <Body>with («Cursor»)
+{
+  «Marker»
+}</Body>
+          <Context>
+            <Selected>Editor\Line\AtEndOfLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="If blocks" OptExpanded="true">
+      <Comments>Templates in this category generate if blocks. Most start with "if", however a few start with "in", which will lead to "if (!...)" blocks.</Comments>
+      <Template Name="cod" CaseSensitiveName="false">
+        <Comment>Create on demand</Comment>
+        <Expansion Priority="0">
+          <Body>// Create on demand...
+if («?Paste» == null)
+	«?Paste» = new «PasteType»(«Caret»);</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="if" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>if («Cursor»)</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="ifa" CaseSensitiveName="false">
+        <Comment>if assigned</Comment>
+        <Expansion Priority="0">
+          <Body>if («Paste» != null)</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>if («Marker»«Caret» != null)</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="ifb" CaseSensitiveName="false">
+        <Comment>if block</Comment>
+        <Expansion Priority="0">
+          <Body>if («Cursor»)
+{
+	«Marker»;
+}</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="ifn" CaseSensitiveName="false">
+        <Comment>if not</Comment>
+        <Expansion Priority="0">
+          <Body>if (!«Cursor»)</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="ifna" CaseSensitiveName="false">
+        <Comment>if not assigned</Comment>
+        <Expansion Priority="0">
+          <Body>if («Paste» == null)</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>if («Marker»«Caret» == null)</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="inr" CaseSensitiveName="false">
+        <Comment>if not assigned (or if false)  then return</Comment>
+        <Expansion Priority="0">
+          <Body>if (!«Paste»)
+	return;</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasBoolean</Selected>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>if («Paste» == null)
+	return;</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Selected>Editor\Code\InComment</Selected>
+            <Selected>Editor\Code\InString</Selected>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Clipboard\HasBoolean</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="2">
+          <Body>if («Cursor» == null)
+	return;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="inr&quot;" CaseSensitiveName="false">
+        <Comment>if not assigned then return an empty string</Comment>
+        <Expansion Priority="0">
+          <Body>if («Paste» == null)
+	return "";</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>if («Cursor»«Marker»Identifier«BlockAnchor» == null)
+	return "";</Body>
+          <Context>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="inr0" CaseSensitiveName="false">
+        <Comment>if not assigned then return zero</Comment>
+        <Expansion Priority="0">
+          <Body>if («Paste» == null)
+	return 0;</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>if («Cursor»«Marker»Identifier«BlockAnchor» == null)
+	return 0;</Body>
+          <Context>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="inrf" CaseSensitiveName="false">
+        <Comment>if not assigned then return false</Comment>
+        <Expansion Priority="0">
+          <Body>if («Paste» == null)
+	return false;</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>if («Cursor»«Marker»Identifier«BlockAnchor» == null)
+	return false;</Body>
+          <Context>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="inrn" CaseSensitiveName="false">
+        <Comment>if not assigned then return null</Comment>
+        <Expansion Priority="0">
+          <Body>if («Paste» == null)
+	return null;</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>if («Cursor»«Marker»Identifier«BlockAnchor» == null)
+	return null;</Body>
+          <Context>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="inrt" CaseSensitiveName="false">
+        <Comment>if not assigned then return true</Comment>
+        <Expansion Priority="0">
+          <Body>if («Paste» == null)
+	return true;</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasIdentifier</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>if («Cursor»«Marker»Identifier«BlockAnchor» == null)
+	return true;</Body>
+          <Context>
+            <Excluded>Editor\Clipboard\HasIdentifier</Excluded>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="inx" CaseSensitiveName="false">
+        <Comment>if not assigned then exit (return)</Comment>
+        <Expansion Priority="0">
+          <Body>«:inr»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Returning Values">
+      <Comments>Templates in this category return values. These templates all start with the letter "r", and end with one or two characters that describe the value to return. For example, "rf" returns false.</Comments>
+      <Template Name="r'" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return "«Caret»";</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="r&quot;" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return "«Caret»";</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="r0" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return 0;</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="r1" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return 1;</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="r-1" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return -1;</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="rf" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return false;</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="rn" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return null;</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="rr" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«SmartReturn»</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+            <Excluded>Editor\Line\InParens</Excluded>
+          </Context>
+          <UsingClause />
+        </Expansion>
+      </Template>
+      <Template Name="rse" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return String.Empty;</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="rt" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return true;</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="rth" CaseSensitiveName="false">
+        <Expansion Priority="0" IsExpression="true">
+          <Body>return this;</Body>
+          <Context>
+            <Selected>Editor\Code\InCodeBlock</Selected>
+          </Context>
+          <UsingClause />
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="try...">
+      <Comments>Templates in this category generate try/finally and try/catch blocks. These templates all start with the letter "t".</Comments>
+      <Template Name="tc" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>try
+{
+	«Cursor»«Marker»
+}
+catch (ex)
+{
+	«Marker»
+}</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tcf" CaseSensitiveName="false">
+        <Comment>try/catch/finally</Comment>
+        <Expansion Priority="0">
+          <Body>try
+{
+	«Caret»«Marker»
+}
+catch (ex)
+{
+	«Marker»
+}
+finally
+{
+	«Marker»
+}</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tf" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>try
+{
+	«Caret»«Marker»
+}
+finally
+{
+	«Marker»
+}</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tfb" CaseSensitiveName="false">
+        <Comment>Try/Finally block toggles boolean on the clipboard.</Comment>
+        <Expansion Priority="0">
+          <Body>«Paste» = true;
+
+try
+{
+	«Caret»
+}
+finally
+{
+	«Paste» = false;
+}</Body>
+          <Context>
+            <Selected>Editor\Clipboard\HasBoolean</Selected>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+            <Excluded>Editor\Code\InComment</Excluded>
+            <Excluded>Editor\Code\InString</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+  </TemplateCategory>
+  <TemplateCategory Name="Setting Values">
+    <Comments>Templates in this category all begin with the letter "S" and work with an identifier copied to the clipboard</Comments>
+    <Template Name="s--" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = «Paste» - «Caret»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s&quot;" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = "«Caret»«Marker(30)»";</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s++" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = «Paste» + «Caret»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s=" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = «Caret»</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s==" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«:s++»</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s0" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = 0;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s1" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = 1;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s-1" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = -1;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sbc" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».BackColor = Color.«Caret»«CompleteWord»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sbs" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».BorderStyle = BorderStyle.«Caret»«CompleteWord»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sbt" CaseSensitiveName="false">
+      <Comment>Set Boolean Toggle (toggles the state of the boolean identifier on the clipboard)</Comment>
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = !«Paste»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasBoolean</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sc" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Checked = «Caret»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="scf" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Checked = false;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sct" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Checked = true;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="se" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Enabled = «Caret»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sef" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Enabled = false;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="set" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Enabled = true;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sf" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = false;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="shi" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Hint = "";</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sht" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Height = «Cursor»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="slo" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Location = new Point(0«Caret», 0);</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="slt" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Left = «Caret»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sn" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = null;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sn&quot;" CaseSensitiveName="false">
+      <Comment>Need to clear the InString context</Comment>
+      <Expansion Priority="0">
+        <Body>«Paste» != "«Cursor»«Marker(30)»"</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sn0" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>«Paste» != 0</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="snn" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>«Paste» != null</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="spa" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Parent = «Cursor»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="spat" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Parent = this;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sse" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = String.Empty;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasString</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="ssr" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Sorted = </Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="ssrf" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Sorted = false;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="ssrt" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Sorted = true;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="ssz" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Size = new Size(0«Cursor», 0);</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="st" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = true;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sth" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = this;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="stp" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Top = «Cursor»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="stx" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Text = "«Cursor»";</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sv" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Visible = «Cursor»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sva" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste» = value;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="svf" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Visible = false;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="svt" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Visible = true;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="swd" CaseSensitiveName="false">
+      <Expansion Priority="0" IsExpression="true" UseDoubleEqualsInsideParens="true">
+        <Body>«Paste».Width = «Cursor»;</Body>
+        <Context>
+          <Selected>Editor\Clipboard\HasIdentifier</Selected>
+          <Excluded>Editor\Code\InComment</Excluded>
+          <Excluded>Editor\Code\InString</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+  <TemplateCategory Name="System">
+    <Comments>This category contains system templates that are referenced by other templates. Changing these will impact all templates with aliases to them.</Comments>
+    <Template Name="#CaretPlaceholder#" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>«Caret»</Body>
+        <Context>
+          <Selected>System\VSVersion\VS2002</Selected>
+          <Selected>System\VSVersion\VS2003</Selected>
+        </Context>
+      </Expansion>
+      <Expansion Priority="1">
+        <Body>«Caret»«?Get(placeholderText)»«BlockAnchor»</Body>
+        <Context>
+          <Excluded>System\VSVersion\VS2002</Excluded>
+          <Excluded>System\VSVersion\VS2003</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="#ExpressionPlaceholder#" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>«?Set(placeholderText,Expression)»«:#CaretPlaceholder#»</Body>
+        <Context />
+      </Expansion>
+    </Template>
+    <Template Name="#UpperBoundPlaceholder#" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>«?Set(placeholderText,UpperBound)»«:#CaretPlaceholder#»</Body>
+        <Context />
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+</Templates>

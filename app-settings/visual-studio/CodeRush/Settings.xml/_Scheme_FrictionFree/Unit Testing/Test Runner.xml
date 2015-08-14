@@ -1,0 +1,51 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Test Runner">
+ <Language Name="*Neutral*">
+  <Section Name="ToolWindow">
+   <Option Name="DetailsInTreeView" Value="False" />
+   <Option Name="HideFilterLabel" Value="False" />
+   <Option Name="SilverlightDebugger" Value="False" />
+   <Option Name="ShowStackOnlyIfFileExists" Value="False" />
+   <Option Name="DetailsShowPassed" Value="False" />
+   <Option Name="DetailsShowIgnored" Value="True" />
+   <Option Name="DetailsShowFailed" Value="True" />
+   <Option Name="DetailsZoom" Value="100" />
+   <Option Name="TreeGroupType" Value="Category" />
+   <Option Name="GotoTestOnDoubleClick" Value="False" />
+   <Option Name="DetailsVisibility" Value="1" />
+   <Option Name="DetailsPosition" Value="392" />
+   <Option Name="BackgroundUseVsColor" Value="True" />
+   <Option Name="BackgroundCustomColor" Value="Named:White" />
+   <Option Name="TextUseVsColor" Value="True" />
+   <Option Name="TextCustomColor" Value="Named:Black" />
+   <Option Name="SeparatorUseVsColor" Value="False" />
+   <Option Name="SeparatorCustomColor" Value="ARGB:255:210:220:250" />
+   <Option Name="ErrorUseVsColor" Value="False" />
+   <Option Name="ErrorCustomColor" Value="ARGB:255:181:0:0" />
+   <Option Name="IgnoreUseVsColor" Value="False" />
+   <Option Name="IgnoreCustomColor" Value="ARGB:255:255:153:13" />
+   <Option Name="PassedUseVsColor" Value="False" />
+   <Option Name="PassedCustomColor" Value="ARGB:255:118:192:118" />
+   <Option Name="ComparisonUseVsColor" Value="False" />
+   <Option Name="ComparisonCustomColor" Value="ARGB:255:255:194:194" />
+   <Option Name="NamespaceUseVsColor" Value="False" />
+   <Option Name="NamespaceCustomColor" Value="ARGB:255:78:118:238" />
+   <Option Name="TypeUseVsColor" Value="False" />
+   <Option Name="TypeCustomColor" Value="ARGB:255:41:145:41" />
+   <Option Name="MemberUseVsColor" Value="False" />
+   <Option Name="MemberCustomColor" Value="ARGB:255:0:61:240" />
+   <Option Name="ParameterNameUseVsColor" Value="False" />
+   <Option Name="ParameterNameCustomColor" Value="ARGB:255:139:159:218" />
+   <Option Name="LinkUseVsColor" Value="False" />
+   <Option Name="LinkCustomColor" Value="ARGB:255:87:35:173" />
+   <Option Name="DotUseVsColor" Value="False" />
+   <Option Name="DotCustomColor" Value="Named:Gray" />
+   <Option Name="CommaUseVsColor" Value="False" />
+   <Option Name="CommaCustomColor" Value="Named:Gray" />
+   <Option Name="InUseVsColor" Value="False" />
+   <Option Name="InCustomColor" Value="ARGB:255:139:112:186" />
+   <Option Name="ParensUseVsColor" Value="False" />
+   <Option Name="ParensCustomColor" Value="Named:Gray" />
+  </Section>
+ </Language>
+</Page>

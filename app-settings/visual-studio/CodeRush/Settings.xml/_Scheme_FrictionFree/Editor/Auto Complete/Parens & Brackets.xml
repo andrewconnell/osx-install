@@ -1,0 +1,24 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Parens &amp; Brackets">
+ <Language Name="*Neutral*">
+  <Section Name="SmartParens">
+   <Option Name="Enabled" Value="False" />
+   <Option Name="AutoComplete" Value="True" />
+   <Option Name="AllowTypecastParens" Value="True" />
+   <Option Name="EasyDelete" Value="True" />
+   <Option Name="IgnoreClosing" Value="True" />
+   <Option Name="SmartSemiColon" Value="True" />
+   <Option Name="UseTextFields" Value="True" />
+   <Option Name="InsertExtraPadding" Value="False" />
+  </Section>
+  <Section Name="SmartBrackets">
+   <Option Name="Enabled" Value="False" />
+   <Option Name="AutoComplete" Value="True" />
+   <Option Name="EasyDelete" Value="True" />
+   <Option Name="IgnoreClosing" Value="True" />
+   <Option Name="SmartSemiColon" Value="True" />
+   <Option Name="UseTextFields" Value="True" />
+   <Option Name="InsertExtraPadding" Value="False" />
+  </Section>
+ </Language>
+</Page>

@@ -1,0 +1,8 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Progress Visualization">
+ <Language Name="*Neutral*">
+  <Section Name="Common">
+   <Option Name="Enabled" Value="False" />
+  </Section>
+ </Language>
+</Page>

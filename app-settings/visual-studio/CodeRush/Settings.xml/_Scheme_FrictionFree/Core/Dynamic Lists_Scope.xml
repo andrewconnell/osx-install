@@ -1,0 +1,146 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Dynamic Lists_Scope">
+ <Language Name="Basic">
+  <Section Name="Header">
+   <Option Name="TemplateVariable" Value="Scope" />
+   <Option Name="DisplayName" Value="Scope" />
+   <Option Name="CustomData" Value="" />
+   <Option Name="Comment" Value="Scope mnemonics" />
+   <Option Name="HoldsTypes" Value="False" />
+   <Option Name="EntriesCount" Value="5" />
+   <Option Name="ContextSelected_Count" Value="0" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Entry0">
+   <Option Name="EntryName" Value="n" />
+   <Option Name="EntryExpansionText" Value="Friend" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry1">
+   <Option Name="EntryName" Value="o" />
+   <Option Name="EntryExpansionText" Value="Protected" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry2">
+   <Option Name="EntryName" Value="v" />
+   <Option Name="EntryExpansionText" Value="Private" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry3">
+   <Option Name="EntryName" Value="b" />
+   <Option Name="EntryExpansionText" Value="Public" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry4">
+   <Option Name="EntryName" Value="on" />
+   <Option Name="EntryExpansionText" Value="Protected Friend" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+ </Language>
+ <Language Name="CC++">
+  <Section Name="Header">
+   <Option Name="TemplateVariable" Value="Scope" />
+   <Option Name="DisplayName" Value="Scope" />
+   <Option Name="CustomData" Value="" />
+   <Option Name="Comment" Value="Scope mnemonics" />
+   <Option Name="HoldsTypes" Value="False" />
+   <Option Name="EntriesCount" Value="4" />
+   <Option Name="ContextSelected_Count" Value="0" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Entry0">
+   <Option Name="EntryName" Value="v" />
+   <Option Name="EntryExpansionText" Value="private" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry1">
+   <Option Name="EntryName" Value="o" />
+   <Option Name="EntryExpansionText" Value="protected" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry2">
+   <Option Name="EntryName" Value="b" />
+   <Option Name="EntryExpansionText" Value="public" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry3">
+   <Option Name="EntryName" Value="f" />
+   <Option Name="EntryExpansionText" Value="friend" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+ </Language>
+ <Language Name="*Neutral*">
+  <Section Name="Header">
+   <Option Name="TemplateVariable" Value="Scope" />
+   <Option Name="DisplayName" Value="Scope" />
+   <Option Name="CustomData" Value="" />
+   <Option Name="Comment" Value="Scope mnemonics" />
+   <Option Name="HoldsTypes" Value="False" />
+   <Option Name="EntriesCount" Value="5" />
+   <Option Name="ContextSelected_Count" Value="0" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Entry0">
+   <Option Name="EntryName" Value="n" />
+   <Option Name="EntryExpansionText" Value="internal" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry1">
+   <Option Name="EntryName" Value="o" />
+   <Option Name="EntryExpansionText" Value="protected" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry2">
+   <Option Name="EntryName" Value="v" />
+   <Option Name="EntryExpansionText" Value="private" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry3">
+   <Option Name="EntryName" Value="b" />
+   <Option Name="EntryExpansionText" Value="public" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry4">
+   <Option Name="EntryName" Value="on" />
+   <Option Name="EntryExpansionText" Value="protected internal" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+ </Language>
+ <Language Name="CSharp">
+  <Section Name="Header">
+   <Option Name="TemplateVariable" Value="Scope" />
+   <Option Name="DisplayName" Value="Scope" />
+   <Option Name="CustomData" Value="" />
+   <Option Name="Comment" Value="Scope mnemonics" />
+   <Option Name="HoldsTypes" Value="False" />
+   <Option Name="EntriesCount" Value="5" />
+   <Option Name="ContextSelected_Count" Value="0" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Entry0">
+   <Option Name="EntryName" Value="n" />
+   <Option Name="EntryExpansionText" Value="internal" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry1">
+   <Option Name="EntryName" Value="o" />
+   <Option Name="EntryExpansionText" Value="protected" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry2">
+   <Option Name="EntryName" Value="v" />
+   <Option Name="EntryExpansionText" Value="private" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry3">
+   <Option Name="EntryName" Value="b" />
+   <Option Name="EntryExpansionText" Value="public" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+  <Section Name="Entry4">
+   <Option Name="EntryName" Value="on" />
+   <Option Name="EntryExpansionText" Value="protected internal" />
+   <Option Name="EntryCustomData" Value="" />
+  </Section>
+ </Language>
+</Page>

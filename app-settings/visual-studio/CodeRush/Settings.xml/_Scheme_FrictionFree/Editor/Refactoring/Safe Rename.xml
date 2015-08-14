@@ -1,0 +1,9 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Safe Rename">
+ <Language Name="*Neutral*">
+  <Section Name="Options">
+   <Option Name="WarningMessage" Value="Use %NewName% instead." />
+   <Option Name="NamePrefix" Value="New" />
+  </Section>
+ </Language>
+</Page>

@@ -1,0 +1,1294 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Embedding">
+ <Language Name="Basic">
+  <Section Name="Embeddings">
+   <Option Name="Count" Value="18" />
+   <Option Name="SelectedIndex" Value="5" />
+  </Section>
+  <Section Name="Embedding_1">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="3" />
+   <Option Name="Bottom_0" Value="Catch ex As Exception" />
+   <Option Name="Bottom_1" Value=" «Marker»" />
+   <Option Name="Bottom_2" Value="End Try" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="try/catch" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="Try" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Try..Catch" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_2">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="3" />
+   <Option Name="Bottom_0" Value="Finally" />
+   <Option Name="Bottom_1" Value=" «Marker»" />
+   <Option Name="Bottom_2" Value="End Try" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="try/finally" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="Try" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Try..Finally" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_3">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="5" />
+   <Option Name="Bottom_0" Value="Catch ex As Exception" />
+   <Option Name="Bottom_1" Value=" «Marker»" />
+   <Option Name="Bottom_2" Value="Finally" />
+   <Option Name="Bottom_3" Value=" «Marker»" />
+   <Option Name="Bottom_4" Value="End Try" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="try/catch/finally" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="Try" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Try..Catch..Finally" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_4">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="#End Region" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="region" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="#Region &quot;«Caret»&quot;" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="#Region..#End Region" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_5">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="#End If" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="if/endif" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="#If «Caret» Then" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="#If..#EndIf" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_6">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="End If" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="If1" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="If «Caret» Then" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="If..End If" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_7">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="3" />
+   <Option Name="Bottom_0" Value="Else" />
+   <Option Name="Bottom_1" Value="  «FinalTarget»" />
+   <Option Name="Bottom_2" Value="End If" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="If Else End If" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="If «Caret»«Field(Expression)»«BlockAnchor» Then" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="If..Else End If" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_8">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="End While" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="while" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="While «Caret»" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="While..End While" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_9">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="Loop While «Caret»" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="do" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="Do" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Do..While" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_10">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="End Using" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="using" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="Using «Caret»" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Using..End Using" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_11">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="End SyncLock" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="SyncLock" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="SyncLock «Caret»" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="SyncLock" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_12">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value=", «Caret»«Field(Type)»«BlockAnchor»)«FinalTarget»" />
+   <Option Name="LeftColumn" Value="1" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="StartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="TryCast(..)" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="TryCast(" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="TryCast(..)" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_13">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="3" />
+   <Option Name="Bottom_0" Value="Finally" />
+   <Option Name="Bottom_1" Value=" «Paste».EndUpdate()" />
+   <Option Name="Bottom_2" Value="End Try" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="beginupdate/endupdate" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="«Paste».BeginUpdate()" />
+   <Option Name="Top_1" Value="Try" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="BeginUpdate..EndUpdate" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_14">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="3" />
+   <Option Name="Bottom_0" Value="Finally" />
+   <Option Name="Bottom_1" Value=" Cursor.Current = «Link(saveCursor)»" />
+   <Option Name="Bottom_2" Value="End Try" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="WaitCursor" />
+   <Option Name="Top_Count" Value="3" />
+   <Option Name="Top_0" Value="«AddNamespace(System.Windows.Forms)»Dim «Caret»«Link(saveCursor)»«BlockAnchor» As Cursor = Cursor.Current" />
+   <Option Name="Top_1" Value="Try" />
+   <Option Name="Top_2" Value=" Cursor.Current = Cursors.WaitCursor" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="WaitCursor" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_15">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="End Namespace" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="Namespace" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="Namespace «Caret»MyNamespace«BlockAnchor»" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Namespace" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_16">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="4" />
+   <Option Name="Bottom_0" Value="Finally" />
+   <Option Name="Bottom_1" Value=" «Link(stopwatch)».Stop()" />
+   <Option Name="Bottom_2" Value="End Try" />
+   <Option Name="Bottom_3" Value="Console.WriteLine(&quot;Time elapsed: {0}&quot;, «Link(stopwatch)».Elapsed)" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="Stopwatch" />
+   <Option Name="Top_Count" Value="3" />
+   <Option Name="Top_0" Value="«AddNamespace(System.Diagnostics)»Dim «Caret»«Link(stopwatch)»«BlockAnchor» As New Stopwatch()" />
+   <Option Name="Top_1" Value="«Link(stopwatch)».Start()" />
+   <Option Name="Top_2" Value="Try" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Stopwatch" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_17">
+   <Option Name="Left" Value="&quot;" />
+   <Option Name="Right" Value=" &quot; &amp; _" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&quot;" />
+   <Option Name="LeftColumn" Value="999999" />
+   <Option Name="RightColumn" Value="-1" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="True" />
+   <Option Name="Style" Value="LeftRightWithStartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="ToString" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="«EscapeQuotes»&quot;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="To string" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_18">
+   <Option Name="Left" Value="' | " />
+   <Option Name="Right" Value=" |" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="' •—«?Repeat(—,«?LongestSelectedCodeLine»)»—•" />
+   <Option Name="LeftColumn" Value="-2" />
+   <Option Name="RightColumn" Value="-2" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="True" />
+   <Option Name="Style" Value="Surround" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="CommentBoxWithLines" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="' •—«?Repeat(—,«?LongestSelectedCodeLine»)»—•" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="Comment box  •---•" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+ </Language>
+ <Language Name="CC++">
+  <Section Name="Embeddings">
+   <Option Name="Count" Value="14" />
+   <Option Name="SelectedIndex" Value="0" />
+  </Section>
+  <Section Name="Embedding_1">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="5" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="catch (Exception ex)" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value=" «Marker»" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="try/catch" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="try" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="try..catch" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_2">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="5" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="finally" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value=" «Marker»" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="try/finally" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="try" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="try..finally" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_3">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="9" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="catch (Exception ex)" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value=" «Marker»" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="Bottom_5" Value="finally" />
+   <Option Name="Bottom_6" Value="{" />
+   <Option Name="Bottom_7" Value=" «Marker»" />
+   <Option Name="Bottom_8" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="try/catch/finally" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="try" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="try...catch/finally" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_4">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="#endif" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="if/endif" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="#if «Caret»" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="#if..#endif" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_5">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="#pragma endregion" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="pragma region" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="#pragma region «Caret»RegionName«BlockAnchor»" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="#pragma region...#pragma endregion" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_6">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="*/" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="SlashComment" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="/*" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="/* .. */" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_7">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="if" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="if («Caret»)" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="if ()" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_8">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="while" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="while («Caret»)" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="while ()" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_9">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="} while («Caret»);" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="do" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="do" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="do..while ()" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_10">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="block" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="block - {}" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_11">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="}  // «Link(Name)»" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="Namespace" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="namespace «Caret»«Link(Name)»«BlockAnchor»" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="namespace" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_12">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="5" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="finally" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value=" «Paste»-&gt;EndUpdate();" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="beginupdate/endupdate" />
+   <Option Name="Top_Count" Value="3" />
+   <Option Name="Top_0" Value="«Paste»-&gt;BeginUpdate();" />
+   <Option Name="Top_1" Value="try" />
+   <Option Name="Top_2" Value="{" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="BeginUpdate..EndUpdate" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_13">
+   <Option Name="Left" Value="&quot;" />
+   <Option Name="Right" Value="&quot; +" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&quot;" />
+   <Option Name="LeftColumn" Value="999999" />
+   <Option Name="RightColumn" Value="-1" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="True" />
+   <Option Name="Style" Value="LeftRightWithStartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="To String" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="«EscapeQuotes»&quot;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="To string" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_14">
+   <Option Name="Left" Value="| " />
+   <Option Name="Right" Value=" |" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="   •—«?Repeat(—,«?LongestSelectedCodeLine»)»—• */" />
+   <Option Name="LeftColumn" Value="-2" />
+   <Option Name="RightColumn" Value="-2" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="True" />
+   <Option Name="Style" Value="Surround" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="CommentBoxWithLines" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="/* •—«?Repeat(—,«?LongestSelectedCodeLine»)»—•" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="Comment box  •---•" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+ </Language>
+ <Language Name="CSharp">
+  <Section Name="Embeddings">
+   <Option Name="Count" Value="17" />
+   <Option Name="SelectedIndex" Value="0" />
+  </Section>
+  <Section Name="Embedding_1">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="5" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="catch (Exception ex)" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value=" «Marker»" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="try/catch" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="try" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="try..catch" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_2">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="5" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="finally" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value=" «Marker»" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="try/finally" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="try" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="try..finally" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_3">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="9" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="catch (Exception ex)" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value=" «Marker»" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="Bottom_5" Value="finally" />
+   <Option Name="Bottom_6" Value="{" />
+   <Option Name="Bottom_7" Value=" «Marker»" />
+   <Option Name="Bottom_8" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="try/catch/finally" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="try" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="try...catch/finally" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_4">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="#endregion" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="1" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="region" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="#region «Caret»RegionName«BlockAnchor»" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="#region..#endregion" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_5">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="#endif" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="if/endif" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="#if «Caret»" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="#if..#endif" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_6">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="}«FinalTarget»" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="if1" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="if («Caret»«Field(Expression)»«BlockAnchor»)" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="if ()" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_7">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="5" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="else" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value="  «FinalTarget»" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="if else" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="if («Caret»«Field(Expression)»«BlockAnchor»)" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="if () else" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_8">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="}«FinalTarget»" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="while" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="while («Caret»«Field(Expression)»«BlockAnchor»)" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="while ()" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_9">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="} while («Caret»«Field(Expression)»«BlockAnchor»);" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="do" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="do" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="do..while ()" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_10">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="}«FinalTarget»" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="using" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="using («Caret»«Field(Expression)»«BlockAnchor»)" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="using ()" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_11">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="}«FinalTarget»" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="lock" />
+   <Option Name="Top_Count" Value="2" />
+   <Option Name="Top_0" Value="lock («Caret»«Field(Expression)»«BlockAnchor»)" />
+   <Option Name="Top_1" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="lock ()" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_12">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="block" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="block - {}" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_13">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="5" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="finally" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value=" «Paste».EndUpdate();" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="beginupdate/endupdate" />
+   <Option Name="Top_Count" Value="3" />
+   <Option Name="Top_0" Value="«Paste».BeginUpdate();" />
+   <Option Name="Top_1" Value="try" />
+   <Option Name="Top_2" Value="{" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="BeginUpdate..EndUpdate" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_14">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="5" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="finally" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value=" Cursor.Current = «Link(saveCursor)»;" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="WaitCursor" />
+   <Option Name="Top_Count" Value="4" />
+   <Option Name="Top_0" Value="«AddNamespace(System.Windows.Forms)»Cursor «Caret»«Link(saveCursor)»«BlockAnchor» = Cursor.Current;" />
+   <Option Name="Top_1" Value="try" />
+   <Option Name="Top_2" Value="{" />
+   <Option Name="Top_3" Value=" Cursor.Current = Cursors.WaitCursor;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="WaitCursor" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_15">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="6" />
+   <Option Name="Bottom_0" Value="}" />
+   <Option Name="Bottom_1" Value="finally" />
+   <Option Name="Bottom_2" Value="{" />
+   <Option Name="Bottom_3" Value="  «Link(stopwatch)».Stop();" />
+   <Option Name="Bottom_4" Value="}" />
+   <Option Name="Bottom_5" Value="Console.WriteLine(&quot;Time elapsed: {0}&quot;, «Link(stopwatch)».Elapsed);" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="True" />
+   <Option Name="Name" Value="Stopwatch" />
+   <Option Name="Top_Count" Value="4" />
+   <Option Name="Top_0" Value="«AddNamespace(System.Diagnostics)»Stopwatch «Caret»«Link(stopwatch)»«BlockAnchor» = new Stopwatch();" />
+   <Option Name="Top_1" Value="«Link(stopwatch)».Start();" />
+   <Option Name="Top_2" Value="try" />
+   <Option Name="Top_3" Value="{" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Stopwatch" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_16">
+   <Option Name="Left" Value="&quot;" />
+   <Option Name="Right" Value=" &quot; +" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&quot;" />
+   <Option Name="LeftColumn" Value="999999" />
+   <Option Name="RightColumn" Value="-1" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="True" />
+   <Option Name="Style" Value="LeftRightWithStartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="ToString" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="«EscapeQuotes»&quot;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="To string" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_17">
+   <Option Name="Left" Value="   | " />
+   <Option Name="Right" Value=" |" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="   •—«?Repeat(—,«?LongestSelectedCodeLine»)»—• */" />
+   <Option Name="LeftColumn" Value="-2" />
+   <Option Name="RightColumn" Value="-2" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="True" />
+   <Option Name="Style" Value="Surround" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="CommentBoxWithLines" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="/* •—«?Repeat(—,«?LongestSelectedCodeLine»)»—•" />
+   <Option Name="BeginGroup" Value="True" />
+   <Option Name="Caption" Value="Comment box  •---•" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+ </Language>
+ <Language Name="HTML">
+  <Section Name="Embeddings">
+   <Option Name="Count" Value="9" />
+   <Option Name="SelectedIndex" Value="0" />
+  </Section>
+  <Section Name="Embedding_1">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&lt;/strong&gt;" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="StartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="Strong" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="&lt;strong&gt;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Bold (&lt;strong&gt;)" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_2">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&lt;/em&gt;" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="StartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="Italic" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="&lt;em&gt;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Italic (&lt;em&gt;)" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_3">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&lt;/span&gt;" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="StartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="Underline" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="&lt;span style=&quot;text-decoration: underline&quot;&gt;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Underline" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_4">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&lt;/a&gt;" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="StartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="Anchor" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="&lt;a id=&quot;«Caret»«FieldStart»«Link(«?GetUniqueID(HyperLink1)»)»«FieldEnd»«BlockAnchor»&quot; href=&quot;«Field(http://www.)»&quot;&gt;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Anchor (Hyperlink)" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_5">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&lt;/p&gt;" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="StartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="Paragraph" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="&lt;p&gt;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Paragraph (&lt;p&gt;)" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_6">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&lt;/div&gt;" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="Div" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="&lt;div&gt;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Div (&lt;div&gt;)" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_7">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&lt;/li&gt;" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="StartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="ListItem" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="&lt;li&gt;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="List Item (&lt;li&gt;)" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_8">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="TopBottom" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="Table" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value=" &lt;table id=&quot;«Caret»«FieldStart»«Link(«?GetUniqueID(Table1)»)»«FieldEnd»«BlockAnchor»&quot;&gt;&lt;tr&gt;&lt;td&gt;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="Table" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+  <Section Name="Embedding_9">
+   <Option Name="Left" Value="" />
+   <Option Name="Right" Value="" />
+   <Option Name="Bottom_Count" Value="1" />
+   <Option Name="Bottom_0" Value="&quot;, &quot;«Caret»«Field(Action)»«BlockAnchor»&quot;, &quot;«Field(Controller)»&quot;) %&gt;" />
+   <Option Name="LeftColumn" Value="0" />
+   <Option Name="RightColumn" Value="0" />
+   <Option Name="FormatStyle" Value="Default" />
+   <Option Name="ModifyEmptyLines" Value="False" />
+   <Option Name="Style" Value="StartEnd" />
+   <Option Name="AdjustSelection" Value="0" />
+   <Option Name="CursorPosition" Value="0" />
+   <Option Name="IndentSelection" Value="False" />
+   <Option Name="Name" Value="ActionLink" />
+   <Option Name="Top_Count" Value="1" />
+   <Option Name="Top_0" Value="&lt;%= Html.ActionLink(&quot;" />
+   <Option Name="BeginGroup" Value="False" />
+   <Option Name="Caption" Value="ActionLink" />
+   <Option Name="VisibleOnMenu" Value="True" />
+  </Section>
+ </Language>
+ <Language Name="*Neutral*">
+  <Section Name="Embeddings">
+   <Option Name="Count" Value="0" />
+   <Option Name="SelectedIndex" Value="0" />
+  </Section>
+ </Language>
+</Page>

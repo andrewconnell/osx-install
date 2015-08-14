@@ -1,0 +1,8 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Member Icons">
+ <Language Name="*Neutral*">
+  <Section Name="Preferences">
+   <Option Name="Enabled" Value="False" />
+  </Section>
+ </Language>
+</Page>

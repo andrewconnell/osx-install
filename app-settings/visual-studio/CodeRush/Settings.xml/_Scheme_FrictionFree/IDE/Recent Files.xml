@@ -1,0 +1,8 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Recent Files">
+ <Language Name="*Neutral*">
+  <Section Name="info">
+   <Option Name="Count" Value="0" />
+  </Section>
+ </Language>
+</Page>

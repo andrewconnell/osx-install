@@ -1,0 +1,15 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Regions">
+ <Language Name="*Neutral*">
+  <Section Name="Preferences">
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="Colors">
+   <Option Name="CollapsedLine" Value="ARGB:255:208:210:251" />
+   <Option Name="CollapsedText" Value="ARGB:255:79:72:200" />
+   <Option Name="ExpandedText" Value="ARGB:255:51:78:158" />
+   <Option Name="CollapsedFill" Value="ARGB:255:252:252:254" />
+   <Option Name="ExpandedLine" Value="ARGB:255:186:202:248" />
+  </Section>
+ </Language>
+</Page>

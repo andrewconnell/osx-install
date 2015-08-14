@@ -1,0 +1,80 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Element Highlighting">
+ <Language Name="*Neutral*">
+  <Section Name="Class elements">
+   <Option Name="Foreground" Value="Named:Black" />
+   <Option Name="Background" Value="Named:Transparent" />
+   <Option Name="BorderColor" Value="Named:Transparent" />
+   <Option Name="BorderStyle" Value="None" />
+   <Option Name="Bold" Value="False" />
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="Method elements">
+   <Option Name="Foreground" Value="Named:Black" />
+   <Option Name="Background" Value="Named:Transparent" />
+   <Option Name="BorderColor" Value="Named:Transparent" />
+   <Option Name="BorderStyle" Value="None" />
+   <Option Name="Bold" Value="False" />
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="Property elements">
+   <Option Name="Foreground" Value="Named:Black" />
+   <Option Name="Background" Value="Named:Transparent" />
+   <Option Name="BorderColor" Value="Named:Transparent" />
+   <Option Name="BorderStyle" Value="None" />
+   <Option Name="Bold" Value="False" />
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="Field elements">
+   <Option Name="Foreground" Value="Named:Black" />
+   <Option Name="Background" Value="Named:Transparent" />
+   <Option Name="BorderColor" Value="Named:Transparent" />
+   <Option Name="BorderStyle" Value="None" />
+   <Option Name="Bold" Value="False" />
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="Event elements">
+   <Option Name="Foreground" Value="Named:Black" />
+   <Option Name="Background" Value="Named:Transparent" />
+   <Option Name="BorderColor" Value="Named:Transparent" />
+   <Option Name="BorderStyle" Value="None" />
+   <Option Name="Bold" Value="False" />
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="Anonymous elements">
+   <Option Name="Foreground" Value="Named:Black" />
+   <Option Name="Background" Value="Named:Transparent" />
+   <Option Name="BorderColor" Value="Named:Transparent" />
+   <Option Name="BorderStyle" Value="None" />
+   <Option Name="Bold" Value="False" />
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="Interface elements">
+   <Option Name="Foreground" Value="Named:Black" />
+   <Option Name="Background" Value="Named:Transparent" />
+   <Option Name="BorderColor" Value="Named:Transparent" />
+   <Option Name="BorderStyle" Value="None" />
+   <Option Name="Bold" Value="False" />
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="Struct elements">
+   <Option Name="Foreground" Value="Named:Black" />
+   <Option Name="Background" Value="Named:Transparent" />
+   <Option Name="BorderColor" Value="Named:Transparent" />
+   <Option Name="BorderStyle" Value="None" />
+   <Option Name="Bold" Value="False" />
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="Enum elements">
+   <Option Name="Foreground" Value="Named:Black" />
+   <Option Name="Background" Value="Named:Transparent" />
+   <Option Name="BorderColor" Value="Named:Transparent" />
+   <Option Name="BorderStyle" Value="None" />
+   <Option Name="Bold" Value="False" />
+   <Option Name="Enabled" Value="True" />
+  </Section>
+  <Section Name="General">
+   <Option Name="Enabled" Value="False" />
+  </Section>
+ </Language>
+</Page>

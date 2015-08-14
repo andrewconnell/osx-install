@@ -1,0 +1,13 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Shortcuts_Code_Intellassist">
+ <Language Name="*Neutral*">
+  <Section Name="FolderInfo">
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Description" Value="Enable only one of the subfolders below. Enable either the &quot;Visual Basic Style&quot; folder (accept suggestions with the Tab key, cycle suggestions with the arrow keys) or the &quot;C# Style&quot; folder (accept suggestions with the Enter key, cycle suggestions with Tab and Shift+Tab)." />
+   <Option Name="FolderState" Value="Expanded" />
+  </Section>
+  <Section Name="Header">
+   <Option Name="Count" Value="0" />
+  </Section>
+ </Language>
+</Page>

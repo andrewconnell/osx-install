@@ -1,0 +1,19 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Extract Method">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="AllowFunctions" Value="True" />
+   <Option Name="ReturnIfOneOutParam" Value="True" />
+   <Option Name="ReturnIfMoreThanOneOutParam" Value="False" />
+   <Option Name="ReturnParam" Value="LastAssignOut" />
+   <Option Name="InsertCode" Value="UsePicker" />
+   <Option Name="AllowReturns" Value="True" />
+   <Option Name="ReturnFlagName" Value="shouldReturn" />
+   <Option Name="PickerLineColor" Value="Named:Red" />
+   <Option Name="PickerFillColor" Value="Named:Red" />
+   <Option Name="SmartPasteIsEnabled" Value="True" />
+   <Option Name="MaxNameLength" Value="48" />
+   <Option Name="InsertNewLine" Value="None" />
+  </Section>
+ </Language>
+</Page>

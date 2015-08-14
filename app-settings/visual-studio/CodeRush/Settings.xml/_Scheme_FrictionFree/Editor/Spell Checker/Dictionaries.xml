@@ -1,0 +1,140 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:SpellDictionaryCollection id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/CR_SpellChecker/CR_Visualize_All">
+<CollectionBase_x002B_list href="#ref-3"/>
+</a1:SpellDictionaryCollection>
+<a2:ArrayList id="ref-3" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-4"/>
+<_size>2</_size>
+<_version>2</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-4" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-5"/>
+<item href="#ref-6"/>
+</SOAP-ENC:Array>
+<a1:SpellDictionary id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/CR_SpellChecker/CR_Visualize_All">
+<_AlphabetPath id="ref-7">../../CodeRush/Bin/PlugIns/Dictionaries/us-en.txt</_AlphabetPath>
+<_DictionaryPath id="ref-8">../../CodeRush/Bin/PlugIns/Dictionaries/us-en.xlg</_DictionaryPath>
+<_GrammarPath id="ref-9">../../CodeRush/Bin/PlugIns/Dictionaries/us-en.aff</_GrammarPath>
+<_Culture href="#ref-10"/>
+<_Encoding href="#ref-11"/>
+<_Name id="ref-12">En-Us</_Name>
+<_CaseSensitive>false</_CaseSensitive>
+<_Type>Standard</_Type>
+</a1:SpellDictionary>
+<a1:SpellDictionary id="ref-6" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/CR_SpellChecker/CR_Visualize_All">
+<_AlphabetPath xsi:null="1"/>
+<_DictionaryPath id="ref-13">../../../../../Users/andrew.RIVERCITY/AppData/Roaming/CodeRush for VS .NET/1.1/Dictionaries/custom.dic</_DictionaryPath>
+<_GrammarPath xsi:null="1"/>
+<_Culture href="#ref-10"/>
+<_Encoding href="#ref-11"/>
+<_Name id="ref-14">Custom</_Name>
+<_CaseSensitive>false</_CaseSensitive>
+<_Type>Custom</_Type>
+</a1:SpellDictionary>
+<a4:CultureInfo id="ref-10" xmlns:a4="http://schemas.microsoft.com/clr/ns/System.Globalization">
+<m_isReadOnly>true</m_isReadOnly>
+<compareInfo href="#ref-15"/>
+<textInfo href="#ref-16"/>
+<numInfo href="#ref-17"/>
+<dateTimeInfo xsi:null="1"/>
+<calendar xsi:null="1"/>
+<m_dataItem>0</m_dataItem>
+<cultureID>1033</cultureID>
+<m_name id="ref-18">en-US</m_name>
+<m_useUserOverride>false</m_useUserOverride>
+</a4:CultureInfo>
+<a5:CodePageEncoding id="ref-11" xmlns:a5="http://schemas.microsoft.com/clr/ns/System.Text">
+<m_isReadOnly>true</m_isReadOnly>
+<encoderFallback href="#ref-19"/>
+<decoderFallback href="#ref-20"/>
+<m_codePage>437</m_codePage>
+<dataItem xsi:type="xsd:anyType" xsi:null="1"/>
+<Encoding_x002B_m_codePage>437</Encoding_x002B_m_codePage>
+<Encoding_x002B_dataItem xsi:type="xsd:anyType" xsi:null="1"/>
+<maxCharSize>1</maxCharSize>
+</a5:CodePageEncoding>
+<a4:CompareInfo id="ref-15" xmlns:a4="http://schemas.microsoft.com/clr/ns/System.Globalization">
+<m_name href="#ref-18"/>
+<win32LCID>0</win32LCID>
+<culture>1033</culture>
+<m_SortVersion xsi:null="1"/>
+</a4:CompareInfo>
+<a4:TextInfo id="ref-16" xmlns:a4="http://schemas.microsoft.com/clr/ns/System.Globalization">
+<m_listSeparator xsi:null="1"/>
+<m_isReadOnly>true</m_isReadOnly>
+<m_cultureName href="#ref-18"/>
+<customCultureName href="#ref-18"/>
+<m_nDataItem>0</m_nDataItem>
+<m_useUserOverride>false</m_useUserOverride>
+<m_win32LangID>1033</m_win32LangID>
+</a4:TextInfo>
+<a4:NumberFormatInfo id="ref-17" xmlns:a4="http://schemas.microsoft.com/clr/ns/System.Globalization">
+<numberGroupSizes href="#ref-21"/>
+<currencyGroupSizes href="#ref-22"/>
+<percentGroupSizes href="#ref-21"/>
+<positiveSign id="ref-23">+</positiveSign>
+<negativeSign id="ref-24">-</negativeSign>
+<numberDecimalSeparator id="ref-25">.</numberDecimalSeparator>
+<numberGroupSeparator id="ref-26">,</numberGroupSeparator>
+<currencyGroupSeparator id="ref-27">,</currencyGroupSeparator>
+<currencyDecimalSeparator id="ref-28">.</currencyDecimalSeparator>
+<currencySymbol id="ref-29">$</currencySymbol>
+<ansiCurrencySymbol xsi:null="1"/>
+<nanSymbol id="ref-30">NaN</nanSymbol>
+<positiveInfinitySymbol id="ref-31">Infinity</positiveInfinitySymbol>
+<negativeInfinitySymbol id="ref-32">-Infinity</negativeInfinitySymbol>
+<percentDecimalSeparator href="#ref-25"/>
+<percentGroupSeparator href="#ref-26"/>
+<percentSymbol id="ref-33">%</percentSymbol>
+<perMilleSymbol id="ref-34">‰</perMilleSymbol>
+<nativeDigits href="#ref-35"/>
+<m_dataItem>0</m_dataItem>
+<numberDecimalDigits>2</numberDecimalDigits>
+<currencyDecimalDigits>2</currencyDecimalDigits>
+<currencyPositivePattern>0</currencyPositivePattern>
+<currencyNegativePattern>0</currencyNegativePattern>
+<numberNegativePattern>1</numberNegativePattern>
+<percentPositivePattern>0</percentPositivePattern>
+<percentNegativePattern>0</percentNegativePattern>
+<percentDecimalDigits>2</percentDecimalDigits>
+<digitSubstitution>1</digitSubstitution>
+<isReadOnly>true</isReadOnly>
+<m_useUserOverride>false</m_useUserOverride>
+<m_isInvariant>false</m_isInvariant>
+<validForParseAsNumber>true</validForParseAsNumber>
+<validForParseAsCurrency>true</validForParseAsCurrency>
+</a4:NumberFormatInfo>
+<a5:InternalEncoderBestFitFallback id="ref-19" xmlns:a5="http://schemas.microsoft.com/clr/ns/System.Text">
+<encoding href="#ref-11"/>
+<arrayBestFit xsi:null="1"/>
+<bIsMicrosoftBestFitFallback>true</bIsMicrosoftBestFitFallback>
+<EncoderFallback_x002B_bIsMicrosoftBestFitFallback>true</EncoderFallback_x002B_bIsMicrosoftBestFitFallback>
+</a5:InternalEncoderBestFitFallback>
+<a5:InternalDecoderBestFitFallback id="ref-20" xmlns:a5="http://schemas.microsoft.com/clr/ns/System.Text">
+<encoding href="#ref-11"/>
+<arrayBestFit xsi:null="1"/>
+<cReplacement>?</cReplacement>
+<bIsMicrosoftBestFitFallback>true</bIsMicrosoftBestFitFallback>
+<DecoderFallback_x002B_bIsMicrosoftBestFitFallback>true</DecoderFallback_x002B_bIsMicrosoftBestFitFallback>
+</a5:InternalDecoderBestFitFallback>
+<SOAP-ENC:Array id="ref-21" SOAP-ENC:arrayType="xsd:int[1]">
+<item>3</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-22" SOAP-ENC:arrayType="xsd:int[1]">
+<item>3</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-35" SOAP-ENC:arrayType="xsd:string[10]">
+<item id="ref-36">0</item>
+<item id="ref-37">1</item>
+<item id="ref-38">2</item>
+<item id="ref-39">3</item>
+<item id="ref-40">4</item>
+<item id="ref-41">5</item>
+<item id="ref-42">6</item>
+<item id="ref-43">7</item>
+<item id="ref-44">8</item>
+<item id="ref-45">9</item>
+</SOAP-ENC:Array>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

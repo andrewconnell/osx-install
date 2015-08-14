@@ -1,0 +1,9 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Split Temporary Variable">
+ <Language Name="*Neutral*">
+  <Section Name="Options">
+   <Option Name="Prefix" Value="Split" />
+   <Option Name="Suffix" Value="" />
+  </Section>
+ </Language>
+</Page>

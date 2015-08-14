@@ -1,0 +1,271 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Inversion">
+ <Language Name="Basic">
+  <Section Name="Header">
+   <Option Name="Count" Value="6" />
+  </Section>
+  <Section Name="Inversion0">
+   <Option Name="Name" Value="True &lt;--&gt; False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="%Identifier1% = %BooleanValue1% %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="%Identifier1% = «?InvertBoolean(%BooleanValue1%)» %EndOfLineComment1%" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Order" Value="0" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="MyIdentifier.Visible+%3d+True" />
+   <Option Name="Test_1" Value="Enabled+%3d+False" />
+  </Section>
+  <Section Name="Inversion1">
+   <Option Name="Name" Value="Simple Expression" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="%Identifier1% = %Identifier2% %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="%Identifier2% = %Identifier1% %EndOfLineComment1%" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Order" Value="1" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="A+%3d+B" />
+   <Option Name="Test_1" Value="C+%3d+D" />
+  </Section>
+  <Section Name="Inversion2">
+   <Option Name="Name" Value="for-loop increment (arbitrary step)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="(?i)For %Identifier1% (%As1% %NumericType1%)? = %Anything2% To %Anything1% Step \-%Integer1%" />
+   <Option Name="ReplaceWith" Value="For %Identifier1% %As1% %NumericType1% = %Anything1% To %Anything2% Step %Integer1%" />
+   <Option Name="Comment" Value="Matches a decrementing for-loop with an initialized iterator, and converts that to an incrementing for-loop." />
+   <Option Name="Order" Value="2" />
+   <Option Name="Test_Count" Value="4" />
+   <Option Name="Test_0" Value="For+i+%3d+20+To+10+Step+-2" />
+   <Option Name="Test_1" Value="For+i+%3d+GetEnd()+To+10+Step+-4" />
+   <Option Name="Test_2" Value="For+i+As+Integer+%3d+20+To+10+Step+-2" />
+   <Option Name="Test_3" Value="For+i+As+Integer+%3d+GetEnd()+To+10+Step+-4" />
+  </Section>
+  <Section Name="Inversion3">
+   <Option Name="Name" Value="for-loop increment (unit step)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="(?i)For %Identifier1% (%As1% %NumericType1%)? = %Anything2% To %Anything1% Step -1" />
+   <Option Name="ReplaceWith" Value="For %Identifier1% %As1% %NumericType1% = %Anything1% To %Anything2%" />
+   <Option Name="Comment" Value="Matches a decrementing for-loop with an initialized iterator, and converts that to an incrementing for-loop." />
+   <Option Name="Order" Value="3" />
+   <Option Name="Test_Count" Value="3" />
+   <Option Name="Test_0" Value="For+i+%3d+20+To+10+Step+-1" />
+   <Option Name="Test_1" Value="For+i+As+Integer+%3d+20+To+10+Step+-1" />
+   <Option Name="Test_2" Value="" />
+  </Section>
+  <Section Name="Inversion4">
+   <Option Name="Name" Value="for-loop decrement (arbitrary step)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="(?i)For %Identifier1% (%As1% %NumericType1%)? = %Anything2% To %Anything1% Step %Integer1%" />
+   <Option Name="ReplaceWith" Value="For %Identifier1% %As1% %NumericType1% = %Anything1% To %Anything2% Step -%Integer1%" />
+   <Option Name="Comment" Value="Matches an incrementing for-loop, and converts that to a decrementing for-loop." />
+   <Option Name="Order" Value="4" />
+   <Option Name="Test_Count" Value="4" />
+   <Option Name="Test_0" Value="For+i+%3d+10+To+20+Step+2" />
+   <Option Name="Test_1" Value="For+i+%3d+10+To+GetEnd()+Step+4" />
+   <Option Name="Test_2" Value="For+i+%3d+10+As+Integer+To+20+Step+2" />
+   <Option Name="Test_3" Value="For+i+%3d+10+As+Integer+To+GetEnd()+Step+4" />
+  </Section>
+  <Section Name="Inversion5">
+   <Option Name="Name" Value="for-loop decrement (unit step)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="(?i)For%mws1%%Identifier1% =%ws1%%Anything2%%mws2%To%mws3%%Anything1%" />
+   <Option Name="ReplaceWith" Value="For%mws1%%Identifier1% =%ws1%%Anything1%%mws2%To%mws3%%Anything2%%mws3%Step%ws1%-%ws1%1" />
+   <Option Name="Comment" Value="Matches an incrementing for-loop, and converts that to a decrementing for-loop." />
+   <Option Name="Order" Value="5" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="For+i+%3d+10+To+20" />
+   <Option Name="Test_1" Value="For+i+%3d+10+To+GetEnd()" />
+  </Section>
+ </Language>
+ <Language Name="CC++">
+  <Section Name="Header">
+   <Option Name="Count" Value="6" />
+  </Section>
+  <Section Name="Inversion0">
+   <Option Name="Name" Value="True &lt;--&gt; False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="%Identifier1% = %BooleanValue1% ;" />
+   <Option Name="ReplaceWith" Value="%Identifier1% = «?InvertBoolean(%BooleanValue1%)» ;" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Order" Value="0" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="MyIdentifier.Visible+%3d+true%3b" />
+   <Option Name="Test_1" Value="Enabled+%3d+false%3b" />
+  </Section>
+  <Section Name="Inversion1">
+   <Option Name="Name" Value="Simple Expression" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="%Identifier1% = %Identifier2% ;" />
+   <Option Name="ReplaceWith" Value="%Identifier2% = %Identifier1% ;" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Order" Value="1" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="A+%3d+B%3b" />
+   <Option Name="Test_1" Value="C+%3d+D%3b" />
+  </Section>
+  <Section Name="Inversion2">
+   <Option Name="Name" Value="for-loop decrement (&lt;=)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="for \(int %Identifier1% = %Anything2% ; %Identifier2% \&lt;= %Anything1% ; %Identifier3% \+\+ \)" />
+   <Option Name="ReplaceWith" Value="for (int %Identifier1% = %Anything1% ; %Identifier2% &gt;= %Anything2% ; %Identifier3% -- )" />
+   <Option Name="Comment" Value="Matches an incrementing for-loop with an upper bound determined by an expression  using the &quot;&lt;=&quot; operator, and converts that to a decrementing for-loop." />
+   <Option Name="Order" Value="2" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="for+(int+i+%3d+0%3b+i+%3c%3d+_DeletedNodes.Count+-+1%3b+i%2b%2b)" />
+   <Option Name="Test_1" Value="for+(int+i+%3d+lowIndex%3b+i+%3c%3d+highIndex%3b+i%2b%2b)" />
+  </Section>
+  <Section Name="Inversion3">
+   <Option Name="Name" Value="for-loop decrement (&lt;)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="for \(int%mws1%%Identifier1%%ws0%=%ws1%%Anything2% ; %Identifier2% \&lt; %Anything1% ; %Identifier3% \+\+ \)" />
+   <Option Name="ReplaceWith" Value="for (int%mws1%%Identifier1%%ws0%=%ws1%%Anything1%%ws1%-%ws1%1 ; %Identifier2% &gt;= %Anything2% ; %Identifier3% -- )" />
+   <Option Name="Comment" Value="Matches an incrementing for-loop with an upper bound determined by an expression  using the &quot;&lt;&quot; operator, and converts that to a decrementing for-loop." />
+   <Option Name="Order" Value="3" />
+   <Option Name="Test_Count" Value="4" />
+   <Option Name="Test_0" Value="for+(int+i+%3d+0%3b+i+%3c+_DeletedNodes.Count%3b+i%2b%2b)" />
+   <Option Name="Test_1" Value="for(int+i%3d0%3bi+%3c+_DeletedNodes.Count%3b+i%2b%2b)" />
+   <Option Name="Test_2" Value="for+++(int++++i++%3d++0++%3b+i++%3c++_DeletedNodes.Count++%3b+++i++%2b%2b++++)" />
+   <Option Name="Test_3" Value="for+(int+i+%3d+lowerBound%3b+i+%3c+numEntries%3b+i%2b%2b)" />
+  </Section>
+  <Section Name="Inversion4">
+   <Option Name="Name" Value="for-loop increment (-1)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="for \(int %Identifier1% = %Identifier4%%ws%-%ws%1 ; %Identifier2% &gt;= %Anything2% ; %Identifier3% \-\- \)" />
+   <Option Name="ReplaceWith" Value="for (int %Identifier1% = %Anything2% ; %Identifier2% &lt; %Identifier4% ; %Identifier3% ++ )" />
+   <Option Name="Comment" Value="Matches a decrementing for-loop with an initialized iterator set to an expression including &quot;-1&quot;, and converts that to an incrementing for-loop." />
+   <Option Name="Order" Value="4" />
+   <Option Name="Test_Count" Value="1" />
+   <Option Name="Test_0" Value="for+(int+i+%3d+_DeletedNodes.Count+-+1%3b+i+%3e%3d+0%3b+i--)" />
+  </Section>
+  <Section Name="Inversion5">
+   <Option Name="Name" Value="for-loop increment" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="for \(int %Identifier1% = %Anything1% ; %Identifier2% &gt;= %Anything2% ; %Identifier3% \-\- \)" />
+   <Option Name="ReplaceWith" Value="for (int %Identifier1% = %Anything2% ; %Identifier2% &lt;= %Anything1% ; %Identifier3% ++ )" />
+   <Option Name="Comment" Value="Matches a decrementing for-loop and converts that to an incrementing for-loop." />
+   <Option Name="Order" Value="5" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="for+(int+i+%3d+maxIndex%3b+i+%3e%3d+0%3b+i--)" />
+   <Option Name="Test_1" Value="for+(int+i+%3d+upperBound%3b+i+%3e%3d+lowerBound%3b+i--)" />
+  </Section>
+ </Language>
+ <Language Name="CSharp">
+  <Section Name="Header">
+   <Option Name="Count" Value="7" />
+  </Section>
+  <Section Name="Inversion0">
+   <Option Name="Name" Value="True &lt;--&gt; False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="%Identifier1% = %BooleanValue1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="%Identifier1% = «?InvertBoolean(%BooleanValue1%)» ; %EndOfLineComment1%" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Order" Value="0" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="MyIdentifier.Visible+%3d+true%3b" />
+   <Option Name="Test_1" Value="Enabled+%3d+false%3b" />
+  </Section>
+  <Section Name="Inversion1">
+   <Option Name="Name" Value="Simple Expression" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="%Identifier1% = %Identifier2% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="%Identifier2% = %Identifier1% ; %EndOfLineComment1%" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Order" Value="1" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="A+%3d+B%3b" />
+   <Option Name="Test_1" Value="C+%3d+D%3b" />
+  </Section>
+  <Section Name="Inversion2">
+   <Option Name="Name" Value="for-loop decrement (&lt;=)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="for \(int %Identifier1% = %Anything2% ; %Identifier2% \&lt;= %Anything1% ; %Identifier3% \+\+ \)" />
+   <Option Name="ReplaceWith" Value="for (int %Identifier1% = %Anything1% ; %Identifier2% &gt;= %Anything2% ; %Identifier3% -- )" />
+   <Option Name="Comment" Value="Matches an incrementing for-loop with an upper bound determined by an expression  using the &quot;&lt;=&quot; operator, and converts that to a decrementing for-loop." />
+   <Option Name="Order" Value="2" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="for+(int+i+%3d+0%3b+i+%3c%3d+_DeletedNodes.Count+-+1%3b+i%2b%2b)" />
+   <Option Name="Test_1" Value="for+(int+i+%3d+lowIndex%3b+i+%3c%3d+highIndex%3b+i%2b%2b)" />
+  </Section>
+  <Section Name="Inversion3">
+   <Option Name="Name" Value="for-loop decrement (&lt;)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="for \(int%mws1%%Identifier1%%ws0%=%ws1%%Anything2% ; %Identifier2% \&lt; %Anything1% ; %Identifier3% \+\+ \)" />
+   <Option Name="ReplaceWith" Value="for (int%mws1%%Identifier1%%ws0%=%ws1%%Anything1%%ws1%-%ws1%1 ; %Identifier2% &gt;= %Anything2% ; %Identifier3% -- )" />
+   <Option Name="Comment" Value="Matches an incrementing for-loop with an upper bound determined by an expression  using the &quot;&lt;&quot; operator, and converts that to a decrementing for-loop." />
+   <Option Name="Order" Value="3" />
+   <Option Name="Test_Count" Value="4" />
+   <Option Name="Test_0" Value="for+(int+i+%3d+0%3b+i+%3c+_DeletedNodes.Count%3b+i%2b%2b)" />
+   <Option Name="Test_1" Value="for(int+i%3d0%3bi+%3c+_DeletedNodes.Count%3b+i%2b%2b)" />
+   <Option Name="Test_2" Value="for+++(int++++i++%3d++0++%3b+i++%3c++_DeletedNodes.Count++%3b+++i++%2b%2b++++)" />
+   <Option Name="Test_3" Value="for+(int+i+%3d+lowerBound%3b+i+%3c+numEntries%3b+i%2b%2b)" />
+  </Section>
+  <Section Name="Inversion4">
+   <Option Name="Name" Value="for-loop increment (-1)" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="for \(int %Identifier1% = %Identifier4%%ws%-%ws%1 ; %Identifier2% &gt;= %Anything2% ; %Identifier3% \-\- \)" />
+   <Option Name="ReplaceWith" Value="for (int %Identifier1% = %Anything2% ; %Identifier2% &lt; %Identifier4% ; %Identifier3% ++ )" />
+   <Option Name="Comment" Value="Matches a decrementing for-loop with an initialized iterator set to an expression including &quot;-1&quot;, and converts that to an incrementing for-loop." />
+   <Option Name="Order" Value="4" />
+   <Option Name="Test_Count" Value="1" />
+   <Option Name="Test_0" Value="for+(int+i+%3d+_DeletedNodes.Count+-+1%3b+i+%3e%3d+0%3b+i--)" />
+  </Section>
+  <Section Name="Inversion5">
+   <Option Name="Name" Value="for-loop increment" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="for \(int %Identifier1% = %Anything1% ; %Identifier2% &gt;= %Anything2% ; %Identifier3% \-\- \)" />
+   <Option Name="ReplaceWith" Value="for (int %Identifier1% = %Anything2% ; %Identifier2% &lt;= %Anything1% ; %Identifier3% ++ )" />
+   <Option Name="Comment" Value="Matches a decrementing for-loop and converts that to an incrementing for-loop." />
+   <Option Name="Order" Value="5" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="for+(int+i+%3d+maxIndex%3b+i+%3e%3d+0%3b+i--)" />
+   <Option Name="Test_1" Value="for+(int+i+%3d+upperBound%3b+i+%3e%3d+lowerBound%3b+i--)" />
+  </Section>
+  <Section Name="Inversion6">
+   <Option Name="Name" Value="Typecast -- &quot;as&quot; to Explicit" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value="%Identifier1%%mws%as%mws%%Type1%" />
+   <Option Name="ReplaceWith" Value="(%Type1%)%Identifier1%" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Order" Value="6" />
+   <Option Name="Test_Count" Value="2" />
+   <Option Name="Test_0" Value="Note%3a+This+is+only+works+when+the+expression+is+on+a+line+by+itself.+Need+to+add+option+to+match+less+than+a+line%2c+and+not+to+allow+multiples." />
+   <Option Name="Test_1" Value="lActiveMethodCall+as+Method" />
+  </Section>
+ </Language>
+ <Language Name="*Neutral*">
+  <Section Name="Header">
+   <Option Name="Count" Value="2" />
+  </Section>
+  <Section Name="Inversion2">
+   <Option Name="TestCount" Value="1" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Order" Value="2" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value=" %Identifier1% = %Identifier2%;" />
+   <Option Name="Name" Value="Simple Expression" />
+   <Option Name="ReplaceWith" Value=" %Identifier2% = %Identifier1%;" />
+   <Option Name="Test0" Value="++a++%3d+++++++++++b%3b" />
+  </Section>
+  <Section Name="Inversion1">
+   <Option Name="TestCount" Value="2" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Test1" Value="++++++c+++++%3d+++d+++%3b" />
+   <Option Name="Order" Value="2" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="MatchWith" Value=" %Identifier1% = %Identifier2% ;" />
+   <Option Name="Name" Value="Simple Expression" />
+   <Option Name="ReplaceWith" Value=" %Identifier2% = %Identifier1% ;" />
+   <Option Name="Test0" Value="++a++%3d+++++++++++b%3b" />
+  </Section>
+  <Section Name="Inversion0">
+   <Option Name="TestCount" Value="2" />
+   <Option Name="Comment" Value="" />
+   <Option Name="Test1" Value="Enabled+%3d+false%3b" />
+   <Option Name="Order" Value="0" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Identifier1% = %BooleanValue1% ;" />
+   <Option Name="Name" Value="True &lt;--&gt; False" />
+   <Option Name="ReplaceWith" Value=" %Identifier1% = «?InvertBoolean(%BooleanValue1%)» ;" />
+   <Option Name="Test0" Value="MyIdentifier.Visible+%3d+true%3b" />
+  </Section>
+ </Language>
+</Page>

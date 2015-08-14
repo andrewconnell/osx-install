@@ -1,0 +1,32 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Setup">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="Enabled" Value="False" />
+  </Section>
+  <Section Name="Activate">
+   <Option Name="Interval" Value="100" />
+   <Option Name="LengthInCode" Value="2" />
+   <Option Name="LengthInComments" Value="4" />
+   <Option Name="LengthInStrings" Value="6" />
+  </Section>
+  <Section Name="Deactivate">
+   <Option Name="ByTime" Value="True" />
+   <Option Name="Interval" Value="2500" />
+   <Option Name="OnIgnore" Value="True" />
+   <Option Name="IgnoreCount" Value="5" />
+  </Section>
+  <Section Name="Case Sensitivity">
+   <Option Name="ExactMatchesOnly" Value="False" />
+   <Option Name="ExactMatchesOnlyWhenUppercaseCharsExist" Value="False" />
+   <Option Name="InexactMatchHighlightColor" Value="ARGB:255:204:0:0" />
+  </Section>
+  <Section Name="Suggestion Order">
+   <Option Name="SortOrder" Value="Length" />
+   <Option Name="RecentFirst" Value="True" />
+  </Section>
+  <Section Name="Preferences">
+   <Option Name="IgnoreCountToShowPicker" Value="0" />
+  </Section>
+ </Language>
+</Page>

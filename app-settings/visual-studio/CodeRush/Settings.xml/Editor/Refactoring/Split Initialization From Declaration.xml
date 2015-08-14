@@ -1,0 +1,9 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Split Initialization From Declaration">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="BelowDeclaration" Value="True" />
+   <Option Name="NearReference" Value="False" />
+  </Section>
+ </Language>
+</Page>

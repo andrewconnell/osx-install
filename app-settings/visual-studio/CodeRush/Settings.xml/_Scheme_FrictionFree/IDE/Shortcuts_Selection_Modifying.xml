@@ -1,0 +1,114 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Shortcuts_Selection_Modifying">
+ <Language Name="*Neutral*">
+  <Section Name="FolderInfo">
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Description" Value="Shortcuts for changing the contents of selections." />
+   <Option Name="FolderState" Value="Collapsed" />
+  </Section>
+  <Section Name="Header">
+   <Option Name="Count" Value="3" />
+  </Section>
+  <Section Name="Command0">
+   <Option Name="Key1.KeyState" Value="2621441" />
+   <Option Name="Key1.KeyCode" Value="222" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="SelectionComment" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="4" />
+   <Option Name="ContextSelected_0" Value="Editor\Selection\Any Selection\Multiple Lines" />
+   <Option Name="ContextSelected_1" Value="Editor\Selection\Any Selection\Whole Line" />
+   <Option Name="ContextSelected_2" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_3" Value="Language\Visual Basic" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command1">
+   <Option Name="Key1.KeyState" Value="3473409" />
+   <Option Name="Key1.KeyCode" Value="191" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="SelectionComment" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="6" />
+   <Option Name="ContextSelected_0" Value="Editor\Selection\Any Selection\Multiple Lines" />
+   <Option Name="ContextSelected_1" Value="Editor\Selection\Any Selection\Whole Line" />
+   <Option Name="ContextSelected_2" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextSelected_3" Value="Language\C#" />
+   <Option Name="ContextSelected_4" Value="Language\C++" />
+   <Option Name="ContextSelected_5" Value="Language\Java Script" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command2">
+   <Option Name="Key1.KeyState" Value="1507329" />
+   <Option Name="Key1.KeyCode" Value="73" />
+   <Option Name="Key1.Ctrl" Value="True" />
+   <Option Name="Key1.Shift" Value="True" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="SelectionInvert" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="4" />
+   <Option Name="ContextSelected_0" Value="Editor\Selection\Any Selection\Line Fragment" />
+   <Option Name="ContextSelected_1" Value="Editor\Selection\Any Selection\Multiple Lines" />
+   <Option Name="ContextSelected_2" Value="Editor\Selection\Any Selection\Whole Line" />
+   <Option Name="ContextSelected_3" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+ </Language>
+</Page>

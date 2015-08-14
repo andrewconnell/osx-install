@@ -1,0 +1,115 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="User">
+ <Language Name="Basic">
+  <Section Name="Header">
+   <Option Name="Count" Value="4" />
+  </Section>
+  <Section Name="Alias0">
+   <Option Name="Name" Value="%IdentifierStringOrNumber%" />
+   <Option Name="Value" Value="%IdentifierStringOrNumber%" />
+   <Option Name="Description" Value="%IdentifierStringOrNumber%" />
+   <Option Name="Extra_Count" Value="3" />
+   <Option Name="Extra_0" Value="+Sub+Identifier+(+ByVal+myvar+as+string+)++'My+comment" />
+   <Option Name="Extra_1" Value="+Function+Initialize+(++)+As+String+" />
+   <Option Name="Extra_2" Value="'+My+comment" />
+  </Section>
+  <Section Name="Alias1">
+   <Option Name="Name" Value="Declaration" />
+   <Option Name="Value" Value="%Accessibility%?(%FieldVarPrefix%%PartialIdentifier%)%mws%%As%%Type%" />
+   <Option Name="Description" Value="" />
+   <Option Name="Extra_Count" Value="2" />
+   <Option Name="Extra_0" Value="Public+m_MyVar+As+String" />
+   <Option Name="Extra_1" Value="Friend+m_MyVar+As+Integer()" />
+  </Section>
+  <Section Name="Alias2">
+   <Option Name="Name" Value="FieldVarPrefix" />
+   <Option Name="Value" Value="\b(_|m_)" />
+   <Option Name="Description" Value="Field variables start with either &quot;_&quot; or a &quot;m_&quot; characters. If your convention is different, you should modify the Value above accordingly." />
+   <Option Name="Extra_Count" Value="2" />
+   <Option Name="Extra_0" Value="_" />
+   <Option Name="Extra_1" Value="m_" />
+  </Section>
+  <Section Name="Alias3">
+   <Option Name="Name" Value="PrefixedMemberVar" />
+   <Option Name="Value" Value="(%FieldVarPrefix%%PartialIdentifier%)" />
+   <Option Name="Description" Value="Prefixed member variable. If your convention differs from the test results below, change the value above." />
+   <Option Name="Extra_Count" Value="7" />
+   <Option Name="Extra_0" Value="'+Following+should+match%3a" />
+   <Option Name="Extra_1" Value="m_MyVar" />
+   <Option Name="Extra_2" Value="_MyVar" />
+   <Option Name="Extra_3" Value="_MyOtherVar" />
+   <Option Name="Extra_4" Value="" />
+   <Option Name="Extra_5" Value="'+Following+should+*not*+match%3a" />
+   <Option Name="Extra_6" Value="MyVar" />
+  </Section>
+ </Language>
+ <Language Name="CC++">
+  <Section Name="Header">
+   <Option Name="Count" Value="3" />
+  </Section>
+  <Section Name="Alias0">
+   <Option Name="Name" Value="Declaration" />
+   <Option Name="Value" Value="%Accessibility%?(%Type%)(%mws%)(\b(_|m_))(%PartialIdentifier%)" />
+   <Option Name="Description" Value="" />
+   <Option Name="Extra_Count" Value="1" />
+   <Option Name="Extra_0" Value="private+bool+m_Param%3b" />
+  </Section>
+  <Section Name="Alias1">
+   <Option Name="Name" Value="FieldVarPrefix" />
+   <Option Name="Value" Value="\b(_|m_)" />
+   <Option Name="Description" Value="Field variables start with either &quot;_&quot; or a &quot;m_&quot; characters. If your convention is different, you should modify the Value above accordingly." />
+   <Option Name="Extra_Count" Value="1" />
+   <Option Name="Extra_0" Value="" />
+  </Section>
+  <Section Name="Alias2">
+   <Option Name="Name" Value="PrefixedMemberVar" />
+   <Option Name="Value" Value="%FieldVarPrefix%%PartialIdentifier%" />
+   <Option Name="Description" Value="Prefixed member variable. If your convention differs from the test results below, change the value above." />
+   <Option Name="Extra_Count" Value="7" />
+   <Option Name="Extra_0" Value="%2f%2f+Following+should+match%3a" />
+   <Option Name="Extra_1" Value="m_MyVar" />
+   <Option Name="Extra_2" Value="_MyVar" />
+   <Option Name="Extra_3" Value="_MyOtherVar" />
+   <Option Name="Extra_4" Value="" />
+   <Option Name="Extra_5" Value="%2f%2f+Following+should+*not*+match%3a" />
+   <Option Name="Extra_6" Value="MyVar" />
+  </Section>
+ </Language>
+ <Language Name="CSharp">
+  <Section Name="Header">
+   <Option Name="Count" Value="3" />
+  </Section>
+  <Section Name="Alias0">
+   <Option Name="Name" Value="Declaration" />
+   <Option Name="Value" Value="%Accessibility%?%Type%%mws%%PrivateMemberVar%" />
+   <Option Name="Description" Value="" />
+   <Option Name="Extra_Count" Value="1" />
+   <Option Name="Extra_0" Value="private+bool+m_Param%3b" />
+  </Section>
+  <Section Name="Alias1">
+   <Option Name="Name" Value="FieldVarPrefix" />
+   <Option Name="Value" Value="\b(_|m_)" />
+   <Option Name="Description" Value="Field variables start with either &quot;_&quot; or a &quot;m_&quot; characters. If your convention is different, you should modify the Value above accordingly." />
+   <Option Name="Extra_Count" Value="1" />
+   <Option Name="Extra_0" Value="" />
+  </Section>
+  <Section Name="Alias2">
+   <Option Name="Name" Value="PrefixedMemberVar" />
+   <Option Name="Value" Value="%FieldVarPrefix%%PartialIdentifier%" />
+   <Option Name="Description" Value="Prefixed member variable. If your convention differs from the test results below, change the value above." />
+   <Option Name="Extra_Count" Value="7" />
+   <Option Name="Extra_0" Value="%2f%2f+Following+should+match%3a" />
+   <Option Name="Extra_1" Value="m_MyVar" />
+   <Option Name="Extra_2" Value="_MyVar" />
+   <Option Name="Extra_3" Value="_MyOtherVar" />
+   <Option Name="Extra_4" Value="" />
+   <Option Name="Extra_5" Value="%2f%2f+Following+should+*not*+match%3a" />
+   <Option Name="Extra_6" Value="MyVar" />
+  </Section>
+ </Language>
+ <Language Name="*Neutral*">
+  <Section Name="Doc">
+   <Option Name="LastLanguage" Value="CSharp" />
+  </Section>
+ </Language>
+</Page>

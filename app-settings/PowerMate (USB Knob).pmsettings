@@ -1,0 +1,67 @@
+<PowerMateDoc>
+  <settings>
+    <lastUpdateCheck>4/26/2013 5:58:26 AM</lastUpdateCheck>
+    <showTaskbarIcon>True</showTaskbarIcon>
+  </settings>
+  <device name="PowerMate 1">
+    <settings>
+      <lastpath>\\?\hid#vid_077d&amp;pid_0410#8&amp;bff2070&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}</lastpath>
+      <sleepPulse>True</sleepPulse>
+      <pulse>False</pulse>
+      <pulseRate>7</pulseRate>
+      <ledBrightness>255</ledBrightness>
+    </settings>
+    <app name="Global Setting">
+      <action pmaction="ClockwiseRotate" caction="Volume Up" plugin="Volume">
+        <settings>
+          <description>Raise System Volume</description>
+        </settings>
+      </action>
+      <action pmaction="CounterClockwiseRotate" caction="Volume Down" plugin="Volume">
+        <settings>
+          <description>Lower System Volume</description>
+        </settings>
+      </action>
+      <action pmaction="Click" caction="Mute" plugin="Volume" />
+    </app>
+    <app image="Adobe Premiere Pro" name="Adobe Premiere Pro">
+      <settings>
+        <iconPath>C:\Program Files\Adobe\Adobe Premiere Pro CS6\Adobe Premiere Pro.exe</iconPath>
+      </settings>
+      <action pmaction="ClockwiseRotate" caction="Scroll Right" plugin="Scrolling">
+        <settings />
+      </action>
+      <action pmaction="CounterClockwiseRotate" caction="Scroll Left" plugin="Scrolling" />
+      <action pmaction="ClickClockwiseRotate" caction="Send Keys" plugin="Send Keys">
+        <panel>
+          <string>Right</string>
+        </panel>
+      </action>
+      <action pmaction="ClickCounterClockwiseRotate" caction="Send Keys" plugin="Send Keys">
+        <panel>
+          <string>Left</string>
+        </panel>
+      </action>
+    </app>
+    <app image="lync" name="Lync">
+      <settings>
+        <iconPath>C:\Program Files\Microsoft Office\Office15\lync.exe</iconPath>
+      </settings>
+      <action pmaction="Click" caction="Send Keys" plugin="Send Keys">
+        <panel>
+          <string>Win+F4</string>
+        </panel>
+      </action>
+    </app>
+    <app image="Adobe Audition CS6" name="Adobe Audition CS6">
+      <settings>
+        <iconPath>C:\Program Files (x86)\Adobe\Adobe Audition CS6\Adobe Audition CS6.exe</iconPath>
+      </settings>
+      <action pmaction="Click" caction="Send Keys" plugin="Send Keys">
+        <panel>
+          <string>Shift+Space</string>
+        </panel>
+      </action>
+    </app>
+  </device>
+</PowerMateDoc>

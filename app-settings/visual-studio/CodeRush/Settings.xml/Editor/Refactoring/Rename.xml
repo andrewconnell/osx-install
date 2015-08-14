@@ -1,0 +1,9 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Rename">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="EnableCrossFileRename" Value="True" />
+   <Option Name="UseCascade" Value="True" />
+  </Section>
+ </Language>
+</Page>

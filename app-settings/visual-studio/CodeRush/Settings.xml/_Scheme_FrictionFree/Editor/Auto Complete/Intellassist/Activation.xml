@@ -1,0 +1,25 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Activation">
+ <Language Name="*Neutral*">
+  <Section Name="Defaults">
+   <Option Name="InCode" Value="2" />
+   <Option Name="InStrings" Value="6" />
+   <Option Name="InComments" Value="4" />
+  </Section>
+  <Section Name="IntellassistCore">
+   <Option Name="InCode" Value="0" />
+   <Option Name="InStrings" Value="0" />
+   <Option Name="InComments" Value="0" />
+  </Section>
+  <Section Name="PathIntellassist">
+   <Option Name="InCode" Value="0" />
+   <Option Name="InStrings" Value="1" />
+   <Option Name="InComments" Value="0" />
+  </Section>
+  <Section Name="EnumIntellAssist">
+   <Option Name="InCode" Value="1" />
+   <Option Name="InStrings" Value="99" />
+   <Option Name="InComments" Value="99" />
+  </Section>
+ </Language>
+</Page>

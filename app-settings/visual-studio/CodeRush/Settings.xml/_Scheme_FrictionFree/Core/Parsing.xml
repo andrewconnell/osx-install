@@ -1,0 +1,25 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Parsing">
+ <Language Name="*Neutral*">
+  <Section Name="Parsing">
+   <Option Name="ParsingMode" Value="None" />
+   <Option Name="FullParseOnSave" Value="True" />
+   <Option Name="FullParseAfterTemplateEpansion" Value="False" />
+   <Option Name="LineChangeCommitIdleTime" Value="250" />
+   <Option Name="ChangeIdleTime" Value="1000" />
+   <Option Name="AutoParsingMode" Value="True" />
+   <Option Name="ParsingModeThreshold" Value="1000" />
+   <Option Name="LogMessages" Value="False" />
+   <Option Name="DisabledLanguages_Count" Value="0" />
+   <Option Name="UseDelayForLargeSolutions" Value="False" />
+   <Option Name="WaitTime" Value="30" />
+   <Option Name="LargeSolutionSize" Value="300" />
+  </Section>
+  <Section Name="Painting">
+   <Option Name="Enabled" Value="False" />
+   <Option Name="TextInsertionsColor" Value="ARGB:25:255:0:0" />
+   <Option Name="ParseRegionsColor" Value="ARGB:30:0:0:255" />
+   <Option Name="NodesToReplaceColor" Value="ARGB:130:0:128:0" />
+  </Section>
+ </Language>
+</Page>

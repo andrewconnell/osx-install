@@ -1,0 +1,1 @@
+{"version":1,"collections":[],"environments":[],"headerPresets":[{"id":"e11c0951-6753-94d4-2c8b-c1093d633ae5","name":"SP2013 REST GET (JSON)","headers":[{"key":"ACCEPT","value":"application/json;odata=verbose","type":"text"}],"timestamp":1383761032083}],"globals":[]}

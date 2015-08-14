@@ -1,0 +1,32 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Options Services">
+ <Language Name="*Neutral*">
+  <Section Name="Registered">
+   <Option Name="Categories_Count" Value="24" />
+   <Option Name="Categories_0" Value="Compatibility" />
+   <Option Name="Categories_1" Value="Core" />
+   <Option Name="Categories_2" Value="Core\Aliases" />
+   <Option Name="Categories_3" Value="Core\Aliases\Regular Expressions" />
+   <Option Name="Categories_4" Value="Diagnostics" />
+   <Option Name="Categories_5" Value="Editor" />
+   <Option Name="Categories_6" Value="Editor\Auto Complete" />
+   <Option Name="Categories_7" Value="Editor\Auto Complete\Intellassist" />
+   <Option Name="Categories_8" Value="Editor\Clipboard" />
+   <Option Name="Categories_9" Value="Editor\Code Analysis" />
+   <Option Name="Categories_10" Value="Editor\Code Cleanup" />
+   <Option Name="Categories_11" Value="Editor\Code Formatting" />
+   <Option Name="Categories_12" Value="Editor\Code Modification" />
+   <Option Name="Categories_13" Value="Editor\Code Style" />
+   <Option Name="Categories_14" Value="Editor\Navigation" />
+   <Option Name="Categories_15" Value="Editor\Organization" />
+   <Option Name="Categories_16" Value="Editor\Painting" />
+   <Option Name="Categories_17" Value="Editor\Refactoring" />
+   <Option Name="Categories_18" Value="Editor\Selections" />
+   <Option Name="Categories_19" Value="Editor\Text Commands" />
+   <Option Name="Categories_20" Value="Hinting" />
+   <Option Name="Categories_21" Value="IDE" />
+   <Option Name="Categories_22" Value="Tool Windows" />
+   <Option Name="Categories_23" Value="Unit Testing" />
+  </Section>
+ </Language>
+</Page>

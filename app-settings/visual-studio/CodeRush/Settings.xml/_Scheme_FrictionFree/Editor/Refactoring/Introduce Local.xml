@@ -1,0 +1,10 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Introduce Local">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="DefaultName" Value="NewVariable" />
+   <Option Name="TryToSuggestName" Value="True" />
+   <Option Name="EmbedInParens" Value="False" />
+  </Section>
+ </Language>
+</Page>

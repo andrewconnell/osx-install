@@ -1,0 +1,9 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Replace Nested Conditional">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="Enabled" Value="True" />
+   <Option Name="AddEmptyLine" Value="True" />
+  </Section>
+ </Language>
+</Page>

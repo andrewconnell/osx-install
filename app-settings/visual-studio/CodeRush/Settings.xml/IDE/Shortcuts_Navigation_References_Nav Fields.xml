@@ -1,0 +1,151 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Shortcuts_Navigation_References_Nav Fields">
+ <Language Name="*Neutral*">
+  <Section Name="FolderInfo">
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Description" Value="" />
+   <Option Name="FolderState" Value="Collapsed" />
+  </Section>
+  <Section Name="Header">
+   <Option Name="Count" Value="3" />
+  </Section>
+  <Section Name="Command0">
+   <Option Name="Key1.KeyState" Value="983041" />
+   <Option Name="Key1.KeyCode" Value="9" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="True" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="ReferencePrevious" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="3" />
+   <Option Name="ContextSelected_0" Value="Editor\Selection\Identifier Name" />
+   <Option Name="ContextSelected_1" Value="Editor\Selection\No Selection" />
+   <Option Name="ContextSelected_2" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextExcluded_Count" Value="13" />
+   <Option Name="ContextExcluded_0" Value="Editor\In Code Snippet Field" />
+   <Option Name="ContextExcluded_1" Value="Editor\Line\Before First Char" />
+   <Option Name="ContextExcluded_2" Value="System\Can Activate Next Field" />
+   <Option Name="ContextExcluded_3" Value="System\CodeFix UI is active" />
+   <Option Name="ContextExcluded_4" Value="System\In Linked Identifier" />
+   <Option Name="ContextExcluded_5" Value="System\In Nav Field" />
+   <Option Name="ContextExcluded_6" Value="System\In Nav Link" />
+   <Option Name="ContextExcluded_7" Value="System\In TextField" />
+   <Option Name="ContextExcluded_8" Value="System\Intellassist Active" />
+   <Option Name="ContextExcluded_9" Value="System\Intellisense Active" />
+   <Option Name="ContextExcluded_10" Value="System\Menu Active" />
+   <Option Name="ContextExcluded_11" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_12" Value="System\Text Replacer Is Active" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command1">
+   <Option Name="Key1.KeyState" Value="983041" />
+   <Option Name="Key1.KeyCode" Value="9" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="ReferenceNext" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="3" />
+   <Option Name="ContextSelected_0" Value="Editor\Selection\Identifier Name" />
+   <Option Name="ContextSelected_1" Value="Editor\Selection\No Selection" />
+   <Option Name="ContextSelected_2" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextExcluded_Count" Value="14" />
+   <Option Name="ContextExcluded_0" Value="Editor\In Code Snippet Field" />
+   <Option Name="ContextExcluded_1" Value="Editor\Line\AtEndOfLine(false)" />
+   <Option Name="ContextExcluded_2" Value="Editor\Line\Before First Char" />
+   <Option Name="ContextExcluded_3" Value="System\Can Activate Next Field" />
+   <Option Name="ContextExcluded_4" Value="System\CodeFix UI is active" />
+   <Option Name="ContextExcluded_5" Value="System\In Linked Identifier" />
+   <Option Name="ContextExcluded_6" Value="System\In Nav Field" />
+   <Option Name="ContextExcluded_7" Value="System\In Nav Link" />
+   <Option Name="ContextExcluded_8" Value="System\In TextField" />
+   <Option Name="ContextExcluded_9" Value="System\Intellassist Active" />
+   <Option Name="ContextExcluded_10" Value="System\Intellisense Active" />
+   <Option Name="ContextExcluded_11" Value="System\Menu Active" />
+   <Option Name="ContextExcluded_12" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_13" Value="System\Text Replacer Is Active" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+  <Section Name="Command2">
+   <Option Name="Key1.KeyState" Value="983041" />
+   <Option Name="Key1.KeyCode" Value="9" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="ReferenceNext" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="ContextSelected_Count" Value="4" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InIdentifier" />
+   <Option Name="ContextSelected_1" Value="Editor\Selection\Identifier Name" />
+   <Option Name="ContextSelected_2" Value="Editor\Selection\No Selection" />
+   <Option Name="ContextSelected_3" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextExcluded_Count" Value="14" />
+   <Option Name="ContextExcluded_0" Value="Editor\In Code Snippet Field" />
+   <Option Name="ContextExcluded_1" Value="Editor\Line\After First Char" />
+   <Option Name="ContextExcluded_2" Value="Editor\Line\AtEndOfLine" />
+   <Option Name="ContextExcluded_3" Value="Editor\Line\Caret in Whitespace" />
+   <Option Name="ContextExcluded_4" Value="System\Can Activate Next Field" />
+   <Option Name="ContextExcluded_5" Value="System\In Linked Identifier" />
+   <Option Name="ContextExcluded_6" Value="System\In Nav Field" />
+   <Option Name="ContextExcluded_7" Value="System\In Nav Link" />
+   <Option Name="ContextExcluded_8" Value="System\In TextField" />
+   <Option Name="ContextExcluded_9" Value="System\Intellassist Active" />
+   <Option Name="ContextExcluded_10" Value="System\Intellisense Active" />
+   <Option Name="ContextExcluded_11" Value="System\Menu Active" />
+   <Option Name="ContextExcluded_12" Value="System\Picker Is Active" />
+   <Option Name="ContextExcluded_13" Value="System\Text Replacer Is Active" />
+   <Option Name="Selected" Value="False" />
+  </Section>
+ </Language>
+</Page>

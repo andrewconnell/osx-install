@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TemplateCategory Name="Binding" OptExpanded="true">
+    <Template Name="ben" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>{Binding ElementName=«Caret»«Field(ControlName,Name of the control to bind to)»«BlockAnchor»,Path=«Field(PropertyName,Name of the property to bind to)»}</Body>
+        <Context />
+      </Expansion>
+    </Template>
+    <Template Name="btp" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>{Binding RelativeSource={RelativeSource TemplatedParent}, Path=«Caret»«Field(Property,Property to bind to.)»«BlockAnchor»}</Body>
+        <Context />
+      </Expansion>
+    </Template>
+    <Template Name="tb?DependProp?" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>«?Get(DependProp)»="{TemplateBinding «?Get(DependProp)»}"</Body>
+        <Context />
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+  <TemplateCategory Name="Elements" OptExpanded="true">
+    <TemplateCategory Name="Controls" OptExpanded="true">
+      <Template Name="b" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Button x:Name="«Caret»«Field(Button1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/Button&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="b," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Button&gt;
+	«Caret»
+&lt;/Button&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="cb" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;ComboBox x:Name="«Caret»«Field(ComboBox1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/ComboBox&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="cb," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;ComboBox&gt;
+	«Caret»
+&lt;/ComboBox&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lb" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;ListBox x:Name="«Caret»«Field(ListBox1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/ListBox&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="lb," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;ListBox&gt;
+	«Caret»
+&lt;/ListBox&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="sl" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Comment>&lt;Slider&gt;</Comment>
+        <Expansion Priority="0">
+          <Body>&lt;Slider x:Name="«Caret»«Field(Slider1)»«BlockAnchor»" Minimum="«Field(0,Minimum value)»" Maximum="«Field(100,Maximum value)»"/&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tb" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Comment>&lt;TextBlock&gt;</Comment>
+        <Expansion Priority="0">
+          <Body>&lt;TextBlock x:Name="«Caret»«Field(TextBlock1)»«BlockAnchor»" Text="«Field»" Width="Auto" Height="Auto" /&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tb," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Comment>&lt;TextBlock&gt;</Comment>
+        <Expansion Priority="0">
+          <Body>&lt;TextBlock Text="«Caret»«Field»" Width="Auto" Height="Auto" /&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tbx" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;TextBox x:Name="«Caret»«Field(TextBox1)»«BlockAnchor»"&gt;«Field(Text)»&lt;/TextBox&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tbx," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;TextBox&gt;«Caret»«Field(Text)»«BlockAnchor»&lt;/TextBox&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Decorators" OptExpanded="true">
+      <Template Name="bd" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Border x:Name="«Caret»«Field(Border1)»«BlockAnchor»"
+        BorderBrush="«Field(Black)»"
+				CornerRadius="«Field(1)»" 
+				Padding="«Field(0)»"&gt;
+	«Target»
+&lt;/Border&gt;
+</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="bd," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Border BorderBrush="«Caret»«Field(Black)»«BlockAnchor»"
+				CornerRadius="«Field(1)»" 
+				Padding="«Field(0)»"&gt;
+	«Target»
+&lt;/Border&gt;
+</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Panels" OptExpanded="true">
+      <Template Name="g" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Grid x:Name="«Caret»«Field(Grid1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/Grid&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="g," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Grid&gt;
+	«Caret»
+&lt;/Grid&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="sp" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;StackPanel x:Name="«Caret»«Field(StackPanel1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/StackPanel&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="sp," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;StackPanel&gt;
+	«Caret»
+&lt;/StackPanel&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="sph" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;StackPanel x:Name="«Caret»«Field(StackPanel1)»«BlockAnchor»" Orientation="Horizontal"&gt;
+	«Target»
+&lt;/StackPanel&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="sph," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;StackPanel Orientation="Horizontal"&gt;
+	«Caret»
+&lt;/StackPanel&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="vb" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Viewbox x:Name="«Caret»«Field(Viewbox1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/Viewbox&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="vb," ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Viewbox&gt;
+	«Caret»
+&lt;/Viewbox&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Shapes" OptExpanded="true">
+      <Template Name="r" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Rectangle Width="«Caret»«Field(100)»«BlockAnchor»" Height="«Field(70)»" Fill="«Field(Red)»"«Target»/&gt;</Body>
+          <Context>
+            <Selected>Editor\Line\OnEmptyLine</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <Template Name="i" ExpansionTrigger="Both" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>&lt;Image Source="«Caret»C:\«BlockAnchor»" /&gt;</Body>
+        <Context>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+  <TemplateCategory Name="Properties" OptExpanded="true">
+    <Template Name="hac" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>HorizontalAlignment="Center"</Body>
+        <Context />
+      </Expansion>
+    </Template>
+    <Template Name="m4" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>Margin="4"</Body>
+        <Context />
+      </Expansion>
+    </Template>
+    <Template Name="ns" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>xmlns:«Caret»«Field(name)»«BlockAnchor»="clr-namespace:«Field(Namespace)»;assembly=«Field(AssemblyName)»"</Body>
+        <Context />
+      </Expansion>
+    </Template>
+    <Template Name="nsl" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>xmlns:local="clr-namespace:«Caret»«Field(Namespace)»«BlockAnchor»"</Body>
+        <Context />
+      </Expansion>
+    </Template>
+    <Template Name="xk" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>x:Key="«Caret»«Field(KeyName)»«BlockAnchor»"«Target»</Body>
+        <Context />
+      </Expansion>
+    </Template>
+    <Template Name="xn" CaseSensitiveName="false">
+      <Expansion Priority="0">
+        <Body>x:Name="«Caret»«Field(Name)»«BlockAnchor»"«Target»</Body>
+        <Context />
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+  <TemplateCategory Name="Styles &amp; Templates" OptExpanded="true">
+    <Template Name="ct" CaseSensitiveName="false">
+      <Comment>&lt;ControlTemplate&gt;</Comment>
+      <Expansion Priority="0">
+        <Body>&lt;ControlTemplate TargetType="{x:Type «Caret»«Field(namespace)»«BlockAnchor»:«Field(ControlType)»}"&gt;
+  «Target»
+&lt;/ControlTemplate&gt;</Body>
+        <Context>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="ctt" CaseSensitiveName="false">
+      <Comment>&lt;ControlTemplate.Triggers&gt;</Comment>
+      <Expansion Priority="0">
+        <Body>&lt;ControlTemplate.Triggers&gt;
+  «:t»
+&lt;/ControlTemplate.Triggers&gt;
+</Body>
+        <Context>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s" CaseSensitiveName="false">
+      <Comment>Simple &lt;Style&gt;</Comment>
+      <Expansion Priority="0">
+        <Body>&lt;Style TargetType="{x:Type «Caret»«Field(namespace)»«BlockAnchor»:«Field(ControlType)»}"&gt;
+  «Target»
+&lt;/Style&gt;</Body>
+        <Context>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="st" CaseSensitiveName="false">
+      <Comment>Style with Template setter</Comment>
+      <Expansion Priority="0">
+        <Body>&lt;Style TargetType="{x:Type «Caret»«FieldStart»«Link(namespace)»«FieldEnd»«BlockAnchor»:«FieldStart»«Link(Type)»«FieldEnd»}"&gt;
+	&lt;Setter Property="Template"&gt;
+		&lt;Setter.Value&gt;
+			&lt;ControlTemplate TargetType="{x:Type «Link(namespace)»:«Link(Type)»}"&gt;
+				«Target»
+			&lt;/ControlTemplate&gt;
+		&lt;/Setter.Value&gt;
+	&lt;/Setter&gt;
+&lt;/Style&gt;</Body>
+        <Context>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="t" ExpansionTrigger="Both" CaseSensitiveName="false">
+      <Comment>&lt;Trigger&gt;</Comment>
+      <Expansion Priority="0">
+        <Body>&lt;Trigger Property="«Caret»«Field(Name,Property to watch)»«BlockAnchor»" Value="«Field(Value,Specify the value to trigger the response)»"&gt;
+  &lt;Setter TargetName="«Field(ElementName,Name of the template element to change)»" Property="«Field(Name,Property to change)»" Value="«Field(Value,The new value for the property)»"/&gt;
+&lt;/Trigger&gt;
+«Target»</Body>
+        <Context>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+</Templates>

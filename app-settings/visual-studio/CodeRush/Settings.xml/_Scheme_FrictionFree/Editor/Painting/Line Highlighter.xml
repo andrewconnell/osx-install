@@ -1,0 +1,10 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Line Highlighter">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="Enabled" Value="False" />
+   <Option Name="LineColor" Value="ARGB:255:186:255:173" />
+   <Option Name="Opacity" Value="67" />
+  </Section>
+ </Language>
+</Page>

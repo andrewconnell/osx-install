@@ -1,0 +1,24 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Code Previews">
+ <Language Name="*Neutral*">
+  <Section Name="Emphasis">
+   <Option Name="Highlight" Value="True" />
+   <Option Name="AdjustContrast" Value="False" />
+  </Section>
+  <Section Name="Contrast">
+   <Option Name="LowValue" Value="84" />
+   <Option Name="EvenLowerValue" Value="68" />
+  </Section>
+  <Section Name="Highlighting">
+   <Option Name="Background" Value="ARGB:255:254:255:169" />
+   <Option Name="Text" Value="Named:Black" />
+   <Option Name="Border" Value="ARGB:255:200:201:87" />
+   <Option Name="UseDefaultBackground" Value="False" />
+   <Option Name="UseDefaultText" Value="False" />
+   <Option Name="DrawBorder" Value="True" />
+  </Section>
+  <Section Name="Hint">
+   <Option Name="DrawShadows" Value="True" />
+  </Section>
+ </Language>
+</Page>

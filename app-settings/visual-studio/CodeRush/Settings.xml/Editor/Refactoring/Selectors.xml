@@ -1,0 +1,15 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Selectors">
+ <Language Name="*Neutral*">
+  <Section Name="TargetPicker">
+   <Option Name="LineColor" Value="Named:Red" />
+   <Option Name="FillColor" Value="Named:Red" />
+   <Option Name="FillOpacity" Value="50" />
+  </Section>
+  <Section Name="Options">
+   <Option Name="SelectorColor" Value="ARGB:255:106:153:195" />
+   <Option Name="CheckedSelectorColor" Value="Named:Tomato" />
+   <Option Name="FillOpacity" Value="20" />
+  </Section>
+ </Language>
+</Page>

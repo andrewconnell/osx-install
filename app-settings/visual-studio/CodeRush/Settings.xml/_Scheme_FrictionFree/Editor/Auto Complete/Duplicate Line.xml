@@ -1,0 +1,620 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Duplicate Line">
+ <Language Name="Basic">
+  <Section Name="Header">
+   <Option Name="Count" Value="12" />
+  </Section>
+  <Section Name="Regex0">
+   <Option Name="Name" Value="Local Variable" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Dim1%%Identifier1%%mws1%%As1%%Type1%%Initialization1%? %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Dim1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25mws1%25%25As1%25%25Type1%25%25Initialization1%25+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates local initialized variables." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="0" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex1">
+   <Option Name="Name" Value="Initialized Integer Field" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%TypeDeclarationModifier1%?%Identifier1%%mws1%%As1%%NumericType1% = %Integer1% %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25TypeDeclarationModifier1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25mws1%25%25As1%25%25NumericType1%25+%3d++%c2%ab%3fIncInteger(%25Integer1%25)%c2%bb%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates integer fields initialized to an integer value. The initialized value is incremented by one for the duplicated line." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="1" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex2">
+   <Option Name="Name" Value="Initialized Field" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%TypeDeclarationModifier1%?%Identifier1%%mws1%%As1%%Type1%%Initialization1% %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25TypeDeclarationModifier1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25mws1%25%25As1%25%25Type1%25%25Initialization1%25+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates an initialized field declaration (bringing the initialization to the new line)." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="2" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex3">
+   <Option Name="Name" Value="Flagged Enum Element" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Identifier1% = %Integer1% %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+%3d+%c2%ab%3fDoubleInteger(%25Integer1%25)%c2%bb+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates an initialized element of an enumeration, doubling the initialized value on the next line." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="3" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="0" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex4">
+   <Option Name="Name" Value="Event" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%SharedModifier1%?(?i)event%mws1%%Identifier1%%mws2%%As1%%Type1% %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25SharedModifier1%25Event%25mws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25mws2%25%25As1%25%25Type1%25+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates event declarations, like &quot;Public Event FileOpened As FileOpenedHandler&quot;" />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="4" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex5">
+   <Option Name="Name" Value="Field" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%TypeDeclarationModifier1%?%Identifier1%%mws1%%As1%%Type1% %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25TypeDeclarationModifier1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25mws1%25%25As1%25%25Type1%25+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates field declarations." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="5" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex6">
+   <Option Name="Name" Value="Method (interface)" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %SubOrFunction1%%Identifier1% \( %ParamsDec1%? \) (%As1%%Type1%)? %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25SubOrFunction1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+(+%25ParamsDec1%25+)+%25As1%25%25Type1%25+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates method declarations when inside an interface." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="6" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="1" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InInterface" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex7">
+   <Option Name="Name" Value="Property (interface)" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Property1%(%ReadOnlyModifier1%|%WriteOnlyModifier1%)?%Identifier1% \( %ParamsDec1%? \)%mws1%?%As1%?%Type1%? %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="%25Property1%25%25ReadOnlyModifier1%25%25WriteOnlyModifier1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb(%25ParamsDec1%25+)%25mws1%25%25As1%25%25Type1%25+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates property declarations when inside an interface." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="7" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="1" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InInterface" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex8">
+   <Option Name="Name" Value="Imports" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value="(?i)Imports %Anything1%" />
+   <Option Name="ReplaceWith" Value="Imports+%c2%abBlockAnchor%c2%bb%25Anything1%25%c2%abCursor%c2%bb" />
+   <Option Name="Comment" Value="Duplicates using statements." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="8" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="0" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex9">
+   <Option Name="Name" Value="If TypeOf aa Is bb..." />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" (?i)(%ws1%else)?If TypeOf %IdentifierWithOptionalIndex1%%mws2%is %Identifier2% Then %EndOfLineComment%?" />
+   <Option Name="ReplaceWith" Value="+Dim+%c2%abBlockAnchor%c2%bb%c2%ab%3fFormatLocalName(%25Identifier2%25)%c2%bb+As+%25Identifier2%25+%3d+CType(%25IdentifierWithOptionalIndex1%25%2c%25Identifier2%25)%c2%abCursor%c2%bb" />
+   <Option Name="Comment" Value="Matches &quot;if (aa is bb)&quot; to produce a new block declaring a new local variable of type bb, initialized to aa." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="False" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="9" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex10">
+   <Option Name="Name" Value="Method Call" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Identifier1%\( %Anything1%? \) %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Identifier1%25(+%c2%abCaret%c2%bb%25Anything1%25%c2%abBlockAnchor%c2%bb+)+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Matches a method call and creates a new duplicate method call on the next line, with the arguments selected." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="10" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex11">
+   <Option Name="Name" Value="Field (short declaration)" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%TypeDeclarationModifier1%?%Identifier1%%mws1%%As1% New %Type1% %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25TypeDeclarationModifier1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25mws1%25%25As1%25+New+%25Type1%25+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates a short field declaration." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="11" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+ </Language>
+ <Language Name="CC++">
+  <Section Name="Header">
+   <Option Name="Count" Value="9" />
+  </Section>
+  <Section Name="Regex0">
+   <Option Name="Name" Value="Local Variable" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Type1%%ws1%?%Identifier1%%Initialization1%? ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Type1%25%25ws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25Initialization1%25+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates local initialized variables." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="0" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex1">
+   <Option Name="Name" Value="Initialized Integer Field" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %TypeDeclarationModifier1%?%NumericType1%%ws1%?%Identifier1% = %Integer1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="%25TypeDeclarationModifier1%25%25NumericType1%25%25ws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+%3d+%c2%ab%3fIncInteger(%25Integer1%25)%c2%bb%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates integer fields initialized to an integer value. The initialized value is incremented by one for the duplicated line." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="1" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex2">
+   <Option Name="Name" Value="Flagged Enum Element" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Identifier1% = %Integer1% , %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+%3d+%c2%ab%3fDoubleInteger(%25Integer1%25)%c2%bb+%2c+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates an initialized element of an enumeration, doubling the initialized value on the next line." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="2" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="0" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex3">
+   <Option Name="Name" Value="Initialized Field" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %TypeDeclarationModifier1%?%Type1%%ws1%?%Identifier1%%Initialization1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="%25TypeDeclarationModifier1%25%25Type1%25%25ws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25Initialization1%25%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates an initialized field declaration (bringing the initialization to the new line)." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="3" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex4">
+   <Option Name="Name" Value="Field" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %TypeDeclarationModifier1%?%Type1%%ws1%?%Identifier1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="%25TypeDeclarationModifier1%25%25Type1%25%25ws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates field declarations." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="4" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex5">
+   <Option Name="Name" Value="Method (interface)" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Type1%%ws1%?%Identifier1% \( %ParamsDec1%? \) ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Type1%25%25ws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+(+%25ParamsDec1%25+)+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates method declarations when inside an interface." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="5" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="1" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InInterface" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex6">
+   <Option Name="Name" Value="Assignment Statement" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %IdentifierWithOptionalIndex1% = %Anything1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%c2%abBlockAnchor%c2%bb%25IdentifierWithOptionalIndex1%25%c2%abCursor%c2%bb+%3d+%25Anything1%25+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates an assignment statement, selecting the left side of the statement." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="6" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex7">
+   <Option Name="Name" Value="If (aa is bb)..." />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value="%ws1%(else%mws1%)?if \(%IdentifierWithOptionalIndex1%%mws2%is %Identifier2%\) %EndOfLineComment%?" />
+   <Option Name="ReplaceWith" Value="%25ws1%25%7b%0d%0a%25ws1%25++%c2%abBlockAnchor%c2%bb%25Identifier2%25+%c2%ab%3fFormatLocalName(%25Identifier2%25)%c2%bb+%3d+(%25Identifier2%25)%25IdentifierWithOptionalIndex1%25%3b%c2%abCursor%c2%bb%0d%0a%25ws1%25%7d" />
+   <Option Name="Comment" Value="Matches &quot;if (aa is bb)&quot; to produce a new block declaring a new local variable of type bb, initialized to aa." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="False" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="7" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex8">
+   <Option Name="Name" Value="Method Call" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Identifier1%\( %Arguments1%? \) ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Identifier1%25(+%c2%abCaret%c2%bb%25Arguments1%25%c2%abBlockAnchor%c2%bb+)+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Matches a method call and creates a new duplicate method call on the next line, with the arguments selected." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="8" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+ </Language>
+ <Language Name="CSharp">
+  <Section Name="Header">
+   <Option Name="Count" Value="13" />
+  </Section>
+  <Section Name="Regex0">
+   <Option Name="Name" Value="Local Variable" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Type1%%mws1%%Identifier1%%Initialization1%? ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Type1%25%25mws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25Initialization1%25+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates local initialized variables." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="0" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex1">
+   <Option Name="Name" Value="Initialized Integer Field" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%TypeDeclarationModifier1%?%NumericType1%%mws1%%Identifier1% = %Integer1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25TypeDeclarationModifier1%25%25NumericType1%25%25mws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+%3d++%c2%ab%3fIncInteger(%25Integer1%25)%c2%bb%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates integer fields initialized to an integer value. The initialized value is incremented by one for the duplicated line." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="1" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex2">
+   <Option Name="Name" Value="Flagged Enum Element" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Identifier1% = %Integer1% , %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+%3d+%c2%ab%3fDoubleInteger(%25Integer1%25)%c2%bb+%2c+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates an initialized element of an enumeration, doubling the initialized value on the next line." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="2" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="0" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex3">
+   <Option Name="Name" Value="Initialized Field" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%TypeDeclarationModifier1%?%Type1%%mws1%%Identifier1%%Initialization1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25TypeDeclarationModifier1%25%25Type1%25%25mws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb%25Initialization1%25+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates an initialized field declaration (bringing the initialization to the new line)." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="3" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex4">
+   <Option Name="Name" Value="Event" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%StaticModifier1%?event%mws1%%Type1%%mws2%%Identifier1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25StaticModifier1%25event%25mws1%25%25Type1%25%25mws2%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates event declarations, like &quot;public event FileOpenedHandler FileOpened;&quot;" />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="4" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex5">
+   <Option Name="Name" Value="Field" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%TypeDeclarationModifier1%?%Type1%%mws1%%Identifier1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25TypeDeclarationModifier1%25%25Type1%25%25mws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates field declarations." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="5" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex6">
+   <Option Name="Name" Value="Method (interface)" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Type1%%mws1%%Identifier1% \( %ParamsDec1%? \) ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Type1%25%25mws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+(+%25ParamsDec1%25+)+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates method declarations when inside an interface." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="6" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="1" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InInterface" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex7">
+   <Option Name="Name" Value="Property (interface)" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Type1%%mws1%%Identifier1% { %InterfacePropertyAccessors1% } %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Type1%25%25mws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+%7b+%25InterfacePropertyAccessors1%25+%7d+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates property declarations when inside an interface." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="7" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="1" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InInterface" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex8">
+   <Option Name="Name" Value="Using" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value="using %Anything1% ;" />
+   <Option Name="ReplaceWith" Value="using+%c2%abBlockAnchor%c2%bb%25Anything1%25%c2%abCursor%c2%bb+%3b" />
+   <Option Name="Comment" Value="Duplicates using statements." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="8" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="0" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex9">
+   <Option Name="Name" Value="Assignment Statement" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %IdentifierWithOptionalIndex1% = %Anything1% ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%c2%abBlockAnchor%c2%bb%25IdentifierWithOptionalIndex1%25%c2%abCursor%c2%bb+%3d+%25Anything1%25+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates an assignment statement, selecting the left side of the statement." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="9" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex10">
+   <Option Name="Name" Value="If (aa is bb)..." />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value="%ws1%(else%mws1%)?if \(%IdentifierWithOptionalIndex1%%mws2%is %Identifier2%\) %EndOfLineComment%?" />
+   <Option Name="ReplaceWith" Value="%25ws1%25%7b%0d%0a%25ws1%25++%c2%abBlockAnchor%c2%bb%25Identifier2%25+%c2%ab%3fFormatLocalName(%25Identifier2%25)%c2%bb+%3d+(%25Identifier2%25)%25IdentifierWithOptionalIndex1%25%3b%c2%abCursor%c2%bb%0d%0a%25ws1%25%7d" />
+   <Option Name="Comment" Value="Matches &quot;if (aa is bb)&quot; to produce a new block declaring a new local variable of type bb, initialized to aa." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="False" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="10" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex11">
+   <Option Name="Name" Value="Method Call" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Identifier1%%GenericArgs1%?\( %Arguments1%? \) ; %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Identifier1%25%25GenericArgs1%25(+%c2%abCaret%c2%bb%25Arguments1%25%c2%abBlockAnchor%c2%bb+)+%3b+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Matches a method call and creates a new duplicate method call on the next line, with the arguments selected." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="11" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InMethod" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InPropertyAccessor" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+  <Section Name="Regex12">
+   <Option Name="Name" Value="Property (auto-implemented)" />
+   <Option Name="Enabled" Value="False" />
+   <Option Name="MatchWith" Value=" %Accessibility1%?%Type1%%mws1%%Identifier1% { %InterfacePropertyAccessors1% } %EndOfLineComment1%?" />
+   <Option Name="ReplaceWith" Value="+%25Accessibility1%25%25Type1%25%25mws1%25%c2%abBlockAnchor%c2%bb%25Identifier1%25%c2%abCursor%c2%bb+%7b+%25InterfacePropertyAccessors1%25+%7d+%25EndOfLineComment1%25" />
+   <Option Name="Comment" Value="Duplicates property declarations when inside an interface." />
+   <Option Name="IsRegEx" Value="False" />
+   <Option Name="PreserveWhiteSpace" Value="True" />
+   <Option Name="OptionalWhiteSpace" Value="True" />
+   <Option Name="StripWhiteSpace" Value="False" />
+   <Option Name="StripComment" Value="False" />
+   <Option Name="Order" Value="13" />
+   <Option Name="Test_Count" Value="0" />
+   <Option Name="ContextSelected_Count" Value="2" />
+   <Option Name="ContextSelected_0" Value="Editor\Code\InClass" />
+   <Option Name="ContextSelected_1" Value="Editor\Code\InStruct" />
+   <Option Name="ContextExcluded_Count" Value="0" />
+  </Section>
+ </Language>
+ <Language Name="*Neutral*">
+  <Section Name="Doc">
+   <Option Name="LastLanguage" Value="CSharp" />
+  </Section>
+ </Language>
+</Page>

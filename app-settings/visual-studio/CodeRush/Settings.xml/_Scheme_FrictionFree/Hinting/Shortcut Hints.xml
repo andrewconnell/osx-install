@@ -1,0 +1,9 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Shortcut Hints">
+ <Language Name="*Neutral*">
+  <Section Name="Settings">
+   <Option Name="Enabled" Value="False" />
+  </Section>
+  <Section Name="Suppress" />
+ </Language>
+</Page>

@@ -1,0 +1,85 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/sp-0365-rest"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/reveal.js"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/pres-sp15workflow-restapi"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/pres-sp15rest-breeze"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/pres-sp15dev-modern-workshop"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/pres-sp15app-ng-spa"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/pres-my-presentations.wiki"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/pres-my-presentations"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/node-xmp-marker"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/node-ps-course/.idea"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/node-ps-course-builder"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/node-ps-course"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/node-ps-assessment"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/ng-demos"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/courses/ps-o365api-core"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/courses/ps-o365api-contacts"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/courses"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Repositories/acnodejs01"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell/Desktop"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/andrewconnell"
+		}
+	]
+}

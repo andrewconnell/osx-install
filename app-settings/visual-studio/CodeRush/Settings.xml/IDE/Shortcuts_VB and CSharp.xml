@@ -1,0 +1,47 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Shortcuts_VB and CSharp">
+ <Language Name="*Neutral*">
+  <Section Name="FolderInfo">
+   <Option Name="Enabled" Value="True" />
+   <Option Name="Description" Value="" />
+   <Option Name="FolderState" Value="Expanded" />
+  </Section>
+  <Section Name="Header">
+   <Option Name="Count" Value="1" />
+  </Section>
+  <Section Name="Command0">
+   <Option Name="Key1.KeyState" Value="2555905" />
+   <Option Name="Key1.KeyCode" Value="186" />
+   <Option Name="Key1.Ctrl" Value="False" />
+   <Option Name="Key1.Shift" Value="False" />
+   <Option Name="Key1.Alt" Value="False" />
+   <Option Name="Key1.RightSide" Value="False" />
+   <Option Name="Key1.Extended" Value="False" />
+   <Option Name="Key2.KeyState" Value="0" />
+   <Option Name="Key2.KeyCode" Value="0" />
+   <Option Name="Key2.Ctrl" Value="False" />
+   <Option Name="Key2.Shift" Value="False" />
+   <Option Name="Key2.Alt" Value="False" />
+   <Option Name="Key2.RightSide" Value="False" />
+   <Option Name="Key2.Extended" Value="False" />
+   <Option Name="Command" Value="TemplateExpand" />
+   <Option Name="Comments" Value="" />
+   <Option Name="Parameters" Value="#space#" />
+   <Option Name="SendKeyToIDE" Value="False" />
+   <Option Name="Binding" Value="0" />
+   <Option Name="MouseAction" Value="0" />
+   <Option Name="ShiftKeyDown" Value="False" />
+   <Option Name="CtrlKeyDown" Value="False" />
+   <Option Name="AltKeyDown" Value="False" />
+   <Option Name="Enabled" Value="True" />
+   <Option Name="ContextSelected_Count" Value="3" />
+   <Option Name="ContextSelected_0" Value="Editor\Line\AtEndOfLine" />
+   <Option Name="ContextSelected_1" Value="Focus\Documents\Source\Code Editor" />
+   <Option Name="ContextExcluded_Count" Value="2" />
+   <Option Name="ContextExcluded_0" Value="Editor\Code\InComment" />
+   <Option Name="ContextExcluded_1" Value="Editor\Code\InString" />
+   <Option Name="Selected" Value="True" />
+   <Option Name="ContextSelected_2" Value="Language\Visual Basic" />
+  </Section>
+ </Language>
+</Page>

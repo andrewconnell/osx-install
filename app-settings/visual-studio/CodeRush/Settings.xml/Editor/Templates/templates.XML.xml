@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TemplateCategory Name="NAnt" OptExpanded="true">
+    <TemplateCategory Name="System" OptExpanded="true">
+      <Template Name="#NAnt#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;nant
+  buildfile="«Caret»«Field(FileName)»«BlockAnchor»"
+  target="«Field(TargetName)»"
+  inhertial="«Field(true)»"
+/&gt;«FinalTarget»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#NAntCall#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;call target="«Caret»«Field(TargetName)»«BlockAnchor»" /&gt;«FinalTarget»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#NAntExec#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;exec
+  program="«Caret»«Field(FileName)»«BlockAnchor»"
+  commandline="«Field(Command)»"
+  failonerror="«Field(false)»"
+/&gt;«FinalTarget»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#NAntProject#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;project name="«Caret»«Field(ProjectName)»«BlockAnchor»"&gt;
+  «FinalTarget»
+&lt;/project&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#NAntProperty#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;property name="«Caret»«Field(Name)»«BlockAnchor»" value="«Field(Value)»" /&gt;«FinalTarget»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#NAntTarget#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;target name = "«Caret»«Field(TagetName)»«BlockAnchor»"&gt;
+  «FinalTarget» 
+&lt;/target&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <Template Name="c" CaseSensitiveName="false">
+      <Comment>Create a &lt;call&gt; task for a active NAnt target.</Comment>
+      <Expansion Priority="0">
+        <Body>«:#NAntCall#»</Body>
+        <Context>
+          <Selected>Editor\XML\NAnt\InTarget</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="e" CaseSensitiveName="false">
+      <Comment>Create a &lt;exec&gt; task for a active NAnt project.</Comment>
+      <Expansion Priority="0">
+        <Body>«:#NAntExec#»</Body>
+        <Context>
+          <Selected>Editor\XML\NAnt\InProject</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="n" CaseSensitiveName="false">
+      <Comment>Create a &lt;nant&gt; tast for a active NAnt target.</Comment>
+      <Expansion Priority="0">
+        <Body>«:#NAnt#»</Body>
+        <Context>
+          <Selected>Editor\XML\NAnt\InTarget</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="p" CaseSensitiveName="false">
+      <Comment>Create a property for a active NAnt project.</Comment>
+      <Expansion Priority="0">
+        <Body>«:#NAntProperty#»</Body>
+        <Context>
+          <Selected>Editor\XML\NAnt\InProject</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="proj" CaseSensitiveName="false">
+      <Comment>Create a NAnt project.</Comment>
+      <Expansion Priority="0">
+        <Body>«:#NAntProject#»</Body>
+        <Context>
+          <Selected>Editor\XML\NAnt\IsNAntProjectFile</Selected>
+          <Excluded>Editor\XML\NAnt\InProject</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="t" CaseSensitiveName="false">
+      <Comment>Create a NAnt target for a active project.</Comment>
+      <Expansion Priority="0">
+        <Body>«:#NAntTarget#»</Body>
+        <Context>
+          <Selected>Editor\XML\NAnt\InProject</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+  <TemplateCategory Name="WCF" OptExpanded="true">
+    <Comments>Templates for modifying WCF config files.</Comments>
+    <TemplateCategory Name="System" OptExpanded="true">
+      <Comments>System templates for WPF.</Comments>
+      <Template Name="#BaseAddresses#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;baseAddresses&gt;
+	&lt;add baseAddress="«Field(«?WcfBaseAddress»,The base service address)»"/&gt;
+&lt;/baseAddresses&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#Behavior#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;behavior name="«Caret»«Field(«?Get(BehaviorName)»,The name to link this behavior with a behaviorConfiguration)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/behavior&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#Binding#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;«Caret»«FieldStart("Binding Type name, camel-case")»«Link(«?Get(Binding)»)»«FieldEnd»«BlockAnchor»&gt;
+	&lt;binding name ="«Field(MyBinding)»"&gt;
+	&lt;/binding&gt;
+&lt;/«Link(«?Get(Binding)»)»&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#ClientModel#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«:#ClientSection#»</Body>
+          <Context>
+            <Selected>Editor\XML\ParentIs(system.serviceModel)</Selected>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>&lt;system.serviceModel&gt;
+  «:#ClientSection#»
+&lt;/system.serviceModel&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#ClientSection#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;client&gt;
+	«:#EndPoint#(WithName=true)»
+&lt;/client&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#DefaultBinding#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«?Set(Binding,wsHttpBinding)»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#EndPoint#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;endpoint «:#EndPointNameAndAddress#»
+	binding="«Field(«?Get(Binding)»,Binding to use)»"
+	contract="«Field(MyNamespace.IMyService,Fully-qualified service contract type)»" /&gt;«Target»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#EndPointAddressField#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«Field(MyService,Optional URI added to base address)»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#EndpointBehaviors#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;endpointBehaviors&gt;
+	«:#Behavior#(BehaviorName=MyEndpointBehavior)»
+&lt;/endpointBehaviors&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#EndPointNameAndAddress#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>name="«SoftCaret»«Field(EndpointName)»«SoftAnchor»"
+	address="«:#EndPointAddressField#»"</Body>
+          <Context>
+            <Selected>System\VariableMatches(WithName,true)</Selected>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>
+	address="«SoftCaret»«:#EndPointAddressField#»«SoftAnchor»"</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#Host#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;host&gt;
+	«:#BaseAddresses#»
+&lt;/host&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#ServerModel#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;system.serviceModel&gt;
+  «:#Services#»
+&lt;/system.serviceModel&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#ServiceBehaviors#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;serviceBehaviors&gt;
+  «:#Behavior#(BehaviorName=MyServiceBehavior)»
+&lt;/serviceBehaviors&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#ServiceRouter#" CaseSensitiveName="false">
+        <Comment>Service with a wsHttpBinding endpoint</Comment>
+        <Expansion Priority="0">
+          <Body>«:#ServiceWithEndPoint#»</Body>
+          <Context>
+            <Selected>Editor\XML\ParentIs(services)</Selected>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>«:#Services#»</Body>
+          <Context>
+            <Selected>Editor\XML\ParentIs(system.serviceModel)</Selected>
+          </Context>
+        </Expansion>
+        <Expansion Priority="2">
+          <Body>«:#ServerModel#»</Body>
+          <Context>
+            <Excluded>Editor\XML\ParentIs(services)</Excluded>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="#Services#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;services&gt;
+  «:#ServiceWithEndPoint#»
+&lt;/services&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#ServiceWithEndPoint#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;service name="«Caret»«Field(MyNamespace.MyService,The fully qualified service instance name)»«BlockAnchor»"&gt;
+	«:#Host#»
+	«:#EndPoint#(WithName=false)»
+&lt;/service&gt;</Body>
+          <Context />
+        </Expansion>
+      </Template>
+      <Template Name="#SmartEndPoint#" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«:#EndPoint#(WithName=true)»</Body>
+          <Context>
+            <Selected>Editor\XML\ParentIs(client)</Selected>
+          </Context>
+        </Expansion>
+        <Expansion Priority="1">
+          <Body>«:#EndPoint#(WithName=false)»</Body>
+          <Context />
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <Template Name="b" CaseSensitiveName="false">
+      <Comment>Creates a service behavior (if inside a serviceBehaviors section). Otherwise creates a binding.</Comment>
+      <Expansion Priority="0">
+        <Body>«:#Behavior#(BehaviorName=MyServiceBehavior)»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+          <Selected>Editor\XML\ParentIs(serviceBehaviors)</Selected>
+        </Context>
+      </Expansion>
+      <Expansion Priority="1">
+        <Body>«:#Behavior#(BehaviorName=MyEndpointBehavior)»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+          <Selected>Editor\XML\ParentIs(endpointBehaviors)</Selected>
+        </Context>
+      </Expansion>
+      <Expansion Priority="2">
+        <Body>«:#DefaultBinding#»«:b?Binding?»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="b?Binding?" CaseSensitiveName="false">
+      <Comment>Creates a binding (and a bindings section if necessary)  -- follow this template with a Binding mnemonic (e.g. np for Named Pipe, t for TCP, etc.)</Comment>
+      <Expansion Priority="0">
+        <Body>&lt;bindings&gt;
+   «:#Binding#»
+&lt;/bindings&gt;</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+          <Excluded>Editor\XML\InSection(bindings)</Excluded>
+        </Context>
+      </Expansion>
+      <Expansion Priority="1">
+        <Body>«:#Binding#»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+          <Selected>Editor\XML\InSection(bindings)</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="c" CaseSensitiveName="false">
+      <Comment>Client service model section</Comment>
+      <Expansion Priority="0">
+        <Body>«:#DefaultBinding#»«:#ClientModel#»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="c?Binding?" CaseSensitiveName="false">
+      <Comment>Client service model section -- follow this template with a Binding mnemonic (e.g. np for Named Pipe, t for TCP, etc.)</Comment>
+      <Expansion Priority="0">
+        <Body>«:#ClientModel#»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="e" CaseSensitiveName="false">
+      <Comment>endpoint</Comment>
+      <Expansion Priority="0">
+        <Body>«:#DefaultBinding#»«:#SmartEndPoint#»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="e?Binding?" CaseSensitiveName="false">
+      <Comment>endpoint -- follow this template with a Binding mnemonic (e.g. np for Named Pipe, t for TCP, etc.)</Comment>
+      <Expansion Priority="0">
+        <Body>«:#SmartEndPoint#»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="eb" CaseSensitiveName="false" SuppressFormatting="true">
+      <Comment>WCF Service Behavior</Comment>
+      <Expansion Priority="0">
+        <Body>&lt;behaviors&gt;
+  «:#EndpointBehaviors#»
+&lt;/behaviors&gt;</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+          <Excluded>Editor\XML\ParentIs(behaviors)</Excluded>
+        </Context>
+      </Expansion>
+      <Expansion Priority="1">
+        <Body>«:#EndpointBehaviors#»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+          <Selected>Editor\XML\ParentIs(behaviors)</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s" CaseSensitiveName="false">
+      <Comment>Server service model section</Comment>
+      <Expansion Priority="0">
+        <Body>«:#DefaultBinding#»«:#ServiceRouter#»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="s?Binding?" CaseSensitiveName="false">
+      <Comment>Server service model section -- follow this template with a Binding mnemonic (e.g. np for Named Pipe, t for TCP, etc.)</Comment>
+      <Expansion Priority="0">
+        <Body>«:#ServiceRouter#»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+        </Context>
+      </Expansion>
+    </Template>
+    <Template Name="sb" CaseSensitiveName="false" SuppressFormatting="true">
+      <Comment>WCF Service Behavior</Comment>
+      <Expansion Priority="0">
+        <Body>«:#ServiceBehaviors#»</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+          <Selected>Editor\XML\ParentIs(behaviors)</Selected>
+        </Context>
+      </Expansion>
+      <Expansion Priority="1">
+        <Body>&lt;behaviors&gt;
+  «:#ServiceBehaviors#»
+&lt;/behaviors&gt;</Body>
+        <Context>
+          <Selected>Editor\Code\AssemblyReferenced(System.ServiceModel)</Selected>
+          <Selected>Editor\Line\OnEmptyLine</Selected>
+          <Excluded>Editor\XML\ParentIs(behaviors)</Excluded>
+        </Context>
+      </Expansion>
+    </Template>
+  </TemplateCategory>
+  <TemplateCategory Name="WPF">
+    <Comments>Templates for working with XAML files in VS 2005.</Comments>
+    <TemplateCategory Name="Binding">
+      <Template Name="ben" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>{Binding ElementName=«Caret»«Field(ControlName,Name of the control to bind to)»«BlockAnchor»,Path=«Field(PropertyName,Name of the property to bind to)»}</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="btp" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>{Binding RelativeSource={RelativeSource TemplatedParent}, Path=«Caret»«Field(Property,Property to bind to.)»«BlockAnchor»}</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="tb?DependProp?" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>«?Get(DependProp)»="{TemplateBinding «?Get(DependProp)»}"</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Elements">
+      <TemplateCategory Name="Controls">
+        <Template Name="b" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;Button x:Name="«Caret»«Field(Button1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/Button&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="b," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;Button&gt;
+	«Caret»
+&lt;/Button&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="cb" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;ComboBox x:Name="«Caret»«Field(ComboBox1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/ComboBox&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="cb," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;ComboBox&gt;
+	«Caret»
+&lt;/ComboBox&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="lb" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;ListBox x:Name="«Caret»«Field(ListBox1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/ListBox&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="lb," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;ListBox&gt;
+	«Caret»
+&lt;/ListBox&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="sl" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Comment>&lt;Slider&gt;</Comment>
+          <Expansion Priority="0">
+            <Body>&lt;Slider x:Name="«Caret»«Field(Slider1)»«BlockAnchor»" Minimum="«Field(0,Minimum value)»" Maximum="«Field(100,Maximum value)»"/&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="tb" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Comment>&lt;TextBlock&gt;</Comment>
+          <Expansion Priority="0">
+            <Body>&lt;TextBlock x:Name="«Caret»«Field(TextBlock1)»«BlockAnchor»" Text="«Field»" Width="Auto" Height="Auto" /&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="tb," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Comment>&lt;TextBlock&gt;</Comment>
+          <Expansion Priority="0">
+            <Body>&lt;TextBlock Text="«Caret»«Field»" Width="Auto" Height="Auto" /&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="tbx" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;TextBox x:Name="«Caret»«Field(TextBox1)»«BlockAnchor»"&gt;«Field(Text)»&lt;/TextBox&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="tbx," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;TextBox&gt;«Caret»«Field(Text)»«BlockAnchor»&lt;/TextBox&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+      </TemplateCategory>
+      <TemplateCategory Name="Decorators">
+        <Template Name="bd" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;Border x:Name="«Caret»«Field(Border1)»«BlockAnchor»"
+        BorderBrush="«Field(Black)»"
+				CornerRadius="«Field(1)»" 
+				Padding="«Field(0)»"&gt;
+	«Target»
+&lt;/Border&gt;
+</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="bd," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;Border BorderBrush="«Caret»«Field(Black)»«BlockAnchor»"
+				CornerRadius="«Field(1)»" 
+				Padding="«Field(0)»"&gt;
+	«Target»
+&lt;/Border&gt;
+</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+      </TemplateCategory>
+      <TemplateCategory Name="Panels">
+        <Template Name="dp" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;DockPanel x:Name="«Caret»«Field(DockPanel1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/DockPanel&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="dp," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;DockPanel&gt;
+	«Caret»
+&lt;/DockPanel&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="g" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;Grid x:Name="«Caret»«Field(Grid1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/Grid&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="g," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;Grid&gt;
+	«Caret»
+&lt;/Grid&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="sp" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;StackPanel x:Name="«Caret»«Field(StackPanel1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/StackPanel&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="sp," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;StackPanel&gt;
+	«Caret»
+&lt;/StackPanel&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="sph" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;StackPanel x:Name="«Caret»«Field(StackPanel1)»«BlockAnchor»" Orientation="Horizontal"&gt;
+	«Target»
+&lt;/StackPanel&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="sph," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;StackPanel Orientation="Horizontal"&gt;
+	«Caret»
+&lt;/StackPanel&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="vb" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;Viewbox x:Name="«Caret»«Field(Viewbox1)»«BlockAnchor»"&gt;
+	«Target»
+&lt;/Viewbox&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+        <Template Name="vb," ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;Viewbox&gt;
+	«Caret»
+&lt;/Viewbox&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+      </TemplateCategory>
+      <TemplateCategory Name="Shapes">
+        <Template Name="r" ExpansionTrigger="Both" CaseSensitiveName="false">
+          <Expansion Priority="0">
+            <Body>&lt;Rectangle Width="«Caret»«Field(100)»«BlockAnchor»" Height="«Field(70)»" Fill="«Field(Red)»"«Target»/&gt;</Body>
+            <Context>
+              <Selected>Project\IsWPF</Selected>
+              <Selected>System\VSVersion\VS2005</Selected>
+            </Context>
+          </Expansion>
+        </Template>
+      </TemplateCategory>
+      <Template Name="i" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>&lt;Image Source="«Caret»C:\«BlockAnchor»" /&gt;</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Properties">
+      <Template Name="hac" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>HorizontalAlignment="Center"</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="m4" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>Margin="4"</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="ns" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>xmlns:«Caret»«Field(name)»«BlockAnchor»="clr-namespace:«Field(Namespace)»;assembly=«Field(AssemblyName)»"</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="nsl" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>xmlns:local="clr-namespace:«Caret»«Field(Namespace)»«BlockAnchor»"</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="xn" CaseSensitiveName="false">
+        <Expansion Priority="0">
+          <Body>x:Name="«Caret»«Field(Name)»«BlockAnchor»"«Target»</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+    <TemplateCategory Name="Styles &amp; Templates">
+      <Template Name="ct" CaseSensitiveName="false">
+        <Comment>&lt;ControlTemplate&gt;</Comment>
+        <Expansion Priority="0">
+          <Body>&lt;ControlTemplate TargetType="{x:Type «Caret»«Field(namespace)»«BlockAnchor»:«Field(ControlType)»}"&gt;
+  «Target»
+&lt;/ControlTemplate&gt;</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="ctt" CaseSensitiveName="false">
+        <Comment>&lt;ControlTemplate.Triggers&gt;</Comment>
+        <Expansion Priority="0">
+          <Body>&lt;ControlTemplate.Triggers&gt;
+  «:t»
+&lt;/ControlTemplate.Triggers&gt;
+</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="s" CaseSensitiveName="false">
+        <Comment>Simple &lt;Style&gt;</Comment>
+        <Expansion Priority="0">
+          <Body>&lt;Style TargetType="{x:Type «Caret»«Field(namespace)»«BlockAnchor»:«Field(ControlType)»}"&gt;
+  «Target»
+&lt;/Style&gt;</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="st" CaseSensitiveName="false">
+        <Comment>Style with Template setter</Comment>
+        <Expansion Priority="0">
+          <Body>&lt;Style TargetType="{x:Type «Caret»«FieldStart»«Link(namespace)»«FieldEnd»«BlockAnchor»:«FieldStart»«Link(Type)»«FieldEnd»}"&gt;
+	&lt;Setter Property="Template"&gt;
+		&lt;Setter.Value&gt;
+			&lt;ControlTemplate TargetType="{x:Type «Link(namespace)»:«Link(Type)»}"&gt;
+				«Target»
+			&lt;/ControlTemplate&gt;
+		&lt;/Setter.Value&gt;
+	&lt;/Setter&gt;
+&lt;/Style&gt;</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+      <Template Name="t" ExpansionTrigger="Both" CaseSensitiveName="false">
+        <Comment>&lt;Trigger&gt;</Comment>
+        <Expansion Priority="0">
+          <Body>&lt;Trigger Property="«Caret»«Field(Name,Property to watch)»«BlockAnchor»" Value="«Field(Value,Specify the value to trigger the response)»"&gt;
+  &lt;Setter TargetName="«Field(ElementName,Name of the template element to change)»" Property="«Field(Name,Property to change)»" Value="«Field(Value,The new value for the property)»"/&gt;
+&lt;/Trigger&gt;
+«Target»</Body>
+          <Context>
+            <Selected>Project\IsWPF</Selected>
+            <Selected>System\VSVersion\VS2005</Selected>
+          </Context>
+        </Expansion>
+      </Template>
+    </TemplateCategory>
+  </TemplateCategory>
+</Templates>

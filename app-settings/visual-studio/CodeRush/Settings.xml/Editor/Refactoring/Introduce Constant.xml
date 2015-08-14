@@ -1,0 +1,52 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Introduce Constant">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="DefaultConstantName" Value="Constant" />
+   <Option Name="MaxConstantNameLength" Value="48" />
+   <Option Name="ReplaceOnce" Value="False" />
+   <Option Name="ReplaceAutomatic" Value="True" />
+   <Option Name="ReplaceWithDialog" Value="False" />
+   <Option Name="UseSuffix" Value="False" />
+   <Option Name="PositionClass" Value="True" />
+   <Option Name="PositionAbove" Value="False" />
+   <Option Name="PositionPicker" Value="False" />
+   <Option Name="PositionRegion" Value="False" />
+   <Option Name="PositionRegionName" Value="private constants..." />
+   <Option Name="PrefixesCount" Value="14" />
+   <Option Name="PositionMethod" Value="False" />
+   <Option Name="VisibilityScope" Value="None" />
+   <Option Name="PromoteTypes" Value="True" />
+  </Section>
+  <Section Name="Types">
+   <Option Name="TypeName0" Value="String" />
+   <Option Name="String" Value="STR" />
+   <Option Name="TypeName1" Value="Char" />
+   <Option Name="Char" Value="CHAR" />
+   <Option Name="TypeName2" Value="Byte" />
+   <Option Name="Byte" Value="BYTE" />
+   <Option Name="TypeName3" Value="SByte" />
+   <Option Name="SByte" Value="SBYTE" />
+   <Option Name="TypeName4" Value="Boolean" />
+   <Option Name="Boolean" Value="BOOL" />
+   <Option Name="TypeName5" Value="Int16" />
+   <Option Name="Int16" Value="SHORT" />
+   <Option Name="TypeName6" Value="UInt16" />
+   <Option Name="UInt16" Value="USHORT" />
+   <Option Name="TypeName7" Value="Int32" />
+   <Option Name="Int32" Value="INT" />
+   <Option Name="TypeName8" Value="UInt32" />
+   <Option Name="UInt32" Value="UINT" />
+   <Option Name="TypeName9" Value="Int64" />
+   <Option Name="Int64" Value="LONG" />
+   <Option Name="TypeName10" Value="UInt64" />
+   <Option Name="UInt64" Value="ULONG" />
+   <Option Name="TypeName11" Value="Single" />
+   <Option Name="Single" Value="FLOAT" />
+   <Option Name="TypeName12" Value="Double" />
+   <Option Name="Double" Value="DBL" />
+   <Option Name="TypeName13" Value="Decimal" />
+   <Option Name="Decimal" Value="DEC" />
+  </Section>
+ </Language>
+</Page>

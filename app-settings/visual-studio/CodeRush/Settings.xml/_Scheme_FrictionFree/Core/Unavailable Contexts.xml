@@ -1,0 +1,50 @@
+﻿<!--This is a DXCore settings file-->
+<Page Name="Unavailable Contexts">
+ <Language Name="*Neutral*">
+  <Section Name="General">
+   <Option Name="Count" Value="10" />
+  </Section>
+  <Section Name="Defaults">
+   <Option Name="Name0" Value="System\Annotation Mode Active" />
+   <Option Name="Params0" Value="" />
+   <Option Name="Value0" Value="NotSatisfied" />
+   <Option Name="IgnoreParams0" Value="False" />
+   <Option Name="Name1" Value="System\Picker Is Active" />
+   <Option Name="Value1" Value="NotSatisfied" />
+   <Option Name="Params1" Value="" />
+   <Option Name="IgnoreParams1" Value="False" />
+   <Option Name="Name2" Value="System\Text Replacer Is Active" />
+   <Option Name="Params2" Value="" />
+   <Option Name="Value2" Value="NotSatisfied" />
+   <Option Name="IgnoreParams2" Value="False" />
+   <Option Name="Name3" Value="Editor\Selection\Holds Single-line Comment" />
+   <Option Name="Params3" Value="" />
+   <Option Name="Value3" Value="NotSatisfied" />
+   <Option Name="IgnoreParams3" Value="False" />
+   <Option Name="Name4" Value="System\In TextField" />
+   <Option Name="Params4" Value="" />
+   <Option Name="Value4" Value="NotSatisfied" />
+   <Option Name="IgnoreParams4" Value="False" />
+   <Option Name="Name5" Value="System\In Linked Identifier" />
+   <Option Name="Params5" Value="" />
+   <Option Name="Value5" Value="NotSatisfied" />
+   <Option Name="IgnoreParams5" Value="False" />
+   <Option Name="Name6" Value="System\Can Activate Next Field" />
+   <Option Name="Params6" Value="" />
+   <Option Name="Value6" Value="NotSatisfied" />
+   <Option Name="IgnoreParams6" Value="False" />
+   <Option Name="Name7" Value="System\CellNavTooltipIsActive" />
+   <Option Name="Params7" Value="" />
+   <Option Name="Value7" Value="NotSatisfied" />
+   <Option Name="IgnoreParams7" Value="False" />
+   <Option Name="Name8" Value="Project\XAFProject" />
+   <Option Name="Params8" Value="" />
+   <Option Name="Value8" Value="NotSatisfied" />
+   <Option Name="IgnoreParams8" Value="False" />
+   <Option Name="Name9" Value="Editor\Selection\Cell Navigation Available" />
+   <Option Name="Params9" Value="" />
+   <Option Name="Value9" Value="NotSatisfied" />
+   <Option Name="IgnoreParams9" Value="False" />
+  </Section>
+ </Language>
+</Page>
