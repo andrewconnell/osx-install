@@ -30,6 +30,7 @@ npm install -g generator-angular
 npm install -g generator-common
 npm install -g generator-generator
 npm install -g generator-karma
+npm install -g generator-office
 npm install -g generator-node
 npm install -g generator-nodehttps
 npm install -g generator-webapp
