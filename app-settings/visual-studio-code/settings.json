@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontFamily": "Hack",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.fontSize": 16,
+  "editor.formatOnType": true,
+  "editor.renderWhitespace": true,
+  "editor.wrappingColumn": 0,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.@__thumb":true
+  }
+}

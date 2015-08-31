@@ -138,7 +138,11 @@ Run script [devinstall.sh](scripts/devinstall.sh)
   - webstorm
     - import settings from [app-settings/webstorm10](app-settings/webstorm10)
 - login ToggleDesktop
-- install http://code.visualstudio.com manually, not the brew cask option… the latter didn’t work with the [command line launcher shorcut](https://code.visualstudio.com/Docs/setup#_mac-os-x)
+- Visual Studio Code
+  - http://code.visualstudio.com manually, not the brew cask option… the latter didn’t work with the [command line launcher shorcut](https://code.visualstudio.com/Docs/setup#_mac-os-x)
+  - install [Hack font](http://sourcefoundry.org/hack/)
+    - font found in [app-settings](app-settings)
+  - change settings to [app-settings/visual-studio-code/settings.json](app-settings/visual-studio-code)
 
 ## Install Node
 
