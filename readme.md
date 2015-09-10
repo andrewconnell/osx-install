@@ -141,7 +141,7 @@ Run script [devinstall.sh](scripts/devinstall.sh)
 - Visual Studio Code
   - http://code.visualstudio.com manually, not the brew cask option… the latter didn’t work with the [command line launcher shorcut](https://code.visualstudio.com/Docs/setup#_mac-os-x)
   - install [Hack font](http://sourcefoundry.org/hack/)
-    - font found in [app-settings](app-settings)
+    - font found in [app-settings](app-settings) as **Hack-*-otf.zip**
   - change settings to [app-settings/visual-studio-code/settings.json](app-settings/visual-studio-code)
 
 ## Install Node
@@ -210,10 +210,17 @@ add gitignore to `~/.gitignore` for global ignore
   - iCloud
   - O365 <primary account>
   - gmail <primary account>
-  - facebook chat
+  - facebook
   - twitter <primary account>
   - facebook
   - don’t do linkedin... too many damn birthday alerts!
+- iMessage - setup facebook...
+  - Messages > Add Account
+  - Pick OTHER MESSAGE ACCOUNT
+    - Pick JABBER
+    - username = FBusername@chat.facebook.com
+    - password = facebook password
+    - leave all options & click CREATE
 - System Preferences > Keyboard
   - CHECK Use all F1, F2, etc keys as standard function keys
 - System Preferences > Keyboard > Shortcuts > Mission Control
