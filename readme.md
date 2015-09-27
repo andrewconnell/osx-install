@@ -166,6 +166,8 @@ Weren’t avail as brew / brew casks
   - install located in `~/Dropbox/My Utils/_Installs`
 - Powermate
 - Mac Office
+- LockItUp
+  - install located in `~/Dropbox/My Utils/_Installs`
 
 Didn’t work as brew / brew casks
 
