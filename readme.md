@@ -147,10 +147,26 @@ Run script [devinstall.sh](scripts/devinstall.sh)
 
 ## Install Node
 
-- run script [nodeinstall.sh](scripts/nodeinstall.sh)
-- run script [npminstall.sh](scripts/npminstall.sh)
+manage node installs using nvm... this lets me test different versions of node as well as avoid issue with having to use `sudo` when installing packages globally
 
-This installs NPM in my user directory, not in a location that will always need `sudo` / run as admin when installing a package globally
+`brew install nvm`
+
+make sure this is at the very end of `.zshrc`
+
+```
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+```
+
+install the latest version of node, for instance:
+```
+# list all available installs
+nvm ls-remote
+# install latest version
+nvm install v4.2.1
+```
+
+now run [npminstall.sh](scripts/npminstall.sh) to install packages globally
 
 ### Setup Azure-cli AutoComplete:
 

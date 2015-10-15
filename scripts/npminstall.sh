@@ -4,7 +4,6 @@
 npm install -g azure-cli
 npm install -g growl
 npm install -g http-server
-npm install -g kudoexec
 npm install -g nodetree
 npm install -g superstatic
 
