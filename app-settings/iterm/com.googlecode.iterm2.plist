@@ -550,11 +550,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>2754 -181 747 330 2560 -320 1080 1897 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>4727 777 924 485 3640 0 2560 1417 </string>
+	<string>2664 857 924 485 2560 -320 1080 1897 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>54 415 384 129 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3846 142 850 1068 3640 0 2560 1417 </string>
+	<string>2560 -316 1080 1136 2560 -320 1080 1897 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2716 -139 850 1068 2560 -320 1080 1897 </string>
 	<key>New Bookmarks</key>
@@ -1161,7 +1161,7 @@
 			<key>Shortcut</key>
 			<string>D</string>
 			<key>Silence Bell</key>
-			<true/>
+			<false/>
 			<key>Smart Cursor Color</key>
 			<false/>
 			<key>Smart Selection Rules</key>
@@ -2556,11 +2556,11 @@
 			<key>Name</key>
 			<string>Default +Hack Font</string>
 			<key>Non Ascii Font</key>
-			<string>Hack 12</string>
+			<string>Hack-Regular 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Hack 12</string>
+			<string>Hack-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2611,7 +2611,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<true/>
+			<false/>
 			<key>Smart Cursor Color</key>
 			<false/>
 			<key>Smart Selection Rules</key>
@@ -2740,9 +2740,9 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453551230.60022002</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>462718100.79409897</real>
+	<real>463957266.298693</real>
 	<key>OnlyWhenMoreTabs</key>
-	<true/>
+	<false/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenBookmark</key>
@@ -2793,7 +2793,7 @@
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
-	<true/>
+	<false/>
 	<key>RightCommand</key>
 	<integer>8</integer>
 	<key>RightOption</key>
@@ -2805,7 +2805,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-08-31T12:48:17Z</date>
+	<date>2015-09-14T21:01:05Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
