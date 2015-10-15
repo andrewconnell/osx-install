@@ -94,6 +94,7 @@ Install this stuff from the Apple App Store, then run the next install scripts..
 - Parcel
   - *login*
 - Disk Map
+- CCMenu
 - Display Menu
 - LiveReload
 - The Clock
@@ -120,7 +121,7 @@ Run script [myinstall.sh](scripts/myinstall.sh)
 
 Run script [devinstall.sh](scripts/devinstall.sh)
 
-- license 
+- license
   - camtasia
   - screenflow
   - charles
@@ -134,7 +135,7 @@ Run script [devinstall.sh](scripts/devinstall.sh)
   - Creative-Cloud
     - import settings from Adobe CC, Adobe Media Encoder - import preferences from [app-settings/adobe-creative-suite](app-settings/adobe-creative-suite)
   - VMWare-Fusion
-    - put VM's in `~/VirtualMachines` 
+    - put VM's in `~/VirtualMachines`
   - webstorm
     - import settings from [app-settings/webstorm10](app-settings/webstorm10)
 - login ToggleDesktop
@@ -157,7 +158,7 @@ This installs NPM in my user directory, not in a location that will always need 
 	$ azure —completion >> ~/azure.completion.sh
 	$ echo ‘source ~/azure.completion.sh’ >> .bash_profile
 	````
-	
+
 ## Manual Download & Installs
 Weren’t avail as brew / brew casks
 - Amazon Music
