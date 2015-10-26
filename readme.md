@@ -44,6 +44,7 @@ Xcode
   - SnippetMaker
   - SublimeCodeIntel
   - Theme-Spacegray
+  - TypeScript
   - View In Browser
 - Update preferences from those in ~/Dropbox/MyAppSettings/Sublime
 
