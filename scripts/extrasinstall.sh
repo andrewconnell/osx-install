@@ -3,6 +3,7 @@
 brew install jsdoc3
 brew install youtube-dl
 brew install ffmpeg
+brew install pandoc
 
 brew cask install appcleaner
 brew cask install qlcolorcode
