@@ -9,6 +9,7 @@ npm install -g superstatic
 
 # developer utils
 npm install -g bower
+npm install -g browserify
 npm install -g express
 npm install -g grunt-cli
 npm install -g gulp
@@ -26,10 +27,8 @@ npm install -g typescript
 # yeoman generators
 npm install -g yo
 npm install -g generator-angular
-npm install -g generator-common
 npm install -g generator-generator
 npm install -g generator-karma
 npm install -g generator-office
 npm install -g generator-node
-npm install -g generator-nodehttps
 npm install -g generator-webapp
