@@ -16,6 +16,7 @@ brew cask install nosleep
 brew cask install gopro-studio
 brew cask install tripmode
 brew cask install wireshark
+brew cask install caskroom/fonts/font-hack
 
 # openvpn client for asys rt3200 router
 #brew cask install tunnelblink
