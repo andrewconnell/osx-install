@@ -23,12 +23,15 @@ npm install -g phantomjs
 npm install -g systemjs
 npm install -g tsd
 npm install -g typescript
+npm install -g webpack
+npm install -g yo
+
 
 # yeoman generators
 npm install -g yo
 npm install -g generator-angular
 npm install -g generator-generator
 npm install -g generator-karma
-npm install -g generator-office
 npm install -g generator-node
+npm install -g generator-office
 npm install -g generator-webapp
