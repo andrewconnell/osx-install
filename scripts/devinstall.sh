@@ -10,7 +10,6 @@ brew cask install screenflow
 brew cask install smartgit
 brew cask install smartsynchronize
 brew cask install toggldesktop
-brew cask install vmware-fusion
 brew cask install snagit
 brew cask install xmind
 brew cask install webstorm
