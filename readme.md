@@ -8,7 +8,6 @@ More background info: [BLOG: Rapid Complete Install / Reinstall OS X Like a Cham
 
 Do the following before paving the partition. This is to get the way I have things configured in the dock & menu bar back the way I want them.
 
-- backup `~/VirtualMachines`
 - have a current Apple TimeMachine & CrashPlan backup job finished
 - screenshot OSX dock
 - screenshot expanded Bartender Apple MenuBar
@@ -129,14 +128,11 @@ Run script [devinstall.sh](scripts/devinstall.sh)
   - balsamiq-mockups
   - smartgit
   - smartsynchronize
-  - vmware-fusion
   - snagit
   - webstorm
 - setup
   - Creative-Cloud
     - import settings from Adobe CC, Adobe Media Encoder - import preferences from [app-settings/adobe-creative-suite](app-settings/adobe-creative-suite)
-  - VMWare-Fusion
-    - put VM's in `~/VirtualMachines`
   - webstorm
     - import settings from [app-settings/webstorm10](app-settings/webstorm10)
 - login ToggleDesktop
@@ -257,7 +253,6 @@ add gitignore to `~/.gitignore` for global ignore
     - Music
     - Public
     - repos
-    - VirtualMachines
 
 ## Ongoing... HOWTO Keep Things Updated
 
