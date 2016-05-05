@@ -1,5 +1,8 @@
 #!/bin/sh
 
+brew install bash-completion
+brew tap homebrew/completions
+# make sure to do the update to the ~/.bash_profile in the instructions above
 brew cask install bartender
 brew cask install caskroom/fonts/font-hack
 brew cask install cheatsheet
