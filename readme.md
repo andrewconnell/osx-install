@@ -262,6 +262,10 @@ to keep homebrew installed things update, do this:
   brew update       	# download app updated formulas
   brew outdated     	# what’s old?
   brew upgrade --all	# upgrade everything locally
+  # because you can't upgrade casks, just reinstall everything you have installed
+  brew cask list | xargs brew cask install --force
+  # cleanup everything
+  brew cleanup
   ```
 
 [![Analytics](https://ga-beacon.appspot.com/UA-59891462-1/osx-buildout/readme)](https://github.com/igrigorik/ga-beacon)
