@@ -203,6 +203,8 @@ Didn’t work as brew / brew casks
   git config --global user.name "Andrew Connell"
   git config --global user.email <insert primary email>
   git config --global credential.helper osxkeychain
+  git config --global core.editor "code -w"
+  git config --global merge.tool code
   ```
 
 add gitignore to `~/.gitignore` for global ignore
