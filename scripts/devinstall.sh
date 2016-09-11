@@ -7,6 +7,7 @@ brew cask install camtasia
 brew cask install charles
 brew cask install firefox
 brew cask install java
+brew install protobuf
 brew cask install screenflow
 brew cask install smartgit
 brew cask install smartsynchronize
