@@ -19,3 +19,8 @@ brew install mono
 
 # install terminal screen recorder
 brew install asciinema
+
+# docker stuff
+brew install docker-clean
+homebrew/completions/docker-completion
+homebrew/completions/docker-compose-completion
