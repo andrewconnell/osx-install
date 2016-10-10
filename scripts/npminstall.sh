@@ -21,12 +21,6 @@ npm install -g node-inspector
 npm install -g nodemon
 npm install -g phantomjs
 npm install -g systemjs
-npm install -g tsd
 npm install -g typescript
-npm install -g typings
 npm install -g webpack
-npm install -g yo
-
-
-# yeoman generators
 npm install -g yo

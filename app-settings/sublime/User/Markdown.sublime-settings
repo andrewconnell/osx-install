@@ -1,15 +1,15 @@
 {
-	"color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",
-	"draw_centered": false,
-	"extensions":
-	[
-		"mdown",
-		"md"
-	],
-	"highlight_line": true,
-	"line_numbers": true,
-	"word_wrap": true,
-	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": false
+  "color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",
+  "draw_centered": false,
+  "extensions":
+  [
+    "mdown",
+    "md"
+  ],
+  "highlight_line": true,
+  "line_numbers": true,
+  "word_wrap": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": false
 }

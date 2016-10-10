@@ -1,29 +1,22 @@
 #!/bin/sh
 
-brew install bash-completion
-brew tap homebrew/completions
-# make sure to do the update to the ~/.bash_profile in the instructions above
-brew cask install alfred
-brew cask install bartender
-brew cask install caskroom/fonts/font-hack
-brew cask install cheatsheet
-brew cask install duet
-brew cask install fritzing
 brew cask install gopro-studio
 brew cask install handbrake
-brew cask install joinme
 brew cask install logitech-harmony
-brew cask install livereload
-brew cask install nosleep
 brew cask install sketchup
-brew cask install slack
-brew cask install steam
-brew cask install tripmode
-brew cask install vlc
-brew cask install wireshark
+brew cask install synergy
 
-# openvpn client for asys rt3200 router
-#brew cask install tunnelblink
+brew install jsdoc3
+brew install ffmpeg
+brew install pandoc
+brew install youtube-dl
 
-# not used much
-# brew cask install wacom-tablet
+brew cask install appcleaner
+brew cask install betterzipql
+brew cask install google-hangounts
+brew cask install qlcolorcode
+brew cask install qlimageize
+brew cask install qlmarkdown
+brew cask install qlstephen
+brew cask install quicklook-csv
+brew cask install quicklook-json

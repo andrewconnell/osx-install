@@ -1,12 +1,21 @@
 {
+	"added_words":
+	[
+		"inbox",
+		"username",
+		"apps",
+		"App",
+		"namespace"
+	],
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
-	"fade_fold_buttons": false,
+	"create_window_at_startup": false,
 	"find_selected_text": true,
 	"fold_buttons": true,
-	"font_size": 18,
+	"font_size": 15,
 	"gutter": true,
 	"highlight_line": true,
+  "hot_exit": false,
 	"ignored_packages":
 	[
 		"Markdown",
@@ -16,11 +25,11 @@
 	"line_padding_bottom": 2,
 	"margin": 4,
 	"open_files_in_new_window": false,
-	"remember_open_files": false,
 	"show_full_path": true,
-	"show_line_endings": true,
 	"spell_check": true,
 	"tab_size": 2,
 	"theme": "Spacegray.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+	"typescript_plugin_tsc_version": "1.7.3"
 }
