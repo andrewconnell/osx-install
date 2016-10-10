@@ -1,5 +1,4 @@
-Sublime Package Backup
-===
+# Sublime Package Backup
 
 The `/User` folder is a backup from OSX & contains all settings.
 

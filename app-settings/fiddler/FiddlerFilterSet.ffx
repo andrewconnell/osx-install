@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SimpleFilter LastSave="2014-12-08T11:20:06.5335201-05:00" ExtensionVersion="2.4.8.5">
+<SimpleFilter LastSave="2016-02-02T14:26:08.7167553-05:00" ExtensionVersion="2.6.1.5">
   <Settings FiltersEnabled="true">
-    <slHosts>*.bitdefender.net; *.google.com; *.googleapis.com; *.dropbox.com; *.stackexchange.com; *.live.net; *.live.com; *.pinterest.com; *.bing.com; *.msn.com; *.s-msn.com; *.extensionanalytics.com; *.lync.com; *.uget.org; *.adobe.com; *.nuget.org; *.msecnd.net; *.visualstudio.com; *.jetbrains.com; *.telemetry.microsoft.com; *.google-analytics.com;</slHosts>
+    <slHosts>`; aconn-my.sharepoint.com; go.microsoft.com; vortex.data.microsoft.com; *.telemetry.microsoft.com; *.bitdefender.net; *.google.com; *.googleapis.com; *.google-analytics.com; *.dropbox.com; *.networkanalytics.net; *.stackexchange.com; *.pinterest.com; *.extensionanalytics.com; *.adobe.com; *.nuget.org; *.aspnetcdn.com; *.live.net; *.live.com; *.lync.com; *.bing.com; *.msn.com; *.s-msn.com; *.visualstudio.com; *.s-msft.com; *msdn.microsoft.com; *.jetbrains.com; *.nuget.org; *.msecnd.net; *.ycombinator.com; *.reddit.com; *.skype.com; *.windowsupdate.com; *telemetry.microsoft.com; *packagecontrol.io; *evernote.com; *livefilestore.com; *1drv.com; *wunderlist.com;</slHosts>
     <iFilterActions>1</iFilterActions>
     <iResponseType>0</iResponseType>
     <bHideSvcHost>false</bHideSvcHost>
@@ -12,7 +12,7 @@
     <bRequestURLFilter>false</bRequestURLFilter>
     <sRequestURLFilter />
     <bHideIfURLContains>true</bHideIfURLContains>
-    <sHideIfURLContains>/browserConnection/buildInfo /__browserLink /browserLink /arterySignalR</sHideIfURLContains>
+    <sHideIfURLContains>/vshub/ /browserConnection/buildInfo /__browserLink /browserLink /arterySignalR</sHideIfURLContains>
     <bHideRedirects>false</bHideRedirects>
     <bHideSuccess>false</bHideSuccess>
     <bHideNon2xx>false</bHideNon2xx>
@@ -20,7 +20,7 @@
     <bHide401>false</bHide401>
     <bUseMinSize>false</bUseMinSize>
     <bUseMaxSize>false</bUseMaxSize>
-    <iMinSize>1000</iMinSize>
+    <iMinSize>0</iMinSize>
     <iMaxSize>1000</iMaxSize>
     <bBlockScript>false</bBlockScript>
     <bHeatMap>false</bHeatMap>
