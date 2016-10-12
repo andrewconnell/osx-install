@@ -51,15 +51,7 @@ Do the following before paving the partition. This is to get the way I have thin
 
 The following manual installs & configuration should be done to setup automated installs.
 
-### XCode
-- install via AppStore
-- after installing, need to accept license... 
-
-```bash
-$ sudo xcodebuild -license
-```
-
-## Homebrew & Homebrew Cask
+### Homebrew & Homebrew Cask
 
 Install [Homebrew](http://brew.sh/) for automated installs & updates. 
 
@@ -210,7 +202,6 @@ Run script [devinstall.sh](scripts/devinstall.sh)
   - then launch to license
 - BitDefender
   - install located in `~/Dropbox/My AppSettings/_Installs`
-- CrashPlan
 
 ## Install Node
 

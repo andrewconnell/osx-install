@@ -3,6 +3,7 @@
 brew cask install alfred
 brew cask install bartender
 brew cask install cheatsheet
+brew cask install crashplan
 brew cask install dropbox
 brew cask install duet
 brew cask install joinme
