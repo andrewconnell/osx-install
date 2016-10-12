@@ -14,6 +14,7 @@ npm install -g express
 npm install -g grunt-cli
 npm install -g gulp
 npm install -g istanbul
+npm install -g jshint
 npm install -g jspm
 npm install -g karma-cli
 npm install -g mocha
@@ -22,5 +23,6 @@ npm install -g nodemon
 npm install -g phantomjs
 npm install -g systemjs
 npm install -g typescript
+npm install -g typings
 npm install -g webpack
 npm install -g yo
