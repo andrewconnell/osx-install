@@ -36,9 +36,11 @@ Do the following before paving the partition. This is to get the way I have thin
     ```bash
     $ npm list -g --depth=0
     ```
+  
+  - use that list to update the npm script: [app-settings/npminstall.sh](app-settings/npminstall.sh)
 
 - visual-studio-code
-  - get list of all installed extensions
+  - get list of all installed extensions and update the list in [vscode-extensions.md](vscode-extensions.md)
   - backup snippets & user settings to [app-settings/visual-studio-code](app-settings/visual-studio-code)
 
 ## Pave Partition
@@ -71,7 +73,7 @@ brew doctor
 
 ## Configure Core Apps
 
-- login to the hollowing:
+- login to the hollowing:q
   - Chrome
     - *do this first & login to LastPass to get licenses*
   - Dropbox
@@ -80,14 +82,14 @@ brew doctor
 - Alfred
   - Activate power pack within app settings
 - Bartender
-  - License & configure
+  - License & configure (*[use this image for reference](images/macOS-MenuBar.png)*)
 - iTerm
   - copy fonts from [iterm/Source Code Pro Fonts](app-settings/iterm/Source Code Pro Fonts) => `~/Library/Fonts`
   - import color profiles from [iterm](app-settings/iterm)
   - [setup iTerm with oh-my-zsh & powerline](https://www.xplatform.rocks/2015/05/07/setting-up-iterm2-with-oh-my-zsh-and-powerline-on-osx)
   - import settings from ~/Dropbox/My AppSettings/iTerm
 - NoSleep
-  - Launch & configure 
+  - Launch & configure (*[use this image for reference](images/NoSleep.png)*)
 - Sublime Text
   - add license
   - [package control](https://packagecontrol.io/)
@@ -104,11 +106,8 @@ brew doctor
     - Theme-Spacegray
     - TypeScript
     - View In Browser
-  - Update preferences from those in `~/app-settings/sublime`
+  - Update preferences from those in [app-settings/sublime](app-settings/sublime)
     - copy to `~/Library/Application Support/Sublime Text`
-- The Clock
-  - launch & license
-  - restore settings form [app-settings/the_clock_settings.tclk](app-settings/the_clock_settings.tclk)
 
 ## Install App Store
 
@@ -123,7 +122,7 @@ Install this stuff from the Apple App Store, then run the next install scripts..
 - Parcel
   - *login*
 - The Clock
-  - *then restore settings from Dropbox*
+  - *restore settings form [app-settings/the_clock_settings.tclk](app-settings/the_clock_settings.tclk)*
 - WeatherClip
 	- *launch and configure*
 
@@ -167,13 +166,13 @@ Run script [devinstall.sh](scripts/devinstall.sh)
     - from [app-settings/visual-studio-code](app-settings/visual-studio-code)
     - to `~/Library/Application Suport/Code/User`
   - install extensions listed in [vscode-extensions.md](vscode-extensions.md)
-    - add key for WallabyJS
+    - *add license key for WallabyJS*
 
 ### Setup Azure-cli AutoComplete:
 
-	````bash
+	```bash
 	$ echo '. <(azure --completion)' >> .zshrc
-	````
+	```
 
 ## Manual Installs
 
@@ -184,6 +183,10 @@ Run script [devinstall.sh](scripts/devinstall.sh)
 - Powermate
   - install located in `~/Dropbox/My AppSettings/_Installs`
 - Mac Office
+
+    > Install this from Office 365... not sure if acts differently from the homebrew cask `microsoft-office`... 
+    > *might be easier to use homebrew?*
+
   - Outlook configuration
     - General
       - uncheck "group similar folders from different accounts"
@@ -217,6 +220,7 @@ source $(brew --prefix nvm)/nvm.sh
 ```
 
 install the latest version of node, for instance:
+
 ```
 # list all available installs
 nvm ls-remote
@@ -241,6 +245,7 @@ brew cleanup
 git config --global user.name "Andrew Connell"
 git config --global user.email <insert primary email>
 git config --global credential.helper osxkeychain
+# set VSCode as commit message editor & merge tool
 git config --global core.editor "code -w"
 git config --global merge.tool code
 ```

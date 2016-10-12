@@ -542,9 +542,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1361 37 445 77 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>954 603 918 381 0 0 1920 1178 </string>
+	<string>3672 963 918 381 3440 -593 1440 2538 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>337 388 570 452 0 0 1920 1178 </string>
+	<string>3440 -585 1438 2530 3440 -593 1440 2538 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -682,12 +682,16 @@
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.15170273184776306</real>
+				<real>0.38592508435249329</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.11783610284328461</real>
+				<real>0.38546574115753174</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.38383013010025024</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -2887,5 +2891,9 @@
 	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.10</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
