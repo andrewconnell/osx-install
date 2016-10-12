@@ -6,11 +6,12 @@ brew cask install camtasia
 brew cask install charles
 brew cask install docker
 brew cask install firefox
+brew cask install caskroom/fonts/font-hack
 brew cask install fritzing
 brew install Caskroom/versions/google-chrome-canary
 brew cask install java
+brew cask install microsoft-azure-storage-explorer
 brew install protobuf
-brew cask install caskroom/fonts/font-hack
 brew cask install screenflow
 brew cask install smartgit
 brew cask install smartsynchronize
