@@ -116,6 +116,7 @@ Install this stuff from the Apple App Store, then run the next install scripts..
 - CCMenu
 - Display Menu
 - Divvy
+  - *then import shortcuts by opening Safari / Firefox & enter the url in [app-settings/divvy-shortcuts.md](app-settings/divvy-shortcuts.md)*
 - Jump Desktop
   - *then sync the machines from folder in dropbox*
 - Kindle
