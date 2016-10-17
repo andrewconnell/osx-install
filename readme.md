@@ -257,12 +257,11 @@ git config --global merge.tool code
   - set icon size 40x40
   - grid spacing - midpoint
   - check SHOW ITEM INFO
-- Security & Privacy
-  - Divvy
-  - Dropbox
-  - SnagIt & SnagItHelper
-  - Synergy
 - System Preferences
+  - Accessibility
+    - Zoom: check the following
+      - use keyboard shortcuts to Zoom
+      - use scroll gesture with modifier keys to zoom (select ^ CONTROL)
   - Display
     - set scale for laptop LCD to max (furthest right)
   - Dock
@@ -294,21 +293,26 @@ git config --global merge.tool code
     - don’t do linkedin... too many damn birthday alerts!
   - Printers
     - install / add printers
-- Users & Groups / Login Items
-  - Alfred 3
-  - Bartender
-  - Crashplan menu bar
-  - Divvy
-  - Dropbox
-  - Duet
-  - Google Chrome (hide = checked)
-  - Google Drive
-  - iTunesHelper
-  - No Sleep
-  - Skype for Business
-  - The Clock
-  - TripMode
-  - WeatherClip
+  - Security & Privacy
+    - Divvy
+    - Dropbox
+    - SnagIt & SnagItHelper
+    - Synergy
+  - Users & Groups / Login Items
+    - Alfred 3
+    - Bartender
+    - Crashplan menu bar
+    - Divvy
+    - Dropbox
+    - Duet
+    - Google Chrome (hide = checked)
+    - Google Drive
+    - iTunesHelper
+    - No Sleep
+    - Skype for Business
+    - The Clock
+    - TripMode
+    - WeatherClip
 
 ## Data Restore
 
