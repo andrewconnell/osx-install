@@ -4,6 +4,7 @@ brew cask install adobe-creative-cloud
 brew cask install balsamiq-mockups
 brew cask install camtasia
 brew cask install charles
+brew cask install cuda
 brew cask install docker
 brew cask install firefox
 brew cask install caskroom/fonts/font-hack
