@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>build</key>
+	<real>705</real>
+	<key>license</key>
+	<string>5996-5195-5545-4558-6156</string>
+	<key>preferences</key>
+	<dict>
+		<key>Battery_MenubarCustomizeStates</key>
+		<integer>0</integer>
+		<key>Battery_MenubarMode</key>
+		<string>2,0</string>
+		<key>CPU_MenubarCombineCores</key>
+		<integer>1</integer>
+		<key>CPU_MenubarGroupItems</key>
+		<integer>0</integer>
+		<key>CPU_MenubarMode</key>
+		<string></string>
+		<key>CombinedDropdownDisplayMode</key>
+		<string>2,4,3,5</string>
+		<key>CombinedMenubarDisplayMode</key>
+		<string>1</string>
+		<key>Diagnostics_Enabled</key>
+		<integer>1</integer>
+		<key>Diagnostics_Sent_3.3</key>
+		<true/>
+		<key>Disks_MenubarMode</key>
+		<string></string>
+		<key>Memory_AppFormat</key>
+		<integer>0</integer>
+		<key>Memory_MenubarMode</key>
+		<string>100,0</string>
+		<key>MenubarTheme</key>
+		<integer>1</integer>
+		<key>Network_GraphMode</key>
+		<integer>0</integer>
+		<key>Network_MenubarMode</key>
+		<string></string>
+		<key>Sensors_MenubarMode</key>
+		<string></string>
+		<key>StatusItems-Order</key>
+		<array>
+			<integer>7</integer>
+			<integer>6</integer>
+			<integer>8</integer>
+		</array>
+		<key>Time_CalendarEnabled</key>
+		<integer>1</integer>
+		<key>Time_CalendarShowWeeks</key>
+		<integer>0</integer>
+		<key>Time_Cities</key>
+		<array>
+			<real>2147714</real>
+			<real>2759794</real>
+			<real>4170894</real>
+			<real>5809844</real>
+		</array>
+		<key>Time_DropdownFormat</key>
+		<array>
+			<string>HH</string>
+			<string>':'</string>
+			<string>mm</string>
+			<string>' '</string>
+		</array>
+		<key>Time_MenubarFormat</key>
+		<array>
+			<string>EEEE</string>
+			<string>' '</string>
+			<string>MMM</string>
+			<string>' '</string>
+			<string>dd</string>
+			<string>' '</string>
+			<string>h</string>
+			<string>':'</string>
+			<string>mm</string>
+			<string>' '</string>
+			<string>a</string>
+		</array>
+	</dict>
+	<key>version</key>
+	<real>5.309999942779541</real>
+</dict>
+</plist>

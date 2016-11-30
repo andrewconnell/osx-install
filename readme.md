@@ -40,7 +40,7 @@ Do the following before paving the partition. This is to get the way I have thin
   - use that list to update the npm script: [app-settings/npminstall.sh](app-settings/npminstall.sh)
 
 - visual-studio-code
-  - get list of all installed extensions and update the list in [scripts/vscode-ext-install.sh](vscode-ext-install.sh)
+  - get list of all installed extensions and update the list in [scripts/vscode-ext-install.sh](scripts/vscode-ext-install.sh)
     - get a list using `$ code --list-extensions`
     - sort alphabetically
     - update the file `vscode-ext-install.sh`
@@ -125,8 +125,6 @@ Install this stuff from the Apple App Store, then run the next install scripts..
 - Kindle
 - Parcel
   - *login*
-- The Clock
-  - *restore settings form [app-settings/the_clock_settings.tclk](app-settings/the_clock_settings.tclk)*
 - WeatherClip
 	- *launch and configure*
 
@@ -137,6 +135,7 @@ Run script [myinstall.sh](scripts/myinstall.sh)
 - license Synergy
 - login Slack
 - login Steam
+- restore iStat Settings [app-settings/iStat Menus Settings.ismp](app-settings/iStat Menus Settings.ismp)
 
 ## Install Dev Apps
 
@@ -169,7 +168,7 @@ Run script [devinstall.sh](scripts/devinstall.sh)
   - copy snippets & settings:
     - from [app-settings/visual-studio-code](app-settings/visual-studio-code)
     - to `~/Library/Application Suport/Code/User`
-  - install extensions listed in [scripts/vscode-ext-install.sh](vscode-ext-install.sh)
+  - install extensions listed in [scripts/vscode-ext-install.sh](scripts/vscode-ext-install.sh)
     - `$ sh scripts/vscode-ext-install.sh`
     - copy all installed extensions from the base VSCode => VSCode Insiders build:
       - all extensions are in `~/.vscode/extensions`
