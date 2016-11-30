@@ -16,6 +16,7 @@ brew cask install screenflow
 brew cask install smartgit
 brew cask install smartsynchronize
 brew cask install visual-studio-code
+brew cask install visual-studio-code-insiders
 brew cask install xmind
 brew install mono
 brew cask install wireshark

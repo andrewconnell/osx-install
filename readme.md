@@ -40,7 +40,10 @@ Do the following before paving the partition. This is to get the way I have thin
   - use that list to update the npm script: [app-settings/npminstall.sh](app-settings/npminstall.sh)
 
 - visual-studio-code
-  - get list of all installed extensions and update the list in [vscode-extensions.md](vscode-extensions.md)
+  - get list of all installed extensions and update the list in [scripts/vscode-ext-install.sh](vscode-ext-install.sh)
+    - get a list using `$ code --list-extensions`
+    - sort alphabetically
+    - update the file `vscode-ext-install.sh`
   - backup snippets & user settings to [app-settings/visual-studio-code](app-settings/visual-studio-code)
 
 ## Pave Partition
@@ -166,8 +169,13 @@ Run script [devinstall.sh](scripts/devinstall.sh)
   - copy snippets & settings:
     - from [app-settings/visual-studio-code](app-settings/visual-studio-code)
     - to `~/Library/Application Suport/Code/User`
-  - install extensions listed in [vscode-extensions.md](vscode-extensions.md)
+  - install extensions listed in [scripts/vscode-ext-install.sh](vscode-ext-install.sh)
+    - `$ sh scripts/vscode-ext-install.sh`
+    - copy all installed extensions from the base VSCode => VSCode Insiders build:
+      - all extensions are in `~/.vscode/extensions`
+      - insiders is in `~/.vscode-insiders/extensions`
     - *add license key for WallabyJS*
+      - repeat for VSCode Insiders install
 
 ### Setup Azure-cli AutoComplete:
 
