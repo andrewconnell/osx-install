@@ -7,6 +7,7 @@ code --install-extension donjayamanne.githistory
 code --install-extension EditorConfig.EditorConfig
 code --install-extension eg2.tslint
 code --install-extension eg2.vscode-npm-script
+code --install-extension felipecaputo.git-project-manager
 code --install-extension joelday.docthis
 code --install-extension johnpapa.Angular1
 code --install-extension johnpapa.Angular2

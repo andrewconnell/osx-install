@@ -1,15 +1,24 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Hack",
-  "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.fontSize": 16,
-  "editor.formatOnType": true,
+  "editor.fontFamily": "Hack",
+  "editor.fontSize": 12,
+  "editor.formatOnType": false,
   "editor.renderWhitespace": true,
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
   "editor.wrappingColumn": 0,
   "files.exclude": {
-    "**/.git": true,
-    "**/.DS_Store": true,
-    "**/.@__thumb":true
-  }
+    "**/.@__thumb": true,
+    "**/*.js":{"when":"$(basename).ts"},
+    "**/*.js.map":true
+  },
+  "circleci.apiKey": "2691b9b2914946ae08e0e28e684ce777844de317",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+  "npm.runInTerminal": false,
+  "typescript.check.tscVersion": false,
+  "gitProjectManager.baseProjectsFolders": [
+    "/Users/ac/repos"
+  ]
 }
