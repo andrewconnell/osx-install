@@ -16,6 +16,7 @@ npm install -g mocha
 npm install -g nodemon
 npm install -g nodetree
 npm install -g phantomjs
+npm install -g source-map-explorer
 npm install -g superstatic
 npm install -g typings
 npm install -g webpack
