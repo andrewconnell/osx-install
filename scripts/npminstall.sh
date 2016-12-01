@@ -1,5 +1,6 @@
 #!/bin/sh
-npm install -g microsoft/generator-sharepoint
+
+npm install -g @microsoft/generator-sharepoint
 npm install -g azure-cli
 npm install -g bower
 npm install -g browserify
@@ -14,7 +15,6 @@ npm install -g karma-cli
 npm install -g mocha
 npm install -g nodemon
 npm install -g nodetree
-npm install -g npm
 npm install -g phantomjs
 npm install -g superstatic
 npm install -g typings

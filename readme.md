@@ -33,7 +33,7 @@ Do the following before paving the partition. This is to get the way I have thin
 - Node
   - get list of all globally installed NPM packages
 
-    ```bash
+    ```shell
     $ npm list -g --depth=0
     ```
   
@@ -178,7 +178,7 @@ Run script [devinstall.sh](scripts/devinstall.sh)
 
 ### Setup Azure-cli AutoComplete:
 
-	```bash
+	```shell
 	$ echo '. <(azure --completion)' >> .zshrc
 	```
 
@@ -218,30 +218,24 @@ Run script [devinstall.sh](scripts/devinstall.sh)
 
 manage node installs using nvm... this lets me test different versions of node as well as avoid issue with having to use `sudo` when installing packages globally
 
-`brew install nvm`
+```shell
+$ brew install nvm
+```
 
 make sure this is at the very end of `.zshrc`
 
-```
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-```
-
-install the latest version of node, for instance:
-
-```
-# list all available installs
-nvm ls-remote
-# install latest version
-nvm install v4.2.1
+```shell
+$ export NVM_DIR=~/.nvm
+$ source $(brew --prefix nvm)/nvm.sh
 ```
 
-now run [npminstall.sh](scripts/npminstall.sh) to install packages globally
+install node LTS and stable versions by running script [nodeinstall.sh](scripts/nodeinstall.sh)
 
+now run [npminstall.sh](scripts/npminstall.sh) to install packages globally for each version of node installed
 
 ## After all Installs, Update Brew, Brew Cask & Purge Installs
 
-```bash
+```shell
 brew update
 brew upgrade brew-cask
 brew cleanup
@@ -249,7 +243,7 @@ brew cleanup
 
 ## Setup git:
 
-```bash
+```shell
 git config --global user.name "Andrew Connell"
 git config --global user.email <insert primary email>
 git config --global credential.helper osxkeychain
@@ -349,7 +343,7 @@ Run first backups.
 
 to keep homebrew installed things update, do this:
 
-  ```bash
+  ```shell
   brew update       	# download app updated formulas
   brew outdated     	# what’s old?
   brew upgrade --all	# upgrade everything locally
