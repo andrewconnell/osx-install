@@ -178,9 +178,9 @@ Run script [devinstall.sh](scripts/devinstall.sh)
 
 ### Setup Azure-cli AutoComplete:
 
-	```shell
-	$ echo '. <(azure --completion)' >> .zshrc
-	```
+```shell
+$ echo '. <(azure --completion)' >> .zshrc
+```
 
 ## Manual Installs
 
