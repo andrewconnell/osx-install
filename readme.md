@@ -91,6 +91,10 @@ brew doctor
   - import color profiles from [iterm](app-settings/iterm)
   - [setup iTerm with oh-my-zsh & powerline](https://www.xplatform.rocks/2015/05/07/setting-up-iterm2-with-oh-my-zsh-and-powerline-on-osx)
   - import settings from ~/Dropbox/My AppSettings/iTerm
+  - apply custom **bullet-train** theme
+    - copy [iterm/bullet-train.zsh-theme](app-settings/iterm/bullet-train.zsh-theme) to `~/.oh-my-zsh/themes`
+    - update `~/.zshrc` to specify the theme used:
+      `ZSH_THEME="bullet-train"`
 - NoSleep
   - Launch & configure (*[use this image for reference](images/NoSleep.png)*)
 - Sublime Text
