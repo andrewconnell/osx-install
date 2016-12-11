@@ -20,8 +20,8 @@ brew cask install smartsynchronize
 brew cask install visual-studio-code
 brew cask install visual-studio-code-insiders
 brew cask install xmind
-brew install mono
 brew cask install wireshark
+brew cask install yarn
 
 # install terminal screen recorder
 brew install asciinema
