@@ -25,6 +25,10 @@ brew cask install tripmode
 brew cask install vlc
 brew cask install xz
 
+# homebrew cask updater: https://github.com/buo/homebrew-cask-upgrade
+brew tap buo/cask-upgrade
+
+
 brew install bash-completion
 brew tap homebrew/completions
 # make sure to do the update to the ~/.bash_profile in the instructions above
