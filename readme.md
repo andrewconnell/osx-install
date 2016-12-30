@@ -348,11 +348,13 @@ Run first backups.
 to keep homebrew installed things update, do this:
 
   ```shell
-  brew update       	# download app updated formulas
-  brew outdated     	# what’s old?
-  brew upgrade --all	# upgrade everything locally
-  # because you can't upgrade casks, just reinstall everything you have installed
-  brew cask list | xargs brew cask install --force
+  brew update           # download app updated formulas
+  brew outdated         # what’s old?
+  brew upgrade          # upgrade everything locally
+  # list all brew casks installed & their versions
+  brew cu --dry-run
+  # optionally update everything
+  brew cu
   # cleanup everything
   brew cleanup
   ```
