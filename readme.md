@@ -63,8 +63,6 @@ Install [Homebrew](http://brew.sh/) for automated installs & updates.
 ```shell
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
-
-brew tap caskroom/cask
 brew install caskroom/cask/brew-cask
 brew doctor
 ```
@@ -76,7 +74,7 @@ brew doctor
 
 ## Configure Core Apps
 
-- login to the hollowing:q
+- login to the following:
   - Chrome
     - *do this first & login to LastPass to get licenses*
   - Dropbox
@@ -87,14 +85,24 @@ brew doctor
 - Bartender
   - License & configure (*[use this image for reference](images/macOS-MenuBar.png)*)
 - iTerm
-  - copy fonts from [iterm/Source Code Pro Fonts](app-settings/iterm/Source Code Pro Fonts) => `~/Library/Fonts`
-  - import color profiles from [iterm](app-settings/iterm)
-  - [setup iTerm with oh-my-zsh & powerline](https://www.xplatform.rocks/2015/05/07/setting-up-iterm2-with-oh-my-zsh-and-powerline-on-osx)
-  - import settings from ~/Dropbox/My AppSettings/iTerm
+  - copy fonts
+    - from [iterm/Source Code Pro Fonts](app-settings/iterm/Source Code Pro Fonts) => `~/Library/Fonts`
+    - from [iterm/Meslo LG M DZ Regular for Powerline.otf](app-settings/iterm/Meslo LG M DZ Regular for Powerline.otf) => `~/Library/Fonts`
+  - install oh my
+
+    ```shell
+    $ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+    ```
+
+  - configure iterm preferences: iterm => preferences
+    - import color profiles from [iterm](app-settings/iterm)
+      - iterm > profiles > colors > color presents => import (select all of them)
+    - change to using powerine font
+      - iterm > profiles > text > font: pick 12pt Meslo LG M DZ Regular for Powerline
+    - import settings from ~/Dropbox/My AppSettings/iTerm
   - apply custom **bullet-train** theme
     - copy [iterm/bullet-train.zsh-theme](app-settings/iterm/bullet-train.zsh-theme) to `~/.oh-my-zsh/themes`
-    - update `~/.zshrc` to specify the theme used:
-      `ZSH_THEME="bullet-train"`
+    - update `~/.zshrc` to specify the theme used: `ZSH_THEME="bullet-train"`
 - NoSleep
   - Launch & configure (*[use this image for reference](images/NoSleep.png)*)
 - Sublime Text
