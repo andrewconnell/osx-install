@@ -14,6 +14,7 @@ brew install youtube-dl
 brew cask install appcleaner
 brew cask install betterzipql
 brew cask install google-hangounts
+brew cask install keybase
 brew cask install istat-menus
 brew cask install qlcolorcode
 brew cask install qlimageize
