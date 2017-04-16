@@ -6,6 +6,8 @@
 	<true/>
 	<key>AllowClipboardAccess</key>
 	<false/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AnimateDimming</key>
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -550,9 +552,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1410 770 620 392 0 0 3440 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>127 486 796 473 0 0 1920 1178 </string>
+	<string>55 168 796 473 0 0 1280 698 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1032 55 850 1068 0 0 1920 1178 </string>
+	<string>0 5 1280 773 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2876,13 +2878,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-12-06T22:12:43Z</date>
+	<date>2017-04-03T19:48:55Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<true/>
+	<key>ShowFullScreenTabBar</key>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -2924,7 +2928,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.12</string>
+	<string>3.0.15</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
