@@ -54,18 +54,28 @@ Do the following before paving the partition. This is to get the way I have thin
 
 ## After Pave, Install the Following
 
-The following manual installs & configuration should be done to setup automated installs.
+The following installs & configuration should be done to setup automated installs.
 
 ### Homebrew & Homebrew Cask
 
-Install [Homebrew](http://brew.sh/) for automated installs & updates. 
+Install [Homebrew](http://brew.sh/) for automated installs & updates.
 
 ```shell
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor
-brew install caskroom/cask/brew-cask
-brew doctor
+sh ./scripts/homebrew-install.sh
 ```
+
+### Setup Command Prompt
+
+Install ZSH, Oh My ZSH, iTerm & copy fonts & themes:
+
+```shell
+sh ./scripts/cmdprompt-install.sh
+```
+
+- iTerm
+    - import settings from ~/Dropbox/My AppSettings/iTerm
+  - apply custom **bullet-train** theme
+    - update `~/.zshrc` to specify the theme used: `ZSH_THEME="bullet-train"`
 
 ## Install Core Apps
 
@@ -84,25 +94,6 @@ brew doctor
   - Activate power pack within app settings
 - Bartender
   - License & configure (*[use this image for reference](images/macOS-MenuBar.png)*)
-- iTerm
-  - copy fonts
-    - from [iterm/Source Code Pro Fonts](app-settings/iterm/Source Code Pro Fonts) => `~/Library/Fonts`
-    - from [iterm/Meslo LG M DZ Regular for Powerline.otf](app-settings/iterm/Meslo LG M DZ Regular for Powerline.otf) => `~/Library/Fonts`
-  - install oh my
-
-    ```shell
-    $ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-    ```
-
-  - configure iterm preferences: iterm => preferences
-    - import color profiles from [iterm](app-settings/iterm)
-      - iterm > profiles > colors > color presents => import (select all of them)
-    - change to using powerine font
-      - iterm > profiles > text > font: pick 12pt Meslo LG M DZ Regular for Powerline
-    - import settings from ~/Dropbox/My AppSettings/iTerm
-  - apply custom **bullet-train** theme
-    - copy [iterm/bullet-train.zsh-theme](app-settings/iterm/bullet-train.zsh-theme) to `~/.oh-my-zsh/themes`
-    - update `~/.zshrc` to specify the theme used: `ZSH_THEME="bullet-train"`
 - NoSleep
   - Launch & configure (*[use this image for reference](images/NoSleep.png)*)
 - Sublime Text
