@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# install drivers
+brew tap caskroom/drivers
+
 # install tools
 brew cask install alfred
 brew cask install bartender
