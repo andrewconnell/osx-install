@@ -21,7 +21,12 @@ brew cask install visual-studio-code
 brew cask install visual-studio-code-insiders
 brew cask install xmind
 brew cask install wireshark
+
+# installing yarn will install node
 brew cask install yarn
+# immediately remove node
+brew uninstall --ignore-dependencies node
+
 
 # install terminal screen recorder
 brew install asciinema
