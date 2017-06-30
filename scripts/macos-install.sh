@@ -1,11 +1,14 @@
 #!/bin/sh
 
-APPLEID=$1
-
 # install mas-cli to install from the Mac App store
 brew install mas
 
-# make sure signed in
+# get Apple ID
+echo ""
+echo "Enter AppleID to signin to Mac App Store:"
+read -p "  AppleID (john@foo.com): " APPLEID
+
+# make sure signed into Mac App Store
 mas signin $APPLEID
 
 # install macos apps
