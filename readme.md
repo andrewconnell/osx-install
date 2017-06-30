@@ -100,9 +100,17 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 ```
 
 - iTerm
-    - import settings from `~/Dropbox/My AppSettings/iTerm`
+  - import settings from `~/Dropbox/My AppSettings/iTerm`
   - apply custom **bullet-train** theme
     - update `~/.zshrc` to specify the theme used: `ZSH_THEME="bullet-train"`
+  - update SSH
+    - copy the `~/.ssh` keys into the new location
+    - reset permissions & add private key to keychain:
+
+      ```shell
+      sudo chmod 600 ~/.ssh/id_rsa
+      ssh-add -K ~/.ssh/id_rsa
+      ```
 
 ## Install Core Apps: `coreinstall.sh`
 
