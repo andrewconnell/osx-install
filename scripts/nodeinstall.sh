@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install node v4 current LTS 
-nvm install lst/argon
+nvm install lts/argon
 # update npm
 npm install -g npm
 

@@ -1,6 +1,5 @@
 #!/bin/sh
 
-brew cask install adobe-creative-cloud
 brew cask install balsamiq-mockups
 brew cask install camtasia
 brew cask install charles
@@ -16,21 +15,23 @@ brew install protobuf
 brew cask install screenflow
 brew cask install smartgit
 brew cask install smartsynchronize
+brew cask install visual-studio
 brew cask install visual-studio-code
 brew cask install visual-studio-code-insiders
 brew cask install xmind
 brew cask install wireshark
 
-# installing yarn will install node
-brew cask install yarn
-# immediately remove node
-brew uninstall --ignore-dependencies node
-
+# yarn but not dependencies (node)
+brew cask install yarn --ignore-dependencies
 
 # install terminal screen recorder
 brew install asciinema
 
 # docker stuff
 brew install docker-clean
-homebrew/completions/docker-completion
-homebrew/completions/docker-compose-completion
+brew install docker-completion
+brew install docker-compose-completion
+
+# Adobe creative cloud installer
+brew cask install adobe-creative-cloud
+/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app

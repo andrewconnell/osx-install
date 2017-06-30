@@ -26,5 +26,19 @@
       "<pre class=\"prettyprint\"><code>$1\n</code></pre>\n$2"
     ],
     "description":"add code snippet on blog"
+  },
+  "ngOfficeUIFabric - commit reference":{
+    "prefix":"uif-commit",
+    "body":[
+      "[${1:commithash}](https://github.com/ngOfficeUIFabric/ng-officeuifabric/commit/${1:commithash})"
+    ],
+    "description": "add commit hash for ngOfficeUIFabric changelog"
+  },
+  "ngOfficeUIFabric - issue reference":{
+    "prefix":"uif-issue",
+    "body":[
+      "[#${1:issuenumber}](https://github.com/ngOfficeUIFabric/ng-officeuifabric/issues/${1:issuenumber})"
+    ],
+    "description": "add issue for ngOfficeUIFabric changelog"
   }
 }

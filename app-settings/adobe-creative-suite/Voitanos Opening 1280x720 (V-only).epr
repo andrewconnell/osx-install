@@ -30,8 +30,8 @@
 	<FolderDisplayPath></FolderDisplayPath>
 	<DoEmulation>false</DoEmulation>
 	<DoVideo>true</DoVideo>
-	<DoAudio>true</DoAudio>
-	<PresetID>1de3e3a4-651c-4d69-aa47-5302a3e03201</PresetID>
+	<DoAudio>false</DoAudio>
+	<PresetID>c362c483-b9dd-4fe5-a1c5-752e8b13a680</PresetID>
 	<CaptionParamContainer ObjectRef="287"/>
 	<ExportParamContainer ObjectRef="1"/>
 	<ExporterFileType>1211250228</ExporterFileType>
@@ -39,7 +39,7 @@
 	<ExporterName></ExporterName>
 	<PresetUserComments></PresetUserComments>
 	<PresetComments>Custom</PresetComments>
-	<PresetName>Wistia (match source)</PresetName>
+	<PresetName>Voitanos Opening 1280x720 (V-only)</PresetName>
 	<ExporterParamContainer ObjectID="1" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
 		<ContainedParamsVersion>1</ContainedParamsVersion>
 		<ParamContainerItems Version="1">
@@ -1423,7 +1423,7 @@
 	<ExporterParam ObjectID="78" ClassID="d0f6b8af-8ddb-4381-acf8-3e817480d07d" Version="1">
 		<ParamAuxType></ParamAuxType>
 		<ParamAuxValue></ParamAuxValue>
-		<ParamArbData Encoding="base64" Checksum="546147725">fwAAAA==</ParamArbData>
+		<ParamArbData Encoding="base64" Checksum="3062730125">fgAAAA==</ParamArbData>
 		<ParamIdentifier>ADBEVideoMatchSource</ParamIdentifier>
 		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
 		<IsFilePathString>false</IsFilePathString>
@@ -1473,13 +1473,13 @@
 		<ParamIsPassword>false</ParamIsPassword>
 		<ParamIsMultiLine>false</ParamIsMultiLine>
 		<ParamIsHidden>false</ParamIsHidden>
-		<ParamIsDisabled>true</ParamIsDisabled>
+		<ParamIsDisabled>false</ParamIsDisabled>
 		<ParamIsIndependant>false</ParamIsIndependant>
 		<ParamIsSlider>false</ParamIsSlider>
 		<ParamDontSerializeValue>false</ParamDontSerializeValue>
 		<ParamOrdinalValue>2</ParamOrdinalValue>
 		<ParamType>2</ParamType>
-		<ParamValue>1920</ParamValue>
+		<ParamValue>1280</ParamValue>
 	</ExporterParam>
 	<ExporterParam ObjectID="81" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
 		<ParamAuxType></ParamAuxType>
@@ -1493,13 +1493,13 @@
 		<ParamIsPassword>false</ParamIsPassword>
 		<ParamIsMultiLine>false</ParamIsMultiLine>
 		<ParamIsHidden>false</ParamIsHidden>
-		<ParamIsDisabled>true</ParamIsDisabled>
+		<ParamIsDisabled>false</ParamIsDisabled>
 		<ParamIsIndependant>false</ParamIsIndependant>
 		<ParamIsSlider>false</ParamIsSlider>
 		<ParamDontSerializeValue>false</ParamDontSerializeValue>
 		<ParamOrdinalValue>3</ParamOrdinalValue>
 		<ParamType>2</ParamType>
-		<ParamValue>1080</ParamValue>
+		<ParamValue>720</ParamValue>
 	</ExporterParam>
 	<ExporterParam ObjectID="82" ClassID="8def7863-204e-4206-8791-54a78f15c66b" Version="1">
 		<ParamAuxType></ParamAuxType>
@@ -1750,7 +1750,7 @@
 		<ParamDontSerializeValue>false</ParamDontSerializeValue>
 		<ParamOrdinalValue>3</ParamOrdinalValue>
 		<ParamType>3</ParamType>
-		<ParamValue>15.</ParamValue>
+		<ParamValue>29.969999999999998863131623</ParamValue>
 	</ExporterParam>
 	<ExporterParam ObjectID="95" ClassID="018cf63d-c58d-4d39-97df-36b6b2d6ef88" Version="1">
 		<ParamAuxType></ParamAuxType>
@@ -1770,7 +1770,7 @@
 		<ParamDontSerializeValue>false</ParamDontSerializeValue>
 		<ParamOrdinalValue>4</ParamOrdinalValue>
 		<ParamType>3</ParamType>
-		<ParamValue>15.</ParamValue>
+		<ParamValue>29.969999999999998863131623</ParamValue>
 	</ExporterParam>
 	<ExporterParam ObjectID="96" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
 		<ParamAuxType></ParamAuxType>

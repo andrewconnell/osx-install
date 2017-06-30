@@ -10,6 +10,26 @@ Do the following before paving the partition. This is to get the way I have thin
 
 - MacOS & System
   - have a current Apple TimeMachine & CrashPlan backup job finished
+  - screenshot Finder layout
+
+    ![](images/macOS-Finder.png)
+  
+  - screenshots of Finder settings
+
+    ![](images/macOS-Finder-Settings-General.png)
+
+    ![](images/macOS-Finder-Settings-Preferences.png)
+
+    ![](images/macOS-Finder-Settings-Sidebar.png)
+
+  - screenshots of Finder settings
+
+    ![](images/macOS-XtraFinder-Preferences-Tabs.png)
+    
+    ![](images/macOS-XtraFinder-Preferences-Features.png)
+    
+    ![](images/macOS-XtraFinder-Preferences-AddItems.png)
+
   - screenshot MacOS dock
 
     ![](images/macOS-Dock.png)
@@ -18,8 +38,8 @@ Do the following before paving the partition. This is to get the way I have thin
 
     ![](images/macOS-MenuBar.png)
 
-- XCOPY to local disk if possible (faster than downloading from CrashPlan)
-  - `~/.bashrc`
+- XCOPY to external disk if possible (faster than downloading from CrashPlan)
+
   - `~/.gitconfig`
   - `~/.ssh`
   - `~/.zshrc`
@@ -27,7 +47,14 @@ Do the following before paving the partition. This is to get the way I have thin
   - `~/Dev`
   - `~/Downloads`
   - `~/Documents`
+  - `~/lib`
   - `~/Pictures`
+  - optional
+    - `~/.angular-cli.json`
+    - `~/_play`
+    - `~/Movies`
+    - `~/repos`
+    - *review other folders in the root*
 - Dev
   - Dump list of all repos in `~/repos`
 - Node
@@ -61,7 +88,7 @@ The following installs & configuration should be done to setup automated install
 Install [Homebrew](http://brew.sh/) for automated installs & updates.
 
 ```shell
-sh ./scripts/homebrew-install.sh
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install.sh | sh
 ```
 
 ### Setup Command Prompt
@@ -69,18 +96,19 @@ sh ./scripts/homebrew-install.sh
 Install ZSH, Oh My ZSH, iTerm & copy fonts & themes:
 
 ```shell
-sh ./scripts/cmdprompt-install.sh
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/cmdprompt-install.sh | sh
 ```
 
 - iTerm
-    - import settings from ~/Dropbox/My AppSettings/iTerm
+    - import settings from `~/Dropbox/My AppSettings/iTerm`
   - apply custom **bullet-train** theme
     - update `~/.zshrc` to specify the theme used: `ZSH_THEME="bullet-train"`
 
-## Install Core Apps
+## Install Core Apps: `coreinstall.sh`
 
-- run script [coreinstall.sh](scripts/coreinstall.sh)
-  - run using `$ sh coreinstall.sh`
+```shell
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/coreinstall.sh | sh
+```
 
 ## Configure Core Apps
 
@@ -92,10 +120,38 @@ sh ./scripts/cmdprompt-install.sh
   - Skype
 - Alfred
   - Activate power pack within app settings
+  - **Preferences > Advanced**: Syncing - set to `~/Dropbox/My AppSettings/Alfred`
+- Amphetamine
+
+  ![](images/amphetamine-preferences-general.png)
+
+  ![](images/amphetamine-preferences-notifications.png)
+
+  ![](images/amphetamine-preferences-appearance.png)
+
 - Bartender
   - License & configure (*[use this image for reference](images/macOS-MenuBar.png)*)
 - NoSleep
   - Launch & configure (*[use this image for reference](images/NoSleep.png)*)
+- Outlook
+
+  ![](images/outlook-general.png)
+
+  ![](images/outlook-notifications.png)
+
+  ![](images/outlook-fonts.png)
+
+  ![](images/outlook-reading.png)
+
+  ![](images/outlook-composing-html.png)
+
+  ![](images/outlook-composing-plaintext.png)
+
+  ![](images/outlook-calendar.png)
+
+- Steam
+  - Launch & login
+  - Disable auto login: **Preferences > Interface > [uncheck] Run Steam with my computer starts**
 - Sublime Text
   - add license
   - [package control](https://packagecontrol.io/)
@@ -114,68 +170,89 @@ sh ./scripts/cmdprompt-install.sh
     - View In Browser
   - Update preferences from those in [app-settings/sublime](app-settings/sublime)
     - copy to `~/Library/Application Support/Sublime Text`
+- Xtrafinder
+  - Reboot to recovery OS: reboot & hold COMMAND+R
+  - select **Utilities => Terminal**
+  - enter `csrutil enable --without debug
+  - reboot
 
 ## Install App Store
 
 Install this stuff from the Apple App Store, then run the next install scripts... while they run, configure these.
 
+- Amphetamine
 - CCMenu
+- Disk Map
 - Display Menu
 - Divvy
-  - *then import shortcuts by opening Safari / Firefox & enter the url in [app-settings/divvy-shortcuts.md](app-settings/divvy-shortcuts.md)*
+  - import shortcuts by opening Safari / Firefox & enter the url in [app-settings/divvy-shortcuts.md](app-settings/divvy-shortcuts.md)
 - Jump Desktop
-  - *then sync the machines from folder in dropbox*
+  - then sync the machines from folder in dropbox
 - Kindle
 - Parcel
   - *login*
 - WeatherClip
 	- *launch and configure*
 
-## Install My Personal Apps
+## Install My Personal Apps: `myinstall.sh`
 
-Run script [myinstall.sh](scripts/myinstall.sh)
+```shell
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/myinstall.sh | sh
+```
 
 - license Synergy
 - login Slack
 - login Steam
 - restore iStat Settings [app-settings/iStat Menus Settings.ismp](app-settings/iStat Menus Settings.ismp)
 
-## Install Dev Apps
+## Install Dev Apps: `devinstall.sh`
 
-Run script [devinstall.sh](scripts/devinstall.sh)
+```shell
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/devinstall.sh | sh
+```
 
 - Creative Cloud installs
-  - Acrobat
-  - Audition
-  - Bridge
-  - Lightroom
+  - Acrobat DC
+  - After Effects CC
+  - Audition CC
+  - Bridge CC
+  - Illustrator CC
+  - Lightroom CC
   - Media Encoder
-  - Photoshop
-  - Premiere Pro
+  - Photoshop CC
+  - Prelude CC
+  - Premiere Pro CC
 - launch
   - Docker for MacOS
   - Duet
 - license
-  - Camtasia
-  - Screenflow
-  - Charles
   - Balsamiq-mockups
-  - Smartgit
+  - Camtasia
+  - Charles
+  - Screenflow
+  - SmartGit
   - SmartSynchronize
 - setup
   - Creative-Cloud
     - import settings from Adobe CC, Adobe Media Encoder - import preferences from [app-settings/adobe-creative-suite](app-settings/adobe-creative-suite)
+- Visual Studio
+  - open & login with O365 account
+  - change updates to alpha channel
 - Visual Studio Code
   - install [Hack font](http://sourcefoundry.org/hack/)
     - font found in [app-settings](app-settings) as **Hack-*-otf.zip**
+  - Launch VS Code
+    - from command pallet, find **Shell Command**
+      - uninstall & reinstall command in path
+      - *repeat the above for VS Code Insiders*
+    - install extensions:
+
+      ```shell
+      curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/vscode-ext-install.sh | sh
+      ```
   - copy snippets & settings:
     - from [app-settings/visual-studio-code](app-settings/visual-studio-code)
     - to `~/Library/Application Suport/Code/User`
-  - install extensions listed in [scripts/vscode-ext-install.sh](scripts/vscode-ext-install.sh)
-    - `$ sh scripts/vscode-ext-install.sh`
-    - copy all installed extensions from the base VSCode => VSCode Insiders build:
-      - all extensions are in `~/.vscode/extensions`
-      - insiders is in `~/.vscode-insiders/extensions`
     - *add license key for WallabyJS*
       - repeat for VSCode Insiders install
 
@@ -209,8 +286,7 @@ $ echo '. <(azure --completion)' >> .zshrc
     - Reading
       - set to mark as read only when opening in seperate window
     - Signature
-- Skype for Business
-  - install located in `~/Dropbox/My AppSettings/_Installs`
+    - Signin to Skype for Business
 - TechSmith SnagIt
   - get by logging into [TechSmith](http://www.techsmith.com)
   - then launch to license
@@ -222,29 +298,41 @@ $ echo '. <(azure --completion)' >> .zshrc
 manage node installs using nvm... this lets me test different versions of node as well as avoid issue with having to use `sudo` when installing packages globally
 
 ```shell
-$ brew install nvm
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/nvm-install.sh | sh
 ```
 
 make sure this is at the very end of `.zshrc`
 
 ```shell
-$ export NVM_DIR=~/.nvm
-$ source $(brew --prefix nvm)/nvm.sh
+$ export NVM_DIR="$HOME/.nvm"
+$ . "/usr/local/opt/nvm/nvm.sh"
 ```
 
-install node LTS and stable versions by running script [nodeinstall.sh](scripts/nodeinstall.sh)
+install node LTS and stable versions:
 
-now run [npminstall.sh](scripts/npminstall.sh) to install packages globally for each version of node installed
+```shell
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/nodeinstall.sh | sh
+```
+
+now install global packages for each version of node installed:
+
+```shell
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install.sh | sh
+```
+
 
 ## After all Installs, Update Brew, Brew Cask & Purge Installs
 
 ```shell
+brew doctor
 brew update
-brew upgrade brew-cask
 brew cleanup
+brew cask cleanup
 ```
 
 ## Setup git:
+
+> might already be done by copying the hidden files over
 
 ```shell
 git config --global user.name "Andrew Connell"
@@ -261,6 +349,10 @@ git config --global merge.tool code
   - set icon size 40x40
   - grid spacing - midpoint
   - check SHOW ITEM INFO
+- Finder
+  - mirror what is in the screenshot [macOS-Finder.png](macOS-Finder.png)
+- Menu Bar / Bartender
+  - mirror what is in the screenshot [macOS-MenuBar.png](macOS-MenuBar.png)
 - System Preferences
   - Accessibility
     - Zoom: check the following
@@ -275,8 +367,9 @@ git config --global merge.tool code
     - animate opening apps
     - auto hide & show
     - show indicators for open apps
+    - mirror what is in the screenshot [macOS-Dock.png](macOS-Dock.png)
   - General
-    - check *Use dark menu bar & dock* 
+    - check *Use dark menu bar & dock*
   - Keyboard
     - General:
       - Key repeat: 100% fast
@@ -297,7 +390,8 @@ git config --global merge.tool code
     - don’t do linkedin... too many damn birthday alerts!
   - Printers
     - install / add printers
-  - Security & Privacy
+  - Security > Privacy
+    - CheatSheet
     - Divvy
     - Dropbox
     - SnagIt & SnagItHelper

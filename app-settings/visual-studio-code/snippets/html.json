@@ -26,5 +26,54 @@
       "<code>$1</code>$2"
     ],
     "description":"add escaped code to page"
+  },
+  "ACDEMO - 01 - office.js reference":{
+    "prefix": "acd-01-office.js-reference",
+    "body": [
+      "<script src=\"https://appsforoffice.microsoft.com/lib/1/hosted/Office.js\" type=\"application/javascript\"></script>"
+    ],
+    "description": ""
+  },
+  "ACDEMO - 03 - customer-center.component.html":{
+    "prefix": "acd-03-customer-center.component.html",
+    "body": [
+      "<div id=\"addinHeading\"",
+      "     class='ms-font-xl ms-bgColor-themePrimary ms-fontColor-white'>",
+      "  <div>Possible customers found in this email...</div>",
+      "</div>"
+    ],
+    "description": ""
+  },
+  "ACDEMO - 05 - index.html office ui fabric update":{
+    "prefix": "acd-05-fabric-ref",
+    "body": [
+      "<link rel=\"stylesheet\" href=\"/vendor/office-ui-fabric/dist/css/fabric.min.css\">",
+      "<link rel=\"stylesheet\" href=\"/vendor/office-ui-fabric/dist/css/fabric.components.min.css\">"
+    ],
+    "description": ""
+  },
+  "ACDEMO - 07 - customer-list.component.html":{
+    "prefix": "acd-07-customer-list.component.html",
+    "body": [
+      "<div class=\"ms-PersonaCard customers\">",
+      "  <div class=\"ms-PersonaCard-persona\">",
+      "    <div class=\"ms-Persona ms-Persona--sm\">",
+      "      <div class=\"ms-Persona-imageArea\">",
+      "        <div class=\"ms-Persona-initials ms-Persona-initials--blue\"></div>",
+      "      </div>",
+      "      <div class=\"ms-Persona-presence\"></div>",
+      "      <div class=\"ms-Persona-details\">",
+      "        <div class=\"ms-Persona-primaryText\"></div>",
+      "        <div class=\"ms-Persona-secondaryText\"></div>",
+      "        <div class=\"ms-Persona-tertiaryText\"></div>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "  <ul class=\"ms-PersonaCard-actions\">",
+      "    <li class=\"ms-PersonaCard-overflow\">View profile</li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": ""
   }
 }

@@ -31,7 +31,7 @@
 	<DoEmulation>false</DoEmulation>
 	<DoVideo>true</DoVideo>
 	<DoAudio>true</DoAudio>
-	<PresetID>918dfd76-e667-45a7-b0d3-b260e6bc3524</PresetID>
+	<PresetID>cab213fe-ee21-4208-be1f-bd8b99487e80</PresetID>
 	<CaptionParamContainer ObjectRef="287"/>
 	<ExportParamContainer ObjectRef="1"/>
 	<ExporterFileType>1211250228</ExporterFileType>
@@ -3394,7 +3394,7 @@
 	<VideoComponentParam ObjectID="183" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>62</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>true</UpperBound>
@@ -3459,7 +3459,7 @@
 	<ArbVideoComponentParam ObjectID="187" ClassID="313e54d4-6903-49ad-b0bf-8262cdd10f4e" Version="2">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>95</ParameterID>
 		<UnitsString></UnitsString>
 		<KeyframeSetSize>0</KeyframeSetSize>
 		<StartKeyframeValue Encoding="base64" Checksum="4294940310">/v4=</StartKeyframeValue>
@@ -3490,7 +3490,7 @@
 	<VideoComponentParam ObjectID="189" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>63</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>1000.</UpperBound>
@@ -3524,7 +3524,7 @@
 	<VideoComponentParam ObjectID="191" ClassID="0fde4e9f-f895-4ba3-b0fe-9a6feafda583" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>94</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>18446744073709551615</UpperBound>
@@ -3727,7 +3727,7 @@
 	<VideoComponentParam ObjectID="202" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>64</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperUIBound>100.</UpperUIBound>
@@ -3880,7 +3880,7 @@
 	<ArbVideoComponentParam ObjectID="211" ClassID="313e54d4-6903-49ad-b0bf-8262cdd10f4e" Version="2">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>96</ParameterID>
 		<UnitsString></UnitsString>
 		<KeyframeSetSize>0</KeyframeSetSize>
 		<StartKeyframeValue Encoding="base64" Checksum="4294940310">/v4=</StartKeyframeValue>
@@ -4133,7 +4133,7 @@
 	<VideoComponentParam ObjectID="226" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>65</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>10000.</UpperBound>
@@ -4193,7 +4193,7 @@
 		<IsLocked>false</IsLocked>
 		<IsTimeVarying>false</IsTimeVarying>
 		<Keyframes></Keyframes>
-		<Name>Hue Saturation Curve</Name>
+		<Name>Hue Saturation Curves</Name>
 	</VideoComponentParam>
 	<ArbVideoComponentParam ObjectID="230" ClassID="313e54d4-6903-49ad-b0bf-8262cdd10f4e" Version="2">
 		<Node Version="1">
@@ -4280,7 +4280,7 @@
 	<VideoComponentParam ObjectID="235" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>66</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>1000.</UpperBound>
@@ -4328,7 +4328,7 @@
 	<VideoComponentParam ObjectID="238" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>67</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>false</UpperBound>
@@ -4345,7 +4345,7 @@
 	<VideoComponentParam ObjectID="239" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>68</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>true</UpperBound>
@@ -4362,7 +4362,7 @@
 	<VideoComponentParam ObjectID="240" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>69</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>false</UpperBound>
@@ -4379,7 +4379,7 @@
 	<VideoComponentParam ObjectID="241" ClassID="0fde4e9f-f895-4ba3-b0fe-9a6feafda583" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>70</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>18446744073709551615</UpperBound>
@@ -4396,7 +4396,7 @@
 	<VideoComponentParam ObjectID="242" ClassID="0fde4e9f-f895-4ba3-b0fe-9a6feafda583" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>71</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>18446744073709551615</UpperBound>
@@ -4413,7 +4413,7 @@
 	<VideoComponentParam ObjectID="243" ClassID="0fde4e9f-f895-4ba3-b0fe-9a6feafda583" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>72</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>18446744073709551615</UpperBound>
@@ -4430,7 +4430,7 @@
 	<ArbVideoComponentParam ObjectID="244" ClassID="313e54d4-6903-49ad-b0bf-8262cdd10f4e" Version="2">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>73</ParameterID>
 		<UnitsString></UnitsString>
 		<KeyframeSetSize>0</KeyframeSetSize>
 		<StartKeyframeValue Encoding="base64" Checksum="306753320">AAAAAD8AAAAAAAAAAAEAAAA/AAAAAAAAAAABAAAAPwAAAAAAAAAAAQ==</StartKeyframeValue>
@@ -4444,7 +4444,7 @@
 	<VideoComponentParam ObjectID="245" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>74</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>true</UpperBound>
@@ -4461,7 +4461,7 @@
 	<VideoComponentParam ObjectID="246" ClassID="6e02e8bb-2569-46b2-8ab1-4ab11c43e9c8" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>75</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>2</UpperBound>
@@ -4478,7 +4478,7 @@
 	<VideoComponentParam ObjectID="247" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>76</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>true</UpperBound>
@@ -4495,7 +4495,7 @@
 	<VideoComponentParam ObjectID="248" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>77</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>true</UpperBound>
@@ -4512,7 +4512,7 @@
 	<VideoComponentParam ObjectID="249" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>78</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>true</UpperBound>
@@ -4529,7 +4529,7 @@
 	<VideoComponentParam ObjectID="250" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>79</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>false</UpperBound>
@@ -4546,7 +4546,7 @@
 	<VideoComponentParam ObjectID="251" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>80</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>false</UpperBound>
@@ -4563,7 +4563,7 @@
 	<VideoComponentParam ObjectID="252" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>81</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>100.</UpperBound>
@@ -4580,7 +4580,7 @@
 	<VideoComponentParam ObjectID="253" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>82</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperUIBound>30.</UpperUIBound>
@@ -4598,7 +4598,7 @@
 	<VideoComponentParam ObjectID="254" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>83</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>false</UpperBound>
@@ -4615,7 +4615,7 @@
 	<VideoComponentParam ObjectID="255" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>84</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>false</UpperBound>
@@ -4632,7 +4632,7 @@
 	<ArbVideoComponentParam ObjectID="256" ClassID="313e54d4-6903-49ad-b0bf-8262cdd10f4e" Version="2">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>85</ParameterID>
 		<UnitsString></UnitsString>
 		<KeyframeSetSize>0</KeyframeSetSize>
 		<StartKeyframeValue Encoding="base64" Checksum="2930646580">AAAAAAAAAAAAAAAAAADgPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADgPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADgPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADgPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADgPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADgPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADgPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADgPwAAAAAAAAAA</StartKeyframeValue>
@@ -4646,7 +4646,7 @@
 	<ArbVideoComponentParam ObjectID="257" ClassID="313e54d4-6903-49ad-b0bf-8262cdd10f4e" Version="2">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>93</ParameterID>
 		<UnitsString></UnitsString>
 		<KeyframeSetSize>0</KeyframeSetSize>
 		<StartKeyframeValue Encoding="base64" Checksum="2374864269">AAAAAA==</StartKeyframeValue>
@@ -4660,7 +4660,7 @@
 	<VideoComponentParam ObjectID="258" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>86</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperUIBound>100.</UpperUIBound>
@@ -4679,7 +4679,7 @@
 	<VideoComponentParam ObjectID="259" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>87</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperUIBound>100.</UpperUIBound>
@@ -4698,7 +4698,7 @@
 	<VideoComponentParam ObjectID="260" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>88</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperUIBound>100.</UpperUIBound>
@@ -4717,7 +4717,7 @@
 	<VideoComponentParam ObjectID="261" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>89</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>100.</UpperBound>
@@ -4734,7 +4734,7 @@
 	<VideoComponentParam ObjectID="262" ClassID="a4ff2d6e-7ac2-44f8-9d52-17d9ca50e542" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>90</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperUIBound>200.</UpperUIBound>
@@ -4752,7 +4752,7 @@
 	<VideoComponentParam ObjectID="263" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>91</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>false</UpperBound>
@@ -4769,7 +4769,7 @@
 	<VideoComponentParam ObjectID="264" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>92</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>false</UpperBound>
@@ -5006,7 +5006,7 @@
 	<VideoComponentParam ObjectID="278" ClassID="cc12343e-f113-4d3b-ae05-b287db77d461" Version="9">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>97</ParameterID>
 		<RangeLocked>false</RangeLocked>
 		<UnitsString></UnitsString>
 		<UpperBound>true</UpperBound>
@@ -5023,7 +5023,7 @@
 	<ArbVideoComponentParam ObjectID="279" ClassID="313e54d4-6903-49ad-b0bf-8262cdd10f4e" Version="2">
 		<Node Version="1">
 		</Node>
-		<ParameterID>-1</ParameterID>
+		<ParameterID>98</ParameterID>
 		<UnitsString></UnitsString>
 		<KeyframeSetSize>0</KeyframeSetSize>
 		<StartKeyframeValue Encoding="base64" Checksum="4294940310">/v4=</StartKeyframeValue>

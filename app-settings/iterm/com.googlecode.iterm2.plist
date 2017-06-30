@@ -493,6 +493,8 @@
 	<integer>76</integer>
 	<key>HotkeyCode</key>
 	<integer>37</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>393475</integer>
 	<key>IRMemory</key>
@@ -508,8 +510,10 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/repos/osx-install/app-settings/iterm</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -550,11 +554,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1361 37 445 77 0 0 1920 1178 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1410 770 620 392 0 0 3440 1418 </string>
+	<string>650 590 620 392 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>55 168 796 473 0 0 1280 698 </string>
+	<string>3513 726 796 473 3440 -593 1440 2538 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 5 1280 773 0 0 1280 778 </string>
+	<string>2 104 850 1070 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>3934 -523 850 1068 3440 -593 1440 2538 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2778,8 +2784,16 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
+	<key>NoSyncInstallUtilitiesPackage</key>
+	<true/>
+	<key>NoSyncInstallUtilitiesPackage_selection</key>
+	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
 	<string>3E8392CE-16FA-466D-8DA1-17D5686BDFBD</string>
 	<key>NoSyncLastTipTime</key>
@@ -2861,6 +2875,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/ac/repos/osx-install/app-settings/iterm</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -2878,7 +2894,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-03T19:48:55Z</date>
+	<date>2017-06-20T15:07:49Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2928,7 +2944,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.15</string>
+	<string>3.1.beta.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

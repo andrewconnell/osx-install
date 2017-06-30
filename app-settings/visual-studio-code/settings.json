@@ -2,17 +2,22 @@
 {
   "editor.insertSpaces": true,
   "editor.fontFamily": "Hack",
-  "editor.fontSize": 12,
+  "editor.fontSize": 13,
   "editor.formatOnType": false,
-  "editor.renderWhitespace": true,
-  "editor.rulers": [80, 120],
-  "editor.tabSize": 2,
-  "editor.wrappingColumn": 0,
+  "editor.renderWhitespace": "al8",
+  "editor.rulers": [
+    80,
+    120
+  ],
   "files.exclude": {
     "**/.@__thumb": true,
-    "**/*.js":{"when":"$(basename).ts"},
-    "**/*.js.map":true
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": true
   },
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
   "circleci.apiKey": "2691b9b2914946ae08e0e28e684ce777844de317",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
@@ -20,5 +25,28 @@
   "typescript.check.tscVersion": false,
   "gitProjectManager.baseProjectsFolders": [
     "/Users/ac/repos"
+  ],
+  "vsicons.dontShowNewVersionMessage": true,
+  "typescript.validate.enable": false,
+  "vsicons.projectDetection.autoReload": true,
+  "workbench.iconTheme": "vscode-icons",
+  "sync.gist": "f81645754c05ae4eca7f8e7910f184d7",
+  "sync.lastUpload": "2017-03-02T11:10:32.526Z",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.lastDownload": "",
+  "sync.version": 262,
+  "sync.showSummary": true,
+  "sync.forceDownload": false,
+  "sync.anonymousGist": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "window.zoomLevel": 0,
+  "cSpell.userWords": [
+    "Wistia",
+    "Injectable",
+    "    loader: 'istanbul-instrumeter-loader',\n",
+    "instrumeter",
+    "transclude"
   ]
 }

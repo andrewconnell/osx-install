@@ -1,5 +1,7 @@
 #!/bin/sh
 
+CURRENT_DIR=`pwd`
+
 # install zsh
 brew install zsh zsh-completions
 
@@ -9,9 +11,28 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 # install iterm2
 brew cask install iterm2
 
-# copy fonts
-cp ./app-settings/iterm/fonts/"Meslo LG M DZ Regular for Powerline.otf" ~/Library/Fonts
-cp -r ./app-settings/iterm/fonts/"Source Code Pro" ~/Library/Fonts/"Source Code Pro"
+# download fonts straight to the correct folder if this script was run remotely
+cd ~/Library/Fonts
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/iterm/fonts/Meslo LG M DZ Regular for Powerline.otf"
 
-# copy ZSH theme
-cp ./app-settings/iterm/bullet-train.zsh-theme ~/.oh-my-zsh/themes
+SOURCE_CODE_PRO_FOLDER="Source Code Pro"
+mkdir "$SOURCE_CODE_PRO_FOLDER"
+cd "$SOURCE_CODE_PRO_FOLDER"
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/iterm/fonts/Source Code Pro/SourceCodePro-Black.otf"
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/iterm/fonts/Source Code Pro/SourceCodePro-Bold.otf"
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/iterm/fonts/Source Code Pro/SourceCodePro-ExtraLight.otf"
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/iterm/fonts/Source Code Pro/SourceCodePro-Light.otf"
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/iterm/fonts/Source Code Pro/SourceCodePro-Medium.otf"
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/iterm/fonts/Source Code Pro/SourceCodePro-Regular.otf"
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/iterm/fonts/Source Code Pro/SourceCodePro-Semibold.otf"
+
+# download ZSH theme
+cd ~/.oh-my-zsh/themes
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/iterm/bullet-train.zsh-theme"
+
+# download zsh configration
+cd ~/.
+curl -O "https://github.com/andrewconnell/osx-install/raw/master/system-files/.zshrc"
+
+
+cd "$CURRENT_DIR"
