@@ -73,6 +73,12 @@ Do the following before paving the partition. This is to get the way I have thin
     - update the file `vscode-ext-install.sh`
   - backup snippets & user settings to [app-settings/visual-studio-code](app-settings/visual-studio-code)
 
+- Mac App Store apps
+  - get list of all installed apps & update the list in [scripts/macos-install.sh](scripts/macos-install.sh)
+    - get a list using `$ mas list`
+    - sort alphabetically
+    - update the file `macos-install.sh`
+
 ## Pave Partition
 
 1. restart with COMMAND+R
@@ -181,26 +187,29 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 - Xtrafinder
   - Reboot to recovery OS: reboot & hold COMMAND+R
   - select **Utilities => Terminal**
-  - enter `csrutil enable --without debug
+  - enter `csrutil enable --without debug`
   - reboot
 
-## Install App Store
+## Install Mac App Store apps: `macos-install.sh`
 
 Install this stuff from the Apple App Store, then run the next install scripts... while they run, configure these.
 
-- Amphetamine
-- CCMenu
-- Disk Map
-- Display Menu
+```shell
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/macos-install.sh | sh
+```
+
+Configure apps:
+
 - Divvy
   - import shortcuts by opening Safari / Firefox & enter the url in [app-settings/divvy-shortcuts.md](app-settings/divvy-shortcuts.md)
 - Jump Desktop
   - then sync the machines from folder in dropbox
 - Kindle
+  - *login*
 - Parcel
   - *login*
 - WeatherClip
-	- *launch and configure*
+  - *launch and configure*
 
 ## Install My Personal Apps: `myinstall.sh`
 
@@ -446,7 +455,7 @@ Run first backups.
 
 ## Ongoing... HOWTO Keep Things Updated
 
-to keep homebrew installed things update, do this:
+to keep Homebrew installed things update, do this:
 
   ```shell
   brew update           # download app updated formulas
@@ -458,6 +467,21 @@ to keep homebrew installed things update, do this:
   brew cu
   # cleanup everything
   brew cleanup
+  ```
+
+update MacOS apps:
+
+  ```shell
+  mas outdated    # what's old
+  mas upgrade     # upgrade everything
+  ```
+
+update MacOS: [ref](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/softwareupdate.8.html)
+
+  ```shell
+  softwareupdate --list
+  # install things based on the name returned using
+  sudo softwareupdate --install [name listed]
   ```
 
 [![Analytics](https://ga-beacon.appspot.com/UA-59891462-1/osx-buildout/readme)](https://github.com/igrigorik/ga-beacon)
