@@ -34,5 +34,7 @@ curl -O "https://github.com/andrewconnell/osx-install/raw/master/app-settings/it
 cd ~/.
 curl -O "https://github.com/andrewconnell/osx-install/raw/master/system-files/.zshrc"
 
+# install shell integration & utilities
+curl -L https://iterm2.com/misc/install_shell_integration.sh | bash
 
 cd "$CURRENT_DIR"
