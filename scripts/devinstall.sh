@@ -22,7 +22,7 @@ brew cask install xmind
 brew cask install wireshark
 
 # yarn but not dependencies (node)
-brew cask install yarn --ignore-dependencies
+brew install yarn --ignore-dependencies
 
 # install terminal screen recorder
 brew install asciinema
