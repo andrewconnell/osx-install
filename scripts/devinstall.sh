@@ -11,6 +11,7 @@ brew install Caskroom/versions/google-chrome-canary
 brew cask install java
 brew cask install microsoft-azure-storage-explorer
 brew cask install mono
+brew cask install ngrok
 brew cask install postman
 brew install protobuf
 brew cask install screenflow
