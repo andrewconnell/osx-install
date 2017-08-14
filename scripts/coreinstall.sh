@@ -14,7 +14,7 @@ brew cask install crashplan
 brew cask install dropbox
 brew cask install duet
 brew cask install google-chrome
-brew cask install google-drive
+brew cask install google-backup-and-sync
 brew cask install joinme
 brew cask install nosleep
 brew cask install skype
