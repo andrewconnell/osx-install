@@ -2,7 +2,6 @@
 
 npm install -g @angular/cli
 npm install -g @microsoft/generator-sharepoint
-npm install -g azure-cli
 npm install -g browserify
 npm install -g eslint
 npm install -g express
