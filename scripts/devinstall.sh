@@ -26,6 +26,9 @@ brew cask install wireshark
 # yarn but not dependencies (node)
 brew install yarn --ignore-dependencies
 
+# Azure CLI 2.0
+curl -L https://aka.ms/InstallAzureCli | bash
+
 # install terminal screen recorder
 brew install asciinema
 
