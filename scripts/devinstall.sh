@@ -17,6 +17,7 @@ brew install protobuf
 brew cask install screenflow
 brew cask install smartgit
 brew cask install smartsynchronize
+brew cask install tee-clc
 brew cask install visual-studio
 brew cask install visual-studio-code
 brew cask install visual-studio-code-insiders
