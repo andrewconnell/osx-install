@@ -21,5 +21,4 @@ mas install 524141863 # Jump Desktop
 mas install 405399194 # Kindle
 mas install 638332853 # Logitech Camera Settings
 mas install 639968404 # Parcel
-mas install 548125767 # WeathrClip
 mas install 410628904 # Wunderlist
