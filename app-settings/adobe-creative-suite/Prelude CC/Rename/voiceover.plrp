@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<PLFieldGroup Version="1">
+		<PLFieldItem Index="0" ObjectRef="1"/>
+		<PLFieldItem Index="1" ObjectRef="2"/>
+		<PLFieldItem Index="2" ObjectRef="3"/>
+		<PLFieldItem Index="3" ObjectRef="4"/>
+		<PLFieldItem Index="4" ObjectRef="5"/>
+	</PLFieldGroup>
+	<PLFieldCount>5</PLFieldCount>
+	<PLPresetID>bfba9631-ca58-458b-b3b7-8d23e36a2b22</PLPresetID>
+	<PLPresetName>voiceover</PLPresetName>
+	<PresetField ObjectID="1" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>UserDefinedAutoIncrease</key>
+		<value>01</value>
+	</PresetField>
+	<PresetField ObjectID="2" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>CustomText</key>
+		<value>_</value>
+	</PresetField>
+	<PresetField ObjectID="3" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>CreationDate</key>
+		<value>%Y%m%d</value>
+	</PresetField>
+	<PresetField ObjectID="4" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>CustomText</key>
+		<value>_voiceover_</value>
+	</PresetField>
+	<PresetField ObjectID="5" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>FileName</key>
+		<value></value>
+	</PresetField>
+</PremiereData>

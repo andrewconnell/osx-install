@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<PLFieldGroup Version="1">
+		<PLFieldItem Index="0" ObjectRef="1"/>
+		<PLFieldItem Index="1" ObjectRef="2"/>
+		<PLFieldItem Index="2" ObjectRef="3"/>
+		<PLFieldItem Index="3" ObjectRef="4"/>
+		<PLFieldItem Index="4" ObjectRef="5"/>
+		<PLFieldItem Index="5" ObjectRef="6"/>
+		<PLFieldItem Index="6" ObjectRef="7"/>
+		<PLFieldItem Index="7" ObjectRef="8"/>
+	</PLFieldGroup>
+	<PLFieldCount>8</PLFieldCount>
+	<PLPresetID>4161a9e7-8206-491c-a2fb-5f2e182f7b56</PLPresetID>
+	<PLPresetName>demo</PLPresetName>
+	<PresetField ObjectID="1" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>vs-code</key>
+		<value></value>
+	</PresetField>
+	<PresetField ObjectID="2" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>nodejs</key>
+		<value></value>
+	</PresetField>
+	<PresetField ObjectID="3" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>npm</key>
+		<value></value>
+	</PresetField>
+	<PresetField ObjectID="4" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>spfx-generator</key>
+		<value></value>
+	</PresetField>
+	<PresetField ObjectID="5" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>yeoman</key>
+		<value></value>
+	</PresetField>
+	<PresetField ObjectID="6" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>gulp</key>
+		<value></value>
+	</PresetField>
+	<PresetField ObjectID="7" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>false</mandatory>
+		<key>chrome</key>
+		<value></value>
+	</PresetField>
+	<PresetField ObjectID="8" ClassID="cf37dddd-b158-4d87-bea2-6382dfdcf46d" Version="1">
+		<mandatory>true</mandatory>
+		<key>operating-system</key>
+		<value></value>
+	</PresetField>
+</PremiereData>
