@@ -185,10 +185,15 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
   - Update preferences from those in [app-settings/sublime](app-settings/sublime)
     - copy to `~/Library/Application Support/Sublime Text`
 - Xtrafinder
-  - Reboot to recovery OS: reboot & hold COMMAND+R
+  - Reboot to recovery OS: reboot & hold <kbd>Command</kbd>+<kbd>R</kbd>
   - select **Utilities => Terminal**
-  - enter `csrutil enable --without debug`
-  - reboot
+  - enter `csrutil disable`
+  - restart
+  - install Xtrafinder (app-settings/XtraFinder.dmg)[app-settings/XtraFinder.dmg]
+  - Reboot to recovery OS: reboot & hold <kbd>Command</kbd>+<kbd>R</kbd>
+  - select **Utilities => Terminal**
+  - enter `csrutil enable`
+  - restart
 
 ## Install Mac App Store apps: `macos-install.sh`
 

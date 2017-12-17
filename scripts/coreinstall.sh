@@ -23,4 +23,3 @@ brew cask install steam
 brew cask install sublime-text
 brew cask install tripmode
 brew cask install vlc
-brew cask install xtrafinder
