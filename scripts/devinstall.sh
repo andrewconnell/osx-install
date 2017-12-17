@@ -1,6 +1,5 @@
 #!/bin/sh
 
-brew cask install balsamiq-mockups
 brew cask install camtasia
 brew cask install charles
 brew cask install docker
@@ -9,6 +8,8 @@ brew cask install caskroom/fonts/font-hack
 brew cask install fritzing
 brew install Caskroom/versions/google-chrome-canary
 brew cask install java
+brew cask install jq
+brew cask install lame
 brew cask install microsoft-azure-storage-explorer
 brew cask install mono
 brew cask install ngrok
