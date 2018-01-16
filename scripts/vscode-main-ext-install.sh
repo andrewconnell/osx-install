@@ -27,7 +27,6 @@ code --install-extension johnpapa.Angular1
 code --install-extension johnpapa.Angular2
 code --install-extension johnpapa.azure-functions-tools
 code --install-extension jvandyke.vscode-circleci
-code --install-extension killalau.vscode-liquid-snippets
 code --install-extension liuji-jim.vue
 code --install-extension lukehoban.Go
 code --install-extension mdickin.markdown-shortcuts
