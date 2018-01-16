@@ -3,9 +3,7 @@
 npm install -g @angular/cli
 npm install -g @microsoft/generator-sharepoint
 npm install -g @pnp/office365-cli
-npm install -g browserify
 npm install -g eslint
-npm install -g grunt-cli
 npm install -g gulp
 npm install -g h2m
 npm install -g http-server
@@ -16,18 +14,11 @@ npm install -g keycred
 npm install -g mocha
 npm install -g nodemon
 npm install -g nodetree
-npm install -g removeNPMAbsolutePaths
 npm install -g source-map-explorer
-npm install -g sql-cli
 npm install -g systemjs
 npm install -g tslint
-<<<<<<< HEAD
 npm install -g typedoc
 npm install -g typescript
-npm install -g typings
 npm install -g uglify-js
 npm install -g webpack
 npm install -g yo
-=======
-npm install -g yo
->>>>>>> update NPM global installs
