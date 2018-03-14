@@ -1,27 +1,28 @@
 #!/bin/sh
 
+brew install jq
+brew install protobuf
+brew install sqlight
+brew install tee-clc
+
+brew cask install balsamiq-mockups
 brew cask install camtasia
 brew cask install charles
 brew cask install docker
 brew cask install firefox
-brew cask install caskroom/fonts/font-hack
+brew cask install font-hack
 brew cask install fritzing
-brew install Caskroom/versions/google-chrome-canary
+brew cask install google-chrome-canary
 brew cask install java
-brew cask install jq
-brew cask install lame
 brew cask install microsoft-azure-storage-explorer
-brew cask install mono
+brew cask install mono-mdk
 brew cask install ngrok
 brew cask install postman
-brew install protobuf
 brew cask install screenflow
 brew cask install smartgit
 brew cask install smartsynchronize
-brew cask install tee-clc
 brew cask install visual-studio
 brew cask install visual-studio-code
-brew cask install visual-studio-code-insiders
 brew cask install xmind
 brew cask install wireshark
 

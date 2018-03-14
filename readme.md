@@ -9,7 +9,7 @@ More background info: [BLOG: Rapid Complete Install / Reinstall OS X Like a Cham
 Do the following before paving the partition. This is to get the way I have things configured in the dock & menu bar back the way I want them.
 
 - MacOS & System
-  - have a current Apple TimeMachine & CrashPlan backup job finished
+  - have a current Apple TimeMachine backup job finished
   - screenshot Finder layout
 
     ![](images/macOS-Finder.png)
@@ -38,7 +38,7 @@ Do the following before paving the partition. This is to get the way I have thin
 
     ![](images/macOS-MenuBar.png)
 
-- XCOPY to external disk if possible (faster than downloading from CrashPlan)
+- XCOPY to external disk if possible
 
   - `~/.gitconfig`
   - `~/.ssh`
@@ -421,7 +421,6 @@ git config --global merge.tool code
   - Users & Groups / Login Items
     - Alfred 3
     - Bartender
-    - Crashplan menu bar
     - Divvy
     - Dropbox
     - Duet
@@ -437,24 +436,8 @@ git config --global merge.tool code
 ## Data Restore
 
 - clone select repositories from github => `~/repos`
-- restore all data from Crashplan => `~/`
 
-## Setup Backups
-- Time Machine
-- CrashPlan
-  - backup everything in home directory: `~/`
-  - EXCLUDE these folders
-    - Applications
-    - Creative Cloud Files
-    - Dropbox
-    - Google Drive
-    - Library
-    - OneDrive
-    - OneDrive for Business
-    - Movies
-    - Music
-    - Public
-    - repos
+## Setup TimeMachine Backups
 
 Run first backups.
 
