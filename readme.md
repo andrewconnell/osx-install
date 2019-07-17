@@ -22,7 +22,7 @@ Do the following before paving the partition. This is to get the way I have thin
 
     ![](images/macOS-Finder-Settings-Sidebar.png)
 
-  - screenshots of Finder settings
+  - screenshots of XtraFinder settings
 
     ![](images/macOS-XtraFinder-Preferences-Tabs.png)
     
@@ -44,13 +44,10 @@ Do the following before paving the partition. This is to get the way I have thin
   - `~/.ssh`
   - `~/.zshrc`
   - `~/Desktop`
-  - `~/Dev`
   - `~/Downloads`
   - `~/Documents`
-  - `~/lib`
   - `~/Pictures`
   - optional
-    - `~/.angular-cli.json`
     - `~/_play`
     - `~/Movies`
     - `~/repos`
