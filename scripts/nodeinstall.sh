@@ -10,6 +10,16 @@ nvm install lts/carbon
 # update npm
 npm install -g npm
 
+# install node v10 current LTS
+nvm install lts/dubnium
+# update npm
+npm install -g npm
+
+# install node v12 current LTS
+nvm install lts/erbium
+# update npm
+npm install -g npm
+
 # install node latest stable
 nvm install stable
 # update npm

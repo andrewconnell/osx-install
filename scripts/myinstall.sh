@@ -1,34 +1,11 @@
 #!/bin/sh
 
-brew cask install sketchup
-brew cask install synergy
+# Azure CLI 2.0
+curl -L https://aka.ms/InstallAzureCli | bash
 
-brew install bitbar
-brew install jsdoc3
-brew install ffmpeg
-brew install mactex
-brew install pandoc
-brew install youtube-dl
-
-brew cask install appcleaner
-brew cask install betterzipql
-brew cask install google-hangounts
-brew cask install keybase
-brew cask install istat-menus
-brew cask install powershell
-brew cask install private-internet-access
-brew cask install qlcolorcode
-brew cask install qlimagesize
-brew cask install qlmarkdown
-brew cask install qlstephen
-brew cask install quicklook-csv
-brew cask install quicklook-json
-brew cask install vmware-fusion
-
-# ripping dvds & blurays for PERSONAL archive
-brew cask install handbrake
-brew install libdvdcss
-brew cask install makemkv
+# Adobe creative cloud installer
+# brew cask install adobe-creative-cloud
+/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app
 
 # configure handbrake to use makemkv for bluray
 mkdir -p ~/lib

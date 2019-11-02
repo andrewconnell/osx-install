@@ -12,13 +12,20 @@ read -p "  AppleID (john@foo.com): " APPLEID
 mas signin $APPLEID
 
 # install macos apps
-mas install 937984704 # Amphetamine
-mas install 603117688 # CCMenu
-mas install 549083868 # Display Menu
-mas install 715464874 # Disk Map
-mas install 413857545 # Divvy
-mas install 524141863 # Jump Desktop
-mas install 405399194 # Kindle
-mas install 638332853 # Logitech Camera Settings
-mas install 639968404 # Parcel
-mas install 410628904 # Wunderlist
+mas install 937984704  # Amphetamine
+mas install 603117688  # CCMenu
+mas install 715464874  # Disk Map
+mas install 549083868  # Display Menu
+mas install 413857545  # Divvy
+mas install 682658836  # GarageBand
+mas install 1217138942 # iLightShow
+mas install 408981434  # iMovie
+mas install 524141863  # Jump Desktop
+mas install 409183694  # Keynote
+mas install 405399194  # Kindle
+mas install 638332853  # Logitech Camera Settings
+mas install 409203825  # Numbers
+mas install 409201541  # Pages
+mas install 639968404  # Parcel
+mas install 1381446741 # Winds
+mas install 497799835  # Xcode

@@ -10,10 +10,7 @@ Do the following before paving the partition. This is to get the way I have thin
 
 - MacOS & System
   - have a current Apple TimeMachine backup job finished
-  - screenshot Finder layout
 
-    ![](images/macOS-Finder.png)
-  
   - screenshots of Finder settings
 
     ![](images/macOS-Finder-Settings-General.png)
@@ -21,14 +18,6 @@ Do the following before paving the partition. This is to get the way I have thin
     ![](images/macOS-Finder-Settings-Preferences.png)
 
     ![](images/macOS-Finder-Settings-Sidebar.png)
-
-  - screenshots of XtraFinder settings
-
-    ![](images/macOS-XtraFinder-Preferences-Tabs.png)
-    
-    ![](images/macOS-XtraFinder-Preferences-Features.png)
-    
-    ![](images/macOS-XtraFinder-Preferences-AddItems.png)
 
   - screenshot MacOS dock
 
@@ -47,6 +36,7 @@ Do the following before paving the partition. This is to get the way I have thin
   - `~/Downloads`
   - `~/Documents`
   - `~/Pictures`
+  - `~/voitanos-workspace`
   - optional
     - `~/_play`
     - `~/Movies`
@@ -60,8 +50,8 @@ Do the following before paving the partition. This is to get the way I have thin
     ```shell
     $ npm list -g --depth=0
     ```
-  
-  - use that list to update the npm script: [app-settings/npminstall.sh](app-settings/npminstall.sh)
+
+  - use that list to update the npm script: [scripts/npm-global-package-install.sh](scripts/npm-global-package-install.sh)
 
 - visual-studio-code
   - get list of all installed extensions and update the list in [scripts/vscode-ext-install.sh](scripts/vscode-ext-install.sh)
@@ -69,6 +59,7 @@ Do the following before paving the partition. This is to get the way I have thin
     - sort alphabetically
     - update the file `vscode-ext-install.sh`
   - backup snippets & user settings to [app-settings/visual-studio-code](app-settings/visual-studio-code)
+    - user settings: `~/Library/Application Support/Code/User`
 
 - Mac App Store apps
   - get list of all installed apps & update the list in [scripts/macos-install.sh](scripts/macos-install.sh)
@@ -181,16 +172,6 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
     - View In Browser
   - Update preferences from those in [app-settings/sublime](app-settings/sublime)
     - copy to `~/Library/Application Support/Sublime Text`
-- Xtrafinder
-  - Reboot to recovery OS: reboot & hold <kbd>Command</kbd>+<kbd>R</kbd>
-  - select **Utilities => Terminal**
-  - enter `csrutil disable`
-  - restart
-  - install Xtrafinder (app-settings/XtraFinder.dmg)[app-settings/XtraFinder.dmg]
-  - Reboot to recovery OS: reboot & hold <kbd>Command</kbd>+<kbd>R</kbd>
-  - select **Utilities => Terminal**
-  - enter `csrutil enable`
-  - restart
 
 ## Install Mac App Store apps: `macos-install.sh`
 
@@ -266,9 +247,10 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
       - *repeat the above for VS Code Insiders*
     - install extensions:
 
-      ```shell
-      curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/vscode-ext-install.sh | sh
-      ```
+        ```shell
+        curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/vscode-ext-install.sh | sh
+        ```
+
   - copy snippets & settings:
     - from [app-settings/visual-studio-code](app-settings/visual-studio-code)
     - to `~/Library/Application Suport/Code/User`
@@ -283,16 +265,9 @@ $ echo '. <(azure --completion)' >> .zshrc
 
 ## Manual Installs
 
-- Amazon Music
-  - install located in `~/Dropbox/My AppSettings/_Installs`
-- Call Recorder (for skype)
-  - install located in `~/Dropbox/My AppSettings/_Installs`
-- Powermate
-  - install located in `~/Dropbox/My AppSettings/_Installs`
 - Mac Office
 
-    > Install this from Office 365... not sure if acts differently from the homebrew cask `microsoft-office`... 
-    > *might be easier to use homebrew?*
+    > Install this from Mac AppStore
 
   - Outlook configuration
     - General
@@ -309,8 +284,6 @@ $ echo '. <(azure --completion)' >> .zshrc
 - TechSmith SnagIt
   - get by logging into [TechSmith](http://www.techsmith.com)
   - then launch to license
-- BitDefender
-  - install located in `~/Dropbox/My AppSettings/_Installs`
 
 ## Install Node
 
@@ -368,8 +341,6 @@ git config --global merge.tool code
   - set icon size 40x40
   - grid spacing - midpoint
   - check SHOW ITEM INFO
-- Finder
-  - mirror what is in the screenshot [macOS-Finder.png](macOS-Finder.png)
 - Menu Bar / Bartender
   - mirror what is in the screenshot [macOS-MenuBar.png](macOS-MenuBar.png)
 - System Preferences
@@ -397,7 +368,7 @@ git config --global merge.tool code
     - Mission Control
       - disable Mission Control & Application Windows options
         - *these hijack the multi-line cursor ability in Sublime Text*
-    - Shortcuts - uncheck options for Spotlight 
+    - Shortcuts - uncheck options for Spotlight
       - Set activation keystroke for Alfred: CMD+SPACE
   - Internet Accounts
     - iCloud
@@ -416,16 +387,12 @@ git config --global merge.tool code
     - SnagIt & SnagItHelper
     - Synergy
   - Users & Groups / Login Items
-    - Alfred 3
+    - Alfred 4
     - Bartender
     - Divvy
-    - Dropbox
-    - Duet
     - Google Chrome (hide = checked)
     - Google Drive
-    - iTunesHelper
     - No Sleep
-    - Skype for Business
     - The Clock
     - TripMode
     - WeatherClip
@@ -447,9 +414,8 @@ to keep Homebrew installed things update, do this:
   brew outdated         # what’s old?
   brew upgrade          # upgrade everything locally
   # list all brew casks installed & their versions
-  brew cu --dry-run
-  # optionally update everything
-  brew cu
+  brew cask outdated
+  brew cask upgrade
   # cleanup everything
   brew cleanup
   ```
