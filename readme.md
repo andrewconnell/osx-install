@@ -4,32 +4,38 @@ This repo acts as a log for my buildout of my laptop. As I add stuff or change s
 
 More background info: [BLOG: Rapid Complete Install / Reinstall OS X Like a Champ in Three-ish Hours](http://www.andrewconnell.com/blog/rapid-complete-install-reinstall-os-x-like-a-champ-in-three-ish-hours)
 
-## Before Paving the primary partition...
+## Before Paving the primary partition, document current config
 
 Do the following before paving the partition. This is to get the way I have things configured in the dock & menu bar back the way I want them.
 
+- Screenshot all installed apps
 - MacOS & System
   - have a current Apple TimeMachine backup job finished
-
   - screenshots of Finder settings
 
-    ![](images/macOS-Finder-Settings-General.png)
+      ![](images/macOS-Finder-Settings-General.png)
 
-    ![](images/macOS-Finder-Settings-Preferences.png)
+      ![](images/macOS-Finder-Settings-Preferences.png)
 
-    ![](images/macOS-Finder-Settings-Sidebar.png)
+      ![](images/macOS-Finder-Settings-Sidebar.png)
 
   - screenshot MacOS dock
 
-    ![](images/macOS-Dock.png)
+      ![](images/macOS-Dock.png)
 
   - screenshot expanded Bartender MacOS Menu Bar
 
-    ![](images/macOS-MenuBar.png)
+      ![](images/macOS-MenuBar.png)
 
+- Screenshot OneDrive doclib's (also from MS Teams) sync'd local
 - XCOPY to external disk if possible
+    > **NOTE:** many of the hidden files & folders are copied as "dot-files"
 
+  - `~/.bash_history`
+  - `~/.bash_profile`
   - `~/.gitconfig`
+  - `~/.npmrc`
+  - `~/.yarnrc`
   - `~/.ssh`
   - `~/.zshrc`
   - `~/Desktop`
@@ -40,40 +46,53 @@ Do the following before paving the partition. This is to get the way I have thin
   - optional
     - `~/_play`
     - `~/Movies`
-    - `~/repos`
     - *review other folders in the root*
+
 - Dev
   - Dump list of all repos in `~/repos`
+- Adobe Creative Cloud
+  - sync all settings in Media Encoder, Photoshop, Prelude, & Premiere Pro
+  - export settings for backup
+  - Photoshop:
+    - export saved actions (*ref **Adobe Creative Cloud/Photoshop***)
+  - Premiere:
+    - export custom presets (*ref **Adobe Creative Cloud/Premiere Pro***)
+- Jump Desktop
+  - export list of VMs
+- Mac App Store apps
+  - refresh list installed MacOS apps: [scripts/macos-install.sh](scripts/macos-install.sh)
+
+      ```shell
+      $ mas list
+      ```
 - Node
-  - get list of all globally installed NPM packages
+  - refresh NPM global package install list: [scripts/npm-global-package-install.sh](scripts/npm-global-package-install.sh)
 
     ```shell
     $ npm list -g --depth=0
     ```
 
-  - use that list to update the npm script: [scripts/npm-global-package-install.sh](scripts/npm-global-package-install.sh)
+- Postman
+  - export all collections & environments
+- Screenflow
+  - log batch export settings to **./App Settings/Screenflow**
+- Visual Studio Code (**./App Settings/Visual Studio Code**)
+  - refresh installed extensions install list: [scripts/vscode-ext-install.sh](scripts/vscode-ext-install.sh)
 
-- visual-studio-code
-  - get list of all installed extensions and update the list in [scripts/vscode-ext-install.sh](scripts/vscode-ext-install.sh)
-    - get a list using `$ code --list-extensions`
-    - sort alphabetically
-    - update the file `vscode-ext-install.sh`
+      ```shell
+      $ code --list-extensions
+      ```
+
   - backup snippets & user settings to [app-settings/visual-studio-code](app-settings/visual-studio-code)
     - user settings: `~/Library/Application Support/Code/User`
 
-- Mac App Store apps
-  - get list of all installed apps & update the list in [scripts/macos-install.sh](scripts/macos-install.sh)
-    - get a list using `$ mas list`
-    - sort alphabetically
-    - update the file `macos-install.sh`
-
-## Pave Partition
+## Pave partition
 
 1. restart with COMMAND+R
 1. when apple logo comes up... delete partition, NOT tiny partition (2nd listed)
 1. back up and install MacOS via network
 
-## After Pave, Install the Following
+## After pave, install the following
 
 The following installs & configuration should be done to setup automated installs.
 
@@ -106,10 +125,10 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
       ssh-add -K ~/.ssh/id_rsa
       ```
 
-## Install Core Apps: `coreinstall.sh`
+## Install Apps: `homebrew-install-apps.sh`
 
 ```shell
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/coreinstall.sh | sh
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.sh | sh
 ```
 
 ## Configure Core Apps
@@ -117,19 +136,20 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 - login to the following:
   - Chrome
     - *do this first & login to LastPass to get licenses*
-  - Dropbox
-  - Google-drive
+  - Edge
+  - Google-Drive
+  - OneDrive
   - Skype
 - Alfred
   - Activate power pack within app settings
   - **Preferences > Advanced**: Syncing - set to `~/Dropbox/My AppSettings/Alfred`
 - Amphetamine
 
-  ![](images/amphetamine-preferences-general.png)
+    ![](images/amphetamine-preferences-general.png)
 
-  ![](images/amphetamine-preferences-notifications.png)
+    ![](images/amphetamine-preferences-notifications.png)
 
-  ![](images/amphetamine-preferences-appearance.png)
+    ![](images/amphetamine-preferences-appearance.png)
 
 - Bartender
   - License & configure (*[use this image for reference](images/macOS-MenuBar.png)*)
@@ -137,19 +157,19 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
   - Launch & configure (*[use this image for reference](images/NoSleep.png)*)
 - Outlook
 
-  ![](images/outlook-general.png)
+    ![](images/outlook-general.png)
 
-  ![](images/outlook-notifications.png)
+    ![](images/outlook-notifications.png)
 
-  ![](images/outlook-fonts.png)
+    ![](images/outlook-fonts.png)
 
-  ![](images/outlook-reading.png)
+    ![](images/outlook-reading.png)
 
-  ![](images/outlook-composing-html.png)
+    ![](images/outlook-composing-html.png)
 
-  ![](images/outlook-composing-plaintext.png)
+    ![](images/outlook-composing-plaintext.png)
 
-  ![](images/outlook-calendar.png)
+    ![](images/outlook-calendar.png)
 
 - Steam
   - Launch & login
@@ -181,18 +201,18 @@ Install this stuff from the Apple App Store, then run the next install scripts..
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/macos-install.sh | sh
 ```
 
-Configure apps:
+Configure & login apps:
 
 - Divvy
   - import shortcuts by opening Safari / Firefox & enter the url in [app-settings/divvy-shortcuts.md](app-settings/divvy-shortcuts.md)
 - Jump Desktop
-  - then sync the machines from folder in dropbox
-- Kindle
-  - *login*
+  - import the machines from export before pave
+- Microsoft Teams
 - Parcel
   - *login*
-- WeatherClip
-  - *launch and configure*
+- Slack
+- Steam
+- restore iStat Settings [app-settings/iStat Menus Settings.ismp](./app-settings/iStat Menus Settings.ismp)
 
 ## Install My Personal Apps: `myinstall.sh`
 
@@ -200,38 +220,22 @@ Configure apps:
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/myinstall.sh | sh
 ```
 
-- license Synergy
-- login Slack
-- login Steam
-- restore iStat Settings [app-settings/iStat Menus Settings.ismp](app-settings/iStat Menus Settings.ismp)
-
-## Install Dev Apps: `devinstall.sh`
-
-```shell
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/devinstall.sh | sh
-```
-
 - Creative Cloud installs
   - Acrobat DC
-  - After Effects CC
-  - Audition CC
-  - Bridge CC
-  - Illustrator CC
+  - After Effects 2020
+  - Audition 2020
+  - Bridge 2020
+  - Illustrator 2020
   - Lightroom CC
-  - Media Encoder
-  - Photoshop CC
-  - Prelude CC
-  - Premiere Pro CC
-- launch
-  - Docker for MacOS
-  - Duet
+  - Media Encoder 2020
+  - Photoshop 2020
+  - Prelude 2020
+  - Premiere Pro 2020
 - license
-  - Balsamiq-mockups
-  - Camtasia
-  - Charles
   - Screenflow
   - SmartGit
   - SmartSynchronize
+  - WebCatalog
 - setup
   - Creative-Cloud
     - import settings from Adobe CC, Adobe Media Encoder - import preferences from [app-settings/adobe-creative-suite](app-settings/adobe-creative-suite)
@@ -253,11 +257,11 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
   - copy snippets & settings:
     - from [app-settings/visual-studio-code](app-settings/visual-studio-code)
-    - to `~/Library/Application Suport/Code/User`
+    - to `~/Library/Application Support/Code/User`
     - *add license key for WallabyJS*
       - repeat for VSCode Insiders install
 
-### Setup Azure-cli AutoComplete:
+### Setup Azure-cli AutoComplete
 
 ```shell
 $ echo '. <(azure --completion)' >> .zshrc
@@ -278,9 +282,15 @@ $ echo '. <(azure --completion)' >> .zshrc
       - size: = 11.5
     - Notifications & Sounds: uncheck all except for reminder
     - Reading
-      - set to mark as read only when opening in seperate window
+      - set to mark as read only when opening in separate window
     - Signature
-    - Signin to Skype for Business
+  - Install Outlook Zoom plugin
+
+      ```shell
+      brew cask install zoomus-outlook-plugin
+      ```
+
+- [Sophos Home A/V](https://home.sophos.com)
 - TechSmith SnagIt
   - get by logging into [TechSmith](http://www.techsmith.com)
   - then launch to license
@@ -300,18 +310,17 @@ $ export NVM_DIR="$HOME/.nvm"
 $ . "/usr/local/opt/nvm/nvm.sh"
 ```
 
-install node LTS and stable versions:
+### Install node LTS & stable versions
 
 ```shell
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/nodeinstall.sh | sh
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/node-install.sh | sh
 ```
 
 now install global packages for each version of node installed:
 
 ```shell
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install.sh | sh
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-global-packages.sh | sh
 ```
-
 
 ## After all Installs, Update Brew, Brew Cask & Purge Installs
 
@@ -322,7 +331,7 @@ brew cleanup
 brew cask cleanup
 ```
 
-## Setup git:
+## Setup git
 
 > might already be done by copying the hidden files over
 
@@ -337,65 +346,56 @@ git config --global merge.tool code
 
 ## MacOS Tweaks
 
-- Desktop (*change these settings by right-click desktop & pick options*)
-  - set icon size 40x40
-  - grid spacing - midpoint
-  - check SHOW ITEM INFO
+- Desktop (*change these settings by right-click desktop & pick **Show View Options***)
+
+    ![](./images/macOS-Settings-01.png)
+
 - Menu Bar / Bartender
-  - mirror what is in the screenshot [macOS-MenuBar.png](macOS-MenuBar.png)
+  - mirror this:
+
+    ![](./images/macOS-MenuBar.png)
+
 - System Preferences
   - Accessibility
-    - Zoom: check the following
-      - use keyboard shortcuts to Zoom
-      - use scroll gesture with modifier keys to zoom (select ^ CONTROL)
-  - Display
-    - set scale for laptop LCD to max (furthest right)
+
+      ![](./images/macOS-SysPrefs-Accessibility-Zoom.png)
+
   - Dock
-    - size 30%
-    - magnification 80%
-    - minimize windows = genie effect
-    - animate opening apps
-    - auto hide & show
-    - show indicators for open apps
-    - mirror what is in the screenshot [macOS-Dock.png](macOS-Dock.png)
+    - settings: **System Preferences > Dock**
+
+        ![](./images/macOS-SysPrefs-Dock.png)
+
+    - update dock to the backup image
+
+        ![](./macOS-Dock.png)
+
   - General
-    - check *Use dark menu bar & dock*
+
+      ![](./images/macOS-SysPrefs-General.png)
+
   - Keyboard
-    - General:
-      - Key repeat: 100% fast
-      - Delay until repeat: 2nd tick from right
-      - CHECK Use all F1, F2, etc keys as standard function keys
-    - Mission Control
-      - disable Mission Control & Application Windows options
-        - *these hijack the multi-line cursor ability in Sublime Text*
-    - Shortcuts - uncheck options for Spotlight
-      - Set activation keystroke for Alfred: CMD+SPACE
+
+      ![](./images/macOS-SysPrefs-Keyboard.png)
+
+    - Shortcuts - uncheck options for Spotlight, then manually setup activation keystroke for Alfred to <kbd>CMD</kbd>+<kbd>SPACE</kbd>
+
+        ![](./images/macOS-SysPrefs-Keyboard-02.png)
+
+  - Mission Control
+
+      ![](./images/macOS-SysPrefs-MissionControll.png)
+
   - Internet Accounts
-    - iCloud
-    - O365 <primary account>
-    - gmail <primary account>
-    - facebook
-    - twitter <primary account>
-    - facebook
-    - don’t do linkedin... too many damn birthday alerts!
+
+      ![](./images/macOS-SysPrefs-InternetAccounts.png)
+
   - Printers
     - install / add printers
   - Security > Privacy
-    - CheatSheet
-    - Divvy
-    - Dropbox
-    - SnagIt & SnagItHelper
-    - Synergy
+    - Activate & enable where necessary
   - Users & Groups / Login Items
-    - Alfred 4
-    - Bartender
-    - Divvy
-    - Google Chrome (hide = checked)
-    - Google Drive
-    - No Sleep
-    - The Clock
-    - TripMode
-    - WeatherClip
+
+      ![](./images/MSTeams-OneDrive-UsersGroupsLogins.png)
 
 ## Data Restore
 
@@ -411,7 +411,7 @@ to keep Homebrew installed things update, do this:
 
   ```shell
   brew update           # download app updated formulas
-  brew outdated         # what’s old?
+  brew outdated         # what's old?
   brew upgrade          # upgrade everything locally
   # list all brew casks installed & their versions
   brew cask outdated
@@ -434,5 +434,3 @@ update MacOS: [ref](https://developer.apple.com/legacy/library/documentation/Dar
   # install things based on the name returned using
   sudo softwareupdate --install [name listed]
   ```
-
-[![Analytics](https://ga-beacon.appspot.com/UA-59891462-1/osx-buildout/readme)](https://github.com/igrigorik/ga-beacon)

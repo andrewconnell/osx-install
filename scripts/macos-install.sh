@@ -27,5 +27,4 @@ mas install 638332853  # Logitech Camera Settings
 mas install 409203825  # Numbers
 mas install 409201541  # Pages
 mas install 639968404  # Parcel
-mas install 1381446741 # Winds
 mas install 497799835  # Xcode
