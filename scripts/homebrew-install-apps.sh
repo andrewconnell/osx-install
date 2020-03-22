@@ -1,13 +1,19 @@
 #!/bin/sh
 
-# install drivers
-brew tap caskroom/drivers
+# add additional repos for homebrew to track, update & install
 
-# install tools
+# add cask-drivers
+brew tap homebrew/cask-drivers
+# add fonts
+brew tap homebrew/cask-fonts
+# add azure functions
+brew tap azure/functions
+
+# install apps
 brew install aom
 brew install asciinema
 brew install azure-cli
-brew install azure-functions-core-tools@2
+brew install azure-functions-core-tools@3
 brew install bash-completion
 brew install boost
 brew install cairo
@@ -19,6 +25,7 @@ brew install docker-compose-completion
 brew install emacs
 brew install ffmpeg
 brew install flac
+brew install font-hack
 brew install fontconfig
 brew install freetype
 brew install frei0r
@@ -32,7 +39,7 @@ brew install git
 brew install glib
 brew install gmp
 brew install gnutls
-brew install go@1.8
+brew install go
 brew install graphite2
 brew install gzip
 brew install harfbuzz
@@ -86,9 +93,6 @@ brew install pkg-config
 brew install pnpm
 brew install protobuf
 brew install python
-brew install python3
-brew install python@2
-brew install python@3.8
 brew install readline
 brew install rtmpdump
 brew install rubberband
@@ -117,27 +121,19 @@ brew install zsh-completions
 
 brew cask install adobe-creative-cloud
 brew cask install alfred
-brew cask install appcleaner
-brew cask install astropad
 brew cask install azure-data-studio
 brew cask install bartender
-brew cask install betterzipql
 brew cask install bitbar
 brew cask install bot-framework-emulator
-brew cask install camtasia
 brew cask install charles
 brew cask install cheatsheet
-brew cask install crashplan
 brew cask install docker
 brew cask install dotnet-sdk
 brew cask install firefox
 brew cask install focusrite-control
-brew cask install font-hack
 brew cask install fritzing
 brew cask install google-backup-and-sync
 brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install google-hangouts
 brew cask install grammarly
 brew cask install handbrake
 brew cask install istat-menus
@@ -145,13 +141,10 @@ brew cask install iterm2
 brew cask install java
 brew cask install keybase
 brew cask install mactex
-brew cask install makemkv
 brew cask install microsoft-azure-storage-explorer
 brew cask install microsoft-edge
 brew cask install microsoft-teams
-brew cask install mono-mdk
 brew cask install ngrok
-brew cask install nosleep
 brew cask install parallels
 brew cask install postman
 brew cask install powershell
@@ -160,7 +153,6 @@ brew cask install screenflow
 brew cask install sketchup
 brew cask install skype
 brew cask install slack
-brew cask install sling
 brew cask install smartgit
 brew cask install smartsynchronize
 brew cask install snagit

@@ -4,32 +4,15 @@ This repo acts as a log for my buildout of my laptop. As I add stuff or change s
 
 More background info: [BLOG: Rapid Complete Install / Reinstall OS X Like a Champ in Three-ish Hours](http://www.andrewconnell.com/blog/rapid-complete-install-reinstall-os-x-like-a-champ-in-three-ish-hours)
 
-## Before Paving the primary partition, document current config
+## Before Paving, document current config
 
 Do the following before paving the partition. This is to get the way I have things configured in the dock & menu bar back the way I want them.
 
+- Set up timestamped backup folder, **{{PRIVATE_BACKUP}}**, OneDrive (or similar) to copy things
 - Screenshot all installed apps
-- MacOS & System
-  - have a current Apple TimeMachine backup job finished
-  - screenshots of Finder settings
-
-      ![](images/macOS-Finder-Settings-General.png)
-
-      ![](images/macOS-Finder-Settings-Preferences.png)
-
-      ![](images/macOS-Finder-Settings-Sidebar.png)
-
-  - screenshot MacOS dock
-
-      ![](images/macOS-Dock.png)
-
-  - screenshot expanded Bartender MacOS Menu Bar
-
-      ![](images/macOS-MenuBar.png)
-
-- Screenshot OneDrive doclib's (also from MS Teams) sync'd local
-- XCOPY to external disk if possible
-    > **NOTE:** many of the hidden files & folders are copied as "dot-files"
+- Screenshot OneDrive sync'd doclib's from MS Teams & save => **{{PRIVATE_BACKUP}}**
+- XCOPY the following => **{{PRIVATE_BACKUP}}**
+  > **NOTE:** many of the hidden files & folders are copied as "dot-files"
 
   - `~/.bash_history`
   - `~/.bash_profile`
@@ -38,61 +21,86 @@ Do the following before paving the partition. This is to get the way I have thin
   - `~/.yarnrc`
   - `~/.ssh`
   - `~/.zshrc`
+  - `~/_play`
   - `~/Desktop`
   - `~/Downloads`
   - `~/Documents`
-  - `~/Pictures`
+  - `~/Movies`
   - `~/voitanos-workspace`
-  - optional
-    - `~/_play`
-    - `~/Movies`
-    - *review other folders in the root*
-
+  - *review other folders in the root*
 - Dev
-  - Dump list of all repos in `~/repos`
-- Adobe Creative Cloud
-  - sync all settings in Media Encoder, Photoshop, Prelude, & Premiere Pro
-  - export settings for backup
-  - Photoshop:
-    - export saved actions (*ref **Adobe Creative Cloud/Photoshop***)
-  - Premiere:
-    - export custom presets (*ref **Adobe Creative Cloud/Premiere Pro***)
-- Jump Desktop
-  - export list of VMs
-- Mac App Store apps
-  - refresh list installed MacOS apps: [scripts/macos-install.sh](scripts/macos-install.sh)
-
-      ```shell
-      $ mas list
-      ```
+  - Dump list of all repos in `~/repos` => **{{PRIVATE_BACKUP}}**
+- iStat Menu
+  - backup settings => **./AppSettings/iStat Menus Settings.ismp**
 - Node
-  - refresh NPM global package install list: [scripts/npm-global-package-install.sh](scripts/npm-global-package-install.sh)
+  - refresh NPM global package install list: **[./scripts/npm-global-package-install.sh](./scripts/npm-global-package-install.sh)**
 
-    ```shell
+    ```bash
     $ npm list -g --depth=0
     ```
 
 - Postman
   - export all collections & environments
 - Screenflow
-  - log batch export settings to **./App Settings/Screenflow**
-- Visual Studio Code (**./App Settings/Visual Studio Code**)
-  - refresh installed extensions install list: [scripts/vscode-ext-install.sh](scripts/vscode-ext-install.sh)
+  - log batch export settings to **[./AppSettings/Screenflow](./AppSettings/Screenflow)**
+- Visual Studio Code
+  - refresh installed extensions install list: **[./scripts/vscode-ext-install.sh](./scripts/vscode-ext-install.sh)**
 
-      ```shell
+      ```bash
       $ code --list-extensions
       ```
 
-  - backup snippets & user settings to [app-settings/visual-studio-code](app-settings/visual-studio-code)
+  - backup snippets & user settings to **[./AppSettings/VisualStudioCode](./AppSettings/VisualStudioCode)**
     - user settings: `~/Library/Application Support/Code/User`
+
+### MacOS & System
+
+- have a current Apple TimeMachine backup job finished
+- screenshots of Finder settings
+
+    ![](images/macOS-Finder-Settings-General.png)
+
+    ![](images/macOS-Finder-Settings-Preferences.png)
+
+    ![](images/macOS-Finder-Settings-Sidebar.png)
+
+- screenshot MacOS dock
+
+    ![](images/macOS-Dock.png)
+
+- screenshot expanded Bartender MacOS Menu Bar
+
+    ![](images/macOS-MenuBar.png)
+
+### Adobe Creative Cloud
+
+- Launch each app and sync settings (PUSH) for:
+  - Media Encoder
+  - Photoshop
+  - Prelude
+  - Premiere Pro
+- Media Encoder:
+  - export all profiles: **[./AppSettings/AdobeCreativeCloud/MediaEncoder](./AppSettings/AdobeCreativeCloud/MediaEncoder)**
+- Photoshop:
+  - export saved actions: **[./AppSettings/AdobeCreativeCloud/Photoshop](./AppSettings/AdobeCreativeCloud/Photoshop)**
+- Premiere Pro:
+  - export custom presets: **[./AppSettings/AdobeCreativeCloud/PremierePro](./AppSettings/AdobeCreativeCloud/PremierPro)**
+- Jump Desktop
+- export list of VMs => **{{PRIVATE_BACKUP}}**
+- Mac App Store apps
+- refresh list installed MacOS apps: **[./scripts/macos-install.sh](./scripts/macos-install.sh)**
+
+    ```bash
+    $ mas list
+    ```
 
 ## Pave partition
 
 1. restart with COMMAND+R
 1. when apple logo comes up... delete partition, NOT tiny partition (2nd listed)
-1. back up and install MacOS via network
+1. install MacOS via internet
 
-## After pave, install the following
+## Install apps
 
 The following installs & configuration should be done to setup automated installs.
 
@@ -100,62 +108,127 @@ The following installs & configuration should be done to setup automated install
 
 Install [Homebrew](http://brew.sh/) for automated installs & updates.
 
-```shell
+```bash
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install.sh | sh
 ```
 
-### Setup Command Prompt
+### Install apps via Homebrew: `homebrew-install-apps.sh`
+
+Install apps using Homebrew.
+
+> **NOTE**: Monitor the terminal for password prompts & errors/warnings.
+
+```bash
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.sh | sh
+```
+
+### Install Mac App Store apps: `macos-install.sh`
+
+Install apps from the Apple App Store.
+
+```bash
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/macos-install.sh | sh
+```
+
+### Manual Installs
+
+- Amphetamine Enhancer - https://github.com/x74353/Amphetamine-Enhancer
+- Mac Office
+
+    > Install this from Mac AppStore
+
+- [Sophos Home A/V](https://home.sophos.com)
+
+## Configure apps
+
+Three step process:
+
+1. Get OneDrive & Google Chrome syncing to get access to backups, settings (in OneDrive), licenses & passwords in LastPass
+1. Configure command prompt
+1. Login, license, install, & configure remaining apps
+
+### Configure core apps to acquire backups, licenses & passwords
+
+- login to the following apps
+  - Google Chrome
+    - *do this first & login to LastPass to get licenses*
+  - Google-Drive
+  - OneDrive
+    - *do this to get sync running... contains backup files collected before pave*
+- Visual Studio Code
+  - install extensions collected before pave:
+
+      ```bash
+      curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/vscode-ext-install.sh | sh
+      ```
+
+  - copy snippets & settings:
+    - from **[./AppSettings/VisualStudioCode](./AppSettings/VisualStudioCode)**
+    - to `~/Library/Application Support/Code/User`
+  - apply licenses to extensions Quokka & Wallaby
+
+### Setup command prompt (iTerm)
 
 Install ZSH, Oh My ZSH, iTerm & copy fonts & themes:
 
-```shell
+```bash
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/cmdprompt-install.sh | sh
 ```
 
 - iTerm
-  - import settings from `~/Dropbox/My AppSettings/iTerm`
+  - import settings from **[./AppSettings/iTerm](./AppSettings/iTerm)**
   - apply custom **bullet-train** theme
     - update `~/.zshrc` to specify the theme used: `ZSH_THEME="bullet-train"`
-  - update SSH
-    - copy the `~/.ssh` keys into the new location
-    - reset permissions & add private key to keychain:
+  - setup SSH keys
+    - copy backed up `./.ssh` keys from **{{PRIVATE_BACKUP}}** => `./.ssh`
+    - configure SSH keys
 
-      ```shell
-      sudo chmod 600 ~/.ssh/id_rsa
-      ssh-add -K ~/.ssh/id_rsa
-      ```
+        ```bash
+        # add key to SSH agent
+        #     + enter passphrase from LastPass when prompted
+        ssh-add ~/.ssh/id_rsa
 
-## Install Apps: `homebrew-install-apps.sh`
+        # add to keychain
+        ssh-add -K
 
-```shell
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.sh | sh
-```
+        # configure 'config' folder permissions
+        sudo chmod 600 ~/.ssh/id_rsa
+        ```
 
-## Configure Core Apps
+### Configure Installed Apps
 
-- login to the following:
-  - Chrome
-    - *do this first & login to LastPass to get licenses*
-  - Edge
-  - Google-Drive
-  - OneDrive
-  - Skype
 - Alfred
   - Activate power pack within app settings
-  - **Preferences > Advanced**: Syncing - set to `~/Dropbox/My AppSettings/Alfred`
+  - **Preferences > Advanced**: Syncing - set to **./{{PRIVATE-BACKUP}}/Alfred**
 - Amphetamine
 
     ![](images/amphetamine-preferences-general.png)
+
+    ![](images/amphetamine-preferences-sessions-nontrigger)
+
+    ![](images/amphetamine-preferences-sessions-allsessions)
 
     ![](images/amphetamine-preferences-notifications.png)
 
     ![](images/amphetamine-preferences-appearance.png)
 
+- iStat Settings
+  - license & restore settings: [./AppSettings/iStat Menus Settings.ismp](./AppSettings/iStat%20Menus%20Settings.ismp)
 - Bartender
-  - License & configure (*[use this image for reference](images/macOS-MenuBar.png)*)
-- NoSleep
-  - Launch & configure (*[use this image for reference](images/NoSleep.png)*)
-- Outlook
+  - License & configure:
+
+      ![](./images/macOS-MenuBar.png)
+
+- Divvy
+  - import shortcuts by opening Safari / Firefox & enter the url in [./AppSettings/divvy.md](./AppSettings/divvy.md)
+
+    ![](./images/divvy.png)
+
+- Jump Desktop
+  - import the machines from export before pave
+- Microsoft OneNote
+  - open notebooks to start sync
+- Microsoft Outlook
 
     ![](images/outlook-general.png)
 
@@ -171,6 +244,23 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
     ![](images/outlook-calendar.png)
 
+  - Signature
+    - get signatures from previous "sends"
+  - Install Outlook Zoom plugin
+
+      ```bash
+      brew cask install zoomus-outlook-plugin
+      ```
+
+- Microsoft Teams
+- Parcel
+- Private Internet Access
+  - Homebrew downloaded, but must be manually install by launching **\*.dmg**. Likely location: **/usr/local/Caskroom/private-internet-access/{{VERSION}}/*.dmg**
+  - Login after installing
+- Screenflow
+  - license
+  - create custom batch export profile
+- Slack
 - Steam
   - Launch & login
   - Disable auto login: **Preferences > Interface > [uncheck] Run Steam with my computer starts**
@@ -190,34 +280,22 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
     - Theme-Spacegray
     - TypeScript
     - View In Browser
-  - Update preferences from those in [app-settings/sublime](app-settings/sublime)
+  - Update preferences from those in **[./AppSettings/Sublime](./AppSettings/Sublime)**
     - copy to `~/Library/Application Support/Sublime Text`
+- TechSmith SnagIt
+  - launch & login to get license
+- Visual Studio for Mac
+  - launch
+  - login with AzureAD account
+  - check & install updates
+- WebCatalog
+  - license
+  - add instances of Microsoft Teams for each tenant
 
-## Install Mac App Store apps: `macos-install.sh`
+## Additional downloads & installs Install My Personal Apps: `scripted-installs.sh`
 
-Install this stuff from the Apple App Store, then run the next install scripts... while they run, configure these.
-
-```shell
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/macos-install.sh | sh
-```
-
-Configure & login apps:
-
-- Divvy
-  - import shortcuts by opening Safari / Firefox & enter the url in [app-settings/divvy-shortcuts.md](app-settings/divvy-shortcuts.md)
-- Jump Desktop
-  - import the machines from export before pave
-- Microsoft Teams
-- Parcel
-  - *login*
-- Slack
-- Steam
-- restore iStat Settings [app-settings/iStat Menus Settings.ismp](./app-settings/iStat Menus Settings.ismp)
-
-## Install My Personal Apps: `myinstall.sh`
-
-```shell
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/myinstall.sh | sh
+```bash
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/scripted-installs.sh | sh
 ```
 
 - Creative Cloud installs
@@ -231,111 +309,59 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
   - Photoshop 2020
   - Prelude 2020
   - Premiere Pro 2020
-- license
-  - Screenflow
-  - SmartGit
-  - SmartSynchronize
-  - WebCatalog
-- setup
-  - Creative-Cloud
-    - import settings from Adobe CC, Adobe Media Encoder - import preferences from [app-settings/adobe-creative-suite](app-settings/adobe-creative-suite)
-- Visual Studio
-  - open & login with O365 account
-  - change updates to alpha channel
-- Visual Studio Code
-  - install [Hack font](http://sourcefoundry.org/hack/)
-    - font found in [app-settings](app-settings) as **Hack-*-otf.zip**
-  - Launch VS Code
-    - from command pallet, find **Shell Command**
-      - uninstall & reinstall command in path
-      - *repeat the above for VS Code Insiders*
-    - install extensions:
-
-        ```shell
-        curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/vscode-ext-install.sh | sh
-        ```
-
-  - copy snippets & settings:
-    - from [app-settings/visual-studio-code](app-settings/visual-studio-code)
-    - to `~/Library/Application Support/Code/User`
-    - *add license key for WallabyJS*
-      - repeat for VSCode Insiders install
-
-### Setup Azure-cli AutoComplete
-
-```shell
-$ echo '. <(azure --completion)' >> .zshrc
-```
-
-## Manual Installs
-
-- Mac Office
-
-    > Install this from Mac AppStore
-
-  - Outlook configuration
-    - General
-      - uncheck "group similar folders from different accounts"
-      - check "hide on my computer folders"
-    - Font
-      - color: = navy
-      - size: = 11.5
-    - Notifications & Sounds: uncheck all except for reminder
-    - Reading
-      - set to mark as read only when opening in separate window
-    - Signature
-  - Install Outlook Zoom plugin
-
-      ```shell
-      brew cask install zoomus-outlook-plugin
-      ```
-
-- [Sophos Home A/V](https://home.sophos.com)
-- TechSmith SnagIt
-  - get by logging into [TechSmith](http://www.techsmith.com)
-  - then launch to license
+- Import settings from the pre-pave section above on [Adobe CC apps](#adobe-creative-cloud)
 
 ## Install Node
 
-manage node installs using nvm... this lets me test different versions of node as well as avoid issue with having to use `sudo` when installing packages globally
+Manage node installs using nvm... this lets me test different versions of node as well as avoid issue with having to use `sudo` when installing packages globally.
 
-```shell
+```bash
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/nvm-install.sh | sh
 ```
 
-make sure this is at the very end of `.zshrc`
+Verify this is at the end of **~/.zshrc**
 
-```shell
-$ export NVM_DIR="$HOME/.nvm"
+```bash
+NVM_DIR="$HOME/.nvm"
 $ . "/usr/local/opt/nvm/nvm.sh"
 ```
 
-### Install node LTS & stable versions
+### Install & configure Node LTS & stable versions
 
-```shell
+This script installs multiple Node versions:
+
+```bash
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/node-install.sh | sh
+```
+
+Use the following to set the desired default version of Node:
+
+```bash
+nvm alias default stable
 ```
 
 now install global packages for each version of node installed:
 
-```shell
+```bash
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-global-packages.sh | sh
 ```
 
-## After all Installs, Update Brew, Brew Cask & Purge Installs
+## Post installation & configuration checks
 
-```shell
+### Update Homebrew, Homebrew Cask & purge installs
+
+```bash
 brew doctor
 brew update
 brew cleanup
 brew cask cleanup
 ```
 
-## Setup git
+### Setup git
 
-> might already be done by copying the hidden files over
+> NOTE: This might already be done by copying the hidden **~./.gitconfig**.
 
-```shell
+```bash
 git config --global user.name "Andrew Connell"
 git config --global user.email <insert primary email>
 git config --global credential.helper osxkeychain
@@ -344,16 +370,11 @@ git config --global core.editor "code -w"
 git config --global merge.tool code
 ```
 
-## MacOS Tweaks
+### MacOS Tweaks
 
 - Desktop (*change these settings by right-click desktop & pick **Show View Options***)
 
     ![](./images/macOS-Settings-01.png)
-
-- Menu Bar / Bartender
-  - mirror this:
-
-    ![](./images/macOS-MenuBar.png)
 
 - System Preferences
   - Accessibility
@@ -367,7 +388,7 @@ git config --global merge.tool code
 
     - update dock to the backup image
 
-        ![](./macOS-Dock.png)
+        ![](./images/macOS-Dock.png)
 
   - General
 
@@ -397,11 +418,11 @@ git config --global merge.tool code
 
       ![](./images/MSTeams-OneDrive-UsersGroupsLogins.png)
 
-## Data Restore
+### Data Restore
 
-- clone select repositories from github => `~/repos`
+- Clone select repositories from github => `~/repos`
 
-## Setup TimeMachine Backups
+### Setup TimeMachine Backups
 
 Run first backups.
 
@@ -409,7 +430,7 @@ Run first backups.
 
 to keep Homebrew installed things update, do this:
 
-  ```shell
+  ```bash
   brew update           # download app updated formulas
   brew outdated         # what's old?
   brew upgrade          # upgrade everything locally
@@ -422,14 +443,14 @@ to keep Homebrew installed things update, do this:
 
 update MacOS apps:
 
-  ```shell
+  ```bash
   mas outdated    # what's old
   mas upgrade     # upgrade everything
   ```
 
 update MacOS: [ref](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/softwareupdate.8.html)
 
-  ```shell
+  ```bash
   softwareupdate --list
   # install things based on the name returned using
   sudo softwareupdate --install [name listed]

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# install nvm
-brew install nvm
+# install nvm (already installed by homebrew)
+# brew install nvm
 
 mkdir ~/.nvm

@@ -1,4 +1,4 @@
-#Export shortcuts:
+# Export shortcuts
 
 - open Safari / Firefox
 - browse to [divvy://export](divvy://export)
