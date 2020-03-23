@@ -133,11 +133,15 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 ### Manual Installs
 
 - Amphetamine Enhancer - https://github.com/x74353/Amphetamine-Enhancer
-- Mac Office
+- EpocCam Drivers for MacOS
+  - Available here: http://www.kinoni.com
+  - Also see **{{PRIVATE_BACKUP}}/Installs**
 
-    > Install this from Mac AppStore
-
+  > NOTE: need to connect to it on phone early on... takes a while for the first connection
 - [Sophos Home A/V](https://home.sophos.com)
+- [Wirecast by Telestream](https://www.telestream.net/wirecast)
+  - Install trial from site download
+  - Launch & license
 
 ## Configure apps
 
