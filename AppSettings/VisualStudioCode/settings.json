@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "terminal.integrated.fontFamily": "Hack",
+  "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
   "terminal.integrated.fontSize": 13,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
