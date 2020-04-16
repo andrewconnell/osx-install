@@ -129,6 +129,7 @@ brew cask install charles
 brew cask install cheatsheet
 brew cask install docker
 brew cask install dotnet-sdk
+brew cask install elgato-stream-deck
 brew cask install firefox
 brew cask install focusrite-control
 brew cask install fritzing

@@ -43,6 +43,8 @@ Do the following before paving the partition. This is to get the way I have thin
   - export all collections & environments
 - Screenflow
   - log batch export settings to **[./AppSettings/Screenflow](./AppSettings/Screenflow)**
+- Stream Deck
+  - export & save Stream Deck profiles => **LiveStreaming/{{PRIVATE_BACKUP}}**
 - Visual Studio Code
   - refresh installed extensions install list: **[./scripts/vscode-ext-install.sh](./scripts/vscode-ext-install.sh)**
 
@@ -133,15 +135,13 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 ### Manual Installs
 
 - Amphetamine Enhancer - https://github.com/x74353/Amphetamine-Enhancer
-- EpocCam Drivers for MacOS
-  - Available here: http://www.kinoni.com
-  - Also see **{{PRIVATE_BACKUP}}/Installs**
-
-  > NOTE: need to connect to it on phone early on... takes a while for the first connection
+- NewTek NDI Tools & drivers for MacOS
+  - See: `*.dmg` in **LiveStreaming/{{PRIVATE_BACKUP}}**
 - [Sophos Home A/V](https://home.sophos.com)
 - [Wirecast by Telestream](https://www.telestream.net/wirecast)
   - Install trial from site download
   - Launch & license
+  - Install NewBlue Titler Live (*installer from Telestream site*)
 
 ## Configure apps
 
