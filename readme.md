@@ -35,8 +35,8 @@ Do the following before paving the partition. This is to get the way I have thin
 - Node
   - refresh NPM global package install list: **[./scripts/npm-global-package-install.sh](./scripts/npm-global-package-install.sh)**
 
-    ```bash
-    $ npm list -g --depth=0
+    ```console
+    npm list -g --depth=0
     ```
 
 - Postman
@@ -48,8 +48,8 @@ Do the following before paving the partition. This is to get the way I have thin
 - Visual Studio Code
   - refresh installed extensions install list: **[./scripts/vscode-ext-install.sh](./scripts/vscode-ext-install.sh)**
 
-      ```bash
-      $ code --list-extensions
+      ```console
+      code --list-extensions
       ```
 
   - backup snippets & user settings to **[./AppSettings/VisualStudioCode](./AppSettings/VisualStudioCode)**
@@ -92,8 +92,8 @@ Do the following before paving the partition. This is to get the way I have thin
 - Mac App Store apps
 - refresh list installed MacOS apps: **[./scripts/macos-install.sh](./scripts/macos-install.sh)**
 
-    ```bash
-    $ mas list
+    ```console
+    mas list
     ```
 
 ## Pave partition
@@ -110,7 +110,7 @@ The following installs & configuration should be done to setup automated install
 
 Install [Homebrew](http://brew.sh/) for automated installs & updates.
 
-```bash
+```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install.sh | sh
 ```
 
@@ -120,7 +120,7 @@ Install apps using Homebrew.
 
 > **NOTE**: Monitor the terminal for password prompts & errors/warnings.
 
-```bash
+```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.sh | sh
 ```
 
@@ -128,7 +128,7 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
 Install apps from the Apple App Store.
 
-```bash
+```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/macos-install.sh | sh
 ```
 
@@ -162,7 +162,7 @@ Three step process:
 - Visual Studio Code
   - install extensions collected before pave:
 
-      ```bash
+      ```console
       curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/vscode-ext-install.sh | sh
       ```
 
@@ -175,7 +175,7 @@ Three step process:
 
 Install ZSH, Oh My ZSH, iTerm & copy fonts & themes:
 
-```bash
+```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/cmdprompt-install.sh | sh
 ```
 
@@ -187,7 +187,7 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
     - copy backed up `./.ssh` keys from **{{PRIVATE_BACKUP}}** => `./.ssh`
     - configure SSH keys
 
-        ```bash
+        ```console
         # add key to SSH agent
         #     + enter passphrase from LastPass when prompted
         ssh-add ~/.ssh/id_rsa
@@ -252,7 +252,7 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
     - get signatures from previous "sends"
   - Install Outlook Zoom plugin
 
-      ```bash
+      ```console
       brew cask install zoomus-outlook-plugin
       ```
 
@@ -298,7 +298,7 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
 ## Additional downloads & installs Install My Personal Apps: `scripted-installs.sh`
 
-```bash
+```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/scripted-installs.sh | sh
 ```
 
@@ -319,13 +319,13 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
 Manage node installs using nvm... this lets me test different versions of node as well as avoid issue with having to use `sudo` when installing packages globally.
 
-```bash
+```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/nvm-install.sh | sh
 ```
 
 Verify this is at the end of **~/.zshrc**
 
-```bash
+```txt
 NVM_DIR="$HOME/.nvm"
 $ . "/usr/local/opt/nvm/nvm.sh"
 ```
@@ -334,19 +334,19 @@ $ . "/usr/local/opt/nvm/nvm.sh"
 
 This script installs multiple Node versions:
 
-```bash
+```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/node-install.sh | sh
 ```
 
 Use the following to set the desired default version of Node:
 
-```bash
+```console
 nvm alias default stable
 ```
 
 now install global packages for each version of node installed:
 
-```bash
+```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-global-packages.sh | sh
 ```
 
@@ -354,7 +354,7 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
 ### Update Homebrew, Homebrew Cask & purge installs
 
-```bash
+```console
 brew doctor
 brew update
 brew cleanup
@@ -365,7 +365,7 @@ brew cask cleanup
 
 > NOTE: This might already be done by copying the hidden **~./.gitconfig**.
 
-```bash
+```console
 git config --global user.name "Andrew Connell"
 git config --global user.email <insert primary email>
 git config --global credential.helper osxkeychain
@@ -434,7 +434,7 @@ Run first backups.
 
 to keep Homebrew installed things update, do this:
 
-  ```bash
+  ```console
   brew update           # download app updated formulas
   brew outdated         # what's old?
   brew upgrade          # upgrade everything locally
@@ -447,14 +447,14 @@ to keep Homebrew installed things update, do this:
 
 update MacOS apps:
 
-  ```bash
+  ```console
   mas outdated    # what's old
   mas upgrade     # upgrade everything
   ```
 
 update MacOS: [ref](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/softwareupdate.8.html)
 
-  ```bash
+  ```console
   softwareupdate --list
   # install things based on the name returned using
   sudo softwareupdate --install [name listed]
