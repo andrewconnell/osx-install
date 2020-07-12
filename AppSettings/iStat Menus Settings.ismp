@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>build</key>
-	<string>1113</string>
+	<string>1116</string>
 	<key>license</key>
 	<dict>
 		<key>email</key>
@@ -30,6 +30,8 @@
 				<string>A9C804EF-1771-4173-A64B-2D8A79009736</string>
 			</dict>
 		</array>
+		<key>CPU_DropdownOrderDisabled</key>
+		<string></string>
 		<key>CPU_MenubarCombineCores</key>
 		<integer>1</integer>
 		<key>CPU_MenubarGroupItems</key>
@@ -38,9 +40,55 @@
 		<array>
 			<dict>
 				<key>key</key>
-				<string></string>
+				<string>100</string>
 				<key>uuid</key>
-				<string>E8637A9C-FB70-4C97-811D-E40AF68FA57F</string>
+				<string>BFC243DD-3C43-4431-AA82-EF0A45E1FD49</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>0</string>
+				<key>uuid</key>
+				<string>1DA70C31-EB44-45E0-AC8E-723190E7BD28</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>2</string>
+				<key>uuid</key>
+				<string>7FF0542F-0F74-4D6E-B4D5-042E47FDF104</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>8</string>
+				<key>uuid</key>
+				<string>E92C95E1-6C28-4C6F-84DB-BB9144CD0DD7</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>5</string>
+				<key>uuid</key>
+				<string>9B30145C-DE9C-4AD8-A692-3210EB23DA4F</string>
+			</dict>
+			<dict>
+				<key>display</key>
+				<integer>1</integer>
+				<key>key</key>
+				<string>11</string>
+				<key>uuid</key>
+				<string>27042676-89D7-47C0-B183-80CECAE6CB18</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>9</string>
+				<key>uuid</key>
+				<string>5BF4E9F6-FC11-4AD7-8BC7-1E764AB28773</string>
+			</dict>
+			<dict>
+				<key>display</key>
+				<integer>0</integer>
+				<key>key</key>
+				<string>10</string>
+				<key>uuid</key>
+				<string>149A0754-557B-458F-A3E7-7989D7BBB056</string>
 			</dict>
 		</array>
 		<key>CombinedDropdownDisplayMode</key>
@@ -100,8 +148,6 @@
 				<true/>
 				<key>key</key>
 				<string>CD7266F3-9588-3D5B-9253-C8B47DEDEF92</string>
-				<key>name</key>
-				<string>Macintosh HD</string>
 			</dict>
 		</array>
 		<key>Disks_MenubarMode</key>
@@ -186,8 +232,12 @@
 				<string>70D88C6B-33B0-4B5C-A101-84559E9E3079</string>
 			</dict>
 		</array>
+		<key>GPU_MenubarGraph</key>
+		<string>0.05 1.00 0.00 1.00</string>
 		<key>Memory_AppFormat</key>
 		<integer>0</integer>
+		<key>Memory_DropdownOrderDisabled</key>
+		<string></string>
 		<key>Memory_MenubarMode</key>
 		<array>
 			<dict>
@@ -203,6 +253,8 @@
 				<string>A88744D1-69FF-4343-93F3-2EA391D660D5</string>
 			</dict>
 		</array>
+		<key>MenubarGraphSize</key>
+		<integer>0</integer>
 		<key>MenubarTheme</key>
 		<integer>1</integer>
 		<key>MigratedExtras_5.0</key>
@@ -221,9 +273,9 @@
 		<array>
 			<dict>
 				<key>key</key>
-				<string></string>
+				<string>0</string>
 				<key>uuid</key>
-				<string>C5723373-AC87-4840-A4F7-9787B6D4787A</string>
+				<string>90C2BD27-EAB3-44E9-A7EF-06D5CEA7CC29</string>
 			</dict>
 		</array>
 		<key>Notifications-Items</key>
@@ -316,7 +368,7 @@
 			<integer>8</integer>
 		</array>
 		<key>Time_CalendarShowWeeks</key>
-		<integer>0</integer>
+		<integer>1</integer>
 		<key>Time_Cities</key>
 		<array>
 			<dict>
@@ -455,7 +507,12 @@
 			<string>HH</string>
 			<string>':'</string>
 			<string>mm</string>
-			<string>' '</string>
+			<string>' ('</string>
+			<string>h</string>
+			<string>':'</string>
+			<string>mm</string>
+			<string>a</string>
+			<string>')'</string>
 		</array>
 		<key>Time_MenubarFormat</key>
 		<array>
@@ -713,7 +770,7 @@
 		<key>Zarya-TLE</key>
 		<dict>
 			<key>time</key>
-			<real>1584528772.9076729</real>
+			<real>1594549793.350807</real>
 			<key>tle</key>
 			<string>ISS (ZARYA)             
 1 25544U 98067A   19024.69130787  .00000289  00000-0  11946-4 0  9991

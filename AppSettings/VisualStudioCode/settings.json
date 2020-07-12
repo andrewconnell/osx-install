@@ -1,6 +1,5 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
   "terminal.integrated.fontSize": 13,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
@@ -16,7 +15,6 @@
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
   "editor.formatOnType": false,
-  "editor.fontFamily": "Hack",
   "editor.fontSize": 13,
   "editor.wordWrap": "off",
   "editor.renderWhitespace": "all",
@@ -27,9 +25,7 @@
   "prettier.singleQuote": true,
   "prettier.jsxBracketSameLine": true,
   "npm.runInTerminal": false,
-  "material-icon-theme.showUpdateMessage": false,
   "typescript.validate.enable": false,
-  "circleci.apiKey": "2691b9b2914946ae08e0e28e684ce777844de317",
   "team.showWelcomeMessage": false,
   "window.zoomLevel": 0,
   "cSpell.enabledLanguageIds": [
@@ -98,32 +94,8 @@
   "gitProjectManager.baseProjectsFolders": [
     "/Users/ac/repos"
   ],
-  "gitlens.keymap": "chorded",
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": true,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": false,
-    "suppressWelcomeNotice": true
-  },
-  "sync.quietSync": false,
-  "sync.askGistName": false,
-  "sync.gist": "",
-  "sync.lastUpload": "",
-  "sync.autoDownload": false,
-  "sync.autoUpload": false,
-  "sync.lastDownload": "",
-  "sync.forceDownload": false,
-  "sync.host": "",
-  "sync.pathPrefix": "",
   "git.enableSmartCommit": true,
   "explorer.confirmDragAndDrop": false,
-  "gitlens.historyExplorer.enabled": true,
   "breadcrumbs.enabled": true,
   "prettier.arrowParens": "always",
   "rest-client.fontSize": 12,
@@ -131,10 +103,6 @@
   "typescript.preferences.quoteStyle": "single",
   "typescript.suggest.autoImports": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "gitlens.gitExplorer.files.layout": "tree",
-  "gitlens.views.repositories.files.layout": "tree",
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
   "terminal.integrated.rendererType": "dom",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -148,10 +116,11 @@
   "markdownlint.config": {
     "MD025": {
       "front_matter_title": ""
-    }
+    },
+    "MD028": false
   },
   "yaml.schemas": {
-    "file:///Users/ac/.vscode/extensions/docsmsft.docs-yaml-0.2.4/schemas/toc.schema.json": "/toc\\.yml/i"
+    "file:///toc.schema.json": "/toc\\.yml/i"
   },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -168,5 +137,17 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "wallaby.startAutomatically": false,
-  "editor.largeFileOptimizations": false
+  "editor.largeFileOptimizations": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "terminal.integrated.letterSpacing": 1,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

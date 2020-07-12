@@ -10,11 +10,13 @@ brew tap homebrew/cask-fonts
 brew tap azure/functions
 
 # install apps
+brew install act
 brew install aom
 brew install asciinema
 brew install azure-cli
 brew install azure-functions-core-tools@3
 brew install bash-completion
+brew install bfg
 brew install boost
 brew install cairo
 brew install carthage
@@ -25,7 +27,6 @@ brew install docker-compose-completion
 brew install emacs
 brew install ffmpeg
 brew install flac
-brew install font-hack
 brew install fontconfig
 brew install freetype
 brew install frei0r
@@ -81,7 +82,6 @@ brew install oniguruma
 brew install opencore-amr
 brew install openjdk
 brew install openjpeg
-brew install openssl
 brew install openssl@1.1
 brew install opus
 brew install p11-kit
@@ -93,6 +93,7 @@ brew install pkg-config
 brew install pnpm
 brew install protobuf
 brew install python
+brew install python@3.8
 brew install readline
 brew install rtmpdump
 brew install rubberband
@@ -121,10 +122,13 @@ brew install zsh-completions
 
 brew cask install adobe-creative-cloud
 brew cask install alfred
+brew cask install appcleaner
+brew cask install astropad
 brew cask install azure-data-studio
 brew cask install bartender
 brew cask install bitbar
 brew cask install bot-framework-emulator
+brew cask install camtasia
 brew cask install charles
 brew cask install cheatsheet
 brew cask install docker
@@ -135,6 +139,7 @@ brew cask install focusrite-control
 brew cask install fritzing
 brew cask install google-backup-and-sync
 brew cask install google-chrome
+brew cask install google-hangouts
 brew cask install grammarly
 brew cask install handbrake
 brew cask install istat-menus
@@ -142,10 +147,13 @@ brew cask install iterm2
 brew cask install java
 brew cask install keybase
 brew cask install mactex
+brew cask install makemkv
 brew cask install microsoft-azure-storage-explorer
 brew cask install microsoft-edge
 brew cask install microsoft-teams
+brew cask install mono-mdk-for-visual-studio
 brew cask install ngrok
+brew cask install nosleep
 brew cask install parallels
 brew cask install postman
 brew cask install powershell
