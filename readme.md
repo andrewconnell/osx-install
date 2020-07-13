@@ -111,7 +111,7 @@ The following installs & configuration should be done to setup automated install
 Install [Homebrew](http://brew.sh/) for automated installs & updates.
 
 ```console
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install.sh | sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ### Install apps via Homebrew: `homebrew-install-apps.sh`
