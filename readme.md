@@ -171,6 +171,27 @@ Three step process:
     - to `~/Library/Application Support/Code/User`
   - apply licenses to extensions Quokka & Wallaby
 
+### Setup SSH
+
+- setup SSH keys
+  - copy backed up `./.ssh` keys from **{{PRIVATE_BACKUP}}** => `./.ssh`
+  - configure SSH keys
+
+      ```console
+      # set permission to make my keys private
+      sudo chmod 400 ~/.ssh/id_rsa
+
+      # configure 'config' folder permissions
+      sudo chmod 600 ~/.ssh/config
+
+      # add key to SSH agent
+      #     + enter passphrase from LastPass when prompted
+      ssh-add ~/.ssh/id_rsa
+
+      # add to keychain
+      ssh-add -K
+      ```
+
 ### Setup command prompt (iTerm)
 
 Install ZSH, Oh My ZSH, iTerm & copy fonts & themes:
@@ -183,21 +204,6 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
   - import settings from **[./AppSettings/iTerm](./AppSettings/iTerm)**
   - apply custom **bullet-train** theme
     - update `~/.zshrc` to specify the theme used: `ZSH_THEME="bullet-train"`
-  - setup SSH keys
-    - copy backed up `./.ssh` keys from **{{PRIVATE_BACKUP}}** => `./.ssh`
-    - configure SSH keys
-
-        ```console
-        # add key to SSH agent
-        #     + enter passphrase from LastPass when prompted
-        ssh-add ~/.ssh/id_rsa
-
-        # add to keychain
-        ssh-add -K
-
-        # configure 'config' folder permissions
-        sudo chmod 600 ~/.ssh/id_rsa
-        ```
 
 ### Configure Installed Apps
 
