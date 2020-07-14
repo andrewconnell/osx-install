@@ -353,7 +353,6 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 brew doctor
 brew update
 brew cleanup
-brew cask cleanup
 ```
 
 ### Setup git
