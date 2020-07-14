@@ -318,10 +318,10 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
 ## Install Node
 
-Manage node installs using nvm... this lets me test different versions of node as well as avoid issue with having to use `sudo` when installing packages globally.
+Manage node installs using NVM... this lets me test different versions of node as well as avoid issue with having to use `sudo` when installing packages globally.
 
 ```console
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/nvm-install.sh | sh
+mkdir ~/.nvm
 ```
 
 Verify this is at the end of **~/.zshrc**
@@ -343,12 +343,6 @@ Use the following to set the desired default version of Node:
 
 ```console
 nvm alias default stable
-```
-
-now install global packages for each version of node installed:
-
-```console
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-global-packages.sh | sh
 ```
 
 ## Post installation & configuration checks
