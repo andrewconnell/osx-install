@@ -250,11 +250,6 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
   - Signature
     - get signatures from previous "sends"
-  - Install Outlook Zoom plugin
-
-      ```console
-      brew cask install zoomus-outlook-plugin
-      ```
 
 - Microsoft Teams
 - Parcel

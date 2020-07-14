@@ -175,4 +175,3 @@ brew cask install webcatalog
 brew cask install wireshark
 brew cask install xmind
 brew cask install zoomus
-# brew cask install zoomus-outlook-plugin // after installing office
