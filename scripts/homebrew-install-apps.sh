@@ -10,7 +10,7 @@ brew tap homebrew/cask-fonts
 brew tap azure/functions
 
 # install apps
-brew install act
+brew install nektos/tap/act
 brew install aom
 brew install asciinema
 brew install azure-cli
