@@ -3,10 +3,6 @@
 # Azure CLI 2.0
 curl -L https://aka.ms/InstallAzureCli | bash
 
-# Adobe creative cloud installer
-# brew cask install adobe-creative-cloud
-/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app
-
 # install fonts
 cd ~/Library/Fonts
 MSFT_FONTS="Segoe UI and Fabric MDL2"
