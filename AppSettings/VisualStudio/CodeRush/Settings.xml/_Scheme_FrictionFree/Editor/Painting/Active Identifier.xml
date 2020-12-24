@@ -1,8 +1,0 @@
-﻿<!--This is a DXCore settings file-->
-<Page Name="Active Identifier">
- <Language Name="*Neutral*">
-  <Section Name="Settings">
-   <Option Name="Enabled" Value="False" />
-  </Section>
- </Language>
-</Page>

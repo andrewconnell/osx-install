@@ -1,9 +1,0 @@
-﻿<!--This is a DXCore settings file-->
-<Page Name="Extract Property">
- <Language Name="*Neutral*">
-  <Section Name="General">
-   <Option Name="InsertCode" Value="UsePicker" />
-   <Option Name="EmbedInParens" Value="False" />
-  </Section>
- </Language>
-</Page>

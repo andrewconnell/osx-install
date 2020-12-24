@@ -1,8 +1,0 @@
-﻿<!--This is a DXCore settings file-->
-<Page Name="Options">
- <Language Name="*Neutral*">
-  <Section Name="General">
-   <Option Name="LastDXCoreVersion" Value="12.1.7" />
-  </Section>
- </Language>
-</Page>

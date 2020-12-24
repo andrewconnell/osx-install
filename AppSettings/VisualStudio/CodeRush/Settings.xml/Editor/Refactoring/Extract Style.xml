@@ -1,8 +1,0 @@
-﻿<!--This is a DXCore settings file-->
-<Page Name="Extract Style">
- <Language Name="*Neutral*">
-  <Section Name="General">
-   <Option Name="StyleTypes" Value="Universal" />
-  </Section>
- </Language>
-</Page>

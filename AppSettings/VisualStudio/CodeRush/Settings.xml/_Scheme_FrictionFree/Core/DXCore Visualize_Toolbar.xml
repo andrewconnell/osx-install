@@ -1,8 +1,0 @@
-﻿<!--This is a DXCore settings file-->
-<Page Name="DXCore Visualize_Toolbar">
- <Language Name="*Neutral*">
-  <Section Name="General">
-   <Option Name="Visible" Value="True" />
-  </Section>
- </Language>
-</Page>

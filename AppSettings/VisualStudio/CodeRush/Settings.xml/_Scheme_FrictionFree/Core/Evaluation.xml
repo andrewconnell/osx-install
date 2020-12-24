@@ -1,9 +1,0 @@
-﻿<!--This is a DXCore settings file-->
-<Page Name="Evaluation">
- <Language Name="*Neutral*">
-  <Section Name="Startup">
-   <Option Name="ShowWelcome" Value="True" />
-   <Option Name="ShowThankYou" Value="True" />
-  </Section>
- </Language>
-</Page>

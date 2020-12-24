@@ -1,9 +1,0 @@
-﻿<!--This is a DXCore settings file-->
-<Page Name="Dynamic Lists">
- <Language Name="*Neutral*">
-  <Section Name="Preferences">
-   <Option Name="ShowContext" Value="False" />
-   <Option Name="LastSelectedList" Value="C# Types" />
-  </Section>
- </Language>
-</Page>
