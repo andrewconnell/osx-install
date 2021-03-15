@@ -10,7 +10,7 @@
     },
     "**/*.js.map": true
   },
-  "editor.autoIndent": false,
+  "editor.autoIndent": "full",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
@@ -48,16 +48,22 @@
   ],
   "cSpell.userWords": [
     "Bing",
+    "Bitbounce",
+    "Boxbe",
     "Customizers",
+    "Gmail",
     "Injectable",
     "Kajabi",
     "MSAL",
+    "PNPM",
     "Performant",
+    "Pluralsight",
     "Sideload",
     "Signup",
     "Truthy",
     "Voitanos",
     "Wisitia",
+    "Wista",
     "Wistia",
     "bot's",
     "customizations",
@@ -67,6 +73,7 @@
     "deserializer",
     "endregion",
     "instrumeter",
+    "lastmod",
     "lcov",
     "lifecycle",
     "odata",
@@ -107,9 +114,6 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "workbench.iconTheme": "vscode-icons",
-  "vsicons.projectDetection.disableDetect": true,
-  "vsicons.dontShowNewVersionMessage": true,
   "markdownlint.customRules": [
     "{docsmsft.docs-linting}/markdownlint-custom-rules/rules.js"
   ],
@@ -149,5 +153,29 @@
   "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "cSpell.enableFiletypes": [
+    "!c",
+    "!cpp",
+    "!latex",
+    "!python",
+    "liquid",
+    "yaml"
+  ],
+  "cSpell.language": "en,en-GB",
+  "docs-build.userType": "Public Contributor",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": "{{put-password-here}}"
+    }
+  ],
+  "workbench.colorTheme": "Night Owl",
+  "workbench.iconTheme": "vscode-icons"
 }

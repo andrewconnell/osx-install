@@ -8,7 +8,7 @@ More background info: [BLOG: Rapid Complete Install / Reinstall OS X Like a Cham
 
 Do the following before paving the partition. This is to get the way I have things configured in the dock & menu bar back the way I want them.
 
-- Set up timestamped backup folder, **{{PRIVATE_BACKUP}}**, OneDrive (or similar) to copy things
+- Set up timestamped backup folder, **{{PRIVATE_BACKUP}}**, OneDrive to copy things
 - Screenshot all installed apps
 - Screenshot OneDrive sync'd doclib's from MS Teams & save => **{{PRIVATE_BACKUP}}**
 - XCOPY the following => **{{PRIVATE_BACKUP}}**
@@ -60,11 +60,7 @@ Do the following before paving the partition. This is to get the way I have thin
 - have a current Apple TimeMachine backup job finished
 - screenshots of Finder settings
 
-    ![](images/macOS-Finder-Settings-General.png)
-
-    ![](images/macOS-Finder-Settings-Preferences.png)
-
-    ![](images/macOS-Finder-Settings-Sidebar.png)
+    ![](images/macOS-Finder-Settings.png)
 
 - screenshot MacOS dock
 

@@ -23,5 +23,4 @@ mas install 462062816 # Microsoft PowerPoint
 mas install 462054704 # Microsoft Word
 mas install 823766827 # OneDrive
 mas install 639968404 # Parcel
-mas install 533696630 # Webcam Settings
 mas install 497799835 # Xcode

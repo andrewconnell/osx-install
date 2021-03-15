@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>build</key>
-	<string>1116</string>
+	<string>1157</string>
 	<key>license</key>
 	<dict>
 		<key>email</key>
@@ -15,6 +15,8 @@
 	<dict>
 		<key>Battery_MenubarCustomizeStates</key>
 		<integer>0</integer>
+		<key>Battery_MenubarItems</key>
+		<array/>
 		<key>Battery_MenubarMode</key>
 		<array>
 			<dict>
@@ -160,78 +162,7 @@
 			</dict>
 		</array>
 		<key>FanControl_Sets</key>
-		<array>
-			<dict>
-				<key>model</key>
-				<string>MacBookPro14,3</string>
-				<key>name</key>
-				<string>Medium</string>
-				<key>speeds</key>
-				<array>
-					<dict>
-						<key>fan</key>
-						<string>F0Ac</string>
-						<key>high</key>
-						<integer>5927</integer>
-						<key>low</key>
-						<integer>2160</integer>
-						<key>percentage</key>
-						<real>0.5</real>
-						<key>speed</key>
-						<integer>4043</integer>
-					</dict>
-					<dict>
-						<key>fan</key>
-						<string>F1Ac</string>
-						<key>high</key>
-						<integer>5489</integer>
-						<key>low</key>
-						<integer>2000</integer>
-						<key>percentage</key>
-						<real>0.5</real>
-						<key>speed</key>
-						<integer>3744</integer>
-					</dict>
-				</array>
-				<key>uuid</key>
-				<string>50D29E57-04AC-428A-8A47-C832290FE7DC</string>
-			</dict>
-			<dict>
-				<key>model</key>
-				<string>MacBookPro14,3</string>
-				<key>name</key>
-				<string>High</string>
-				<key>speeds</key>
-				<array>
-					<dict>
-						<key>fan</key>
-						<string>F0Ac</string>
-						<key>high</key>
-						<integer>5927</integer>
-						<key>low</key>
-						<integer>2160</integer>
-						<key>percentage</key>
-						<real>1</real>
-						<key>speed</key>
-						<integer>5927</integer>
-					</dict>
-					<dict>
-						<key>fan</key>
-						<string>F1Ac</string>
-						<key>high</key>
-						<integer>5489</integer>
-						<key>low</key>
-						<integer>2000</integer>
-						<key>percentage</key>
-						<real>1</real>
-						<key>speed</key>
-						<integer>5489</integer>
-					</dict>
-				</array>
-				<key>uuid</key>
-				<string>70D88C6B-33B0-4B5C-A101-84559E9E3079</string>
-			</dict>
-		</array>
+		<array/>
 		<key>GPU_MenubarGraph</key>
 		<string>0.05 1.00 0.00 1.00</string>
 		<key>Memory_AppFormat</key>
@@ -253,6 +184,8 @@
 				<string>A88744D1-69FF-4343-93F3-2EA391D660D5</string>
 			</dict>
 		</array>
+		<key>Menubar-DetectedColor</key>
+		<string>1.00 1.00 1.00 0.90</string>
 		<key>MenubarGraphSize</key>
 		<integer>0</integer>
 		<key>MenubarTheme</key>
@@ -266,6 +199,8 @@
 		<key>Migrated_6.0</key>
 		<true/>
 		<key>Migrated_6.22</key>
+		<true/>
+		<key>Migrated_6.5</key>
 		<true/>
 		<key>Network_GraphMode</key>
 		<integer>0</integer>
@@ -364,7 +299,6 @@
 		<array>
 			<integer>9</integer>
 			<integer>7</integer>
-			<integer>6</integer>
 			<integer>8</integer>
 		</array>
 		<key>Time_CalendarShowWeeks</key>
@@ -543,6 +477,10 @@
 		<key>Updater_Attempts</key>
 		<dict>
 			<key>1113</key>
+			<string>1</string>
+			<key>1150</key>
+			<string>1</string>
+			<key>1157</key>
 			<string>1</string>
 		</dict>
 		<key>Weather_Cache_Locations_AW</key>
@@ -770,14 +708,14 @@
 		<key>Zarya-TLE</key>
 		<dict>
 			<key>time</key>
-			<real>1594549793.350807</real>
+			<real>1615806192.7598438</real>
 			<key>tle</key>
 			<string>ISS (ZARYA)             
-1 25544U 98067A   19024.69130787  .00000289  00000-0  11946-4 0  9991
-2 25544  51.6429 354.9058 0004630 308.2748  50.7575 15.53168972152956</string>
+1 25544U 98067A   21074.23137491 -.00026238  00000-0 -47147-3 0  9993
+2 25544  51.6417  87.4324 0002972 107.3229 358.6999 15.48891205274036</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>6.40</string>
+	<string>6.51</string>
 </dict>
 </plist>
