@@ -2,9 +2,8 @@
 
 # add additional repos for homebrew to track, update & install
 echo "Starting setup..."
-brew tap cask
-brew tap cask-drivers
-brew tap cask-fonts
+brew tap homebrew/cask-drivers
+brew tap homebrew/cask-fonts
 
 # install packages
 PACKAGES=(
