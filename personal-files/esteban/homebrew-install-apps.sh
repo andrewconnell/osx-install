@@ -1,7 +1,33 @@
 #!/bin/sh
 
-# install mas-cli to install from the Mac App store
-brew install mas
+# install cask apps
+CASKS=(
+    adobe-creative-cloud
+    appcleaner
+    balenaetcher
+    figma
+    handbrake
+    keka
+    logitech-options
+    macs-fan-control
+    makemkv
+    microsoft-edge
+    mountain-duck
+    onyx
+    principle
+    rightfont
+    sf-symbols
+    signal
+    sketch
+    surfshark
+    unpkg
+    visual-studio-code
+    wacom-tablet
+    vmware-fusion
+)
+
+echo "Installing apps from the web..."
+brew install cask ${CASKS[@]}
 
 # get Apple ID
 echo ""
