@@ -7,8 +7,8 @@ if test ! $(which brew); then
 fi
 
 brew doctor
-brew install cask
-brew doctor
 
 # homebrew cask updater: https://github.com/buo/homebrew-cask-upgrade
-brew tap buo/cask-upgrade
+brew upgrade cask
+
+brew cleanup
