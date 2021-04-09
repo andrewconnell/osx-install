@@ -36,7 +36,7 @@ Do the following before paving the partition. This is to get the way I have thin
   - refresh NPM global package install list: **[./scripts/npm-global-package-install.sh](./scripts/npm-global-package-install.sh)**
 
     ```console
-    npm list -g --depth=0
+    curl -L https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/installer.sh
     ```
 
 - Postman
