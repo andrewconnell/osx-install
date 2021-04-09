@@ -3,12 +3,15 @@
 This repo acts as a log for my buildout of my laptop. As I add stuff or change settings, I log it here so pave & restores can go quickly in the future. Feel free to fork & customize to your liking.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Install apps from the Apple App Store.
 
 ```console
 /bin/bash -c "$(curl -L https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/installer.sh)"
 ```
 =======
+=======
+>>>>>>> parent of f4ad226 (Modified readme)
 More background info: [BLOG: Rapid Complete Install / Reinstall OS X Like a Champ in Three-ish Hours](http://www.andrewconnell.com/blog/rapid-complete-install-reinstall-os-x-like-a-champ-in-three-ish-hours)
 
 ## Before Paving, document current config
@@ -460,4 +463,7 @@ update MacOS: [ref](https://developer.apple.com/legacy/library/documentation/Dar
   # install things based on the name returned using
   sudo softwareupdate --install [name listed]
   ```
+<<<<<<< HEAD
+>>>>>>> parent of f4ad226 (Modified readme)
+=======
 >>>>>>> parent of f4ad226 (Modified readme)
