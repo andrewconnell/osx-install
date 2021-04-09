@@ -3,12 +3,12 @@
 echo "Starting macOS configuration"
 
 read -p "Please enter your name:"  USERNAME
-echo "Hello $USERNAME, let's setup your mac"
+echo "Hello $USERNAME, let's setup your mac 😊"
 
 echo "Installing Homebrew"
 # Check for Homebrew, install if we don't have it
-sh scripts/homebrew-install.sh
-sh scripts/homebrew-setup.sh
+scripts/homebrew-install.sh
+scripts/homebrew-setup.sh
 
 # Install Apps
 echo "Installing apps"
