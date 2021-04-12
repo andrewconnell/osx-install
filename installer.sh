@@ -7,12 +7,12 @@ echo "Hello $USERNAME, let's setup your mac 😊"
 
 echo "Installing Homebrew"
 # Check for Homebrew, install if we don't have it
-scripts/homebrew-install.sh
-scripts/homebrew-setup.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/scripts/homebrew-install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/scripts/homebrew-setup.sh)"
 
 # Install Apps
 echo "Installing apps"
-sh personal-files/$USERNAME/homebrew-install-apps.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/personal-files/$USERNAME/homebrew-install-apps.sh)"
 
 # Office installer
 read -r -p "Do you want to install Office Apps? [Y/n] " input
