@@ -1,4 +1,8 @@
 #!/bin/sh
+# Add Homebrew to PATH
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ralphjsmit/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew doctor
 
 # add additional repos for homebrew to track, update & install
 echo "Starting setup..."
