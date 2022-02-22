@@ -8,8 +8,6 @@ echo "Hello $USERNAME, let's setup your mac 😊"
 echo "Installing Homebrew"
 # Check for Homebrew, install if we don't have it
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ralphjsmit/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Setup homebrew
 echo "Getting ready"
