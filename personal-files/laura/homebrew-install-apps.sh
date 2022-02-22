@@ -8,6 +8,7 @@ CASKS=(
     keka
     firefox
     onyx
+    grandperspective
     wacom-tablet
 )
 
