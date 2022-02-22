@@ -8,8 +8,8 @@ brew tap homebrew/cask-drivers
 
 # install packages
 PACKAGES=(
-    git
-    wget
+    #git
+    #wget
     mas
 )
 
