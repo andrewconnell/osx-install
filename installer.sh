@@ -22,7 +22,7 @@ echo "Installing apps"
 read -r -p "Do you want to install Office Apps? [Y/n] " input
  case $input in
     [yY][eE][sS]|[yY])
-        sh scripts/office-install.sh
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/scripts/office-install.sh)"
  ;;
     [nN][oO]|[nN])
   echo "Skipping..."
