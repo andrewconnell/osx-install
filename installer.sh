@@ -11,7 +11,8 @@ echo "Installing Homebrew"
 
 # Install Apps
 echo "Installing apps"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/personal-files/$USERNAME/homebrew-install-apps.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/personal-files/$USERNAME/homebrew-install-apps.sh)"
+
 
 # Office installer
 read -r -p "Do you want to install Office Apps? [Y/n] " input
