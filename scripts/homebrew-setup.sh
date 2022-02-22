@@ -1,6 +1,6 @@
 #!/bin/sh
 # Add Homebrew to PATH
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> '~/.zprofile'
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew doctor
 
