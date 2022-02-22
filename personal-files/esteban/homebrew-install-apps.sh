@@ -14,20 +14,19 @@ CASKS=(
     surfshark
     unpkg
     visual-studio-code-insiders
-    sf-symbols
     font-sf-pro
     font-sf-compact
     font-sf-mono
     font-new-york
+    sf-symbols
 )
 
 echo "Installing apps from the web..."
 brew install ${CASKS[@]}
 
 # get Apple ID
-echo ""
-echo "Enter AppleID to signin to Mac App Store:"
-read -p "  AppleID (john@email.com): " APPLEID
+echo "Enter Esteban's Apple ID to signin to Mac App Store:"
+read -p "  Apple ID (john@email.com): " APPLEID
 
 # make sure signed into Mac App Store
 mas signin $APPLEID

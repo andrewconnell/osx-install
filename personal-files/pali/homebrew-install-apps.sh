@@ -12,7 +12,7 @@ brew install ${CASKS[@]}
 
 # get Apple ID
 echo "Enter Pali's Apple ID to signin to Mac App Store:"
-read -p "  AppleID (john@email.com): " APPLEID
+read -p "  Apple ID (john@email.com): " APPLEID
 
 # make sure signed into Mac App Store
 mas signin $APPLEID
