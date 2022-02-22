@@ -10,12 +10,15 @@ CASKS=(
     #makemkv
     #microsoft-edge
     onyx
-    sf-symbols
     #sketch
     surfshark
     unpkg
     visual-studio-code-insiders
     sf-symbols
+    font-sf-pro
+    font-sf-compact
+    font-sf-mono
+    font-new-york
 )
 
 echo "Installing apps from the web..."
@@ -36,6 +39,8 @@ APPS=(
     1601151613 # Baking Soda
     1024974133 # Mountain Duck
     803453959 # Slack
+    693112260 # Sim Daltonism
+    493145008 # Headspace
     409183694 # Keynote
     409201541 # Pages
     409203825 # Numbers

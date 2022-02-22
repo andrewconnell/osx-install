@@ -11,8 +11,7 @@ echo "Installing apps from the web..."
 brew install ${CASKS[@]}
 
 # get Apple ID
-echo ""
-echo "Enter AppleID to signin to Mac App Store:"
+echo "Enter Pali's Apple ID to signin to Mac App Store:"
 read -p "  AppleID (john@email.com): " APPLEID
 
 # make sure signed into Mac App Store
