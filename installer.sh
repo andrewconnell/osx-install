@@ -9,6 +9,10 @@ echo "Installing Homebrew"
 # Check for Homebrew, install if we don't have it
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Setup homebrew
+echo "Getting ready"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/scripts/homebrew-setup.sh)"
+
 # Install Apps
 echo "Installing apps"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/personal-files/$USERNAME/homebrew-install-apps.sh)"
