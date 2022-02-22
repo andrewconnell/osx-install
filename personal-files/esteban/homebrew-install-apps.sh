@@ -9,10 +9,11 @@ CASKS=(
     logitech-options
     #makemkv
     #microsoft-edge
-    onyx
     #sketch
+    onyx
     surfshark
     unpkg
+    grandperspective
     visual-studio-code-insiders
     font-sf-pro
     font-sf-compact

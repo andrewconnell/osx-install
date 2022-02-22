@@ -6,17 +6,16 @@ CASKS=(
     appcleaner
     figma
     keka
-    logitech-options
     macs-fan-control
     firefox
     onyx
+    grandperspective
 )
 
 echo "Installing apps from the web..."
 brew install ${CASKS[@]}
 
 # get Apple ID
-echo ""
 echo "Enter Juandi's Apple ID to signin to Mac App Store:"
 read -p "  Apple ID (john@email.com): " APPLEID
 
