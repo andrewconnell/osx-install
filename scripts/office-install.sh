@@ -4,13 +4,13 @@
 case $input in
     [yY][eE][sS]|[yY])
         echo "Getting Microsoft Office patch..."
-        brew install cask microsoft-office
+        brew install microsoft-office
  ;;
     [nN][oO]|[nN])
          echo "Skipping"
        ;;
     *)
- echo "Invalid input..."
+ echo "Invalidn input..."
  break
  ;;
 esac
