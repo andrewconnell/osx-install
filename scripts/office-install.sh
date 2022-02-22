@@ -1,19 +1,7 @@
 #!/bin/sh
 
 # Office installer
-case $input in
-    [yY][eE][sS]|[yY])
-        echo "Getting Microsoft Office patch..."
-        brew install microsoft-office
- ;;
-    [nN][oO]|[nN])
-         echo "Skipping"
-       ;;
-    *)
- echo "Invalidn input..."
- break
- ;;
-esac
+brew install microsoft-office
 
 # Delete non-standard office apps
 read -r -p "Do you want to keep only standard office apps? (Word, Excel & PowerPoint) [Y/n] " input
