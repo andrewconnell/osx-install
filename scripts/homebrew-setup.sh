@@ -1,8 +1,6 @@
 #!/bin/sh
 # Add Homebrew to PATH
-#read -p "Please enter your computer's username. You can find it as your home folder:"  HOMEFOLDER
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>~/.zprofile
-#echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>/Users/$HOMEFOLDER/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew doctor
 
