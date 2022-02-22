@@ -2,13 +2,9 @@
 
 # install cask apps
 CASKS=(
-    adobe-creative-cloud
     appcleaner
-    figma
     keka
-    firefox
     onyx
-    wacom-tablet
 )
 
 echo "Installing apps from the web..."
@@ -30,7 +26,6 @@ APPS=(
     409183694 # Keynote
     409201541 # Pages
     409203825 # Numbers
-    1351639930 # Gifski
 )
 
 echo "Installing apps from the App Store..."

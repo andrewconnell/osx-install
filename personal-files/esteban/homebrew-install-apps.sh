@@ -2,31 +2,23 @@
 
 # install cask apps
 CASKS=(
-    adobe-creative-cloud
     appcleaner
     balenaetcher
-    figma
-    handbrake
+    figma-beta
     keka
     logitech-options
-    macs-fan-control
-    makemkv
-    microsoft-edge
+    #makemkv
+    #microsoft-edge
     onyx
-    principle
-    rightfont
     sf-symbols
-    signal
-    sketch
+    #sketch
     surfshark
     unpkg
-    visual-studio-code
-    wacom-tablet
-    vmware-fusion
+    visual-studio-code-insiders
 )
 
 echo "Installing apps from the web..."
-brew install cask ${CASKS[@]}
+brew install ${CASKS[@]}
 
 # get Apple ID
 echo ""
@@ -39,13 +31,13 @@ mas signin $APPLEID
 # install macos apps
 APPS=(
     1440147259 # Adguard-for-safari
+    1591303229 # Vinegar
+    1601151613 # Baking Soda
     1024974133 # Mountain Duck
     803453959 # Slack
-    747648890 # Telegram
     409183694 # Keynote
     409201541 # Pages
     409203825 # Numbers
-    497799835 # Xcode
     1351639930 # Gifski
 )
 

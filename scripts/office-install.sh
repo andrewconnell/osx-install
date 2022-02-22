@@ -52,7 +52,7 @@ case $input in
             Microsoft OneNote
             OneDrive
         )
-        killall Microsoft ${OFFICE[@]} -target /
+        killall ${OFFICE[@]} -target /
 
         echo "Installing Office patch..."
         sudo installer -verbose -pkg ~/Downloads/Microsoft_Office_2019_VL_Serializer.pkg -target /

@@ -7,8 +7,7 @@ echo "Hello $USERNAME, let's setup your mac 😊"
 
 echo "Installing Homebrew"
 # Check for Homebrew, install if we don't have it
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/scripts/homebrew-install.sh)"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/scripts/homebrew-setup.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install Apps
 echo "Installing apps"
