@@ -6,10 +6,11 @@ CASKS=(
     appcleaner
     figma
     keka
-    firefox
+    kekaexternalhelper
     onyx
     grandperspective
     wacom-tablet
+    #macs-fan-control
 )
 
 echo "Installing apps from the web..."

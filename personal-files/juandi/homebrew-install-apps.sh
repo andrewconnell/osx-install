@@ -4,12 +4,12 @@
 CASKS=(
     adobe-creative-cloud
     appcleaner
-    figma
+    figma-beta
     keka
-    macs-fan-control
-    firefox
+    kekaexternalhelper
     onyx
     grandperspective
+    #macs-fan-control
 )
 
 echo "Installing apps from the web..."

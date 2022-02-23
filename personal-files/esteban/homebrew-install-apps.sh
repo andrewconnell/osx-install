@@ -2,19 +2,22 @@
 
 # install cask apps
 CASKS=(
-    appcleaner
-    balenaetcher
     figma-beta
-    keka
-    logitech-options
-    #makemkv
-    #microsoft-edge
     #sketch
+    keka
+    kekaexternalhelper
+    logitech-options
+    eloston-chromium
+    #microsoft-edge
+    #makemkv
     onyx
     surfshark
     unpkg
+    appcleaner
     grandperspective
+    balenaetcher
     visual-studio-code-insiders
+    github
     font-sf-pro
     font-sf-compact
     font-sf-mono
@@ -24,7 +27,7 @@ CASKS=(
 
 echo "Installing apps from the web..."
 brew install ${CASKS[@]}
-curl https://glass-factory-client.s3.amazonaws.com/releases/GlassFactory-1.3.135.dmg >~/Downloads/GlassFactory.dmg
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/scripts/glassfactory-install.sh)"
 
 # get Apple ID
 echo "Enter Esteban's Apple ID to signin to Mac App Store:"

@@ -4,6 +4,7 @@
 CASKS=(
     appcleaner
     keka
+    kekaexternalhelper
     onyx
 )
 
