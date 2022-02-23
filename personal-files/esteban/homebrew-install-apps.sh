@@ -24,6 +24,7 @@ CASKS=(
 
 echo "Installing apps from the web..."
 brew install ${CASKS[@]}
+curl https://glass-factory-client.s3.amazonaws.com/releases/GlassFactory-1.3.135.dmg >~/Downloads/GlassFactory.dmg
 
 # get Apple ID
 echo "Enter Esteban's Apple ID to signin to Mac App Store:"
