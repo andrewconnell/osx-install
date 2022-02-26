@@ -5,6 +5,7 @@ CASKS=(
     adobe-creative-cloud
     appcleaner
     figma-beta
+    eloston-chromium
     keka
     kekaexternalhelper
     onyx
