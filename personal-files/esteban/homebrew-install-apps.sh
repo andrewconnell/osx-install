@@ -39,9 +39,10 @@ mas signin $APPLEID
 
 # install macos apps
 APPS=(
-    1440147259 # Adguard-for-safari
-    1591303229 # Vinegar
-    1601151613 # Baking Soda
+    1440147259 # Adguard - Safari
+    1591303229 # Vinegar - Safari
+    1601151613 # Baking Soda - Safari
+    1564329434 # Momentum - Safari
     1024974133 # Mountain Duck
     803453959 # Slack
     693112260 # Sim Daltonism
