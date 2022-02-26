@@ -4,6 +4,7 @@
 CASKS=(
     figma-beta
     #sketch
+    openemu-experimental
     keka
     kekaexternalhelper
     logitech-options
