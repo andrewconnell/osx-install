@@ -3,7 +3,6 @@
 # install cask apps
 CASKS=(
     appcleaner
-    eloston-chromium
     keka
     kekaexternalhelper
     onyx
