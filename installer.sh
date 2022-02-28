@@ -18,19 +18,19 @@ echo "Installing apps"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/personal-files/$USERNAME/homebrew-install-apps.sh)"
 
 # Legacy Mac Patcher
-read -r -p "Is this Mac running an unsupported version of macOS? [Y/n] " input
- case $input in
-    [yY][eE][sS]|[yY])
-        /bin/bash -c "$(curl -fsSL /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/scripts/opencore-legacy-install.sh)"
- ;;
-    [nN][oO]|[nN])
-  echo "Skipping..."
-       ;;
-    *)
- echo "Invalid input..."
- exit 1
- ;;
-esac
+#read -r -p "Is this Mac running an unsupported version of macOS? [Y/n] " input
+# case $input in
+#    [yY][eE][sS]|[yY])
+#        /bin/bash -c "$(curl -fsSL /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/scripts/opencore-legacy-install.sh)"
+# ;;
+#    [nN][oO]|[nN])
+#  echo "Skipping..."
+#       ;;
+#    *)
+# echo "Invalid input..."
+# exit 1
+# ;;
+#esac
 
 # Office installer
 read -r -p "Do you want to install Office Apps? [Y/n] " input
