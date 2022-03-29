@@ -15,6 +15,7 @@ mas signin $APPLEID
 mas install 937984704 # Amphetamine
 mas install 715464874 # Disk Map
 mas install 413857545 # Divvy
+mas install 1099568401 # Home Assistant
 mas install 524141863 # Jump Desktop
 mas install 462058435 # Microsoft Excel
 mas install 784801555 # Microsoft OneNote
@@ -23,4 +24,5 @@ mas install 462062816 # Microsoft PowerPoint
 mas install 462054704 # Microsoft Word
 mas install 823766827 # OneDrive
 mas install 639968404 # Parcel
+mas install 417605357 # Teleprompter
 mas install 497799835 # Xcode

@@ -14,14 +14,18 @@ Do the following before paving the partition. This is to get the way I have thin
 - XCOPY the following => **{{PRIVATE_BACKUP}}**
   > **NOTE:** many of the hidden files & folders are copied as "dot-files"
 
-  - `~/.bash_history`
+  - `~/_play`
+  - `~/.az_completion`
   - `~/.bash_profile`
   - `~/.gitconfig`
+  - `~/.gitmessage`
+  - `~/.hyper.js`
   - `~/.npmrc`
-  - `~/.yarnrc`
+  - `~/.oh-my-zsh`
   - `~/.ssh`
+  - `~/.yarnrc`
+  - `~/.zsh_history`
   - `~/.zshrc`
-  - `~/_play`
   - `~/Desktop`
   - `~/Downloads`
   - `~/Documents`
@@ -29,9 +33,9 @@ Do the following before paving the partition. This is to get the way I have thin
   - `~/voitanos-workspace`
   - *review other folders in the root*
 - Dev
-  - Dump list of all repos in `~/repos` => **{{PRIVATE_BACKUP}}**
+  - Dump list of all repos in `~/repos` => **{{PRIVATE_BACKUP}}/{{BACKUPDATE}}**
 - iStat Menu
-  - backup settings => **./AppSettings/iStat Menus Settings.ismp**
+  - backup settings => **{{PRIVATE_BACKUP}}/iStat Menus Settings.ismp**
 - Node
   - refresh NPM global package install list: **[./scripts/npm-global-package-install.sh](./scripts/npm-global-package-install.sh)**
 
@@ -39,12 +43,14 @@ Do the following before paving the partition. This is to get the way I have thin
     npm list -g --depth=0
     ```
 
+- Copy virtual machines => external storage
+
 - Postman
-  - export all collections & environments
+  - export all collections & environments => **{{PRIVATE_BACKUP}}/Postman-backup.zip**
 - Screenflow
   - log batch export settings to **[./AppSettings/Screenflow](./AppSettings/Screenflow)**
 - Stream Deck
-  - export & save Stream Deck profiles => **LiveStreaming/{{PRIVATE_BACKUP}}**
+  - export & save Stream Deck profiles => **{{PRIVATE_BACKUP}}/Stream Deck - {{..}}.streamDeckProfilesBackup**
 - Visual Studio Code
   - refresh installed extensions install list: **[./scripts/vscode-ext-install.sh](./scripts/vscode-ext-install.sh)**
 
@@ -52,7 +58,7 @@ Do the following before paving the partition. This is to get the way I have thin
       code --list-extensions
       ```
 
-  - backup snippets & user settings to **[./AppSettings/VisualStudioCode](./AppSettings/VisualStudioCode)**
+  - backup snippets & user settings to **{{PRIVATE_BACKUP}}/VisualStudioCode**
     - user settings: `~/Library/Application Support/Code/User`
 
 ### MacOS & System
@@ -70,12 +76,19 @@ Do the following before paving the partition. This is to get the way I have thin
 
     ![](images/macOS-MenuBar.png)
 
+### Installed apps
+
+- get list of all apps installed via Homebrew:
+
+  ```console
+  brew leaves
+  ```
+
 ### Adobe Creative Cloud
 
 - Launch each app and sync settings (PUSH) for:
   - Media Encoder
   - Photoshop
-  - Prelude
   - Premiere Pro
 - Media Encoder:
   - export all profiles: **[./AppSettings/AdobeCreativeCloud/MediaEncoder](./AppSettings/AdobeCreativeCloud/MediaEncoder)**
@@ -94,8 +107,10 @@ Do the following before paving the partition. This is to get the way I have thin
 
 ## Pave partition
 
-1. restart with COMMAND+R
-1. when apple logo comes up... delete partition, NOT tiny partition (2nd listed)
+1. restart with <kbd>⌘</kbd>+<kbd>R</kbd>
+1. go to **Disk Utility**
+1. select the main drive, then select **Erase** > **Erase Volume Group**
+1. create new ADFS volume
 1. install MacOS via internet
 
 ## Install apps
@@ -107,7 +122,7 @@ The following installs & configuration should be done to setup automated install
 Install [Homebrew](http://brew.sh/) for automated installs & updates.
 
 ```console
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### Install apps via Homebrew: `homebrew-install-apps.sh`
@@ -134,17 +149,12 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 - NewTek NDI Tools & drivers for MacOS
   - See: `*.dmg` in **LiveStreaming/{{PRIVATE_BACKUP}}**
 - [Sophos Home A/V](https://home.sophos.com)
-- [Wirecast by Telestream](https://www.telestream.net/wirecast)
-  - Install trial from site download
-  - Launch & license
-  - Install NewBlue Titler Live (*installer from Telestream site*)
 
 ## Configure apps
 
 Three step process:
 
 1. Get OneDrive & Google Chrome syncing to get access to backups, settings (in OneDrive), licenses & passwords in LastPass
-1. Configure command prompt
 1. Login, license, install, & configure remaining apps
 
 ### Configure core apps to acquire backups, licenses & passwords
@@ -187,19 +197,6 @@ Three step process:
       # add to keychain
       ssh-add -K
       ```
-
-### Setup command prompt (iTerm)
-
-Install ZSH, Oh My ZSH, iTerm & copy fonts & themes:
-
-```console
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/cmdprompt-install.sh | sh
-```
-
-- iTerm
-  - import settings from **[./AppSettings/iTerm](./AppSettings/iTerm)**
-  - apply custom **bullet-train** theme
-    - update `~/.zshrc` to specify the theme used: `ZSH_THEME="bullet-train"`
 
 ### Configure Installed Apps
 
@@ -265,33 +262,8 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 - Steam
   - Launch & login
   - Disable auto login: **Preferences > Interface > [uncheck] Run Steam with my computer starts**
-- Sublime Text
-  - add license
-  - [package control](https://packagecontrol.io/)
-  - install packages:
-    - BracketHighlighter
-    - Git
-    - Indent XML
-    - Markdown Preview
-    - MarkdownEditing
-    - Preference Helper
-    - Pretty JSON
-    - SnippetMaker
-    - SublimeCodeIntel
-    - Theme-Spacegray
-    - TypeScript
-    - View In Browser
-  - Update preferences from those in **[./AppSettings/Sublime](./AppSettings/Sublime)**
-    - copy to `~/Library/Application Support/Sublime Text`
 - TechSmith SnagIt
   - launch & login to get license
-- Visual Studio for Mac
-  - launch
-  - login with AzureAD account
-  - check & install updates
-- WebCatalog
-  - license
-  - add instances of Microsoft Teams for each tenant
 
 ## Additional downloads & installs Install My Personal Apps: `scripted-installs.sh`
 
@@ -333,12 +305,6 @@ This script installs multiple Node versions:
 
 ```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/node-install.sh | sh
-```
-
-Use the following to set the desired default version of Node:
-
-```console
-nvm alias default stable
 ```
 
 ## Post installation & configuration checks

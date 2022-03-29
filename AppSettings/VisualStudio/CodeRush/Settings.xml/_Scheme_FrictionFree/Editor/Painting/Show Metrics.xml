@@ -1,8 +1,0 @@
-﻿<!--This is a DXCore settings file-->
-<Page Name="Show Metrics">
- <Language Name="*Neutral*">
-  <Section Name="Preferences">
-   <Option Name="Enabled" Value="False" />
-  </Section>
- </Language>
-</Page>

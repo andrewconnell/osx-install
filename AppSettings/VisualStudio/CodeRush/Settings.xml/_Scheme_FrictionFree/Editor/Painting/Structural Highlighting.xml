@@ -1,8 +1,0 @@
-﻿<!--This is a DXCore settings file-->
-<Page Name="Structural Highlighting">
- <Language Name="*Neutral*">
-  <Section Name="Globals">
-   <Option Name="Enabled" Value="False" />
-  </Section>
- </Language>
-</Page>
