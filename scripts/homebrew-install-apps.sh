@@ -79,6 +79,7 @@ brew install --cask font-dejavu-sans-mono-nerd-font
 brew install --cask font-fira-code
 brew install --cask font-fira-code-nerd-font
 brew install --cask font-fira-mono-for-powerline
+brew install --cask font-fira-sans
 brew install --cask font-hack
 brew install --cask font-jetbrains-mono
 brew install --cask font-menlo-for-powerline
