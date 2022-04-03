@@ -222,6 +222,8 @@ Three step process:
 
       ![](./images/macOS-MenuBar.png)
 
+- Control Center
+  - Open & configure to launch at login
 - Divvy
   - import shortcuts by opening Safari / Firefox & enter the url in [./AppSettings/divvy.md](./AppSettings/divvy.md)
 
@@ -262,6 +264,8 @@ Three step process:
 - Steam
   - Launch & login
   - Disable auto login: **Preferences > Interface > [uncheck] Run Steam with my computer starts**
+- Stream Deck
+  - restore profiles
 - TechSmith SnagIt
   - launch & login to get license
 
