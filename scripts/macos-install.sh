@@ -24,5 +24,4 @@ mas install 462062816 # Microsoft PowerPoint
 mas install 462054704 # Microsoft Word
 mas install 823766827 # OneDrive
 mas install 639968404 # Parcel
-mas install 417605357 # Teleprompter
 mas install 497799835 # Xcode
