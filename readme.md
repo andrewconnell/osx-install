@@ -266,8 +266,6 @@ Three step process:
   - Disable auto login: **Preferences > Interface > [uncheck] Run Steam with my computer starts**
 - Stream Deck
   - restore profiles
-- TechSmith SnagIt
-  - launch & login to get license
 
 ## Additional downloads & installs Install My Personal Apps: `scripted-installs.sh`
 

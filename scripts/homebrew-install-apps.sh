@@ -118,7 +118,6 @@ brew install --cask skype
 brew install --cask slack
 brew install --cask smartgit
 brew install --cask smartsynchronize
-brew install --cask snagit
 brew install --cask steam
 brew install --cask tradingview
 brew install --cask tripmode
