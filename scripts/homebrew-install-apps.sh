@@ -60,6 +60,7 @@ brew install zsh-completions
 brew install --cask adobe-creative-cloud
 brew install --cask alfred
 brew install --cask appcleaner
+brew install --cask audio-hijack
 brew install --cask azure-data-studio
 brew install --cask bartender
 brew install --cask bitbar
@@ -97,6 +98,7 @@ brew install --cask home-assistant
 brew install --cask hyper
 brew install --cask istat-menus
 brew install --cask java
+brew install --cask loopback
 brew install --cask makemkv
 brew install --cask microsoft-azure-storage-explorer
 brew install --cask microsoft-edge
