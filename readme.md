@@ -34,10 +34,36 @@ Do the following before paving the partition. This is to get the way I have thin
   - *review other folders in the root*
 - Dev
   - Dump list of all repos in `~/repos` => **{{PRIVATE_BACKUP}}/{{BACKUPDATE}}**
+  - Alternatively, gen commands to clone all repos (+ upstream remotes)
+
+      > NOTE: the generated strings may need some tweaking... ;)
+
+      ```console
+      ROOT_DIR=$PWD
+      for REPO_DIR in */; do
+        cd $REPO_DIR
+
+        # get origin url
+        echo "git clone $(git config --get remote.origin.url)"
+
+        # get upstream if present
+        UPSTREAM_REMOTE="$(git config --get remote.upstream.url)"
+        if [ ! -z "$UPSTREAM_REMOTE" ]
+        then
+          echo "cd $REPO_DIR"
+          echo "git remote add upstream $(git config --get remote.upstream.url)"
+        fi
+
+        echo "cd $ROOT_DIR"
+        cd $ROOT_DIR
+        echo ""
+      done
+      ```
+
 - iStat Menu
   - backup settings => **{{PRIVATE_BACKUP}}/iStat Menus Settings.ismp**
 - Node
-  - refresh NPM global package install list: **[./scripts/npm-global-package-install.sh](./scripts/npm-global-package-install.sh)**
+  - refresh NPM global package install list: **./scripts/npm-install-packages-lts-*.sh**
 
     ```console
     npm list -g --depth=0
@@ -117,6 +143,14 @@ Do the following before paving the partition. This is to get the way I have thin
 
 The following installs & configuration should be done to setup automated installs.
 
+### If installing on Apple Silicon
+
+Install Rosetta 2
+
+```console
+sudo softwareupdate --install-rosetta
+```
+
 ### Homebrew & Homebrew Cask
 
 Install [Homebrew](http://brew.sh/) for automated installs & updates.
@@ -135,6 +169,8 @@ Install apps using Homebrew.
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.sh | sh
 ```
 
+Pay attention for extra installs & steps at the end.
+
 ### Install Mac App Store apps: `macos-install.sh`
 
 Install apps from the Apple App Store.
@@ -146,8 +182,6 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 ### Manual Installs
 
 - Amphetamine Enhancer - https://github.com/x74353/Amphetamine-Enhancer
-- NewTek NDI Tools & drivers for MacOS
-  - See: `*.dmg` in **LiveStreaming/{{PRIVATE_BACKUP}}**
 - [Sophos Home A/V](https://home.sophos.com)
 
 ## Configure apps
@@ -162,7 +196,6 @@ Three step process:
 - login to the following apps
   - Google Chrome
     - *do this first & login to LastPass to get licenses*
-  - Google-Drive
   - OneDrive
     - *do this to get sync running... contains backup files collected before pave*
 - Visual Studio Code
@@ -231,8 +264,6 @@ Three step process:
 
 - Jump Desktop
   - import the machines from export before pave
-- Microsoft OneNote
-  - open notebooks to start sync
 - Microsoft Outlook
 
     ![](images/outlook-general.png)
@@ -254,9 +285,6 @@ Three step process:
 
 - Microsoft Teams
 - Parcel
-- Private Internet Access
-  - Homebrew downloaded, but must be manually install by launching **\*.dmg**. Likely location: **/usr/local/Caskroom/private-internet-access/{{VERSION}}/*.dmg**
-  - Login after installing
 - Screenflow
   - license
   - create custom batch export profile
@@ -275,15 +303,13 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
 - Creative Cloud installs
   - Acrobat DC
-  - After Effects 2020
-  - Audition 2020
-  - Bridge 2020
-  - Illustrator 2020
-  - Lightroom CC
-  - Media Encoder 2020
-  - Photoshop 2020
-  - Prelude 2020
-  - Premiere Pro 2020
+  - After Effects
+  - Audition
+  - Bridge
+  - Illustrator
+  - Media Encoder
+  - Photoshop
+  - Premiere Pro
 - Import settings from the pre-pave section above on [Adobe CC apps](#adobe-creative-cloud)
 
 ## Install Node
@@ -294,20 +320,13 @@ Manage node installs using NVM... this lets me test different versions of node a
 mkdir ~/.nvm
 ```
 
-Verify this is at the end of **~/.zshrc**
-
-```txt
-NVM_DIR="$HOME/.nvm"
-$ . "/usr/local/opt/nvm/nvm.sh"
-```
-
 ### Install & configure Node LTS & stable versions
 
 This script installs multiple Node versions:
 
 ```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/node-install.sh | sh
-```
+code ```
 
 ## Post installation & configuration checks
 

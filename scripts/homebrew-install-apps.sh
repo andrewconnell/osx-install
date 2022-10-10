@@ -15,38 +15,41 @@ brew tap azure/functions
 brew install act
 brew install asciinema
 brew install azure-cli
-brew install azure/functions/azure-functions-core-tools@3
+brew install azure/functions/azure-functions-core-tools@4
 brew install bash-completion
 brew install bfg
 brew install carthage
 brew install cask
 brew install docker
+brew install dropbox
 brew install esptool
 brew install ffmpeg
 brew install gh
 brew install ghostscript
 brew install git
 brew install go
+brew install gobject-introspection
 brew install gzip
 brew install highlight
 brew install hugo
 brew install jq
 brew install jsdoc3
 brew install libdvdcss
+brew install markdownlint-cli
 brew install mas
 brew install meson
 brew install mono
 brew install nasm
 brew install nvm
+brew install openssl@3
 brew install pandoc
+brew install pnpm
 brew install protobuf
 brew install python@3.8
 brew install rtmpdump
 brew install spaceship
 brew install sphinx-doc
-brew install sshfs
-brew install svn
-brew install tee-clc
+brew install subversion
 brew install telnet
 brew install watch
 brew install watchman
@@ -59,14 +62,11 @@ brew install zsh-completions
 
 brew install --cask adobe-creative-cloud
 brew install --cask alfred
-brew install --cask appcleaner
 brew install --cask audio-hijack
 brew install --cask azure-data-studio
 brew install --cask bartender
 brew install --cask bitbar
 brew install --cask bot-framework-emulator
-brew install --cask camtasia
-brew install --cask charles
 brew install --cask discord
 brew install --cask dotnet-sdk
 brew install --cask drawio
@@ -99,24 +99,18 @@ brew install --cask hyper
 brew install --cask istat-menus
 brew install --cask java
 brew install --cask loopback
-brew install --cask makemkv
 brew install --cask microsoft-azure-storage-explorer
 brew install --cask microsoft-edge
-brew install --cask microsoft-teams
+brew install --cask microsoft-teams # may not install on Apple Silicon
 brew install --cask ngrok
 brew install --cask nosleep
 brew install --cask notion
 brew install --cask obs
-brew install --cask obs-ios0-camera-source
-brew install --cask obs-ndi
-brew install --cask osxfuse
 brew install --cask parallels
 brew install --cask postman
 brew install --cask powershell
 brew install --cask private-internet-access
 brew install --cask screenflow
-brew install --cask sketchup
-brew install --cask skype
 brew install --cask slack
 brew install --cask smartgit
 brew install --cask smartsynchronize

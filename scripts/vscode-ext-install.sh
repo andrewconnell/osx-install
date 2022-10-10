@@ -1,9 +1,12 @@
 #!/bin/sh
 
 code --install-extension Acrolinx.vscode-sidebar
+code --install-extension Adobe.extendscript-debug
 code --install-extension Azurite.azurite
 code --install-extension blackmist.LinkCheckMD
 code --install-extension bradlc.vscode-tailwindcss
+code --install-extension budparr.language-hugo-vscode
+code --install-extension cschlosser.doxdocgen
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension docsmsft.docs-article-templates
 code --install-extension docsmsft.docs-authoring-pack
@@ -17,6 +20,7 @@ code --install-extension docsmsft.docs-scaffolding
 code --install-extension docsmsft.docs-visual-areas
 code --install-extension docsmsft.docs-yaml
 code --install-extension fivethree.vscode-hugo-snippets
+code --install-extension jeff-hykin.better-cpp-syntax
 code --install-extension jsynowiec.vscode-insertdatestring
 code --install-extension ms-azuretools.vscode-azurefunctions
 code --install-extension ms-azuretools.vscode-azureresourcegroups
@@ -24,9 +28,14 @@ code --install-extension ms-azuretools.vscode-bicep
 code --install-extension ms-azuretools.vscode-cosmosdb
 code --install-extension ms-dotnettools.csharp
 code --install-extension ms-dotnettools.vscode-dotnet-runtime
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
 code --install-extension ms-vscode.azure-account
+code --install-extension ms-vscode.cmake-tools
+code --install-extension ms-vscode.cpptools
+code --install-extension ms-vscode.cpptools-extension-pack
+code --install-extension ms-vscode.cpptools-themes
 code --install-extension ms-vscode.wordcount
-code --install-extension msjsdiag.debugger-for-edge
 code --install-extension oouo-diogo-perdigao.docthis
 code --install-extension redhat.vscode-commons
 code --install-extension redhat.vscode-xml
@@ -35,9 +44,12 @@ code --install-extension ritwickdey.LiveServer
 code --install-extension sdras.night-owl
 code --install-extension shardulm94.trailing-spaces
 code --install-extension shuworks.vscode-table-formatter
+code --install-extension sissel.shopify-liquid
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension TeamsDevApp.ms-teams-vscode-extension
 code --install-extension timonwong.shellcheck
+code --install-extension twxs.cmake
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension WallabyJs.wallaby-vscode
 code --install-extension wayou.vscode-todo-highlight
+code --install-extension zhouronghui.propertylist

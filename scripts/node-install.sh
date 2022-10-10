@@ -14,12 +14,12 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 nvm alias spfx-1.10.0 lts/carbon
 nvm alias spfx-sp2019se spfx-1.10.0
 
-# install node v14 (LTS) for SPFx SPO
-nvm install lts/fermium
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-packages-lts-fermium.sh | sh
+# install node v16 (LTS) for SPFx SPO
+nvm install lts/gallium
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-packages-lts-gallium.sh | sh
 # setup aliases
-nvm alias spfx-1.14.0 lts/fermium
-nvm alias spfx-spo spfx-1.14.0
+nvm alias spfx-1.15.2 lts/gallium
+nvm alias spfx-spo spfx-1.15.2
 
 # set default option
-nvm alias default lts/fermium
+nvm alias default lts/gallium
