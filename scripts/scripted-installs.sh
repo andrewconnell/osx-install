@@ -1,9 +1,9 @@
 #!/bin/sh
 
-CURRENT_DIR=`pwd`
+CURRENT_DIR=$PWD
 
 # install "oh my zsh"
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install fonts
 cd ~/Library/Fonts
@@ -24,13 +24,5 @@ curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/Omnes/Om
 curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/Omnes/OmnesLight.otf"
 curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/Omnes/OmnesMedium.otf"
 curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/Omnes/OmnesSemiBold.otf"
-
-# download fonts straight to the correct folder if this script was run remotely
-cd ~/Library/Fonts
-curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/Meslo LG M DZ Regular for Powerline.otf"
-
-# download ZSH theme
-cd ~/.oh-my-zsh/themes
-curl -O "https://raw.githubusercontent.com/andrewconnell/osx-install/master/AppSettings/bullet-train.zsh-theme"
 
 cd "$CURRENT_DIR"
