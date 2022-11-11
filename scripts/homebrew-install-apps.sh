@@ -32,6 +32,7 @@ brew install highlight
 brew install hugo
 brew install jq
 brew install jsdoc3
+brew install ledger-live
 brew install libdvdcss
 brew install markdownlint-cli
 brew install mas
