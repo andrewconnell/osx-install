@@ -14,6 +14,8 @@ brew install spaceship
 
 # install Warp terminal
 brew install warp
+# install Warp theme
+curl -s -N 'https://warp-themes.com/d/6j8o3VqP8g6Rh8ovdJXr' | bash
 
 # install Hyper.js terminal & plugins
 brew install --cask hyper

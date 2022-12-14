@@ -157,8 +157,42 @@ Installs ideal shell, prompt, and terminals
     - `~/.zshrc`
 1. configure Warp
     - Appearance > Themes > Sync with OS = **TRUE**
+    - Appearance > Themes > [select] Dark = **Tailwind**
     - Appearance > Text > Terminal Font = **FiraCode Nerd ...**
     - Features > Session > Honor user's custom prompt (PS1) = **TRUE**
+
+<details>
+  <summary>If theme "Tailwind" isn't listed...</summary>
+
+  1. create a new file **~/.warp/themes/tailwind.yaml**
+  1. add the following to the file:
+
+  ```yaml
+  accent: '#63B3ED' # Accent color for UI elements
+  background: '#1A202C' # Terminal background color
+  details: darker # Whether the theme is lighter or darker.
+  foreground: '#A0AEC0' # The foreground color.
+  terminal_colors: # Ansi escape colors.
+    bright:
+      blue: "#3182CE"
+      cyan: "#4FD1C5"
+      red: "#C53030"
+      yellow: "#D69E2E"
+      magenta: "#6B46C1"
+      white: "#ffffff"
+      black: "#666666"
+      green: "#48BB78"
+    normal:
+      cyan: "#81E6D9"
+      green: "#68D391"
+      white: "#f1f1f1"
+      blue: "#63B3ED"
+      yellow: "#FAF089"
+        black: "#121212"
+        magenta: "#B794F4"
+        red: "#f56565"
+  ```
+</details>
 
 ### Install apps via Homebrew: `homebrew-install-apps.sh`
 
