@@ -18,8 +18,8 @@ nvm alias spfx-sp2019se spfx-1.10.0
 nvm install lts/gallium
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-packages-lts-gallium.sh | sh
 # setup aliases
-nvm alias spfx-1.15.2 lts/gallium
-nvm alias spfx-spo spfx-1.15.2
+nvm alias spfx-1.16.1 lts/gallium
+nvm alias spfx-spo spfx-1.16.1
 
 # set default option
 nvm alias default lts/gallium

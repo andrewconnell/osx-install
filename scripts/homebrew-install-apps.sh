@@ -14,7 +14,6 @@ brew tap buo/cask-upgrade
 brew tap azure/functions
 brew install azure/functions/azure-functions-core-tools@4
 
-brew install bash-completion
 brew install bfg
 brew install carthage
 brew install cask
@@ -39,14 +38,11 @@ brew install mas
 brew install meson
 brew install mono
 brew install nasm
-brew install nvm
 brew install openssl@3
 brew install pandoc
-brew install pnpm
 brew install protobuf
 brew install python@3.8
 brew install rtmpdump
-brew install spaceship
 brew install sphinx-doc
 brew install subversion
 brew install telnet
@@ -55,8 +51,6 @@ brew install watchman
 brew install yarn
 brew install youtube-dl
 brew install yq
-brew install zsh
-brew install zsh-completions
 
 
 brew install --cask adobe-creative-cloud
@@ -75,7 +69,6 @@ brew install --cask google-chrome
 brew install --cask grammarly
 brew install --cask handbrake
 brew install --cask home-assistant
-brew install --cask hyper
 brew install --cask istat-menus
 brew install --cask java
 brew install --cask loopback
@@ -104,34 +97,12 @@ brew install --cask xmind
 brew install --cask zoom
 brew install --cask zxpinstaller
 
-# install hyper plugins
-hyper i hyper-tailwind-dark
-hyper i hyper-search
-hyper i hyper-font-ligatures
 
 # install ssh pass
 #   ref: https://gist.github.com/arunoda/7790979?permalink_comment_id=4035295#gistcomment-4035295
 brew tap esolitos/ipa
 brew install esolitos/ipa/sshpass
 
-# add fonts
-brew tap homebrew/cask-fonts
-brew install --cask font-consolas-for-powerline
-brew install --cask font-dejavu
-brew install --cask font-dejavu-sans-mono-for-powerline
-brew install --cask font-dejavu-sans-mono-nerd-font
-brew install --cask font-fira-code
-brew install --cask font-fira-code-nerd-font
-brew install --cask font-fira-mono-for-powerline
-brew install --cask font-fira-sans
-brew install --cask font-hack
-brew install --cask font-jetbrains-mono
-brew install --cask font-menlo-for-powerline
-brew install --cask font-meslo-lg-dz
-brew install --cask font-meslo-lg-nerd-font
-brew install --cask font-source-code-pro
-brew install --cask font-source-code-pro-for-powerline
-brew install --cask font-powerline-symbols
 
 # add cask-drivers
 brew tap homebrew/cask-drivers

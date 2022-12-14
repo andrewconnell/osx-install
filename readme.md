@@ -16,15 +16,15 @@ Do the following before paving the partition. This is to get the way I have thin
 
   - `~/_play`
   - `~/.az_completion`
-  - `~/.bash_profile`
   - `~/.gitconfig`
   - `~/.gitmessage`
   - `~/.hyper.js`
   - `~/.npmrc`
   - `~/.oh-my-zsh`
+  - `~/.spaceshiprc.zsh`
   - `~/.ssh`
   - `~/.yarnrc`
-  - `~/.zsh_history`
+  - `~/.zsh`
   - `~/.zshrc`
   - `~/Desktop`
   - `~/Downloads`
@@ -131,15 +131,46 @@ Install [Homebrew](http://brew.sh/) for automated installs & updates.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+### Install fonts
+
+```console
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/core-fonts.sh | sh
+```
+
+### Install & setup console
+
+Installs ideal shell, prompt, and terminals
+
+> **NOTE**: Monitor the terminal for password prompts & errors/warnings.
+
+1. run following to install cores
+
+    ```console
+    curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/core-install.sh | sh
+    ```
+
+1. copy the following **dotfiles** & **dotfolders** (overwriting existing) into home folder:
+    - `~/.hyper.js`
+    - `~/.spaceshiprc.zsh`
+    - `~/.zsh`
+    - `~/.zshenv`
+    - `~/.zshrc`
+1. configure Warp
+    - Appearance > Themes > Sync with OS = **TRUE**
+    - Appearance > Text > Terminal Font = **FiraCode Nerd ...**
+    - Features > Session > Honor user's custom prompt (PS1) = **TRUE**
+
 ### Install apps via Homebrew: `homebrew-install-apps.sh`
 
 Install apps using Homebrew.
 
 > **NOTE**: Monitor the terminal for password prompts & errors/warnings.
 
-```console
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.sh | sh
-```
+run following to install cores
+
+  ```console
+  curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.sh | sh
+  ```
 
 Pay attention for extra installs & steps at the end.
 
