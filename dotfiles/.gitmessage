@@ -1,0 +1,34 @@
+######## TITLE: 50 characters ###################
+# ====================================================================
+# > use emoji's to explain what it kind of a change it is
+
+# CONTENT TYPE EMOJIS (use in commit title)
+# ====================================================================
+#📜 article
+#🎙 audio
+#📺 video
+#📚 docs
+#🧪 test
+#🐞 bugfix
+#🎨 theme/ux/style
+#🔎 seo
+#♻️ update/refresh
+#🧼 clean/repo change
+#⚙️ automation/workflow
+#📦 feature
+#🚢 release
+
+######## BODY 72 characters ###########################################
+# ====================================================================
+# > use imperitive, present tense: "change" not "changed/changing/changes"
+# > use and/or bullet points (-)
+# > be as descriptive as possible
+# > use markdown
+
+# ISSUE REFERENCES
+# ====================================================================
+# References
+#
+# - closes
+# - fixes
+# - related

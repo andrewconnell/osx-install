@@ -15,20 +15,16 @@ Do the following before paving the partition. This is to get the way I have thin
   > **NOTE:** many of the hidden files & folders are copied as "dot-files"
 
   - `~/_play`
-  - `~/.az_completion`
   - `~/.gitconfig`
   - `~/.gitmessage`
   - `~/.hyper.js`
   - `~/.npmrc`
-  - `~/.oh-my-zsh`
-  - `~/.spaceshiprc.zsh`
   - `~/.ssh`
   - `~/.yarnrc`
   - `~/.zsh`
+  - `~/.zprofile`
+  - `~/.zshenv`
   - `~/.zshrc`
-  - `~/Desktop`
-  - `~/Downloads`
-  - `~/Documents`
   - `~/Movies`
   - `~/voitanos-workspace`
   - *review other folders in the root*
@@ -149,16 +145,15 @@ Installs ideal shell, prompt, and terminals
     curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/core-install.sh | sh
     ```
 
-1. copy the following **dotfiles** & **dotfolders** (overwriting existing) into home folder:
-    - `~/.hyper.js`
-    - `~/.spaceshiprc.zsh`
-    - `~/.zsh`
-    - `~/.zshenv`
-    - `~/.zshrc`
+1. copy the **[dotfiles & folders](./dotfiles/)** (overwriting existing) into home folder
 1. configure Warp
-    - Appearance > Themes > Sync with OS = **TRUE**
-    - Appearance > Themes > [select] Dark = **Tailwind**
-    - Appearance > Text > Terminal Font = **FiraCode Nerd ...**
+    - Appearance
+      - Themes > Sync with OS = **TRUE**
+      - Themes > [select] Dark = **Tailwind**
+      - Text
+        - Terminal Font = **Cascadia Code**
+        - Font size = **15**
+        - Line height = **1.2**
     - Features > Session > Honor user's custom prompt (PS1) = **TRUE**
 
 <details>

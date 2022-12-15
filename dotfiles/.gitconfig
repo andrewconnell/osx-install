@@ -1,0 +1,29 @@
+[user]
+	name = Andrew Connell
+	email = me@andrewconnell.com
+[credential]
+	helper = osxkeychain
+[core]
+	editor = code -w
+[merge]
+	tool = code
+	ff = no
+	commit = no
+[alias]
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+[pull]
+	ff = only
+	rebase = false
+[commit]
+	template = /Users/ac/.gitmessage
+	gpgSign = false
+[gc]
+	autoDetach = false
+[gui]
+	pruneduringfetch = true
+[smartgit "submodule"]
+	fetchalways = false
+	update = true
+	initializenew = true
+[push]
+	recurseSubmodules = check
