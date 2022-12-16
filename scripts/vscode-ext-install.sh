@@ -1,7 +1,9 @@
 #!/bin/sh
 
+code --install-extension aaron-bond.better-comments
 code --install-extension Acrolinx.vscode-sidebar
 code --install-extension Adobe.extendscript-debug
+code --install-extension alefragnani.Bookmarks
 code --install-extension Azurite.azurite
 code --install-extension blackmist.LinkCheckMD
 code --install-extension bradlc.vscode-tailwindcss
@@ -19,9 +21,13 @@ code --install-extension docsmsft.docs-preview
 code --install-extension docsmsft.docs-scaffolding
 code --install-extension docsmsft.docs-visual-areas
 code --install-extension docsmsft.docs-yaml
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
 code --install-extension fivethree.vscode-hugo-snippets
+code --install-extension formulahendry.auto-rename-tag
 code --install-extension jeff-hykin.better-cpp-syntax
 code --install-extension jsynowiec.vscode-insertdatestring
+code --install-extension mhutchie.git-graph
 code --install-extension ms-azuretools.vscode-azurefunctions
 code --install-extension ms-azuretools.vscode-azureresourcegroups
 code --install-extension ms-azuretools.vscode-bicep
@@ -35,13 +41,17 @@ code --install-extension ms-vscode.cmake-tools
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.cpptools-extension-pack
 code --install-extension ms-vscode.cpptools-themes
+code --install-extension ms-vscode.remote-explorer
 code --install-extension ms-vscode.wordcount
 code --install-extension oouo-diogo-perdigao.docthis
+code --install-extension patbenatar.advanced-new-file
+code --install-extension rangav.vscode-thunder-client
 code --install-extension redhat.vscode-commons
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension ritwickdey.LiveServer
 code --install-extension sdras.night-owl
+code --install-extension Shan.code-settings-sync
 code --install-extension shardulm94.trailing-spaces
 code --install-extension shuworks.vscode-table-formatter
 code --install-extension sissel.shopify-liquid
@@ -51,5 +61,5 @@ code --install-extension timonwong.shellcheck
 code --install-extension twxs.cmake
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension WallabyJs.wallaby-vscode
-code --install-extension wayou.vscode-todo-highlight
+code --install-extension wesbos.theme-cobalt2
 code --install-extension zhouronghui.propertylist
