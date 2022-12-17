@@ -347,6 +347,7 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
   - Photoshop
   - Premiere Pro
 - Import settings from the pre-pave section above on [Adobe CC apps](#adobe-creative-cloud)
+- Manually install **[aescripts + aeplugins](https://aescripts.com/)** manager, login & install plugins
 
 ## Install Node
 
