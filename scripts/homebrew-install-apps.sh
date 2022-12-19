@@ -82,7 +82,6 @@ brew install --cask obs
 brew install --cask parallels
 brew install --cask postman
 brew install --cask powershell
-brew install --cask private-internet-access
 brew install --cask screenflow
 brew install --cask slack
 brew install --cask smartgit
