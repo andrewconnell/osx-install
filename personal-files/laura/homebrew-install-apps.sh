@@ -10,7 +10,6 @@ CASKS=(
     onyx
     grandperspective
     wacom-tablet
-    #macs-fan-control
 )
 
 echo "Installing apps from the web..."

@@ -19,7 +19,7 @@ read -p "  Apple ID (john@email.com): " APPLEID
 # make sure signed into Mac App Store
 mas signin $APPLEID
 
-# install macos apps
+# install macos appsgit
 APPS=(
     1440147259 # Adguard-for-safari
     409183694 # Keynote

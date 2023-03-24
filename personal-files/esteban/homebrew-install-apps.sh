@@ -3,16 +3,13 @@
 # install cask apps
 CASKS=(
     figma-beta
-    #sketch
     openemu-experimental
     keka
     kekaexternalhelper
-    logitech-options
-    eloston-chromium
+    arc
     #microsoft-edge
     #makemkv
     onyx
-    surfshark
     unpkg
     appcleaner
     grandperspective
@@ -24,6 +21,8 @@ CASKS=(
     font-sf-mono
     font-new-york
     sf-symbols
+    microsoft-teams
+    balenaetcher
 )
 
 echo "Installing apps from the web..."
@@ -40,12 +39,20 @@ mas signin $APPLEID
 # install macos apps
 APPS=(
     1440147259 # Adguard - Safari
-    1564329434 # Momentum - Safari
     1024974133 # Mountain Duck
-    803453959 # Slack
     409183694 # Keynote
     409201541 # Pages
     409203825 # Numbers
+    1437809329 # Surfshark
+    985367838 # Microsoft Outlook
+    462058435 # Microsoft Excel
+    462054704 # Microsoft Word
+    1591303229 # Vinegar
+    1601151613 # baking-soda
+    1451733095 # Pym
+    693112260 # Sim Daltonism
+    953286746 # Darkroom
+    1351639930 # Gifski
 )
 
 echo "Installing apps from the App Store..."

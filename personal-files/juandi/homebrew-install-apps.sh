@@ -2,15 +2,15 @@
 
 # install cask apps
 CASKS=(
-    adobe-creative-cloud
-    appcleaner
     figma-beta
-    eloston-chromium
     keka
     kekaexternalhelper
     onyx
+    appcleaner
     grandperspective
-    #macs-fan-control
+    microsoft-edge
+    microsoft-teams
+    microsoft-defender
 )
 
 echo "Installing apps from the web..."
