@@ -23,6 +23,7 @@ CASKS=(
     sf-symbols
     microsoft-teams
     balenaetcher
+    vnc-viewer
 )
 
 echo "Installing apps from the web..."
