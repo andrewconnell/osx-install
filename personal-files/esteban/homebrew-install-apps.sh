@@ -28,7 +28,6 @@ CASKS=(
 
 echo "Installing apps from the web..."
 brew install ${CASKS[@]}
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lovozeto/macOS-postinstall/master/scripts/glassfactory-install.sh)"
 
 # get Apple ID
 echo "Enter Esteban's Apple ID to signin to Mac App Store:"
