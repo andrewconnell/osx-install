@@ -1,19 +1,9 @@
 #!/bin/sh
 
-# add additional repos for homebrew to track, update & install
-
-
 # install apps
 brew install act
 brew install asciinema
 brew install azure-cli
-
-# homebrew cask updater: https://github.com/buo/homebrew-cask-upgrade
-brew tap buo/cask-upgrade
-
-brew tap azure/functions
-brew install azure/functions/azure-functions-core-tools@4
-
 brew install bfg
 brew install carthage
 brew install cask
@@ -95,6 +85,15 @@ brew install --cask wireshark
 brew install --cask xmind
 brew install --cask zoom
 brew install --cask zxpinstaller
+
+
+# homebrew cask updater: https://github.com/buo/homebrew-cask-upgrade
+brew tap buo/cask-upgrade
+
+
+# install azure functions tools
+brew tap azure/functions
+brew install azure/functions/azure-functions-core-tools@4
 
 
 # install ssh pass
