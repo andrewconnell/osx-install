@@ -7,7 +7,6 @@ brew install azure-cli
 brew install bfg
 brew install carthage
 brew install cask
-brew install docker
 brew install dropbox
 brew install esptool
 brew install ffmpeg
@@ -51,6 +50,7 @@ brew install --cask bartender
 brew install --cask bitbar
 brew install --cask bot-framework-emulator
 brew install --cask discord
+brew install --cask docker
 brew install --cask dotnet-sdk
 brew install --cask drawio
 brew install --cask firefox
