@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 npm install -g @microsoft/generator-sharepoint@1.6.0
 npm install -g gulp-cli@2.3.0

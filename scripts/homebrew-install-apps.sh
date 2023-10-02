@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # install apps
 brew install act
@@ -25,12 +25,12 @@ brew install libdvdcss
 brew install markdownlint-cli
 brew install mas
 brew install meson
-brew install mono
 brew install nasm
 brew install openssl@3
 brew install pandoc
+brew install pnpm
 brew install protobuf
-brew install python@3.8
+# brew install python@3.8 > added by azure-cli
 brew install rtmpdump
 brew install sphinx-doc
 brew install subversion
@@ -38,17 +38,19 @@ brew install telnet
 brew install watch
 brew install watchman
 brew install yarn
-brew install youtube-dl
 brew install yq
+brew install yt-dlp
 
 
+brew install --cask 1password
+brew install --cask 1password-cli
 brew install --cask adobe-creative-cloud
 brew install --cask alfred
-brew install --cask audio-hijack
 brew install --cask azure-data-studio
 brew install --cask bartender
 brew install --cask bitbar
 brew install --cask bot-framework-emulator
+brew install --cask canva
 brew install --cask discord
 brew install --cask docker
 brew install --cask dotnet-sdk
@@ -61,7 +63,7 @@ brew install --cask handbrake
 brew install --cask home-assistant
 brew install --cask istat-menus
 brew install --cask java
-brew install --cask loopback
+brew install --cask loom
 brew install --cask microsoft-azure-storage-explorer
 brew install --cask microsoft-edge
 brew install --cask microsoft-teams # may not install on Apple Silicon
@@ -69,7 +71,6 @@ brew install --cask ngrok
 brew install --cask nosleep
 brew install --cask notion
 brew install --cask obs
-brew install --cask parallels
 brew install --cask postman
 brew install --cask powershell
 brew install --cask screenflow
@@ -77,12 +78,10 @@ brew install --cask slack
 brew install --cask smartgit
 brew install --cask smartsynchronize
 brew install --cask steam
-brew install --cask tradingview
-brew install --cask tripmode
 brew install --cask visual-studio-code
 brew install --cask vlc
+brew install --cask warp
 brew install --cask wireshark
-brew install --cask xmind
 brew install --cask zoom
 brew install --cask zxpinstaller
 
@@ -103,8 +102,13 @@ brew install esolitos/ipa/sshpass
 
 
 # add cask-drivers
-brew tap homebrew/cask-drivers
-brew install --cask elgato-control-center
-brew install --cask elgato-stream-deck
-brew install --cask focusrite-control
-brew install --cask obs-ios-camera-source
+# brew tap homebrew/cask-drivers
+# brew install --cask elgato-control-center   # desktop only
+# brew install --cask elgato-stream-deck      # desktop only
+# brew install --cask focusrite-control       # desktop only
+# brew install --cask obs-ios-camera-source   # desktop only
+
+# desktop only
+# brew install --cask audio-hijack            # desktop only
+# brew install --cask loopback                # desktop only
+# brew install --cask parallels               # desktop only

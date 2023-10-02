@@ -1,8 +1,13 @@
-#!/bin/sh
+#!/bin/zsh
 
 # This is intended to be run from the root folder where repos are located (ie: ~/repos).
 #   It outputs to the console commands used to clone repos and, if defined, add the
-#   remote `upstream` to the repo.
+#   remote `upstream` to the repo. For example...
+#
+# > Run this on the machine where the repos are located....
+# cd ~/repos
+# ~/repos/osx-install/scripts/repo-gen-clone-script.zsh
+# > take the results of the above command and run on the new machine...para
 
 ROOT_DIR=$PWD
 for REPO_DIR in */; do

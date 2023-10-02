@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 CURRENT_DIR=$PWD
 
@@ -24,5 +24,9 @@ curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/Omnes/Om
 curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/Omnes/OmnesLight.otf"
 curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/Omnes/OmnesMedium.otf"
 curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/Omnes/OmnesSemiBold.otf"
+
+cd ~/Library/Fonts
+mkdir "AC Handwriting" && cd $_
+curl -O "https://github.com/andrewconnell/osx-install/blob/master/fonts/AC Handwriting/AndrewConnellHandwritingV1-Regular.ttf"
 
 cd "$CURRENT_DIR"

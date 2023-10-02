@@ -17,7 +17,6 @@ Do the following before paving the partition. This is to get the way I have thin
   - `~/_play`
   - `~/.gitconfig`
   - `~/.gitmessage`
-  - `~/.hyper.js`
   - `~/.npmrc`
   - `~/.ssh`
   - `~/.yarnrc`
@@ -127,6 +126,15 @@ Install [Homebrew](http://brew.sh/) for automated installs & updates.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+> [!TIP]
+> If get error about `zsh compinit: insecure directories, run compaudit for list.`, do what it says:
+>
+> `$ compaudit`
+>
+> For the folder(s) returned, fix it with:
+>
+> `$ sudo chmod -R 755 {PATH}`
+
 ### Install fonts
 
 ```console
@@ -146,48 +154,6 @@ Installs ideal shell, prompt, and terminals
     ```
 
 1. copy the **[dotfiles & folders](./dotfiles/)** (overwriting existing) into home folder
-1. configure Warp
-    - Appearance
-      - Themes > Sync with OS = **TRUE**
-      - Themes > [select] Dark = **Tailwind**
-      - Text
-        - Terminal Font = **Cascadia Code**
-        - Font size = **15**
-        - Line height = **1.2**
-    - Features > Session > Honor user's custom prompt (PS1) = **TRUE**
-
-<details>
-  <summary>If theme "Tailwind" isn't listed...</summary>
-
-  1. create a new file **~/.warp/themes/tailwind.yaml**
-  1. add the following to the file:
-
-  ```yaml
-  accent: '#63B3ED' # Accent color for UI elements
-  background: '#1A202C' # Terminal background color
-  details: darker # Whether the theme is lighter or darker.
-  foreground: '#A0AEC0' # The foreground color.
-  terminal_colors: # Ansi escape colors.
-    bright:
-      blue: "#3182CE"
-      cyan: "#4FD1C5"
-      red: "#C53030"
-      yellow: "#D69E2E"
-      magenta: "#6B46C1"
-      white: "#ffffff"
-      black: "#666666"
-      green: "#48BB78"
-    normal:
-      cyan: "#81E6D9"
-      green: "#68D391"
-      white: "#f1f1f1"
-      blue: "#63B3ED"
-      yellow: "#FAF089"
-        black: "#121212"
-        magenta: "#B794F4"
-        red: "#f56565"
-  ```
-</details>
 
 ### Install apps via Homebrew: `homebrew-install-apps.sh`
 
@@ -220,14 +186,14 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 
 Three step process:
 
-1. Get OneDrive & Google Chrome syncing to get access to backups, settings (in OneDrive), licenses & passwords in LastPass
+1. Get OneDrive syncing to get access to backups, settings (in OneDrive), licenses & passwords in password manager
 1. Login, license, install, & configure remaining apps
 
 ### Configure core apps to acquire backups, licenses & passwords
 
 - login to the following apps
   - Google Chrome
-    - *do this first & login to LastPass to get licenses*
+    - *do this first & login to password manager to get licenses*
   - OneDrive
     - *do this to get sync running... contains backup files collected before pave*
 - Visual Studio Code
@@ -256,7 +222,7 @@ Three step process:
       sudo chmod 600 ~/.ssh/config
 
       # add key to SSH agent
-      #     + enter passphrase from LastPass when prompted
+      #     + enter passphrase from password manager when prompted
       ssh-add ~/.ssh/id_rsa
 
       # add to keychain
@@ -331,13 +297,23 @@ Three step process:
     - Phillips Hue
     - VLC
 
-## Additional downloads & installs Install My Personal Apps: `scripted-installs.sh`
+## Additional downloads & installs: `scripted-installs.sh`
 
 ```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/scripted-installs.sh | sh
 ```
 
-- Creative Cloud installs
+### Install custom fonts
+
+- Open `~/Library/Fonts`
+- For the following folders, select all fonts files, open in macOS' **Font Book**, & install them:
+  - AC Handwriting
+  - Omnes
+  - Segoe UI MDL2
+
+### Creative Cloud installs
+
+- Install apps:
   - Acrobat DC
   - After Effects
   - Audition
@@ -359,11 +335,16 @@ mkdir ~/.nvm
 
 ### Install & configure Node LTS & stable versions
 
+> [!CAUTION]
+> The following script doesn't work. Something is causing `nvm` to not be seen as a valid comment.
+>
+> Instead, copy the blocks of code from the following installer script file and manually run in the console.
+
 This script installs multiple Node versions:
 
 ```console
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/node-install.sh | sh
-code ```
+```
 
 ## Post installation & configuration checks
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # install ZSH
 brew install zsh zsh-completions
@@ -12,13 +12,8 @@ brew install nvm
 # install console prompt
 brew install spaceship
 
-# install Warp terminal
-brew install warp
-# install Warp theme
-curl -s -N 'https://warp-themes.com/d/6j8o3VqP8g6Rh8ovdJXr' | bash
-
-# install Hyper.js terminal & plugins
-brew install --cask hyper
-hyper i hyper-tailwind-dark
-hyper i hyper-search
-hyper i hyper-font-ligatures
+# install Hyper.js terminal & plugins (switched to warp)
+# brew install --cask hyper
+# hyper i hyper-tailwind-dark
+# hyper i hyper-search
+# hyper i hyper-font-ligatures
