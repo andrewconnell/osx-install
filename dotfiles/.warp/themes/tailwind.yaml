@@ -1,7 +1,7 @@
 foreground: "#A0AEC0"
 details: "darker"
 background: "#1A202C"
-accent: "#63B3ED"
+accent: "#5a5c27"
 terminal_colors:
   bright:
     blue: "#3182CE"
@@ -21,4 +21,3 @@ terminal_colors:
     black: "#121212"
     magenta: "#B794F4"
     red: "#f56565"
-

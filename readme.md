@@ -154,6 +154,9 @@ Installs ideal shell, prompt, and terminals
     ```
 
 1. copy the **[dotfiles & folders](./dotfiles/)** (overwriting existing) into home folder
+1. search for any `{{{REPLACE_THIS}}}` and replace with correct values
+1. setup SSH with 1Password for `.gitconfig`
+1.
 
 ### Install apps via Homebrew: `homebrew-install-apps.zsh`
 

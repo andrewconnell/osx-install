@@ -16,7 +16,7 @@
 	rebase = false
 [commit]
 	template = /Users/ac/.gitmessage
-	gpgSign = false
+	gpgsign = true
 [gc]
 	autoDetach = false
 [gui]
@@ -27,3 +27,5 @@
 	initializenew = true
 [push]
 	recurseSubmodules = check
+[gpg]
+	format = ssh
