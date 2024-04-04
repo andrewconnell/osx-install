@@ -29,11 +29,11 @@ Do the following before paving the partition. This is to get the way I have thin
   - *review other folders in the root*
 - Dev
   - Dump list of all repos in `~/repos` => **{{PRIVATE_BACKUP}}/{{BACKUPDATE}}**
-  - Clone all repos (+ upstream remotes) using this script: [scripts/repo-gen-clone-script.sh](./repo-gen-clone-script.sh)
+  - Clone all repos (+ upstream remotes) using this script: [scripts/repo-gen-clone-script.zsh](./repo-gen-clone-script.zsh)
 - iStat Menu
   - backup settings => **{{PRIVATE_BACKUP}}/iStat Menus Settings.ismp**
 - Node
-  - refresh NPM global package install list: **./scripts/npm-install-packages-lts-*.sh**
+  - refresh NPM global package install list: **./scripts/npm-install-packages-lts-*.zsh**
 
     ```console
     npm list -g --depth=0
@@ -47,7 +47,7 @@ Do the following before paving the partition. This is to get the way I have thin
 - Stream Deck
   - export & save Stream Deck profiles => **{{PRIVATE_BACKUP}}/Stream Deck - {{..}}.streamDeckProfilesBackup**
 - Visual Studio Code
-  - refresh installed extensions install list: **[./scripts/vscode-ext-install.sh](./scripts/vscode-ext-install.sh)**
+  - refresh installed extensions install list: **[./scripts/vscode-ext-install.zsh](./scripts/vscode-ext-install.zsh)**
 
       ```console
       code --list-extensions
@@ -92,7 +92,7 @@ Do the following before paving the partition. This is to get the way I have thin
 - Jump Desktop
 - export list of VMs => **{{PRIVATE_BACKUP}}**
 - Mac App Store apps
-- refresh list installed MacOS apps: **[./scripts/macos-install.sh](./scripts/macos-install.sh)**
+- refresh list installed MacOS apps: **[./scripts/macos-install.zsh](./scripts/macos-install.zsh)**
 
     ```console
     mas list
@@ -138,7 +138,7 @@ Install [Homebrew](http://brew.sh/) for automated installs & updates.
 ### Install fonts
 
 ```console
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/core-fonts.sh | sh
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/core-fonts.zsh | zsh
 ```
 
 ### Install & setup console
@@ -150,12 +150,12 @@ Installs ideal shell, prompt, and terminals
 1. run following to install cores
 
     ```console
-    curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/core-install.sh | sh
+    curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/core-install.zsh | zsh
     ```
 
 1. copy the **[dotfiles & folders](./dotfiles/)** (overwriting existing) into home folder
 
-### Install apps via Homebrew: `homebrew-install-apps.sh`
+### Install apps via Homebrew: `homebrew-install-apps.zsh`
 
 Install apps using Homebrew.
 
@@ -164,17 +164,17 @@ Install apps using Homebrew.
 run following to install cores
 
   ```console
-  curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.sh | sh
+  curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.zsh | zsh
   ```
 
 Pay attention for extra installs & steps at the end.
 
-### Install Mac App Store apps: `macos-install.sh`
+### Install Mac App Store apps: `macos-install.zsh`
 
 Install apps from the Apple App Store.
 
 ```console
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/macos-install.sh | sh
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/macos-install.zsh | zsh
 ```
 
 ### Manual Installs
@@ -200,7 +200,7 @@ Three step process:
   - install extensions collected before pave:
 
       ```console
-      curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/vscode-ext-install.sh | sh
+      curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/vscode-ext-install.zsh | zsh
       ```
 
   - copy snippets & settings:
@@ -297,10 +297,10 @@ Three step process:
     - Phillips Hue
     - VLC
 
-## Additional downloads & installs: `scripted-installs.sh`
+## Additional downloads & installs: `scripted-installs.zsh`
 
 ```console
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/scripted-installs.sh | sh
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/scripted-installs.zsh | zsh
 ```
 
 ### Install custom fonts
@@ -343,7 +343,7 @@ mkdir ~/.nvm
 This script installs multiple Node versions:
 
 ```console
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/node-install.sh | sh
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/node-install.zsh | zsh
 ```
 
 ## Post installation & configuration checks
