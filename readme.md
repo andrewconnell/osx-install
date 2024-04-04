@@ -169,6 +169,13 @@ run following to install cores
 
 Pay attention for extra installs & steps at the end.
 
+### Setup Warp theme
+
+- Copy Tailwind theme from [`./dotfiles/.warp`](./dotfiles/.warp) > `~/`
+- Launch Warp & login
+- Settings > Appearance > Theme, select Dark
+- Find and select **Tailwind**
+
 ### Install Mac App Store apps: `macos-install.zsh`
 
 Install apps from the Apple App Store.
