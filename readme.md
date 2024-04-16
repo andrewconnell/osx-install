@@ -127,7 +127,14 @@ Install [Homebrew](http://brew.sh/) for automated installs & updates.
 ```
 
 > [!TIP]
-> If get error about `zsh compinit: insecure directories, run compaudit for list.`, do what it says:
+> If get error about `zsh compinit: insecure directories, run compaudit for list.`, first try to run the following to see if it fixes it:
+>
+> ```console
+> chmod go-w '/opt/homebrew/share'
+> chmod -R go-w '/opt/homebrew/share/zsh'
+> ```
+>
+> ... if the issue persists, do what it says:
 >
 > `$ compaudit`
 >
@@ -156,7 +163,7 @@ Installs ideal shell, prompt, and terminals
 1. copy the **[dotfiles & folders](./dotfiles/)** (overwriting existing) into home folder
 1. search for any `{{{REPLACE_THIS}}}` and replace with correct values
 1. setup SSH with 1Password for `.gitconfig`
-1.
+  - **1Password > Settings > Developer** & select all options
 
 ### Install apps via Homebrew: `homebrew-install-apps.zsh`
 
