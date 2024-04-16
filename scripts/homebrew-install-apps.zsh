@@ -30,7 +30,6 @@ brew install openssl@3
 brew install pandoc
 brew install pnpm
 brew install protobuf
-# brew install python@3.8 > added by azure-cli
 brew install rtmpdump
 brew install sphinx-doc
 brew install subversion
