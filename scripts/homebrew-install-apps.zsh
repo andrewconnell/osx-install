@@ -30,6 +30,7 @@ brew install openssl@3
 brew install pandoc
 brew install pnpm
 brew install protobuf
+brew install ripgrep
 brew install rtmpdump
 brew install sphinx-doc
 brew install subversion
@@ -80,7 +81,6 @@ brew install --cask steam
 brew install --cask visual-studio-code
 brew install --cask vlc
 brew install --cask warp
-brew install --cask wireshark
 brew install --cask zoom
 brew install --cask zxpinstaller
 
@@ -99,6 +99,11 @@ brew install azure/functions/azure-functions-core-tools@4
 brew tap esolitos/ipa
 brew install esolitos/ipa/sshpass
 
+
+# install Microsoft's Dev Proxy
+#   ref:https://learn.microsoft.com/microsoft-cloud/dev/dev-proxy/overview
+brew tap microsoft/dev-proxy
+brew install dev-proxy
 
 # add cask-drivers
 # brew tap homebrew/cask-drivers
