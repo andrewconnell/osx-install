@@ -16,5 +16,6 @@ brew install --cask font-menlo-for-powerline
 brew install --cask font-meslo-lg-dz
 brew install --cask font-meslo-lg-nerd-font
 brew install --cask font-powerline-symbols
+brew install --cask font-sora
 brew install --cask font-source-code-pro
 brew install --cask font-source-code-pro-for-powerline
