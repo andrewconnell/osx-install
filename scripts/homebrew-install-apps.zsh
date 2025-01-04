@@ -107,12 +107,13 @@ brew install dev-proxy
 
 # add cask-drivers
 # brew tap homebrew/cask-drivers
-# brew install --cask elgato-control-center   # desktop only
-# brew install --cask elgato-stream-deck      # desktop only
-# brew install --cask focusrite-control       # desktop only
-# brew install --cask obs-ios-camera-source   # desktop only
 
 # desktop only
 # brew install --cask audio-hijack            # desktop only
+# brew install --cask elgato-control-center   # desktop only
+# brew install --cask elgato-stream-deck      # desktop only
 # brew install --cask loopback                # desktop only
+# brew install --cask obs-ios-camera-source   # desktop only
 # brew install --cask parallels               # desktop only
+# brew install --cask rode-central            # desktop only
+# brew install --cask rode-unify              # desktop only
