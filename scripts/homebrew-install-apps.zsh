@@ -30,6 +30,7 @@ brew install openssl@3
 brew install pandoc
 brew install pnpm
 brew install protobuf
+brew install raycast
 brew install ripgrep
 brew install rtmpdump
 brew install sphinx-doc
@@ -45,7 +46,6 @@ brew install yt-dlp
 brew install --cask 1password
 brew install --cask 1password-cli
 brew install --cask adobe-creative-cloud
-brew install --cask alfred
 brew install --cask azure-data-studio
 brew install --cask bartender
 brew install --cask bitbar
