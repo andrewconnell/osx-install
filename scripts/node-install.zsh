@@ -18,9 +18,9 @@
 nvm install lts/hydrogen
 curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-packages-lts-hydrogen.zsh | zsh
 
-# install node v20 (LTS)
-nvm install lts/iron
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-packages-lts-iron.zsh | zsh
+# install node v22 (LTS)
+nvm install lts/jod
+curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/npm-install-packages-lts-jod.zsh | zsh
 
 # set default option
 nvm alias default lts/hydrogen

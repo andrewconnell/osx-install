@@ -51,6 +51,7 @@ brew install --cask bartender
 brew install --cask bitbar
 brew install --cask bot-framework-emulator
 brew install --cask canva
+brew install --cask claude
 brew install --cask chatgpt
 brew install --cask discord
 brew install --cask docker
