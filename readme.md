@@ -197,7 +197,7 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 ### Manual Installs
 
 - Amphetamine Enhancer - https://github.com/x74353/Amphetamine-Enhancer
-- [Sophos Home A/V](https://home.sophos.com)
+- PresentLink - https://presentink.com/
 
 ## Configure apps
 
